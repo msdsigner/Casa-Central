@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const excelCart = document.getElementById('excelCart');
 
     const sortSelect = document.getElementById('sortSelect');
-    const qtyFilter = document.getElementById('qtyFilter');
     
     // Sort logic
     let currentSort = 'default';
@@ -41,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Selection state: map of itemId -> { item, quantity }
     let selectionCart = {};
-    let minQty = 0;
 
     // Boot Up
     loadData();
@@ -77,11 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     sortSelect.addEventListener('change', (e) => {
         currentSort = e.target.value;
-        renderGrid();
-    });
-
-    qtyFilter.addEventListener('change', (e) => {
-        minQty = parseInt(e.target.value) || 0;
         renderGrid();
     });
 
@@ -202,10 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 item.name.toLowerCase().includes(query) ||
                 item.id.toLowerCase().includes(query) ||
                 item.category.toLowerCase().includes(query);
-            
-            const matchQty = (item.available || 0) >= minQty;
-
-            return matchCat && matchSearch && matchQty;
+            return matchCat && matchSearch;
         });
 
         // Apply Sorting
@@ -217,6 +207,10 @@ document.addEventListener('DOMContentLoaded', () => {
             filtered.sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
         } else if (currentSort === 'price-desc') {
             filtered.sort((a, b) => parseFloat(b.price) - parseFloat(a.price));
+        } else if (currentSort === 'qty-asc') {
+            filtered.sort((a, b) => (a.available || 0) - (b.available || 0));
+        } else if (currentSort === 'qty-desc') {
+            filtered.sort((a, b) => (b.available || 0) - (a.available || 0));
         } else if (currentSort === 'newest') {
             // Assume the bottom of original list is newest if not timestamped
             filtered.sort((a, b) => {
@@ -375,37 +369,36 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = `mailto:info@goldenopportunity.com?subject=${subject}&body=${mailBody}`;
     });
 
-    // 📊 Save as Excel (.xlsx) using ExcelJS
+    // 📊 Save as Excel (.xlsx) using ExcelJS with embedded images
     excelCart.addEventListener('click', async () => {
         const items = getSelectionArray();
         if(items.length === 0) return alert("Selection is empty.");
 
-        excelCart.textContent = "⚙️ Processing Images...";
+        const originalText = excelCart.textContent;
+        excelCart.textContent = "Fetching Images...";
         
         const workbook = new ExcelJS.Workbook();
-        const worksheet = workbook.addWorksheet('Golden Opportunity Selection');
+        const worksheet = workbook.addWorksheet('Catalog Selection');
 
-        // Define Columns
+        // Styles
+        worksheet.getRow(1).height = 25;
+        worksheet.getRow(1).font = { bold: true };
+
         worksheet.columns = [
+            { header: 'Preview', key: 'img', width: 15 },
             { header: 'Reference ID', key: 'id', width: 15 },
-            { header: 'Preview', key: 'preview', width: 12 }, // Image column
-            { header: 'Product Name', key: 'name', width: 45 },
+            { header: 'Product Name', key: 'name', width: 40 },
             { header: 'Category', key: 'category', width: 22 },
-            { header: 'Unit Price', key: 'price', width: 14 },
-            { header: 'Qty', key: 'qty', width: 10 },
-            { header: 'Total', key: 'total', width: 16 }
+            { header: 'Unit Price', key: 'price', width: 12 },
+            { header: 'Quantity', key: 'qty', width: 10 },
+            { header: 'Total Price', key: 'total', width: 15 }
         ];
 
-        // Format Header
-        worksheet.getRow(1).height = 25;
-        worksheet.getRow(1).font = { bold: true, size: 12 };
-        worksheet.getRow(1).alignment = { vertical: 'middle', horizontal: 'center' };
-
-        // Process each item
-        for (let idx = 0; idx < items.length; idx++) {
+        // Process items with images
+        for(let idx = 0; idx < items.length; idx++) {
             const i = items[idx];
-            const rowNumber = idx + 2; 
-            const total = parseFloat(i.product.price) * i.quantity;
+            const rowNo = idx + 2;
+            excelCart.textContent = `Processing ${idx+1}/${items.length}...`;
 
             const row = worksheet.addRow({
                 id: i.product.id,
@@ -413,14 +406,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 category: i.product.category,
                 price: parseFloat(i.product.price),
                 qty: i.quantity,
-                total: total
+                total: parseFloat(i.product.price) * i.quantity
             });
-
-            // Set Row Height for images
-            row.height = 60;
+            row.height = 65;
             row.alignment = { vertical: 'middle' };
 
-            // Attempt to embed image
             try {
                 let imgSrc = i.product.image;
                 if(!imgSrc.startsWith('http')) {
@@ -428,41 +418,38 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 
                 const response = await fetch(imgSrc);
-                const blob = await response.blob();
-                const buffer = await blob.arrayBuffer();
-                
+                const arrayBuffer = await response.arrayBuffer();
                 const imageId = workbook.addImage({
-                    buffer: buffer,
+                    buffer: arrayBuffer,
                     extension: 'png',
                 });
 
                 worksheet.addImage(imageId, {
-                    tl: { col: 1, row: idx + 1 },
-                    ext: { width: 75, height: 75 },
-                    editAs: 'oneCell'
+                    tl: { col: 0.1, row: rowNo - 1 + 0.1 },
+                    br: { col: 0.9, row: rowNo - 0.1 }
                 });
-            } catch (e) {
-                console.warn(`Failed to embed image for ${i.product.id}:`, e);
+            } catch (err) {
+                console.error("Excel Image Error:", err);
             }
         }
 
-        // Apply Currency Formatting
         worksheet.getColumn('price').numFmt = '$#,##0.00';
         worksheet.getColumn('total').numFmt = '$#,##0.00';
 
         const buffer = await workbook.xlsx.writeBuffer();
         const blob = new Blob([buffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
-        saveAs(blob, `Golden_Opportunity_Catalog_${new Date().getTime()}.xlsx`);
+        saveAs(blob, `Catalog_Selection_${new Date().getTime()}.xlsx`);
         
-        excelCart.textContent = "📊 Save as Excel";
+        excelCart.textContent = originalText;
     });
 
-    // 📄 Save as PDF using HTML2PDF
-    pdfCart.addEventListener('click', () => {
+    // 📄 Save as PDF with Images
+    pdfCart.addEventListener('click', async () => {
         const items = getSelectionArray();
         if(items.length === 0) return alert("Selection is empty.");
         
-        // Build a high-quality temporary HTML table for the PDF
+        pdfCart.textContent = "Loading Images...";
+
         const wrap = document.createElement('div');
         wrap.style.padding = "40px";
         wrap.style.backgroundColor = "white";
@@ -485,51 +472,58 @@ document.addEventListener('DOMContentLoaded', () => {
                         <th style="padding:12px; border:1px solid #EEE;">Total</th>
                     </tr>
                 </thead>
-                <tbody>
-                    ${items.map(i => {
-                        let total = (parseFloat(i.product.price) * i.quantity).toFixed(2);
-                        // Ensure image URL is absolute for PDF generator
-                        let imgSrc = i.product.image;
-                        if(!imgSrc.startsWith('http')) {
-                            imgSrc = window.location.origin + window.location.pathname.replace('index.html', '') + imgSrc;
-                        }
-                        
-                        return `
-                        <tr>
-                            <td style="padding:10px; border:1px solid #EEE; text-align:center;">
-                                <img src="${imgSrc}" style="width:50px; height:50px; object-fit:contain;" crossorigin="anonymous">
-                            </td>
-                            <td style="padding:10px; border:1px solid #EEE;">${i.product.id}</td>
-                            <td style="padding:10px; border:1px solid #EEE; max-width: 200px;">${i.product.name}</td>
-                            <td style="padding:10px; border:1px solid #EEE; font-weight:bold;">${i.quantity}</td>
-                            <td style="padding:10px; border:1px solid #EEE;">$${parseFloat(i.product.price).toFixed(2)}</td>
-                            <td style="padding:10px; border:1px solid #EEE; font-weight:bold;">$${total}</td>
-                        </tr>`;
-                    }).join('')}
-                </tbody>
+                <tbody id="pdfTableBody"></tbody>
             </table>
-            <div style="margin-top:30px; border-top: 1px solid #EEE; padding-top: 20px; text-align:right;">
-                <p style="font-size:14px; color:#666;">Generated via Golden Opportunity Online Catalog</p>
-            </div>
         `;
+
+        const tbody = wrap.querySelector('#pdfTableBody');
+        const imagePromises = items.map(async (i) => {
+            let total = (parseFloat(i.product.price) * i.quantity).toFixed(2);
+            let imgSrc = i.product.image;
+            if(!imgSrc.startsWith('http')) {
+                imgSrc = window.location.origin + window.location.pathname.replace('index.html', '') + imgSrc;
+            }
+
+            return new Promise((resolve) => {
+                const img = new Image();
+                img.crossOrigin = "anonymous";
+                img.onload = () => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td style="padding:10px; border:1px solid #EEE; text-align:center;">
+                            <img src="${imgSrc}" style="width:60px; height:60px; object-fit:contain;">
+                        </td>
+                        <td style="padding:10px; border:1px solid #EEE;">${i.product.id}</td>
+                        <td style="padding:10px; border:1px solid #EEE; max-width: 200px;">${i.product.name}</td>
+                        <td style="padding:10px; border:1px solid #EEE; font-weight:bold;">${i.quantity}</td>
+                        <td style="padding:10px; border:1px solid #EEE;">$${parseFloat(i.product.price).toFixed(2)}</td>
+                        <td style="padding:10px; border:1px solid #EEE; font-weight:bold;">$${total}</td>
+                    `;
+                    tbody.appendChild(tr);
+                    resolve();
+                };
+                img.onerror = () => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `<td colspan="6">Image Error for ${i.product.id}</td>`;
+                    tbody.appendChild(tr);
+                    resolve();
+                };
+                img.src = imgSrc;
+            });
+        });
+
+        await Promise.all(imagePromises);
         
-        pdfCart.textContent = "Generating...";
+        pdfCart.textContent = "Rendering...";
         
-        // Configure PDF options
         const opt = {
             margin: 10,
             filename: `Catalog_Quote_${new Date().getTime()}.pdf`,
             image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { 
-                scale: 2, 
-                useCORS: true, 
-                allowTaint: false,
-                letterRendering: true
-            },
+            html2canvas: { scale: 2, useCORS: true, allowTaint: false },
             jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
         };
 
-        // Run html2pdf
         html2pdf().from(wrap).set(opt).save().then(() => {
             pdfCart.textContent = "📄 Save as PDF";
         });
