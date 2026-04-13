@@ -350,10 +350,12 @@ document.addEventListener('DOMContentLoaded', () => {
         return Object.values(selectionCart);
     }
 
-    // ✉️ Selection Inquiry (Email)
+    // ✉️ Selection Inquiry (Email with Browser Choice)
     emailCart.addEventListener('click', () => {
         const items = getSelectionArray();
         if(items.length === 0) return alert("Selection is empty.");
+        
+        const useGmail = confirm("Use Gmail in Browser? \n\nClick 'OK' for Gmail. \nClick 'Cancel' for Default App (Outlook).");
         
         let body = "Hello Golden Opportunity Catalog Team,\n\nI am interested in the following items from the Live Inventory:\n\n";
         items.forEach(i => {
@@ -365,11 +367,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const subject = encodeURIComponent("Catalog Information Request");
         const mailBody = encodeURIComponent(body);
         
-        // This will trigger the user's default mail client (Outlook, Mail, or Browser handler)
-        window.location.href = `mailto:info@goldenopportunity.com?subject=${subject}&body=${mailBody}`;
+        if(useGmail) {
+            window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=info@goldenopportunity.com&su=${subject}&body=${mailBody}`);
+        } else {
+            window.location.href = `mailto:info@goldenopportunity.com?subject=${subject}&body=${mailBody}`;
+        }
     });
 
-    // 📊 Save as Excel (.xlsx) using ExcelJS with embedded images
+    // 📊 Save as Excel (.xlsx) using ExcelJS with FIX for image stretching
     excelCart.addEventListener('click', async () => {
         const items = getSelectionArray();
         if(items.length === 0) return alert("Selection is empty.");
@@ -394,7 +399,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { header: 'Total Price', key: 'total', width: 15 }
         ];
 
-        // Process items with images
+        // Process items
         for(let idx = 0; idx < items.length; idx++) {
             const i = items[idx];
             const rowNo = idx + 2;
@@ -408,8 +413,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 qty: i.quantity,
                 total: parseFloat(i.product.price) * i.quantity
             });
-            row.height = 65;
-            row.alignment = { vertical: 'middle' };
+            row.height = 75; // Increased row height
+            row.alignment = { vertical: 'middle', horizontal: 'center' };
 
             try {
                 let imgSrc = i.product.image;
@@ -424,9 +429,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     extension: 'png',
                 });
 
+                // Fixed Anchoring to prevent stretching
                 worksheet.addImage(imageId, {
-                    tl: { col: 0.1, row: rowNo - 1 + 0.1 },
-                    br: { col: 0.9, row: rowNo - 0.1 }
+                    tl: { col: 0.1, row: rowNo - 0.9 },
+                    ext: { width: 85, height: 85 } // Fixed box size
                 });
             } catch (err) {
                 console.error("Excel Image Error:", err);
