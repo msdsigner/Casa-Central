@@ -350,31 +350,35 @@ document.addEventListener('DOMContentLoaded', () => {
         return Object.values(selectionCart);
     }
 
-    // ✉️ Selection Inquiry (Email with Browser Choice)
-    emailCart.addEventListener('click', () => {
-        const items = getSelectionArray();
-        if(items.length === 0) return alert("Selection is empty.");
-        
-        const useGmail = confirm("Use Gmail in Browser? \n\nClick 'OK' for Gmail. \nClick 'Cancel' for Default App (Outlook).");
-        
+    // ✉️ Selection Inquiry (Email Choice)
+    const generateEmailBody = () => {
         let body = "Hello Golden Opportunity Catalog Team,\n\nI am interested in the following items from the Live Inventory:\n\n";
-        items.forEach(i => {
+        getSelectionArray().forEach(i => {
             let total = (parseFloat(i.product.price) * i.quantity).toFixed(2);
             body += `- ${i.quantity}x ${i.product.name} (Ref: ${i.product.id}) @ $${i.product.price} each = Total: $${total}\n`;
         });
         body += "\nPlease let me know if these items are available.\n\nThank you.";
-        
+        return body;
+    };
+
+    const emailCartDefault = document.getElementById('emailCartDefault');
+    const emailCartGmail = document.getElementById('emailCartGmail');
+
+    emailCartDefault?.addEventListener('click', () => {
+        const body = generateEmailBody();
         const subject = encodeURIComponent("Catalog Information Request");
         const mailBody = encodeURIComponent(body);
-        
-        if(useGmail) {
-            window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=info@goldenopportunity.com&su=${subject}&body=${mailBody}`);
-        } else {
-            window.location.href = `mailto:info@goldenopportunity.com?subject=${subject}&body=${mailBody}`;
-        }
+        window.location.href = `mailto:info@goldenopportunity.com?subject=${subject}&body=${mailBody}`;
     });
 
-    // 📊 Save as Excel (.xlsx) using ExcelJS with FIX for image stretching
+    emailCartGmail?.addEventListener('click', () => {
+        const body = generateEmailBody();
+        const subject = encodeURIComponent("Catalog Information Request");
+        const mailBody = encodeURIComponent(body);
+        window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=info@goldenopportunity.com&su=${subject}&body=${mailBody}`);
+    });
+
+    // 📊 Save as Excel (.xlsx) using ExcelJS with FIX for image stretching & 140px size
     excelCart.addEventListener('click', async () => {
         const items = getSelectionArray();
         if(items.length === 0) return alert("Selection is empty.");
@@ -386,11 +390,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const worksheet = workbook.addWorksheet('Catalog Selection');
 
         // Styles
-        worksheet.getRow(1).height = 25;
+        worksheet.getRow(1).height = 30;
         worksheet.getRow(1).font = { bold: true };
 
         worksheet.columns = [
-            { header: 'Preview', key: 'img', width: 15 },
+            { header: 'Preview', key: 'img', width: 22 }, // Widened for 140px
             { header: 'Reference ID', key: 'id', width: 15 },
             { header: 'Product Name', key: 'name', width: 40 },
             { header: 'Category', key: 'category', width: 22 },
@@ -413,7 +417,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 qty: i.quantity,
                 total: parseFloat(i.product.price) * i.quantity
             });
-            row.height = 75; // Increased row height
+            row.height = 110; // Tall enough for 140px icon
             row.alignment = { vertical: 'middle', horizontal: 'center' };
 
             try {
@@ -429,10 +433,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     extension: 'png',
                 });
 
-                // Fixed Anchoring to prevent stretching
+                // 140px size centered in cell
                 worksheet.addImage(imageId, {
-                    tl: { col: 0.1, row: rowNo - 0.9 },
-                    ext: { width: 85, height: 85 } // Fixed box size
+                    tl: { col: 0.1, row: rowNo - 0.95 },
+                    ext: { width: 140, height: 140 },
+                    editAs: 'oneCell'
                 });
             } catch (err) {
                 console.error("Excel Image Error:", err);
