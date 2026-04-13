@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const excelCart = document.getElementById('excelCart');
 
     const sortSelect = document.getElementById('sortSelect');
+    const qtyFilter = document.getElementById('qtyFilter');
     
     // Sort logic
     let currentSort = 'default';
@@ -40,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Selection state: map of itemId -> { item, quantity }
     let selectionCart = {};
+    let minQty = 0;
 
     // Boot Up
     loadData();
@@ -75,6 +77,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     sortSelect.addEventListener('change', (e) => {
         currentSort = e.target.value;
+        renderGrid();
+    });
+
+    qtyFilter.addEventListener('change', (e) => {
+        minQty = parseInt(e.target.value) || 0;
         renderGrid();
     });
 
@@ -195,7 +202,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 item.name.toLowerCase().includes(query) ||
                 item.id.toLowerCase().includes(query) ||
                 item.category.toLowerCase().includes(query);
-            return matchCat && matchSearch;
+            
+            const matchQty = (item.available || 0) >= minQty;
+
+            return matchCat && matchSearch && matchQty;
         });
 
         // Apply Sorting
@@ -370,25 +380,34 @@ document.addEventListener('DOMContentLoaded', () => {
         const items = getSelectionArray();
         if(items.length === 0) return alert("Selection is empty.");
 
-        excelCart.textContent = "Generating...";
+        excelCart.textContent = "⚙️ Processing Images...";
         
         const workbook = new ExcelJS.Workbook();
-        const worksheet = workbook.addWorksheet('Selection');
+        const worksheet = workbook.addWorksheet('Golden Opportunity Selection');
 
         // Define Columns
         worksheet.columns = [
             { header: 'Reference ID', key: 'id', width: 15 },
-            { header: 'Product Name', key: 'name', width: 40 },
-            { header: 'Category', key: 'category', width: 20 },
-            { header: 'Unit Price', key: 'price', width: 12 },
-            { header: 'Quantity', key: 'qty', width: 10 },
-            { header: 'Total Price', key: 'total', width: 15 }
+            { header: 'Preview', key: 'preview', width: 12 }, // Image column
+            { header: 'Product Name', key: 'name', width: 45 },
+            { header: 'Category', key: 'category', width: 22 },
+            { header: 'Unit Price', key: 'price', width: 14 },
+            { header: 'Qty', key: 'qty', width: 10 },
+            { header: 'Total', key: 'total', width: 16 }
         ];
 
-        // Add Data Rows
-        items.forEach(i => {
-            let total = parseFloat(i.product.price) * i.quantity;
-            worksheet.addRow({
+        // Format Header
+        worksheet.getRow(1).height = 25;
+        worksheet.getRow(1).font = { bold: true, size: 12 };
+        worksheet.getRow(1).alignment = { vertical: 'middle', horizontal: 'center' };
+
+        // Process each item
+        for (let idx = 0; idx < items.length; idx++) {
+            const i = items[idx];
+            const rowNumber = idx + 2; 
+            const total = parseFloat(i.product.price) * i.quantity;
+
+            const row = worksheet.addRow({
                 id: i.product.id,
                 name: i.product.name,
                 category: i.product.category,
@@ -396,16 +415,40 @@ document.addEventListener('DOMContentLoaded', () => {
                 qty: i.quantity,
                 total: total
             });
-        });
 
-        // Cell Styling
-        worksheet.getRow(1).font = { bold: true };
+            // Set Row Height for images
+            row.height = 60;
+            row.alignment = { vertical: 'middle' };
+
+            // Attempt to embed image
+            try {
+                let imgSrc = i.product.image;
+                if(!imgSrc.startsWith('http')) {
+                    imgSrc = window.location.origin + window.location.pathname.replace('index.html', '') + imgSrc;
+                }
+                
+                const response = await fetch(imgSrc);
+                const blob = await response.blob();
+                const buffer = await blob.arrayBuffer();
+                
+                const imageId = workbook.addImage({
+                    buffer: buffer,
+                    extension: 'png',
+                });
+
+                worksheet.addImage(imageId, {
+                    tl: { col: 1, row: idx + 1 },
+                    ext: { width: 75, height: 75 },
+                    editAs: 'oneCell'
+                });
+            } catch (e) {
+                console.warn(`Failed to embed image for ${i.product.id}:`, e);
+            }
+        }
+
+        // Apply Currency Formatting
         worksheet.getColumn('price').numFmt = '$#,##0.00';
         worksheet.getColumn('total').numFmt = '$#,##0.00';
-
-        // NOTE: Embedding images in Excel from browser JS is extremely memory intensive 
-        // and requires fetching every image. To keep the tool fast, I have added 
-        // the Reference ID which corresponds to the image files.
 
         const buffer = await workbook.xlsx.writeBuffer();
         const blob = new Blob([buffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });

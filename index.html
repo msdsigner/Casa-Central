@@ -33,6 +33,17 @@
         <!-- Sidebar -->
         <aside class="sidebar">
             <div class="sidebar-block">
+                <h3>Availability</h3>
+                <select id="qtyFilter" class="category-dropdown">
+                    <option value="0">All Quantities</option>
+                    <option value="1">In Stock (1+)</option>
+                    <option value="10">Bulk Available (10+)</option>
+                    <option value="50">Wholesale (50+)</option>
+                    <option value="100">High Volume (100+)</option>
+                </select>
+            </div>
+
+            <div class="sidebar-block">
                 <h3>Last Updated</h3>
                 <p class="update-note" id="updateDate">Loading date...</p>
                 <div class="download-links">
