@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View the full, real-time product inventory for Golden Auto. Filter and search for items instantly.">
+    <title>Golden Auto | Live Inventory</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Optional: HTML2PDF for cart export -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Top Navigation -->
+    <header>
+        <div class="nav-container">
+            <h1 class="logo">✨ Golden Auto <span>Inventory</span></h1>
+            <div class="search-wrap">
+                <input type="text" id="searchInput" placeholder="Search by name, ID, or brand...">
+            </div>
+            <button class="cart-toggle" id="cartBtn">
+                View Selection (<span id="cartCount">0</span>)
+            </button>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-block">
+                <h3>Last Updated</h3>
+                <p class="update-note" id="updateDate">Loading date...</p>
+                <div class="download-links">
+                    <a href="#" id="dlExcel" download class="dl-btn excel" title="Download Excel">Excel</a>
+                    <a href="#" id="dlPdf" download class="dl-btn pdf" title="Download PDF">PDF</a>
+                </div>
+            </div>
+            <div class="sidebar-block">
+                <h3>Sort Inventory</h3>
+                <select id="sortSelect" class="category-dropdown">
+                    <option value="default">Sort By: Default</option>
+                    <option value="name-asc">Name: A-Z</option>
+                    <option value="name-desc">Name: Z-A</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="newest">Newest</option>
+                </select>
+            </div>
+
+            <div class="sidebar-block">
+                <h3>Browse by Category</h3>
+                <!-- Dropdown version -->
+                <select id="categoryDropdown" class="category-dropdown">
+                    <!-- Populated by JS -->
+                </select>
+                
+                <!-- 3-Column Buttons version -->
+                <div class="category-grid" id="categoryGrid">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+            
+            <p id="totalCount" class="total-count">Loading items...</p>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content-area">
+            <!-- Inventory Grid -->
+            <div id="inventoryGrid" class="inventory-grid">
+                <!-- Cards injected by JS -->
+            </div>
+            
+            <!-- Empty State -->
+            <div id="emptyState" class="empty-state hidden">
+                <p>No products found matching your criteria.</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Slide-out Cart Panel -->
+    <div id="cartPanel" class="cart-panel">
+        <div class="cart-header">
+            <h2>Your Selection</h2>
+            <button class="close-cart" id="closeCartBtn">&times;</button>
+        </div>
+        <div class="cart-body" id="cartContent">
+            <!-- Selected items listed here -->
+        </div>
+        <div class="cart-footer">
+            <button class="action-btn email" id="emailCart">📧 Email Selection</button>
+            <button class="action-btn pdf" id="pdfCart">📄 Save as PDF</button>
+            <button class="action-btn excel" id="excelCart">📊 Save as Excel</button>
+        </div>
+    </div>
+    
+    <!-- Cart Overlay -->
+    <div id="cartOverlay" class="cart-overlay"></div>
+
+    <!-- Local Script -->
+    <script src="script.js"></script>
+</body>
+</html>
