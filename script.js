@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function loadData() {
         try {
-            const response = await fetch('./data/inventory.json');
+            const response = await fetch('./data/inventory.json?t=' + new Date().getTime());
             if (!response.ok) throw new Error('Network response error');
             const data = await response.json();
             
@@ -306,36 +306,37 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1000);
     }
 
+    const cartGrandTotalEl = document.getElementById('cartGrandTotal');
+
     function updateCartUI() {
         cartContent.innerHTML = '';
         const keys = Object.keys(selectionCart);
         cartCount.textContent = keys.length;
         
+        let grandTotal = 0;
+
         if (keys.length === 0) {
             cartContent.innerHTML = '<p style="color:#888; text-align:center; padding: 2rem;">No items selected yet.</p>';
+            if(cartGrandTotalEl) cartGrandTotalEl.textContent = 'Grand Total: $0.00';
             return;
         }
 
         keys.forEach(id => {
-            const row = selectionCart[id];
+            const entry = selectionCart[id];
+            const itemTotal = parseFloat(entry.product.price) * entry.quantity;
+            grandTotal += itemTotal;
+
             const div = document.createElement('div');
             div.className = 'cart-item';
             div.innerHTML = `
-                <div class="cart-item-info">
-                    <h4>${row.product.name}</h4>
-                    <p>Ref: ${id} | $${row.product.price}</p>
+                <img src="${entry.product.image}" alt="${entry.product.name}" style="width:50px; height:50px; object-fit:contain; border-radius:4px;">
+                <div class="cart-item-details" style="flex:1; margin-left:15px;">
+                    <div class="cart-item-name" style="font-weight:600; font-size:0.9rem; color:#333;">${entry.product.name}</div>
+                    <div class="cart-item-price" style="font-size:0.85rem; color:#666;">$${entry.product.price} × ${entry.quantity} = $${itemTotal.toFixed(2)}</div>
                 </div>
-                <div style="display:flex; align-items:center;">
-                    <input type="number" min="1" class="cart-qty" value="${row.quantity}" data-id="${id}">
-                    <button class="remove-item" data-id="${id}">&times;</button>
-                </div>
+                <button class="remove-btn" style="background:none; border:none; color:#ea4335; cursor:pointer;" onclick="removeFromSelection('${id}')">&times;</button>
             `;
             cartContent.appendChild(div);
-            
-            // Qty Event Listener
-            div.querySelector('.cart-qty').addEventListener('change', (e) => {
-                selectionCart[id].quantity = parseInt(e.target.value) || 1;
-            });
             // Remove event listener
             div.querySelector('.remove-item').addEventListener('click', () => {
                 delete selectionCart[id];
