@@ -350,13 +350,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const items = getSelectionArray();
         if(items.length === 0) return alert("Selection is empty.");
         
-        let body = "Hello Golden Auto,%0D%0A%0D%0AI am interested in the following items from the Live Inventory:%0D%0A%0D%0A";
+        let body = "Hello Golden Opportunity Catalog,%0D%0A%0D%0AI am interested in the following items from the Live Inventory:%0D%0A%0D%0A";
         items.forEach(i => {
             let total = (parseFloat(i.product.price) * i.quantity).toFixed(2);
             body += `- ${i.quantity}x ${i.product.name} (Ref: ${i.product.id}) (Image: ${i.product.id}.png) @ $${i.product.price} each = $${total}%0D%0A`;
         });
         
-        window.location.href = `mailto:info@goldenauto.com?subject=Inventory Information Request&body=${body}`;
+        window.location.href = `mailto:info@goldenopportunity.com?subject=Catalog Information Request&body=${body}`;
     });
 
     excelCart.addEventListener('click', () => {
@@ -375,7 +375,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const encodedUri = encodeURI(csvContent);
         const link = document.createElement("a");
         link.setAttribute("href", encodedUri);
-        link.setAttribute("download", `Golden_Auto_Selection_${new Date().getTime()}.csv`);
+        link.setAttribute("download", `Golden_Opportunity_Selection_${new Date().getTime()}.csv`);
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -390,7 +390,7 @@ document.addEventListener('DOMContentLoaded', () => {
         wrap.style.padding = "20px";
         wrap.style.backgroundColor = "white"; // ensure white background for PDF
         wrap.innerHTML = `
-            <h2>Golden Auto - Selected Inventory Request</h2>
+            <h2>Golden Opportunity Catalog - Selected Items</h2>
             <p>Date: ${new Date().toLocaleDateString()}</p>
             <hr><br>
             <table style="width:100%; text-align:left; border-collapse:collapse; font-size:12px;">
@@ -428,7 +428,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pdfCart.textContent = "Generating...";
         html2pdf().from(wrap).set({
             margin: 10,
-            filename: `Golden_Auto_Quote_${new Date().getTime()}.pdf`,
+            filename: `Golden_Opportunity_Quote_${new Date().getTime()}.pdf`,
             image: { type: 'jpeg', quality: 0.98 },
             html2canvas: { scale: 2, useCORS: true, allowTaint: true },
             jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
