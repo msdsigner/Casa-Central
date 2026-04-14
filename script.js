@@ -404,6 +404,14 @@ document.addEventListener('DOMContentLoaded', () => {
             { header: 'Total Price', key: 'total', width: 15 }
         ];
 
+        // Style for Borders
+        const borderStyle = {
+            top: { style: 'thin', color: { argb: 'FF333333' } },
+            left: { style: 'thin', color: { argb: 'FF333333' } },
+            bottom: { style: 'thin', color: { argb: 'FF333333' } },
+            right: { style: 'thin', color: { argb: 'FF333333' } }
+        };
+
         // Process items
         for(let idx = 0; idx < items.length; idx++) {
             const i = items[idx];
@@ -418,8 +426,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 qty: i.quantity,
                 total: parseFloat(i.product.price) * i.quantity
             });
-            row.height = 110; // Tall enough for 140px icon
-            row.alignment = { vertical: 'middle', horizontal: 'center' };
+            row.height = 110; 
+            row.alignment = { vertical: 'middle', horizontal: 'center', wrapText: true };
+            
+            // Apply borders to all cells in row
+            row.eachCell({ includeEmpty: true }, (cell) => {
+                cell.border = borderStyle;
+            });
 
             try {
                 let imgSrc = i.product.image;
@@ -448,6 +461,11 @@ document.addEventListener('DOMContentLoaded', () => {
         worksheet.getColumn('price').numFmt = '$#,##0.00';
         worksheet.getColumn('total').numFmt = '$#,##0.00';
 
+        // Apply borders to header
+        worksheet.getRow(1).eachCell((cell) => {
+            cell.border = borderStyle;
+        });
+
         const buffer = await workbook.xlsx.writeBuffer();
         const blob = new Blob([buffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
         saveAs(blob, `Catalog_Selection_${new Date().getTime()}.xlsx`);
@@ -455,7 +473,7 @@ document.addEventListener('DOMContentLoaded', () => {
         excelCart.textContent = originalText;
     });
 
-    // 📄 Save as PDF with Images
+    // 📄 Save as PDF with Images, Borders and Wrap
     pdfCart.addEventListener('click', async () => {
         const items = getSelectionArray();
         if(items.length === 0) return alert("Selection is empty.");
@@ -467,21 +485,23 @@ document.addEventListener('DOMContentLoaded', () => {
         wrap.style.backgroundColor = "white";
         wrap.style.fontFamily = "'Inter', sans-serif";
         
+        const cellStyle = "padding:10px; border:1px solid #333; word-wrap:break-word; white-space:normal; overflow-wrap:break-word;";
+        
         wrap.innerHTML = `
             <div style="display:flex; justify-content:space-between; align-items:center; border-bottom: 2px solid #EEE; padding-bottom: 20px; margin-bottom: 20px;">
                 <h2 style="margin:0; color:#1e3c72;">Golden Opportunity Catalog</h2>
                 <span style="color:#666;">Date: ${new Date().toLocaleDateString()}</span>
             </div>
             <h3 style="color:#333;">Selected Product Request</h3>
-            <table style="width:100%; text-align:left; border-collapse:collapse; font-size:12px;">
+            <table style="width:100%; text-align:left; border-collapse:collapse; font-size:11px; table-layout:fixed;">
                 <thead>
                     <tr style="background-color: #f8f9fa;">
-                        <th style="padding:12px; border:1px solid #EEE;">Preview</th>
-                        <th style="padding:12px; border:1px solid #EEE;">Ref ID</th>
-                        <th style="padding:12px; border:1px solid #EEE;">Product Name</th>
-                        <th style="padding:12px; border:1px solid #EEE;">Qty</th>
-                        <th style="padding:12px; border:1px solid #EEE;">Unit Price</th>
-                        <th style="padding:12px; border:1px solid #EEE;">Total</th>
+                        <th style="${cellStyle} width:70px;">Preview</th>
+                        <th style="${cellStyle} width:80px;">Ref ID</th>
+                        <th style="${cellStyle}">Product Name</th>
+                        <th style="${cellStyle} width:50px;">Qty</th>
+                        <th style="${cellStyle} width:80px;">Unit Price</th>
+                        <th style="${cellStyle} width:90px;">Total</th>
                     </tr>
                 </thead>
                 <tbody id="pdfTableBody"></tbody>
@@ -502,21 +522,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 img.onload = () => {
                     const tr = document.createElement('tr');
                     tr.innerHTML = `
-                        <td style="padding:10px; border:1px solid #EEE; text-align:center;">
+                        <td style="${cellStyle} text-align:center;">
                             <img src="${imgSrc}" style="width:60px; height:60px; object-fit:contain;">
                         </td>
-                        <td style="padding:10px; border:1px solid #EEE;">${i.product.id}</td>
-                        <td style="padding:10px; border:1px solid #EEE; max-width: 200px;">${i.product.name}</td>
-                        <td style="padding:10px; border:1px solid #EEE; font-weight:bold;">${i.quantity}</td>
-                        <td style="padding:10px; border:1px solid #EEE;">$${parseFloat(i.product.price).toFixed(2)}</td>
-                        <td style="padding:10px; border:1px solid #EEE; font-weight:bold;">$${total}</td>
+                        <td style="${cellStyle}">${i.product.id}</td>
+                        <td style="${cellStyle}">${i.product.name}</td>
+                        <td style="${cellStyle} font-weight:bold;">${i.quantity}</td>
+                        <td style="${cellStyle}">$${parseFloat(i.product.price).toFixed(2)}</td>
+                        <td style="${cellStyle} font-weight:bold;">$${total}</td>
                     `;
                     tbody.appendChild(tr);
                     resolve();
                 };
                 img.onerror = () => {
                     const tr = document.createElement('tr');
-                    tr.innerHTML = `<td colspan="6">Image Error for ${i.product.id}</td>`;
+                    tr.innerHTML = `<td colspan="6" style="${cellStyle}">Image Error for ${i.product.id}</td>`;
                     tbody.appendChild(tr);
                     resolve();
                 };
