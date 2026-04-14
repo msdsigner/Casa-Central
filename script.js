@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const pdfCart = document.getElementById('pdfCart');
     const excelCart = document.getElementById('excelCart');
     const cartGrandTotalEl = document.getElementById('cartGrandTotal');
+    const cartActions = document.getElementById('cartActions');
 
     const sortSelect = document.getElementById('sortSelect');
     
@@ -319,8 +320,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (keys.length === 0) {
             cartContent.innerHTML = '<p style="color:#888; text-align:center; padding: 2rem;">No items selected yet.</p>';
-            if(cartGrandTotalEl) cartGrandTotalEl.textContent = 'Grand Total: $0.00';
+            if(cartGrandTotalEl) cartGrandTotalEl.style.display = 'none';
+            if(cartActions) cartActions.style.display = 'none';
             return;
+        } else {
+            if(cartGrandTotalEl) cartGrandTotalEl.style.display = 'block';
+            if(cartActions) cartActions.style.display = 'flex';
         }
 
         keys.forEach(id => {
