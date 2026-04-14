@@ -395,10 +395,10 @@ document.addEventListener('DOMContentLoaded', () => {
         worksheet.getRow(1).font = { bold: true };
 
         worksheet.columns = [
-            { header: 'Preview', key: 'img', width: 22 }, // Widened for 140px
+            { header: 'Preview', key: 'img', width: 22 }, 
             { header: 'Reference ID', key: 'id', width: 15 },
-            { header: 'Product Name', key: 'name', width: 40 },
-            { header: 'Category', key: 'category', width: 22 },
+            { header: 'Product Name', key: 'name', width: 40, style: { alignment: { wrapText: true, vertical: 'middle' } } },
+            { header: 'Category', key: 'category', width: 20, style: { alignment: { wrapText: true, vertical: 'middle' } } },
             { header: 'Unit Price', key: 'price', width: 12 },
             { header: 'Quantity', key: 'qty', width: 10 },
             { header: 'Total Price', key: 'total', width: 15 }
@@ -427,10 +427,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 total: parseFloat(i.product.price) * i.quantity
             });
             row.height = 110; 
-            row.alignment = { vertical: 'middle', horizontal: 'center', wrapText: true };
             
-            // Apply borders to all cells in row
+            // Apply alignment and border to each cell explicitly
             row.eachCell({ includeEmpty: true }, (cell) => {
+                const align = { vertical: 'middle', horizontal: 'center', wrapText: true };
+                // Use LEFT alignment for Name and Category to make wrap look better
+                if(cell.column === 3 || cell.column === 4) align.horizontal = 'left';
+                
+                cell.alignment = align;
                 cell.border = borderStyle;
             });
 
@@ -464,6 +468,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Apply borders to header
         worksheet.getRow(1).eachCell((cell) => {
             cell.border = borderStyle;
+            cell.alignment = { vertical: 'middle', horizontal: 'center', wrapText: true };
         });
 
         const buffer = await workbook.xlsx.writeBuffer();
@@ -485,7 +490,7 @@ document.addEventListener('DOMContentLoaded', () => {
         wrap.style.backgroundColor = "white";
         wrap.style.fontFamily = "'Inter', sans-serif";
         
-        const cellStyle = "padding:10px; border:1px solid #333; word-wrap:break-word; white-space:normal; overflow-wrap:break-word;";
+        const cellStyle = "padding:10px; border:1px solid #333; word-wrap:break-word; white-space:pre-wrap; overflow-wrap:break-word; vertical-align:middle;";
         
         wrap.innerHTML = `
             <div style="display:flex; justify-content:space-between; align-items:center; border-bottom: 2px solid #EEE; padding-bottom: 20px; margin-bottom: 20px;">
@@ -499,6 +504,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <th style="${cellStyle} width:70px;">Preview</th>
                         <th style="${cellStyle} width:80px;">Ref ID</th>
                         <th style="${cellStyle}">Product Name</th>
+                        <th style="${cellStyle} width:90px;">Category</th>
                         <th style="${cellStyle} width:50px;">Qty</th>
                         <th style="${cellStyle} width:80px;">Unit Price</th>
                         <th style="${cellStyle} width:90px;">Total</th>
@@ -527,6 +533,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </td>
                         <td style="${cellStyle}">${i.product.id}</td>
                         <td style="${cellStyle}">${i.product.name}</td>
+                        <td style="${cellStyle}">${i.product.category}</td>
                         <td style="${cellStyle} font-weight:bold;">${i.quantity}</td>
                         <td style="${cellStyle}">$${parseFloat(i.product.price).toFixed(2)}</td>
                         <td style="${cellStyle} font-weight:bold;">$${total}</td>
