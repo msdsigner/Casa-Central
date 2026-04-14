@@ -345,4 +345,11 @@ header {
 @media (max-width: 768px) {
     .app-layout { grid-template-columns: 1fr; }
     .sidebar { position: static; }
+    .cart-panel { width: 100%; right: -100%; }
+}
+
+@media (max-width: 480px) {
+    .nav-container { padding: 0 1rem; flex-wrap: wrap; }
+    .search-wrap { order: 3; max-width: 100%; }
+    .cart-item { padding: 8px; }
 }

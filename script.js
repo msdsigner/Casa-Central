@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const emailCart = document.getElementById('emailCart');
     const pdfCart = document.getElementById('pdfCart');
     const excelCart = document.getElementById('excelCart');
+    const cartGrandTotalEl = document.getElementById('cartGrandTotal');
 
     const sortSelect = document.getElementById('sortSelect');
     
@@ -39,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentSearch = '';
 
     // Selection state: map of itemId -> { item, quantity }
-    let selectionCart = {};
+    let selectionCart = JSON.parse(localStorage.getItem('goldenSelectionCart')) || {};
 
     // Boot Up
     loadData();
@@ -65,8 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 categoriesList[p].add(s);
             });
             
+            grid.innerHTML = '';
             buildFilters();
             renderGrid();
+            updateCartUI(); // Initial UI sync
         } catch (error) {
             totalCount.textContent = "Error loading inventory data.";
             console.error('Fetch error:', error);
@@ -305,9 +308,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 300);
     }
 
-    const cartGrandTotalEl = document.getElementById('cartGrandTotal');
-
     function updateCartUI() {
+        // Persist
+        localStorage.setItem('goldenSelectionCart', JSON.stringify(selectionCart));
         cartContent.innerHTML = '';
         const keys = Object.keys(selectionCart);
         cartCount.textContent = keys.length;
