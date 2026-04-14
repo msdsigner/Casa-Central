@@ -477,6 +477,22 @@ document.addEventListener('DOMContentLoaded', () => {
         worksheet.getColumn('price').numFmt = '$#,##0.00';
         worksheet.getColumn('total').numFmt = '$#,##0.00';
 
+        // Add Grand Total Row to Excel
+        const grandTotal = items.reduce((acc, i) => acc + (parseFloat(i.product.price) * i.quantity), 0);
+        const totalRow = worksheet.addRow({
+            category: 'GRAND TOTAL:',
+            total: grandTotal
+        });
+        totalRow.font = { bold: true };
+        totalRow.height = 30;
+        totalRow.eachCell((cell) => {
+            cell.border = borderStyle;
+            cell.alignment = { vertical: 'middle', horizontal: 'center' };
+        });
+        worksheet.mergeCells(`A${totalRow.number}:C${totalRow.number}`);
+        worksheet.getCell(`A${totalRow.number}`).value = 'Selection Summary';
+        worksheet.getCell(`D${totalRow.number}`).alignment = { horizontal: 'right', vertical: 'middle' };
+        
         // Apply borders to header
         worksheet.getRow(1).eachCell((cell) => {
             cell.border = borderStyle;
@@ -561,10 +577,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 };
                 img.src = imgSrc;
             });
+            });
         });
 
         await Promise.all(imagePromises);
         
+        // Add Grand Total row to PDF
+        const pdfSum = items.reduce((acc, i) => acc + (parseFloat(i.product.price) * i.quantity), 0);
+        const totalTr = document.createElement('tr');
+        totalTr.innerHTML = `
+            <td colspan="6" style="${cellStyle} text-align:right; font-weight:bold; font-size:12px;">GRAND TOTAL:</td>
+            <td style="${cellStyle} font-weight:bold; font-size:12px; color:#1e3c72; background:#f8f9fa;">$${pdfSum.toFixed(2)}</td>
+        `;
+        tbody.appendChild(totalTr);
+
         pdfCart.textContent = "Rendering...";
         
         const opt = {
