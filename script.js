@@ -488,13 +488,32 @@ document.addEventListener('DOMContentLoaded', () => {
         totalRow.eachCell((cell) => {
             cell.border = borderStyle;
             cell.alignment = { vertical: 'middle', horizontal: 'center' };
+            cell.fill = {
+                type: 'pattern',
+                pattern: 'solid',
+                fgColor: { argb: 'FFF1F5F9' }
+            };
         });
-        worksheet.mergeCells(`A${totalRow.number}:C${totalRow.number}`);
-        worksheet.getCell(`A${totalRow.number}`).value = 'Selection Summary';
-        worksheet.getCell(`D${totalRow.number}`).alignment = { horizontal: 'right', vertical: 'middle' };
-        
-        // Apply borders to header
-        worksheet.getRow(1).eachCell((cell) => {
+
+        // Specific styling for the actual Total Value cell
+        const totalValueCell = worksheet.getCell(`G${totalRow.number}`);
+        totalValueCell.font = { bold: true, color: { argb: 'FF1E3C72' } };
+        totalValueCell.fill = {
+            type: 'pattern',
+            pattern: 'solid',
+            fgColor: { argb: 'FFE2E8F0' }
+        };
+
+        // Header Styling
+        const headerRow = worksheet.getRow(1);
+        headerRow.height = 35;
+        headerRow.eachCell((cell) => {
+            cell.font = { bold: true, color: { argb: 'FFFFFFFF' } };
+            cell.fill = {
+                type: 'pattern',
+                pattern: 'solid',
+                fgColor: { argb: 'FF1E3C72' }
+            };
             cell.border = borderStyle;
             cell.alignment = { vertical: 'middle', horizontal: 'center', wrapText: true };
         });
@@ -528,14 +547,14 @@ document.addEventListener('DOMContentLoaded', () => {
             <h3 style="color:#333;">Selected Product Request</h3>
             <table style="width:100%; text-align:left; border-collapse:collapse; font-size:11px; table-layout:fixed;">
                 <thead>
-                    <tr style="background-color: #f8f9fa;">
-                        <th style="${cellStyle} width:70px;">Preview</th>
-                        <th style="${cellStyle} width:80px;">Ref ID</th>
-                        <th style="${cellStyle}">Product Name</th>
-                        <th style="${cellStyle} width:90px;">Category</th>
-                        <th style="${cellStyle} width:50px;">Qty</th>
-                        <th style="${cellStyle} width:80px;">Unit Price</th>
-                        <th style="${cellStyle} width:90px;">Total</th>
+                    <tr style="background-color: #1e3c72; color: #ffffff;">
+                        <th style="padding:10px; border:1px solid #333; width:70px;">Preview</th>
+                        <th style="padding:10px; border:1px solid #333; width:80px;">Ref ID</th>
+                        <th style="padding:10px; border:1px solid #333;">Product Name</th>
+                        <th style="padding:10px; border:1px solid #333; width:90px;">Category</th>
+                        <th style="padding:10px; border:1px solid #333; width:50px;">Qty</th>
+                        <th style="padding:10px; border:1px solid #333; width:80px;">Unit Price</th>
+                        <th style="padding:10px; border:1px solid #333; width:90px;">Total</th>
                     </tr>
                 </thead>
                 <tbody id="pdfTableBody"></tbody>
@@ -562,21 +581,20 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td style="${cellStyle}">${i.product.id}</td>
                         <td style="${cellStyle}">${i.product.name}</td>
                         <td style="${cellStyle}">${i.product.category}</td>
-                        <td style="${cellStyle} font-weight:bold;">${i.quantity}</td>
-                        <td style="${cellStyle}">$${parseFloat(i.product.price).toFixed(2)}</td>
-                        <td style="${cellStyle} font-weight:bold;">$${total}</td>
+                        <td style="${cellStyle} font-weight:bold; text-align:center;">${i.quantity}</td>
+                        <td style="${cellStyle} text-align:center;">$${parseFloat(i.product.price).toFixed(2)}</td>
+                        <td style="${cellStyle} font-weight:bold; text-align:center;">$${total}</td>
                     `;
                     tbody.appendChild(tr);
                     resolve();
                 };
                 img.onerror = () => {
                     const tr = document.createElement('tr');
-                    tr.innerHTML = `<td colspan="6" style="${cellStyle}">Image Error for ${i.product.id}</td>`;
+                    tr.innerHTML = `<td colspan="7" style="${cellStyle}">Image Error for ${i.product.id}</td>`;
                     tbody.appendChild(tr);
                     resolve();
                 };
                 img.src = imgSrc;
-            });
             });
         });
 
@@ -586,8 +604,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const pdfSum = items.reduce((acc, i) => acc + (parseFloat(i.product.price) * i.quantity), 0);
         const totalTr = document.createElement('tr');
         totalTr.innerHTML = `
-            <td colspan="6" style="${cellStyle} text-align:right; font-weight:bold; font-size:12px;">GRAND TOTAL:</td>
-            <td style="${cellStyle} font-weight:bold; font-size:12px; color:#1e3c72; background:#f8f9fa;">$${pdfSum.toFixed(2)}</td>
+            <td colspan="6" style="${cellStyle} text-align:right; font-weight:bold; font-size:12px; background:#f1f5f9;">GRAND TOTAL:</td>
+            <td style="${cellStyle} font-weight:bold; font-size:12px; color:#1e3c72; text-align:center; background:#e2e8f0;">$${pdfSum.toFixed(2)}</td>
         `;
         tbody.appendChild(totalTr);
 
