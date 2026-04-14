@@ -231,6 +231,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const card = document.createElement('article');
                 card.className = 'product-card';
                 
+                const isSelected = !!selectionCart[item.id];
+                
                 let badgeHTML = '';
                 if (item.available <= 0) badgeHTML = `<div class="badge out-stock">OUT OF STOCK</div>`;
                 else if (item.available <= 5) badgeHTML = `<div class="badge low-stock">Only ${item.available} Left</div>`;
@@ -252,7 +254,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="card-stock-status" style="margin-top: 8px; font-size: 0.8rem; font-weight: 600; color: ${item.available > 0 ? '#10b981' : '#ef4444'}">
                             ${item.available > 0 ? `Available: ${item.available}` : 'Out of Stock'}
                         </div>
-                        <button class="add-btn" data-id="${item.id}" style="margin-top:10px; width:100%;">Add to Selection</button>
+                        <button class="add-btn ${isSelected ? 'selected' : ''}" data-id="${item.id}" style="margin-top:10px; width:100%; ${isSelected ? 'background:#10b981; color:white; border-color:#10b981;' : ''}">
+                            ${isSelected ? '✓ Selected' : 'Add to Selection'}
+                        </button>
                     </div>
                 `;
                 grid.appendChild(card);
@@ -272,8 +276,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function toggleCart() {
         cartPanel.classList.toggle('open');
-        cartOverlay.style.display = cartPanel.classList.contains('open') ? 'block' : 'none';
-        setTimeout(() => cartOverlay.classList.toggle('open'), 10);
+        cartOverlay.classList.toggle('open');
     }
     
     cartToggle.addEventListener('click', toggleCart);
@@ -288,22 +291,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         updateCartUI();
         
-        // Visual feedback instead of popping open the cart
-        const originalText = btnElement.textContent;
-        btnElement.textContent = "✓ Added!";
+        // Visual feedback
+        btnElement.textContent = "✓ Selected";
         btnElement.style.background = "#10b981";
         btnElement.style.color = "white";
         btnElement.style.borderColor = "#10b981";
+        btnElement.classList.add('selected');
         
         // Wiggle the top cart button
         cartToggle.style.transform = "scale(1.1)";
         setTimeout(() => {
             cartToggle.style.transform = "scale(1)";
-            btnElement.textContent = originalText;
-            btnElement.style.background = "";
-            btnElement.style.color = "";
-            btnElement.style.borderColor = "";
-        }, 1000);
+        }, 300);
     }
 
     const cartGrandTotalEl = document.getElementById('cartGrandTotal');
@@ -331,18 +330,23 @@ document.addEventListener('DOMContentLoaded', () => {
             div.innerHTML = `
                 <img src="${entry.product.image}" alt="${entry.product.name}" style="width:50px; height:50px; object-fit:contain; border-radius:4px;">
                 <div class="cart-item-details" style="flex:1; margin-left:15px;">
-                    <div class="cart-item-name" style="font-weight:600; font-size:0.9rem; color:#333;">${entry.product.name}</div>
-                    <div class="cart-item-price" style="font-size:0.85rem; color:#666;">$${entry.product.price} × ${entry.quantity} = $${itemTotal.toFixed(2)}</div>
+                    <div class="cart-item-name" style="font-weight:600; font-size:0.85rem; color:#333; line-height:1.2;">${entry.product.name}</div>
+                    <div class="cart-item-price" style="font-size:0.8rem; color:#666; margin-top:4px;">$${entry.product.price} × ${entry.quantity} = $${itemTotal.toFixed(2)}</div>
                 </div>
-                <button class="remove-btn" style="background:none; border:none; color:#ea4335; cursor:pointer;" onclick="removeFromSelection('${id}')">&times;</button>
+                <button class="remove-btn" style="background:none; border:none; color:#ea4335; font-size:1.4rem; padding:0 10px; cursor:pointer;" title="Remove Item">&times;</button>
             `;
             cartContent.appendChild(div);
-            // Remove event listener
-            div.querySelector('.remove-item').addEventListener('click', () => {
+            
+            div.querySelector('.remove-btn').addEventListener('click', () => {
                 delete selectionCart[id];
                 updateCartUI();
+                renderGrid(); // Refresh grid buttons
             });
         });
+
+        if(cartGrandTotalEl) {
+            cartGrandTotalEl.textContent = `Grand Total: $${grandTotal.toFixed(2)}`;
+        }
     }
 
     // Export Logic
