@@ -631,7 +631,7 @@ document.addEventListener('DOMContentLoaded', () => {
         wrap.style.backgroundColor = "white";
         wrap.style.fontFamily = "'Inter', sans-serif";
         
-        const cellStyle = "padding:10px; border:1px solid #333; word-wrap:break-word; white-space:pre-wrap; overflow-wrap:break-word; vertical-align:middle;";
+        const cellStyle = "padding:5px; border:1px solid #333; word-wrap:break-word; white-space:pre-wrap; overflow-wrap:break-word; vertical-align:middle;";
         
         wrap.innerHTML = `
             <div style="display:flex; justify-content:space-between; align-items:center; border-bottom: 2px solid #EEE; padding-bottom: 20px; margin-bottom: 20px;">
@@ -642,13 +642,13 @@ document.addEventListener('DOMContentLoaded', () => {
             <table style="width:100%; text-align:left; border-collapse:collapse; font-size:11px; table-layout:fixed;">
                 <thead>
                     <tr style="background-color: #1e3c72; color: #ffffff;">
-                        <th style="padding:10px; border:1px solid #333; width:70px;">Preview</th>
-                        <th style="padding:10px; border:1px solid #333; width:80px;">Ref ID</th>
-                        <th style="padding:10px; border:1px solid #333;">Product Name</th>
-                        <th style="padding:10px; border:1px solid #333; width:90px;">Category</th>
-                        <th style="padding:10px; border:1px solid #333; width:50px;">Qty</th>
-                        <th style="padding:10px; border:1px solid #333; width:80px;">Unit Price</th>
-                        <th style="padding:10px; border:1px solid #333; width:90px;">Total</th>
+                        <th style="padding:5px; border:1px solid #333; width:10%;">Preview</th>
+                        <th style="padding:5px; border:1px solid #333; width:12%;">Ref ID</th>
+                        <th style="padding:5px; border:1px solid #333; width:35%;">Product Name</th>
+                        <th style="padding:5px; border:1px solid #333; width:15%;">Category</th>
+                        <th style="padding:5px; border:1px solid #333; width:8%;">Qty</th>
+                        <th style="padding:5px; border:1px solid #333; width:10%;">Unit Price</th>
+                        <th style="padding:5px; border:1px solid #333; width:10%;">Total</th>
                     </tr>
                 </thead>
                 <tbody id="pdfTableBody"></tbody>
