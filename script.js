@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const excelCart = document.getElementById('excelCart');
     const cartGrandTotalEl = document.getElementById('cartGrandTotal');
     const cartActions = document.getElementById('cartActions');
+    const clearCartBtn = document.getElementById('clearCartBtn');
 
     const sortSelect = document.getElementById('sortSelect');
     
@@ -322,10 +323,12 @@ document.addEventListener('DOMContentLoaded', () => {
             cartContent.innerHTML = '<p style="color:#888; text-align:center; padding: 2rem;">No items selected yet.</p>';
             if(cartGrandTotalEl) cartGrandTotalEl.style.display = 'none';
             if(cartActions) cartActions.style.display = 'none';
+            if(clearCartBtn) clearCartBtn.style.display = 'none';
             return;
         } else {
             if(cartGrandTotalEl) cartGrandTotalEl.style.display = 'block';
             if(cartActions) cartActions.style.display = 'flex';
+            if(clearCartBtn) clearCartBtn.style.display = 'inline-block';
         }
 
         keys.forEach(id => {
@@ -361,6 +364,16 @@ document.addEventListener('DOMContentLoaded', () => {
     
     function getSelectionArray() {
         return Object.values(selectionCart);
+    }
+
+    if(clearCartBtn) {
+        clearCartBtn.addEventListener('click', () => {
+            if(confirm("Are you sure you want to clear your entire selection?")) {
+                selectionCart = {};
+                updateCartUI();
+                renderGrid();
+            }
+        });
     }
 
     // ✉️ Selection Inquiry (Email Choice)

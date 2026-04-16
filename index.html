@@ -87,7 +87,10 @@
     <!-- Slide-out Cart Panel -->
     <div id="cartPanel" class="cart-panel">
         <div class="cart-header">
-            <h2>Your Selection</h2>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <h2 style="margin: 0;">Your Selection</h2>
+                <button id="clearCartBtn" style="font-size: 0.75rem; padding: 4px 10px; background: none; color: #ef4444; border: 1px solid #ef4444; border-radius: 4px; cursor: pointer; transition: 0.2s;">Clear All</button>
+            </div>
             <button class="close-cart" id="closeCartBtn">&times;</button>
         </div>
         <div class="cart-body" id="cartContent">
