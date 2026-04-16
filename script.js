@@ -385,29 +385,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ✉️ Selection Inquiry (Email Choice)
-    const generateEmailBody = () => {
-        const baseUrl = window.location.origin + window.location.pathname.replace('index.html', '');
-        let body = "Hello Golden Opportunity Catalog Team,\n\nI am interested in the following items from the Live Inventory:\n\n";
-        
-        getSelectionArray().forEach(i => {
-            let total = (parseFloat(i.product.price) * i.quantity).toFixed(2);
-            let imgSrc = i.product.image;
-            if(!imgSrc.startsWith('http')) {
-                imgSrc = baseUrl + imgSrc;
-            }
-            
-            body += `- ${i.quantity}x ${i.product.name} (Ref: ${i.product.id})\n`;
-            body += `  Price: $${i.product.price} | Total: $${total}\n`;
-            body += `  Inquiry URL: ${imgSrc}\n\n`;
-        });
-        
-        body += "Please let me know if these items are available.\n\nThank you.";
-        return body;
-    };
-
-    const emailCartDefault = document.getElementById('emailCartDefault');
-    const emailCartGmail = document.getElementById('emailCartGmail');
     const copyCartBtn = document.getElementById('copyCart');
 
     // 📋 Copy Rich Table to Clipboard
@@ -468,27 +445,21 @@ document.addEventListener('DOMContentLoaded', () => {
             const blob = new Blob([html], { type: 'text/html' });
             const data = [new ClipboardItem({ 'text/html': blob, 'text/plain': new Blob([html.replace(/<[^>]*>/g, '')], { type: 'text/plain' }) })];
             await navigator.clipboard.write(data);
-            copyCartBtn.textContent = "✅ Table Copied!";
-            setTimeout(() => copyCartBtn.textContent = originalText, 2500);
+            copyCartBtn.textContent = "✅ Copied! Opening Gmail...";
+            
+            // Open Gmail compose window
+            setTimeout(() => {
+                const subject = encodeURIComponent("Catalog Information Request");
+                const defaultBody = encodeURIComponent("Hello Golden Opportunity Team,\n\nI have copied my selection. Here it is (Please Paste / Ctrl+V below this line):\n\n====================\n\n\n");
+                window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=info@goldenopportunity.com&su=${subject}&body=${defaultBody}`);
+                copyCartBtn.textContent = originalText;
+            }, 800);
+
         } catch (err) {
             console.error(err);
             alert("Clipboard Error. Try again in Chrome/Edge.");
             copyCartBtn.textContent = originalText;
         }
-    });
-
-    emailCartDefault?.addEventListener('click', () => {
-        const body = generateEmailBody();
-        const subject = encodeURIComponent("Catalog Information Request");
-        const mailBody = encodeURIComponent(body);
-        window.location.href = `mailto:info@goldenopportunity.com?subject=${subject}&body=${mailBody}`;
-    });
-
-    emailCartGmail?.addEventListener('click', () => {
-        const body = generateEmailBody();
-        const subject = encodeURIComponent("Catalog Information Request");
-        const mailBody = encodeURIComponent(body);
-        window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=info@goldenopportunity.com&su=${subject}&body=${mailBody}`);
     });
 
     // 📊 Save as Excel (.xlsx) using ExcelJS with FIX for image stretching & 140px size
@@ -681,10 +652,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 const img = new Image();
                 img.crossOrigin = "anonymous";
                 img.onload = () => {
+                    // Convert to Base64 to avoid html2canvas loading issues
+                    const canvas = document.createElement('canvas');
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(img, 0, 0);
+                    const dataURL = canvas.toDataURL('image/png');
+
                     const tr = document.createElement('tr');
                     tr.innerHTML = `
                         <td style="${cellStyle} text-align:center;">
-                            <img src="${imgSrc}" style="width:60px; height:60px; object-fit:contain;">
+                            <img src="${dataURL}" style="width:60px; height:60px; object-fit:contain;">
                         </td>
                         <td style="${cellStyle}">${i.product.id}</td>
                         <td style="${cellStyle}">${i.product.name}</td>
