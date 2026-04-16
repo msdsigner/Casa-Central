@@ -351,12 +351,27 @@ document.addEventListener('DOMContentLoaded', () => {
                 <img src="${entry.product.image}" alt="${entry.product.name}" style="width:50px; height:50px; object-fit:contain; border-radius:4px;">
                 <div class="cart-item-details" style="flex:1; margin-left:15px;">
                     <div class="cart-item-name" style="font-weight:600; font-size:0.85rem; color:#333; line-height:1.2;">${entry.product.name}</div>
-                    <div class="cart-item-price" style="font-size:0.8rem; color:#666; margin-top:4px;">$${entry.product.price} × ${entry.quantity} = $${itemTotal.toFixed(2)}</div>
+                    <div class="cart-item-price" style="font-size:0.8rem; color:#666; margin-top:4px; display:flex; align-items:center; gap:5px;">
+                        $${entry.product.price} × 
+                        <input type="number" class="qty-edit" value="${entry.quantity}" min="1" max="${entry.product.available}" style="width:45px; padding:2px; border:1px solid #ccc; border-radius:4px; font-size:0.8rem; text-align:center;">
+                        = $${itemTotal.toFixed(2)}
+                    </div>
                 </div>
                 <button class="remove-btn" style="background:none; border:none; color:#ea4335; font-size:1.4rem; padding:0 10px; cursor:pointer;" title="Remove Item">&times;</button>
             `;
             cartContent.appendChild(div);
             
+            div.querySelector('.qty-edit').addEventListener('change', (e) => {
+                let newQty = parseInt(e.target.value);
+                if (isNaN(newQty) || newQty < 1) newQty = 1;
+                if (newQty > entry.product.available) {
+                    alert(`Only ${entry.product.available} available in stock.`);
+                    newQty = entry.product.available;
+                }
+                selectionCart[id].quantity = newQty;
+                updateCartUI();
+            });
+
             div.querySelector('.remove-btn').addEventListener('click', () => {
                 delete selectionCart[id];
                 updateCartUI();
@@ -698,14 +713,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         pdfCart.textContent = "Rendering...";
         
-        wrap.style.position = 'absolute';
-        wrap.style.left = '0';
-        wrap.style.top = '0';
         wrap.style.width = '800px'; 
-        wrap.style.zIndex = '-9999';
-        // Removed opacity: 0 since it breaks html2canvas
-        document.body.appendChild(wrap);
-
+        // DO NOT append to DOM - let html2pdf handle the cloned node directly in memory to avoid screen culling issues.
+        
         const opt = {
             margin: [5, 5, 5, 5], // Narrow margins
             filename: `Catalog_Quote_${new Date().getTime()}.pdf`,
@@ -716,9 +726,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         html2pdf().from(wrap).set(opt).save().then(() => {
             pdfCart.textContent = "📄 Save as PDF";
-            if (document.body.contains(wrap)) {
-                document.body.removeChild(wrap);
-            }
         });
     });
 
