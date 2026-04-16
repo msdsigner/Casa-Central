@@ -619,117 +619,135 @@ document.addEventListener('DOMContentLoaded', () => {
         excelCart.textContent = originalText;
     });
 
-    // 📄 Save as PDF with Images, Borders and Wrap
+    // 📄 Native Vector PDF Generation (jsPDF + autoTable)
     pdfCart.addEventListener('click', async () => {
         const items = getSelectionArray();
         if(items.length === 0) return alert("Selection is empty.");
         
         pdfCart.textContent = "Loading Images...";
 
-        const wrap = document.createElement('div');
-        wrap.style.padding = "40px";
-        wrap.style.backgroundColor = "white";
-        wrap.style.fontFamily = "'Inter', sans-serif";
-        
-        const cellStyle = "padding:5px; border:1px solid #333; word-wrap:break-word; white-space:pre-wrap; overflow-wrap:break-word; vertical-align:middle;";
-        
-        wrap.innerHTML = `
-            <div style="display:flex; justify-content:space-between; align-items:center; border-bottom: 2px solid #EEE; padding-bottom: 20px; margin-bottom: 20px;">
-                <h2 style="margin:0; color:#1e3c72;">Golden Opportunity Catalog</h2>
-                <span style="color:#666;">Date: ${new Date().toLocaleDateString()}</span>
-            </div>
-            <h3 style="color:#333;">Selected Product Request</h3>
-            <table style="width:100%; text-align:left; border-collapse:collapse; font-size:11px; table-layout:fixed;">
-                <thead>
-                    <tr style="background-color: #1e3c72; color: #ffffff;">
-                        <th style="padding:5px; border:1px solid #333; width:10%;">Preview</th>
-                        <th style="padding:5px; border:1px solid #333; width:12%;">Ref ID</th>
-                        <th style="padding:5px; border:1px solid #333; width:35%;">Product Name</th>
-                        <th style="padding:5px; border:1px solid #333; width:15%;">Category</th>
-                        <th style="padding:5px; border:1px solid #333; width:8%;">Qty</th>
-                        <th style="padding:5px; border:1px solid #333; width:10%;">Unit Price</th>
-                        <th style="padding:5px; border:1px solid #333; width:10%;">Total</th>
-                    </tr>
-                </thead>
-                <tbody id="pdfTableBody"></tbody>
-            </table>
-        `;
-
-        const tbody = wrap.querySelector('#pdfTableBody');
-        const imagePromises = items.map(async (i) => {
-            let total = (parseFloat(i.product.price) * i.quantity).toFixed(2);
-            let imgSrc = i.product.image;
-            if(!imgSrc.startsWith('http')) {
-                imgSrc = window.location.origin + window.location.pathname.replace('index.html', '') + imgSrc;
-            }
-
-            return new Promise((resolve) => {
-                const img = new Image();
-                img.crossOrigin = "anonymous";
-                img.onload = () => {
-                    // Convert to Base64 to avoid html2canvas loading issues
-                    const canvas = document.createElement('canvas');
-                    canvas.width = img.width;
-                    canvas.height = img.height;
-                    const ctx = canvas.getContext('2d');
-                    ctx.drawImage(img, 0, 0);
-                    const dataURL = canvas.toDataURL('image/png');
-
-                    const tr = document.createElement('tr');
-                    tr.innerHTML = `
-                        <td style="${cellStyle} text-align:center;">
-                            <img src="${dataURL}" style="width:60px; height:60px; object-fit:contain;">
-                        </td>
-                        <td style="${cellStyle}">${i.product.id}</td>
-                        <td style="${cellStyle}">${i.product.name}</td>
-                        <td style="${cellStyle}">${i.product.category}</td>
-                        <td style="${cellStyle} font-weight:bold; text-align:center;">${i.quantity}</td>
-                        <td style="${cellStyle} text-align:center;">$${parseFloat(i.product.price).toFixed(2)}</td>
-                        <td style="${cellStyle} font-weight:bold; text-align:center;">$${total}</td>
-                    `;
-                    tbody.appendChild(tr);
-                    resolve();
-                };
-                img.onerror = () => {
-                    const tr = document.createElement('tr');
-                    tr.innerHTML = `<td colspan="7" style="${cellStyle}">Image Error for ${i.product.id}</td>`;
-                    tbody.appendChild(tr);
-                    resolve();
-                };
-                img.src = imgSrc;
+        try {
+            // Initialize PDF
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+            
+            // Header Rendering
+            doc.setFontSize(18);
+            doc.setTextColor(30, 60, 114);
+            doc.text("Golden Opportunity Catalog", 14, 20);
+            
+            doc.setFontSize(10);
+            doc.setTextColor(100, 100, 100);
+            doc.text(`Date: ${new Date().toLocaleDateString()}`, 160, 20);
+            
+            doc.setFontSize(14);
+            doc.setTextColor(50, 50, 50);
+            doc.text("Selected Product Request", 14, 30);
+            
+            // Process Data & Images
+            const tableData = [];
+            const imageMap = {}; 
+            
+            const imagePromises = items.map(async (i, index) => {
+                let total = (parseFloat(i.product.price) * i.quantity).toFixed(2);
+                
+                tableData[index] = [
+                    "", // Empty placeholder for Image
+                    i.product.id,
+                    i.product.name,
+                    i.product.category,
+                    i.quantity.toString(),
+                    "$" + parseFloat(i.product.price).toFixed(2),
+                    "$" + total
+                ];
+                
+                let imgSrc = i.product.image;
+                if(!imgSrc.startsWith('http')) {
+                    imgSrc = window.location.origin + window.location.pathname.replace('index.html', '') + imgSrc;
+                }
+                
+                return new Promise((resolve) => {
+                    const img = new Image();
+                    img.crossOrigin = "anonymous";
+                    img.onload = () => {
+                        const canvas = document.createElement('canvas');
+                        canvas.width = img.width;
+                        canvas.height = img.height;
+                        const ctx = canvas.getContext('2d');
+                        ctx.drawImage(img, 0, 0);
+                        imageMap[index] = canvas.toDataURL('image/jpeg', 0.95);
+                        resolve();
+                    };
+                    img.onerror = resolve; // Ignore errors, leave blank
+                    img.src = imgSrc;
+                });
             });
-        });
+            
+            await Promise.all(imagePromises);
+            
+            pdfCart.textContent = "Rendering PDF...";
 
-        await Promise.all(imagePromises);
-        
-        // Add Grand Total row to PDF
-        const pdfSum = items.reduce((acc, i) => acc + (parseFloat(i.product.price) * i.quantity), 0);
-        const totalTr = document.createElement('tr');
-        totalTr.innerHTML = `
-            <td colspan="6" style="${cellStyle} text-align:right; font-weight:bold; font-size:14px; background:#f1f5f9; text-transform:uppercase;">Selection Grand Total:</td>
-            <td style="${cellStyle} font-weight:bold; font-size:14px; color:#1e3c72; text-align:center; background:#e2e8f0; border: 2px solid #1e3c72;">$${pdfSum.toFixed(2)}</td>
-        `;
-        tbody.appendChild(totalTr);
-
-        pdfCart.textContent = "Rendering...";
-        
-        wrap.style.width = '1024px'; 
-        wrap.style.margin = '0 auto';
-        
-        const opt = {
-            margin: 5, 
-            filename: `Catalog_Quote_${new Date().getTime()}.pdf`,
-            image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { 
-                scale: 2, 
-                useCORS: true 
-            },
-            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-        };
-
-        html2pdf().from(wrap).set(opt).save().then(() => {
+            // Draw Dynamic Vector Table
+            doc.autoTable({
+                startY: 35,
+                head: [['Preview', 'Ref ID', 'Product Name', 'Category', 'Qty', 'Unit Price', 'Total']],
+                body: tableData,
+                theme: 'grid',
+                headStyles: { fillColor: [30, 60, 114], textColor: 255 },
+                styles: { cellPadding: 3, valign: 'middle', halign: 'center', fontSize: 9 },
+                columnStyles: {
+                    0: { cellWidth: 25, minCellHeight: 25 },
+                    1: { cellWidth: 20 },
+                    2: { cellWidth: 'auto', halign: 'left' },
+                    3: { cellWidth: 28 },
+                    4: { cellWidth: 15, fontStyle: 'bold' },
+                    5: { cellWidth: 20 },
+                    6: { cellWidth: 20, fontStyle: 'bold' }
+                },
+                didDrawCell: (data) => {
+                    // Inject Images over placeholders
+                    if (data.section === 'body' && data.column.index === 0) {
+                        const base64Img = imageMap[data.row.index];
+                        if (base64Img) {
+                            const padding = 2;
+                            const x = data.cell.x + padding;
+                            const y = data.cell.y + padding;
+                            const w = data.cell.width - (padding * 2);
+                            const h = data.cell.height - (padding * 2);
+                            const dim = Math.min(w, h);
+                            const offsetX = x + (w - dim) / 2; // Center horizontally
+                            const offsetY = y + (h - dim) / 2; // Center vertically
+                            doc.addImage(base64Img, 'JPEG', offsetX, offsetY, dim, dim);
+                        }
+                    }
+                }
+            });
+            
+            // Grand Total Footer Section
+            const pdfSum = items.reduce((acc, i) => acc + (parseFloat(i.product.price) * i.quantity), 0);
+            
+            doc.autoTable({
+                startY: doc.lastAutoTable.finalY + 0, // Immediately below
+                body: [
+                    ["SELECTION GRAND TOTAL:", "$" + pdfSum.toFixed(2)]
+                ],
+                theme: 'grid',
+                styles: { fontSize: 11, fontStyle: 'bold', halign: 'right', cellPadding: 5 },
+                margin: { left: 14, right: 14 },
+                columnStyles: {
+                    0: { fillColor: [241, 245, 249] },
+                    1: { cellWidth: 20, halign: 'center', textColor: [30, 60, 114], fillColor: [226, 232, 240] }
+                }
+            });
+            
+            doc.save(`Catalog_Quote_${new Date().getTime()}.pdf`);
             pdfCart.textContent = "📄 Save as PDF";
-        });
+
+        } catch (error) {
+            console.error("PDF Generator Error:", error);
+            alert("An error occurred while generating the PDF.");
+            pdfCart.textContent = "📄 Save as PDF";
+        }
     });
 
 });
