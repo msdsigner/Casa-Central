@@ -1,8 +1,8 @@
 {
     "last_updated": "April 22, 2026",
     "downloads": {
-        "pdf": "https://drive.google.com/uc?export=download&id=1xYxWaDx53xBlnyrAteGpgG1bOjYdN1S_",
-        "excel": "https://drive.google.com/uc?export=download&id=1EEexhaQJfdD7efrzky-kxUTnRzOwbOAn"
+        "pdf": "data/Inventory_Latest.pdf",
+        "excel": "data/Inventory_Latest.xlsx"
     },
     "items": [
         {
@@ -238,7 +238,7 @@
         {
             "id": "BCC20W",
             "name": "Black & Decker Mobile Cooler Cart",
-            "category": "Beverage Centers",
+            "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Beverage Centers",
             "price": "50.00",
@@ -248,7 +248,7 @@
         {
             "id": "BD60026",
             "name": "Black & Decker 8 Bottle Wine Cellar",
-            "category": "Beverage Centers",
+            "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Beverage Centers",
             "price": "50.00",
@@ -258,7 +258,7 @@
         {
             "id": "BD60316",
             "name": "Black & Decker 6 Bottle Wine Cellar",
-            "category": "Beverage Centers",
+            "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Beverage Centers",
             "price": "50.00",
@@ -268,7 +268,7 @@
         {
             "id": "CK-CB14GRN",
             "name": "Cookinex 14 Can Cooler Bag, Green",
-            "category": "Beverage Centers",
+            "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Beverage Centers",
             "price": "14.00",
@@ -278,7 +278,7 @@
         {
             "id": "CK-CB26GR",
             "name": "Cookinex 26 Can Cooler Bag, Grey",
-            "category": "Beverage Centers",
+            "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Beverage Centers",
             "price": "18.00",
@@ -1188,7 +1188,7 @@
         {
             "id": "BD100",
             "name": "Golden 3.5 cu ft Chest Freezer White DOE",
-            "category": "Chest Freezer",
+            "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Chest Freezer",
             "price": "149.00",
@@ -1198,7 +1198,7 @@
         {
             "id": "UL-BD142-D",
             "name": "GOLDEN 5.0 Cu.Ft. Chest Freezer W/Chest White",
-            "category": "Chest Freezer",
+            "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Chest Freezer",
             "price": "180.00",
@@ -3868,7 +3868,7 @@
         {
             "id": "BCED37",
             "name": "Black & Decker 3.7 Cu Ft 6Kg Portable Dryer",
-            "category": "Laundry",
+            "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "349.00",
@@ -3878,7 +3878,7 @@
         {
             "id": "BFLW27MW",
             "name": "BLACK+DECKER 2.7 Cu. Ft. Front Load Washer",
-            "category": "Laundry",
+            "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "200.00",
@@ -3888,7 +3888,7 @@
         {
             "id": "BPWH84W",
             "name": "Black+Decker 0.84 Cu. Ft. Portable Washer",
-            "category": "Laundry",
+            "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "240.00",
@@ -3898,7 +3898,7 @@
         {
             "id": "BPWM16W",
             "name": "Black+Decker 1.6 Cu. Ft. Portable Washer",
-            "category": "Laundry",
+            "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "300.00",
@@ -3908,7 +3908,7 @@
         {
             "id": "BWDS",
             "name": "Black & Decker Washer & Dryer Stand",
-            "category": "Laundry",
+            "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "50.00",
@@ -3918,7 +3918,7 @@
         {
             "id": "CASTER KIT",
             "name": "Home Comfort Caster Kit",
-            "category": "Laundry",
+            "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "25.00",
@@ -3928,7 +3928,7 @@
         {
             "id": "DRYER LINT",
             "name": "Home Comfort Dryer Lint Filter",
-            "category": "Laundry",
+            "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "5.00",
@@ -3938,7 +3938,7 @@
         {
             "id": "FW100-1388AS",
             "name": "GOLDEN 22.0 LB/10 Kg Portable Washer - White",
-            "category": "Laundry",
+            "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "360.00",
@@ -3948,7 +3948,7 @@
         {
             "id": "FW50-518A",
             "name": "GOLDEN 11.0 LB/1.6 Cu Ft Portable Washer - White",
-            "category": "Laundry",
+            "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "300.00",
@@ -3958,7 +3958,7 @@
         {
             "id": "FW70-1558L",
             "name": "GOLDEN 15.4 LB/1.9 Cu Ft Portable Washer - White",
-            "category": "Laundry",
+            "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "330.00",
@@ -3968,7 +3968,7 @@
         {
             "id": "GYJ40-88FI",
             "name": "GOLDEN 8.8 LB/2.65 CF Portable Dryer - White",
-            "category": "Laundry",
+            "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "323.00",
@@ -3978,7 +3978,7 @@
         {
             "id": "GYJ60-88F1",
             "name": "GOLDEN 13 LB/3.5 CF Portable Dryer - White",
-            "category": "Laundry",
+            "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "350.00",
@@ -4238,7 +4238,7 @@
         {
             "id": "BCD6W",
             "name": "Black & Decker Compact Countertop Dishwasher",
-            "category": "Other Appliances",
+            "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Other Appliances",
             "price": "100.00",
@@ -4718,7 +4718,7 @@
         {
             "id": "BC 40",
             "name": "A Energy Compact Refrigerator 1.4 CF, White",
-            "category": "Refrigerators",
+            "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Refrigerators",
             "price": "100.00",
@@ -4728,7 +4728,7 @@
         {
             "id": "BCRK17V",
             "name": "Black+Decker 1.7 Cu. Ft. Compact Fridge Silver",
-            "category": "Refrigerators",
+            "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Refrigerators",
             "price": "105.00",
@@ -4738,7 +4738,7 @@
         {
             "id": "RM3316B",
             "name": "AVANTI 3.3 CU FT REFRIGERATOR - Black",
-            "category": "Refrigerators",
+            "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Refrigerators",
             "price": "165.00",
