@@ -1,8 +1,8 @@
 {
     "last_updated": "April 22, 2026",
     "downloads": {
-        "pdf": "data/Inventory_Latest.pdf",
-        "excel": "data/Inventory_Latest.xlsx"
+        "pdf": "https://drive.google.com/uc?export=download&id=1xYxWaDx53xBlnyrAteGpgG1bOjYdN1S_",
+        "excel": "https://drive.google.com/uc?export=download&id=1EEexhaQJfdD7efrzky-kxUTnRzOwbOAn"
     },
     "items": [
         {
@@ -238,7 +238,7 @@
         {
             "id": "BCC20W",
             "name": "Black & Decker Mobile Cooler Cart",
-            "category": "Major Appliances",
+            "category": "Beverage Centers",
             "parent_category": "Major Appliances",
             "sub_category": "Beverage Centers",
             "price": "50.00",
@@ -246,29 +246,9 @@
             "image": "images/BCC20W.png"
         },
         {
-            "id": "BD60026",
-            "name": "Black & Decker 8 Bottle Wine Cellar",
-            "category": "Major Appliances",
-            "parent_category": "Major Appliances",
-            "sub_category": "Beverage Centers",
-            "price": "50.00",
-            "available": 1,
-            "image": "images/BD60026.png"
-        },
-        {
-            "id": "BD60316",
-            "name": "Black & Decker 6 Bottle Wine Cellar",
-            "category": "Major Appliances",
-            "parent_category": "Major Appliances",
-            "sub_category": "Beverage Centers",
-            "price": "50.00",
-            "available": 1,
-            "image": "images/BD60316.png"
-        },
-        {
             "id": "CK-CB14GRN",
             "name": "Cookinex 14 Can Cooler Bag, Green",
-            "category": "Major Appliances",
+            "category": "Beverage Centers",
             "parent_category": "Major Appliances",
             "sub_category": "Beverage Centers",
             "price": "14.00",
@@ -278,7 +258,7 @@
         {
             "id": "CK-CB26GR",
             "name": "Cookinex 26 Can Cooler Bag, Grey",
-            "category": "Major Appliances",
+            "category": "Beverage Centers",
             "parent_category": "Major Appliances",
             "sub_category": "Beverage Centers",
             "price": "18.00",
@@ -1188,7 +1168,7 @@
         {
             "id": "BD100",
             "name": "Golden 3.5 cu ft Chest Freezer White DOE",
-            "category": "Major Appliances",
+            "category": "Chest Freezer",
             "parent_category": "Major Appliances",
             "sub_category": "Chest Freezer",
             "price": "149.00",
@@ -1198,7 +1178,7 @@
         {
             "id": "UL-BD142-D",
             "name": "GOLDEN 5.0 Cu.Ft. Chest Freezer W/Chest White",
-            "category": "Major Appliances",
+            "category": "Chest Freezer",
             "parent_category": "Major Appliances",
             "sub_category": "Chest Freezer",
             "price": "180.00",
@@ -1826,6 +1806,16 @@
             "image": "images/WPF4-1008-WHT.png"
         },
         {
+            "id": "RVDR5034N1",
+            "name": "Revlon 1875-Watt Hair Dryer",
+            "category": "Hair Dryer",
+            "parent_category": "Health and Personal Care",
+            "sub_category": "Hair Dryer",
+            "price": "18.00",
+            "available": 47,
+            "image": "images/RVDR5034N1.png"
+        },
+        {
             "id": "50HPBT500G",
             "name": "Fisher MIXX PRO Wireless Headphones, Gold",
             "category": "Headphones & Earphones",
@@ -2323,7 +2313,7 @@
             "sub_category": "Headphones & Earphones",
             "price": "3.00",
             "available": 480,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/HPSHO224.png"
         },
         {
             "id": "HPSHO228",
@@ -2403,7 +2393,7 @@
             "sub_category": "Headphones & Earphones",
             "price": "10.00",
             "available": 107,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/HPXBT985.png"
         },
         {
             "id": "HPXBT999BK",
@@ -2683,7 +2673,7 @@
             "sub_category": "Headphones & Earphones",
             "price": "6.00",
             "available": 72,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/HPXIC150Z.png"
         },
         {
             "id": "HPXIC160",
@@ -3179,7 +3169,7 @@
             "id": "AR-136",
             "name": "BRENTWOOD Arepa Maker-6 Slice",
             "category": "Heating and Cooking",
-            "parent_category": "Other",
+            "parent_category": "Kitchen Appliances",
             "sub_category": "Heating and Cooking",
             "price": "33.00",
             "available": 3,
@@ -3189,7 +3179,7 @@
             "id": "BC-2958CR",
             "name": "Betty Crocker Pizza Maker - Red",
             "category": "Heating and Cooking",
-            "parent_category": "Other",
+            "parent_category": "Kitchen Appliances",
             "sub_category": "Heating and Cooking",
             "price": "33.60",
             "available": 2,
@@ -3199,7 +3189,7 @@
             "id": "BDG-2200",
             "name": "BRENTWOOD 10.9\" Non-Stick Griddle Pan",
             "category": "Heating and Cooking",
-            "parent_category": "Other",
+            "parent_category": "Kitchen Appliances",
             "sub_category": "Heating and Cooking",
             "price": "25.00",
             "available": 4,
@@ -3209,7 +3199,7 @@
             "id": "CE23839",
             "name": "Continental Sandwich Maker 2 Slice Non Stick-Black",
             "category": "Heating and Cooking",
-            "parent_category": "Other",
+            "parent_category": "Kitchen Appliances",
             "sub_category": "Heating and Cooking",
             "price": "17.00",
             "available": 7,
@@ -3219,7 +3209,7 @@
             "id": "CHPM12R",
             "name": "Commercial Chef 12 Inch Pizza + Meat Food Maker",
             "category": "Heating and Cooking",
-            "parent_category": "Other",
+            "parent_category": "Kitchen Appliances",
             "sub_category": "Heating and Cooking",
             "price": "29.00",
             "available": 1,
@@ -3229,7 +3219,7 @@
             "id": "CP43279",
             "name": "Continental 5.0 Liter Deep Fryer & Multi Cooker",
             "category": "Heating and Cooking",
-            "parent_category": "Other",
+            "parent_category": "Kitchen Appliances",
             "sub_category": "Heating and Cooking",
             "price": "49.00",
             "available": 6,
@@ -3239,7 +3229,7 @@
             "id": "ED-302",
             "name": "Cookinex Arepa Maker w/ Non-Stick Coating",
             "category": "Heating and Cooking",
-            "parent_category": "Other",
+            "parent_category": "Kitchen Appliances",
             "sub_category": "Heating and Cooking",
             "price": "20.00",
             "available": 64,
@@ -3249,7 +3239,7 @@
             "id": "ED-302-BUR",
             "name": "Cookinex Arepa Maker w/ Non-Stick Coating, Burgund",
             "category": "Heating and Cooking",
-            "parent_category": "Other",
+            "parent_category": "Kitchen Appliances",
             "sub_category": "Heating and Cooking",
             "price": "20.00",
             "available": 4,
@@ -3259,7 +3249,7 @@
             "id": "EM131A5C-BS",
             "name": "TOSHIBA 1100W Countertop Microwave Ovens 1.2 Cu Ft, Smart Humidity Sensor 12 Auto Menus Mute Function ECO Mode Easy Clean Interior, Black",
             "category": "Heating and Cooking",
-            "parent_category": "Other",
+            "parent_category": "Kitchen Appliances",
             "sub_category": "Heating and Cooking",
             "price": "140.00",
             "available": 2,
@@ -3269,7 +3259,7 @@
             "id": "IM-297R",
             "name": "Better Chef Waffle Maker, Red",
             "category": "Heating and Cooking",
-            "parent_category": "Other",
+            "parent_category": "Kitchen Appliances",
             "sub_category": "Heating and Cooking",
             "price": "14.00",
             "available": 33,
@@ -3279,7 +3269,7 @@
             "id": "TS-124R",
             "name": "Brentwood 12\" Non-Stick Pizza Maker and Grill with Timer, Red",
             "category": "Heating and Cooking",
-            "parent_category": "Other",
+            "parent_category": "Kitchen Appliances",
             "sub_category": "Heating and Cooking",
             "price": "58.00",
             "available": 12,
@@ -3289,7 +3279,7 @@
             "id": "TS-127",
             "name": "BRENTWOOD SS Electric Tortilla Maker",
             "category": "Heating and Cooking",
-            "parent_category": "Other",
+            "parent_category": "Kitchen Appliances",
             "sub_category": "Heating and Cooking",
             "price": "42.00",
             "available": 4,
@@ -3299,7 +3289,7 @@
             "id": "TS-231S",
             "name": "BRENTWOOD 5\" Flip Belgian Waffle Maker",
             "category": "Heating and Cooking",
-            "parent_category": "Other",
+            "parent_category": "Kitchen Appliances",
             "sub_category": "Heating and Cooking",
             "price": "22.00",
             "available": 12,
@@ -3309,7 +3299,7 @@
             "id": "TS-240B",
             "name": "BRENTWOOD Sandwich Maker - Black & SS",
             "category": "Heating and Cooking",
-            "parent_category": "Other",
+            "parent_category": "Kitchen Appliances",
             "sub_category": "Heating and Cooking",
             "price": "17.00",
             "available": 87,
@@ -3319,7 +3309,7 @@
             "id": "TS-240W",
             "name": "BRENTWOOD SANDWICH MAKER - WHITE",
             "category": "Heating and Cooking",
-            "parent_category": "Other",
+            "parent_category": "Kitchen Appliances",
             "sub_category": "Heating and Cooking",
             "price": "17.00",
             "available": 26,
@@ -3329,7 +3319,7 @@
             "id": "TS-242",
             "name": "BRENTWOOD Waffle Maker - White & SS",
             "category": "Heating and Cooking",
-            "parent_category": "Other",
+            "parent_category": "Kitchen Appliances",
             "sub_category": "Heating and Cooking",
             "price": "16.00",
             "available": 53,
@@ -3339,7 +3329,7 @@
             "id": "TS-245",
             "name": "BRENTWOOD PANINI MAKER - WHITE",
             "category": "Heating and Cooking",
-            "parent_category": "Other",
+            "parent_category": "Kitchen Appliances",
             "sub_category": "Heating and Cooking",
             "price": "16.00",
             "available": 52,
@@ -3349,7 +3339,7 @@
             "id": "TS-246",
             "name": "BRENTWOOD PANINI MAKER - Blk",
             "category": "Heating and Cooking",
-            "parent_category": "Other",
+            "parent_category": "Kitchen Appliances",
             "sub_category": "Heating and Cooking",
             "price": "17.00",
             "available": 65,
@@ -3359,7 +3349,7 @@
             "id": "TS-372",
             "name": "BRENTWOOD 1440W Double Electric Hotplate Chromed",
             "category": "Heating and Cooking",
-            "parent_category": "Other",
+            "parent_category": "Kitchen Appliances",
             "sub_category": "Heating and Cooking",
             "price": "36.00",
             "available": 41,
@@ -3369,7 +3359,7 @@
             "id": "TS-643BK",
             "name": "BRENTWOOD 1200W Electric Smokeless Indoor Grill with Ceramic Non-Stick Surface, Black",
             "category": "Heating and Cooking",
-            "parent_category": "Other",
+            "parent_category": "Kitchen Appliances",
             "sub_category": "Heating and Cooking",
             "price": "40.00",
             "available": 17,
@@ -3379,7 +3369,7 @@
             "id": "TS-810",
             "name": "BRENTWOOD Electric Griddle w/ Ceramic Non-Stick, Adjustable Temperature, & Cool Touch Handles",
             "category": "Heating and Cooking",
-            "parent_category": "Other",
+            "parent_category": "Kitchen Appliances",
             "sub_category": "Heating and Cooking",
             "price": "25.00",
             "available": 30,
@@ -3389,7 +3379,7 @@
             "id": "TS-821",
             "name": "BRENTWOOD Non-Stick Electric Griddle w/ Drip Tray, Adjustable Temperature, & Cool Touch Handles, Black",
             "category": "Heating and Cooking",
-            "parent_category": "Other",
+            "parent_category": "Kitchen Appliances",
             "sub_category": "Heating and Cooking",
             "price": "35.00",
             "available": 18,
@@ -3868,7 +3858,7 @@
         {
             "id": "BCED37",
             "name": "Black & Decker 3.7 Cu Ft 6Kg Portable Dryer",
-            "category": "Major Appliances",
+            "category": "Laundry",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "349.00",
@@ -3878,7 +3868,7 @@
         {
             "id": "BFLW27MW",
             "name": "BLACK+DECKER 2.7 Cu. Ft. Front Load Washer",
-            "category": "Major Appliances",
+            "category": "Laundry",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "200.00",
@@ -3888,7 +3878,7 @@
         {
             "id": "BPWH84W",
             "name": "Black+Decker 0.84 Cu. Ft. Portable Washer",
-            "category": "Major Appliances",
+            "category": "Laundry",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "240.00",
@@ -3898,7 +3888,7 @@
         {
             "id": "BPWM16W",
             "name": "Black+Decker 1.6 Cu. Ft. Portable Washer",
-            "category": "Major Appliances",
+            "category": "Laundry",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "300.00",
@@ -3908,7 +3898,7 @@
         {
             "id": "BWDS",
             "name": "Black & Decker Washer & Dryer Stand",
-            "category": "Major Appliances",
+            "category": "Laundry",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "50.00",
@@ -3918,7 +3908,7 @@
         {
             "id": "CASTER KIT",
             "name": "Home Comfort Caster Kit",
-            "category": "Major Appliances",
+            "category": "Laundry",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "25.00",
@@ -3928,7 +3918,7 @@
         {
             "id": "DRYER LINT",
             "name": "Home Comfort Dryer Lint Filter",
-            "category": "Major Appliances",
+            "category": "Laundry",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "5.00",
@@ -3938,7 +3928,7 @@
         {
             "id": "FW100-1388AS",
             "name": "GOLDEN 22.0 LB/10 Kg Portable Washer - White",
-            "category": "Major Appliances",
+            "category": "Laundry",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "360.00",
@@ -3948,7 +3938,7 @@
         {
             "id": "FW50-518A",
             "name": "GOLDEN 11.0 LB/1.6 Cu Ft Portable Washer - White",
-            "category": "Major Appliances",
+            "category": "Laundry",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "300.00",
@@ -3958,7 +3948,7 @@
         {
             "id": "FW70-1558L",
             "name": "GOLDEN 15.4 LB/1.9 Cu Ft Portable Washer - White",
-            "category": "Major Appliances",
+            "category": "Laundry",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "330.00",
@@ -3968,7 +3958,7 @@
         {
             "id": "GYJ40-88FI",
             "name": "GOLDEN 8.8 LB/2.65 CF Portable Dryer - White",
-            "category": "Major Appliances",
+            "category": "Laundry",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "323.00",
@@ -3978,7 +3968,7 @@
         {
             "id": "GYJ60-88F1",
             "name": "GOLDEN 13 LB/3.5 CF Portable Dryer - White",
-            "category": "Major Appliances",
+            "category": "Laundry",
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "350.00",
@@ -4054,6 +4044,16 @@
             "price": "20.00",
             "available": 22,
             "image": "images/SM-720-5000.png"
+        },
+        {
+            "id": "BCD6W",
+            "name": "Black & Decker Compact Countertop Dishwasher",
+            "category": "Major Appliances",
+            "parent_category": "Major Appliances",
+            "sub_category": "Major Appliances",
+            "price": "100.00",
+            "available": 1,
+            "image": "images/BCD6W.png"
         },
         {
             "id": "M-310",
@@ -4234,16 +4234,6 @@
             "price": "24.00",
             "available": 2,
             "image": "images/NAM-984-BLK.png"
-        },
-        {
-            "id": "BCD6W",
-            "name": "Black & Decker Compact Countertop Dishwasher",
-            "category": "Major Appliances",
-            "parent_category": "Major Appliances",
-            "sub_category": "Other Appliances",
-            "price": "100.00",
-            "available": 1,
-            "image": "images/BCD6W.png"
         },
         {
             "id": "3043",
@@ -4526,16 +4516,6 @@
             "image": "images/NV-09586.png"
         },
         {
-            "id": "RVDR5034N1",
-            "name": "Revlon 1875-Watt Hair Dryer",
-            "category": "Personal Care",
-            "parent_category": "Health and Personal Care",
-            "sub_category": "Personal Care",
-            "price": "18.00",
-            "available": 47,
-            "image": "images/RVDR5034N1.png"
-        },
-        {
             "id": "VRD928982395",
             "name": "Cosmo Callus Remover, Black",
             "category": "Personal Care",
@@ -4718,7 +4698,7 @@
         {
             "id": "BC 40",
             "name": "A Energy Compact Refrigerator 1.4 CF, White",
-            "category": "Major Appliances",
+            "category": "Refrigerators",
             "parent_category": "Major Appliances",
             "sub_category": "Refrigerators",
             "price": "100.00",
@@ -4728,7 +4708,7 @@
         {
             "id": "BCRK17V",
             "name": "Black+Decker 1.7 Cu. Ft. Compact Fridge Silver",
-            "category": "Major Appliances",
+            "category": "Refrigerators",
             "parent_category": "Major Appliances",
             "sub_category": "Refrigerators",
             "price": "105.00",
@@ -4738,7 +4718,7 @@
         {
             "id": "RM3316B",
             "name": "AVANTI 3.3 CU FT REFRIGERATOR - Black",
-            "category": "Major Appliances",
+            "category": "Refrigerators",
             "parent_category": "Major Appliances",
             "sub_category": "Refrigerators",
             "price": "165.00",
@@ -6754,6 +6734,26 @@
             "price": "289.00",
             "available": 3,
             "image": "images/LW1017ERSM1.png"
+        },
+        {
+            "id": "BD60026",
+            "name": "Black & Decker 8 Bottle Wine Cellar",
+            "category": "Wine Cellars",
+            "parent_category": "Major Appliances",
+            "sub_category": "Wine Cellars",
+            "price": "50.00",
+            "available": 1,
+            "image": "images/BD60026.png"
+        },
+        {
+            "id": "BD60316",
+            "name": "Black & Decker 6 Bottle Wine Cellar",
+            "category": "Wine Cellars",
+            "parent_category": "Major Appliances",
+            "sub_category": "Wine Cellars",
+            "price": "50.00",
+            "available": 1,
+            "image": "images/BD60316.png"
         }
     ]
 }
