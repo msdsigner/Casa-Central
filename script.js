@@ -36,6 +36,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalCaption = document.getElementById('modalCaption');
     const closeModal = document.getElementById('closeModal');
     
+    // Health & Review Elements
+    const adminToggle = document.getElementById('adminToggle');
+    const healthBlock = document.getElementById('healthBlock');
+    const toggleHealth = document.getElementById('toggleHealth');
+    const missingImagesText = document.getElementById('missingImages');
+    const zeroPricesText = document.getElementById('zeroPrices');
+    
+    const reviewModal = document.getElementById('reviewModal');
+    const reviewSelectionBtn = document.getElementById('reviewSelectionBtn');
+    const closeReview = document.getElementById('closeReview');
+    const reviewTableWrap = document.getElementById('reviewTableWrap');
+    const reviewTotalQty = document.getElementById('reviewTotalQty');
+    const reviewTotalVal = document.getElementById('reviewTotalVal');
+    
     // Sort logic
     let currentSort = 'default';
 
@@ -303,7 +317,99 @@ document.addEventListener('DOMContentLoaded', () => {
             imageModal.style.display = "none";
             document.body.style.overflow = 'auto';
         }
+        if (event.target == reviewModal) {
+            reviewModal.style.display = "none";
+            document.body.style.overflow = 'auto';
+        }
     };
+
+    // --- Health Dashboard Logic ---
+    adminToggle.addEventListener('click', () => {
+        const isHidden = healthBlock.style.display === 'none';
+        healthBlock.style.display = isHidden ? 'block' : 'none';
+        if (isHidden) runHealthCheck();
+        adminToggle.textContent = isHidden ? 'Hide Health Data' : 'Show Health Data';
+    });
+
+    toggleHealth.addEventListener('click', () => {
+        healthBlock.style.display = 'none';
+        adminToggle.textContent = 'Show Health Data';
+    });
+
+    function runHealthCheck() {
+        if (!inventoryData || !inventoryData.items) return;
+        
+        let missingImg = 0;
+        let zeroPrice = 0;
+        
+        inventoryData.items.forEach(item => {
+            if (item.image.includes('default-item.png')) missingImg++;
+            if (parseFloat(item.price) === 0) zeroPrice++;
+        });
+        
+        missingImagesText.textContent = `Missing Images: ${missingImg}`;
+        zeroPricesText.textContent = `Zero Prices: ${zeroPrice}`;
+        
+        console.log(`[Health] Audit complete: ${missingImg} missing images, ${zeroPrice} zero prices.`);
+    }
+
+    // --- Review Selection Logic ---
+    reviewSelectionBtn.addEventListener('click', () => {
+        if (cart.length === 0) {
+            alert("Your selection is empty!");
+            return;
+        }
+        renderReviewTable();
+        reviewModal.style.display = "block";
+        document.body.style.overflow = 'hidden';
+    });
+
+    closeReview.onclick = () => {
+        reviewModal.style.display = "none";
+        document.body.style.overflow = 'auto';
+    };
+
+    function renderReviewTable() {
+        let totalVal = 0;
+        let totalQty = 0;
+        
+        let html = `
+            <table class="review-table">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Item ID</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+        `;
+        
+        cart.forEach(item => {
+            const subtotal = item.price * item.quantity;
+            totalVal += subtotal;
+            totalQty += item.quantity;
+            
+            html += `
+                <tr>
+                    <td><img src="${item.image}" class="review-img"></td>
+                    <td><b>${item.id}</b></td>
+                    <td>${item.name}</td>
+                    <td>$${parseFloat(item.price).toFixed(2)}</td>
+                    <td>${item.quantity}</td>
+                    <td><b>$${subtotal.toFixed(2)}</b></td>
+                </tr>
+            `;
+        });
+        
+        html += `</tbody></table>`;
+        reviewTableWrap.innerHTML = html;
+        reviewTotalQty.textContent = totalQty;
+        reviewTotalVal.textContent = `$${totalVal.toFixed(2)}`;
+    }
 
     searchInput.addEventListener('input', (e) => {
         currentSearch = e.target.value;
