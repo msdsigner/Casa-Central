@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentSearch = '';
 
     // Selection state: map of itemId -> { item, quantity }
-    let selectionCart = JSON.parse(localStorage.getItem('goldenSelectionCart')) || {};
+    let selectionCart = JSON.parse(localStorage.getItem('casaCentralSelectionCart')) || {};
 
     // Boot Up
     loadData();
@@ -356,7 +356,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateCartUI() {
         // Persist
-        localStorage.setItem('goldenSelectionCart', JSON.stringify(selectionCart));
+        localStorage.setItem('casaCentralSelectionCart', JSON.stringify(selectionCart));
         cartContent.innerHTML = '';
         const keys = Object.keys(selectionCart);
         cartCount.textContent = keys.length;
@@ -488,7 +488,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </tr>
             </tbody>
             </table>
-            <p style="font-size:12px; color:#666; margin-top:10px;">Generated from Golden Opportunity Catalog</p>
+            <p style="font-size:12px; color:#666; margin-top:10px;">Generated from Casa Central</p>
         `;
 
         try {
@@ -500,8 +500,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // Open Gmail compose window
             setTimeout(() => {
                 const subject = encodeURIComponent("Catalog Information Request");
-                const defaultBody = encodeURIComponent("Hello Golden Opportunity Team,\n\nI have copied my selection. Here it is (Please Paste / Ctrl+V below this line):\n\n====================\n\n\n");
-                window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=info@goldenopportunity.com&su=${subject}&body=${defaultBody}`);
+                const defaultBody = encodeURIComponent("Hello Casa Central Team,\n\nI have copied my selection. Here it is (Please Paste / Ctrl+V below this line):\n\n====================\n\n\n");
+                window.open(`https://mail.google.com/mail/?view=cm&fs=1&su=${subject}&body=${defaultBody}`);
                 copyCartBtn.textContent = originalText;
             }, 800);
 
@@ -669,7 +669,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Header Rendering
             doc.setFontSize(18);
             doc.setTextColor(30, 60, 114);
-            doc.text("Golden Opportunity Catalog", 14, 20);
+            doc.text("Casa Central", 14, 20);
             
             doc.setFontSize(10);
             doc.setTextColor(100, 100, 100);
