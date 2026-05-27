@@ -8,9 +8,6 @@
 data/Inventory_Latest.xlsx
 data/Inventory_Latest.pdf
 
-# ── Product Images (managed locally, too large for GitHub) ─
-images/
-
 # ── OS & Editor Artifacts ─────────────────────────────────
 .DS_Store
 Thumbs.db
