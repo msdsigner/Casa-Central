@@ -1,22 +1,15 @@
-# ============================================================
-# Casa Central — webapp/.gitignore
-# This git repo deploys to GitHub Pages (public-facing).
-# Never commit credentials or generated data files here.
-# ============================================================
+# KEEP SECRETS SAFE (Do not delete these!)
+credentials.json
+token.pickle
+token.json
+*.pickle
+service_account*.json
+.env
+.env.*
+*.env
 
-# ── Generated / Downloaded Inventory Files ────────────────
-data/Inventory_Latest.xlsx
-data/Inventory_Latest.pdf
-
-# ── Product Images (managed locally, too large for GitHub) ─
-images/
-
-# ── OS & Editor Artifacts ─────────────────────────────────
+# Keep OS junk out
 .DS_Store
 Thumbs.db
-desktop.ini
-*.swp
-*~
 
-# ── Node (future-proofing) ────────────────────────────────
-node_modules/
+# (Images are no longer listed here, so they will now update perfectly!)
