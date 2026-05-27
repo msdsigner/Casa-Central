@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalCaption = document.getElementById('modalCaption');
     const closeModal = document.getElementById('closeModal');
     
-    
     // Sort logic
     let currentSort = 'default';
 
@@ -306,7 +305,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-
     searchInput.addEventListener('input', (e) => {
         currentSearch = e.target.value;
         renderGrid();
@@ -361,7 +359,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const keys = Object.keys(selectionCart);
         cartCount.textContent = keys.length;
         
-        let grandTotal = 0;
+        let subtotal = 0;
 
         if (keys.length === 0) {
             cartContent.innerHTML = '<p style="color:#888; text-align:center; padding: 2rem;">No items selected yet.</p>';
@@ -378,7 +376,7 @@ document.addEventListener('DOMContentLoaded', () => {
         keys.forEach(id => {
             const entry = selectionCart[id];
             const itemTotal = parseFloat(entry.product.price) * entry.quantity;
-            grandTotal += itemTotal;
+            subtotal += itemTotal;
 
             const div = document.createElement('div');
             div.className = 'cart-item';
@@ -415,7 +413,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if(cartGrandTotalEl) {
-            cartGrandTotalEl.textContent = `Grand Total: $${grandTotal.toFixed(2)}`;
+            const salesTax = subtotal * 0.03125;
+            const grandTotal = subtotal + salesTax;
+            cartGrandTotalEl.innerHTML = `
+                <div style="font-size:0.85rem; color:#666; display:flex; justify-content:space-between; margin-bottom:2px;">
+                    <span>Subtotal:</span> <span>$${subtotal.toFixed(2)}</span>
+                </div>
+                <div style="font-size:0.85rem; color:#666; display:flex; justify-content:space-between; margin-bottom:6px; border-bottom:1px dashed #ddd; padding-bottom:4px;">
+                    <span>Sales Tax (3.125%):</span> <span>$${salesTax.toFixed(2)}</span>
+                </div>
+                <div style="font-weight:700; font-size:1.1rem; color:#1e3c72; display:flex; justify-content:space-between;">
+                    <span>Grand Total:</span> <span>$${grandTotal.toFixed(2)}</span>
+                </div>
+            `;
         }
     }
 
@@ -480,15 +490,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 </tr>
             `;
         });
+        const salesTax = grandSum * 0.03125;
+        const finalTotal = grandSum + salesTax;
 
         html += `
+                <tr style="background:#f8fafc; font-size:0.9rem; color:#475569;">
+                    <td colspan="4" style="padding:8px 10px; border:1px solid #ddd; text-align:right; font-weight:bold;">Subtotal:</td>
+                    <td style="padding:8px 10px; border:1px solid #ddd; text-align:center; font-weight:bold;">$${grandSum.toFixed(2)}</td>
+                </tr>
+                <tr style="background:#f8fafc; font-size:0.9rem; color:#475569;">
+                    <td colspan="4" style="padding:8px 10px; border:1px solid #ddd; text-align:right; font-weight:bold;">Sales Tax (3.125%):</td>
+                    <td style="padding:8px 10px; border:1px solid #ddd; text-align:center; font-weight:bold;">$${salesTax.toFixed(2)}</td>
+                </tr>
                 <tr style="background:#f1f5f9; font-weight:bold;">
                     <td colspan="4" style="padding:10px; border:1px solid #ddd; text-align:right;">GRAND TOTAL:</td>
-                    <td style="padding:10px; border:1px solid #ddd; text-align:center; color:#1e3c72;">$${grandSum.toFixed(2)}</td>
+                    <td style="padding:10px; border:1px solid #ddd; text-align:center; color:#1e3c72; font-size:1.1rem;">$${finalTotal.toFixed(2)}</td>
                 </tr>
             </tbody>
             </table>
-            <p style="font-size:12px; color:#666; margin-top:10px;">Generated from Casa Central</p>
         `;
 
         try {
@@ -512,7 +531,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 📊 Save as Excel (.xlsx) using ExcelJS with FIX for image stretching & 140px size
+    // 📊 Save as Excel (.xlsx) using ExcelJS
     excelCart.addEventListener('click', async () => {
         const items = getSelectionArray();
         if(items.length === 0) return alert("Selection is empty.");
@@ -599,39 +618,48 @@ document.addEventListener('DOMContentLoaded', () => {
         worksheet.getColumn('total').numFmt = '$#,##0.00';
 
         // Add Grand Total Row to Excel
-        const grandTotal = items.reduce((acc, i) => acc + (parseFloat(i.product.price) * i.quantity), 0);
-        const totalRow = worksheet.addRow({
-            total: grandTotal
-        });
-        totalRow.height = 35;
-        
-        // Style all cells in totalRow first
-        totalRow.eachCell({ includeEmpty: true }, (cell) => {
-            cell.border = borderStyle;
-            cell.fill = {
-                type: 'pattern',
-                pattern: 'solid',
-                fgColor: { argb: 'FFF1F5F9' }
-            };
-        });
+        const subtotal = items.reduce((acc, i) => acc + (parseFloat(i.product.price) * i.quantity), 0);
+        const salesTax = subtotal * 0.03125;
+        const grandTotal = subtotal + salesTax;
 
-        // Merge Columns A through F for the label
+        // 1. Subtotal Row
+        const subtotalRow = worksheet.addRow({ total: subtotal });
+        worksheet.mergeCells(`A${subtotalRow.number}:F${subtotalRow.number}`);
+        worksheet.getCell(`A${subtotalRow.number}`).value = 'SUBTOTAL:';
+        worksheet.getCell(`G${subtotalRow.number}`).numFmt = '$#,##0.00';
+
+        // 2. Tax Row
+        const taxRow = worksheet.addRow({ total: salesTax });
+        worksheet.mergeCells(`A${taxRow.number}:F${taxRow.number}`);
+        worksheet.getCell(`A${taxRow.number}`).value = 'SALES TAX (3.125%):';
+        worksheet.getCell(`G${taxRow.number}`).numFmt = '$#,##0.00';
+
+        // 3. Grand Total Row
+        const totalRow = worksheet.addRow({ total: grandTotal });
         worksheet.mergeCells(`A${totalRow.number}:F${totalRow.number}`);
-        const summaryLabelCell = worksheet.getCell(`A${totalRow.number}`);
-        summaryLabelCell.value = 'SELECTION GRAND TOTAL:';
-        summaryLabelCell.font = { bold: true, size: 12 };
-        summaryLabelCell.alignment = { horizontal: 'right', vertical: 'middle' };
+        worksheet.getCell(`A${totalRow.number}`).value = 'SELECTION GRAND TOTAL:';
+        worksheet.getCell(`G${totalRow.number}`).numFmt = '$#,##0.00';
 
-        // Style the Value Cell (G)
-        const totalValueCell = worksheet.getCell(`G${totalRow.number}`);
-        totalValueCell.font = { bold: true, size: 12, color: { argb: 'FF1E3C72' } };
-        totalValueCell.alignment = { horizontal: 'center', vertical: 'middle' };
-        totalValueCell.numFmt = '$#,##0.00';
-        totalValueCell.fill = {
-            type: 'pattern',
-            pattern: 'solid',
-            fgColor: { argb: 'FFE2E8F0' }
-        };
+        // Style all three summary rows dynamically
+        [subtotalRow, taxRow, totalRow].forEach((row, idx, arr) => {
+            row.height = idx === 2 ? 35 : 25; // Make the final row slightly taller
+            row.eachCell({ includeEmpty: true }, (cell) => {
+                cell.border = borderStyle;
+                cell.font = { bold: true, size: idx === 2 ? 12 : 10 };
+                if (cell.column <= 6) {
+                    cell.alignment = { horizontal: 'right', vertical: 'middle' };
+                } else {
+                    cell.alignment = { horizontal: 'center', vertical: 'middle' };
+                    cell.numFmt = '$#,##0.00';
+                    if (idx === 2) cell.font.color = { argb: 'FF1E3C72' }; // Blue text for final total
+                }
+                cell.fill = {
+                    type: 'pattern',
+                    pattern: 'solid',
+                    fgColor: { argb: idx === 2 ? 'FFE2E8F0' : 'FFF1F5F9' }
+                };
+            });
+        });
 
         // Header Styling
         const headerRow = worksheet.getRow(1);
@@ -759,13 +787,16 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             
             // Grand Total Footer Section
-            const pdfSum = items.reduce((acc, i) => acc + (parseFloat(i.product.price) * i.quantity), 0);
-            const formattedTotal = pdfSum.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-            
+            const subtotal = items.reduce((acc, i) => acc + (parseFloat(i.product.price) * i.quantity), 0);
+            const salesTax = subtotal * 0.03125;
+            const grandTotal = subtotal + salesTax;
+
             doc.autoTable({
-                startY: doc.lastAutoTable.finalY + 0, // Immediately below
+                startY: doc.lastAutoTable.finalY + 0,
                 body: [
-                    ["SELECTION GRAND TOTAL:", "$" + formattedTotal]
+                    ["SUBTOTAL:", "$" + subtotal.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })],
+                    ["SALES TAX (3.125%):", "$" + salesTax.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })],
+                    ["SELECTION GRAND TOTAL:", "$" + grandTotal.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })]
                 ],
                 theme: 'grid',
                 styles: { fontSize: 9, fontStyle: 'bold', halign: 'right', cellPadding: 3 },
@@ -773,6 +804,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 columnStyles: {
                     0: { fillColor: [241, 245, 249] },
                     1: { cellWidth: 25, halign: 'center', textColor: [30, 60, 114], fillColor: [226, 232, 240] }
+                },
+                didParseCell: (data) => {
+                    // Optional: Highlight the final row even more in the PDF
+                    if (data.section === 'body' && data.row.index === 2) {
+                        if (data.column.index === 0) data.cell.styles.fillColor = [226, 232, 240];
+                    }
                 }
             });
             
