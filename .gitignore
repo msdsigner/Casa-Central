@@ -1,4 +1,4 @@
-# KEEP SECRETS SAFE (Do not delete these!)
+# KEEP SECRETS SAFE
 credentials.json
 token.pickle
 token.json
@@ -12,4 +12,8 @@ service_account*.json
 .DS_Store
 Thumbs.db
 
-# (Images are no longer listed here, so they will now update perfectly!)
+# Large Data Files
+data/Inventory_Latest.xlsx
+data/Inventory_Latest.pdf
+
+# (Images are NOT ignored here, so they will upload perfectly!)
