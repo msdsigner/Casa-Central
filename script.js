@@ -50,6 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Selection state: map of itemId -> { item, quantity }
     let selectionCart = JSON.parse(localStorage.getItem('casaCentralSelectionCart')) || {};
 
+    // Fixed Tax Rate Constant (3.3125%)
+    const TAX_RATE = 0.033125;
+
     // Boot Up
     loadData();
 
@@ -64,8 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Meta updates
             updateDate.textContent = data.last_updated || "Live";
-            if(data.downloads.excel) { dlExcelBtn.href = data.downloads.excel; } else { dlExcelBtn.style.display = 'none'; }
-            if(data.downloads.pdf) { dlPdfBtn.href = data.downloads.pdf; } else { dlPdfBtn.style.display = 'none'; }
+            if(data.downloads && data.downloads.excel) { dlExcelBtn.href = data.downloads.excel; } else if (dlExcelBtn) { dlExcelBtn.style.display = 'none'; }
+            if(data.downloads && data.downloads.pdf) { dlPdfBtn.href = data.downloads.pdf; } else if (dlPdfBtn) { dlPdfBtn.style.display = 'none'; }
             
             inventory.forEach(item => {
                 let p = item.parent_category || "Other";
@@ -84,12 +87,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    sortSelect.addEventListener('change', (e) => {
-        currentSort = e.target.value;
-        renderGrid();
-    });
+    if (sortSelect) {
+        sortSelect.addEventListener('change', (e) => {
+            currentSort = e.target.value;
+            renderGrid();
+        });
+    }
 
     function buildFilters() {
+        if (!catDropdown || !catGrid) return;
         catDropdown.innerHTML = '<option value="All Categories">All Categories</option>';
         catGrid.innerHTML = '';
         
@@ -168,10 +174,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function selectCategory(parent, sub) {
+        if (catDropdown) catDropdown.value = (sub !== 'All Categories' && sub !== 'All Subcategories') ? sub : 'All Categories';
+
         currentParentCategory = parent;
         currentCategory = sub;
-
-        catDropdown.value = (sub !== 'All Categories' && sub !== 'All Subcategories') ? sub : 'All Categories';
 
         // Highlight parent buttons
         document.querySelectorAll('.btn-parent-cat').forEach(b => {
@@ -189,6 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderGrid() {
+        if (!grid) return;
         grid.innerHTML = '';
 
         let filtered = inventory.filter(item => {
@@ -223,7 +230,6 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (currentSort === 'qty-desc') {
             filtered.sort((a, b) => (b.available || 0) - (a.available || 0));
         } else if (currentSort === 'newest') {
-            // Assume the bottom of original list is newest if not timestamped
             filtered.sort((a, b) => {
                 const idxA = originalInventoryOrder.findIndex(x => x.id === a.id);
                 const idxB = originalInventoryOrder.findIndex(x => x.id === b.id);
@@ -231,12 +237,12 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        totalCount.textContent = `Showing ${filtered.length} item${filtered.length !== 1 ? 's' : ''}`;
+        if (totalCount) totalCount.textContent = `Showing ${filtered.length} item${filtered.length !== 1 ? 's' : ''}`;
         
         if (filtered.length === 0) {
-            emptyState.classList.remove('hidden');
+            if (emptyState) emptyState.classList.remove('hidden');
         } else {
-            emptyState.classList.add('hidden');
+            if (emptyState) emptyState.classList.add('hidden');
             
             filtered.forEach(item => {
                 const card = document.createElement('article');
@@ -272,13 +278,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
                 grid.appendChild(card);
                 
-                // Add event listener to the Select button
                 card.querySelector('.add-btn').addEventListener('click', (e) => {
                     e.stopPropagation();
                     addToSelection(item, e.target);
                 });
 
-                // Add event listener to the image for lightbox
                 card.querySelector('.card-img-wrap').addEventListener('click', () => {
                     openLightbox(item.image, item.name);
                 });
@@ -287,39 +291,44 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function openLightbox(src, title) {
+        if (!imageModal || !modalImg || !modalCaption) return;
         imageModal.style.display = "block";
         modalImg.src = src;
         modalCaption.textContent = title;
-        document.body.style.overflow = 'hidden'; // Prevent scroll
+        document.body.style.overflow = 'hidden';
     }
 
-    closeModal.onclick = () => {
-        imageModal.style.display = "none";
-        document.body.style.overflow = 'auto';
-    };
+    if (closeModal) {
+        closeModal.onclick = () => {
+            imageModal.style.display = "none";
+            document.body.style.overflow = 'auto';
+        };
+    }
 
-    window.onclick = (event) => {
+    window.addEventListener('click', (event) => {
         if (event.target == imageModal) {
             imageModal.style.display = "none";
             document.body.style.overflow = 'auto';
         }
-    };
-
-    searchInput.addEventListener('input', (e) => {
-        currentSearch = e.target.value;
-        renderGrid();
     });
+
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            currentSearch = e.target.value;
+            renderGrid();
+        });
+    }
 
     // --- CART / SELECTION LOGIC ---
 
     function toggleCart() {
-        cartPanel.classList.toggle('open');
-        cartOverlay.classList.toggle('open');
+        if (cartPanel) cartPanel.classList.toggle('open');
+        if (cartOverlay) cartOverlay.classList.toggle('open');
     }
     
-    cartToggle.addEventListener('click', toggleCart);
-    closeCartBtn.addEventListener('click', toggleCart);
-    cartOverlay.addEventListener('click', toggleCart);
+    if (cartToggle) cartToggle.addEventListener('click', toggleCart);
+    if (closeCartBtn) closeCartBtn.addEventListener('click', toggleCart);
+    if (cartOverlay) cartOverlay.addEventListener('click', toggleCart);
 
     function addToSelection(item, btnElement) {
         if (item.available <= 0) {
@@ -338,26 +347,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         updateCartUI();
         
-        // Visual feedback
         btnElement.textContent = "✓ Selected";
         btnElement.style.background = "#10b981";
         btnElement.style.color = "white";
         btnElement.style.borderColor = "#10b981";
         btnElement.classList.add('selected');
         
-        // Wiggle the top cart button
-        cartToggle.style.transform = "scale(1.1)";
-        setTimeout(() => {
-            cartToggle.style.transform = "scale(1)";
-        }, 300);
+        if (cartToggle) {
+            cartToggle.style.transform = "scale(1.1)";
+            setTimeout(() => { cartToggle.style.transform = "scale(1)"; }, 300);
+        }
     }
 
     function updateCartUI() {
-        // Persist
         localStorage.setItem('casaCentralSelectionCart', JSON.stringify(selectionCart));
+        if (!cartContent) return;
         cartContent.innerHTML = '';
         const keys = Object.keys(selectionCart);
-        cartCount.textContent = keys.length;
+        if (cartCount) cartCount.textContent = keys.length;
         
         let subtotal = 0;
 
@@ -408,12 +415,12 @@ document.addEventListener('DOMContentLoaded', () => {
             div.querySelector('.remove-btn').addEventListener('click', () => {
                 delete selectionCart[id];
                 updateCartUI();
-                renderGrid(); // Refresh grid buttons
+                renderGrid();
             });
         });
 
         if(cartGrandTotalEl) {
-            const salesTax = subtotal * 0.033125;
+            const salesTax = subtotal * TAX_RATE;
             const grandTotal = subtotal + salesTax;
             cartGrandTotalEl.innerHTML = `
                 <div style="font-size:0.85rem; color:#666; display:flex; justify-content:space-between; margin-bottom:2px;">
@@ -429,8 +436,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Export Logic
-    
     function getSelectionArray() {
         return Object.values(selectionCart);
     }
@@ -448,379 +453,363 @@ document.addEventListener('DOMContentLoaded', () => {
     const copyCartBtn = document.getElementById('copyCart');
 
     // 📋 Copy Rich Table to Clipboard
-    copyCartBtn?.addEventListener('click', async () => {
-        const items = getSelectionArray();
-        if(items.length === 0) return alert("Selection is empty.");
-        
-        const originalText = copyCartBtn.textContent;
-        copyCartBtn.textContent = "⌛ Generating...";
-
-        const baseUrl = window.location.origin + window.location.pathname.replace('index.html', '');
-        
-        let html = `
-            <table style="border-collapse:collapse; width:100%; font-family: sans-serif; border: 1px solid #ddd;">
-                <thead>
-                    <tr style="background:#1e3c72; color:white;">
-                        <th style="padding:10px; border:1px solid #ddd;">Preview</th>
-                        <th style="padding:10px; border:1px solid #ddd;">Ref ID</th>
-                        <th style="padding:10px; border:1px solid #ddd;">Product Name</th>
-                        <th style="padding:10px; border:1px solid #ddd;">Qty</th>
-                        <th style="padding:10px; border:1px solid #ddd;">Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-        `;
-
-        let grandSum = 0;
-        items.forEach(i => {
-            let total = parseFloat(i.product.price) * i.quantity;
-            grandSum += total;
-            let imgSrc = i.product.image;
-            if(!imgSrc.startsWith('http')) imgSrc = baseUrl + imgSrc;
+    if (copyCartBtn) {
+        copyCartBtn.addEventListener('click', async () => {
+            const items = getSelectionArray();
+            if(items.length === 0) return alert("Selection is empty.");
             
-            html += `
-                <tr>
-                    <td style="padding:10px; border:1px solid #ddd; text-align:center;">
-                        <img src="${imgSrc}" width="60" style="max-width:60px;">
-                    </td>
-                    <td style="padding:10px; border:1px solid #ddd;">${i.product.id}</td>
-                    <td style="padding:10px; border:1px solid #ddd;">${i.product.name}</td>
-                    <td style="padding:10px; border:1px solid #ddd; text-align:center;">${i.quantity}</td>
-                    <td style="padding:10px; border:1px solid #ddd; text-align:center;">$${total.toFixed(2)}</td>
-                </tr>
+            const originalText = copyCartBtn.textContent;
+            copyCartBtn.textContent = "⌛ Generating...";
+
+            const baseUrl = window.location.origin + window.location.pathname.replace('index.html', '');
+            
+            let html = `
+                <table style="border-collapse:collapse; width:100%; font-family: sans-serif; border: 1px solid #ddd;">
+                    <thead>
+                        <tr style="background:#1e3c72; color:white;">
+                            <th style="padding:10px; border:1px solid #ddd;">Preview</th>
+                            <th style="padding:10px; border:1px solid #ddd;">Ref ID</th>
+                            <th style="padding:10px; border:1px solid #ddd;">Product Name</th>
+                            <th style="padding:10px; border:1px solid #ddd;">Qty</th>
+                            <th style="padding:10px; border:1px solid #ddd;">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
             `;
-        });
-        const salesTax = grandSum * 0.033125;
-        const finalTotal = grandSum + salesTax;
 
-        html += `
-                <tr style="background:#f8fafc; font-size:0.9rem; color:#475569;">
-                    <td colspan="4" style="padding:8px 10px; border:1px solid #ddd; text-align:right; font-weight:bold;">Subtotal:</td>
-                    <td style="padding:8px 10px; border:1px solid #ddd; text-align:center; font-weight:bold;">$${grandSum.toFixed(2)}</td>
-                </tr>
-                <tr style="background:#f8fafc; font-size:0.9rem; color:#475569;">
-                    <td colspan="4" style="padding:8px 10px; border:1px solid #ddd; text-align:right; font-weight:bold;">Sales Tax (3.3125%):</td>
-                    <td style="padding:8px 10px; border:1px solid #ddd; text-align:center; font-weight:bold;">$${salesTax.toFixed(2)}</td>
-                </tr>
-                <tr style="background:#f1f5f9; font-weight:bold;">
-                    <td colspan="4" style="padding:10px; border:1px solid #ddd; text-align:right;">GRAND TOTAL:</td>
-                    <td style="padding:10px; border:1px solid #ddd; text-align:center; color:#1e3c72; font-size:1.1rem;">$${finalTotal.toFixed(2)}</td>
-                </tr>
-            </tbody>
-            </table>
-        `;
-
-        try {
-            const blob = new Blob([html], { type: 'text/html' });
-            const data = [new ClipboardItem({ 'text/html': blob, 'text/plain': new Blob([html.replace(/<[^>]*>/g, '')], { type: 'text/plain' }) })];
-            await navigator.clipboard.write(data);
-            copyCartBtn.textContent = "✅ Copied! Opening Gmail...";
-            
-            // Open Gmail compose window
-            setTimeout(() => {
-                const subject = encodeURIComponent("Catalog Information Request");
-                const defaultBody = encodeURIComponent("Hello Casa Central Team,\n\nI have copied my selection. Here it is (Please Paste / Ctrl+V below this line):\n\n====================\n\n\n");
-                window.open(`https://mail.google.com/mail/?view=cm&fs=1&su=${subject}&body=${defaultBody}`);
-                copyCartBtn.textContent = originalText;
-            }, 800);
-
-        } catch (err) {
-            console.error(err);
-            alert("Clipboard Error. Try again in Chrome/Edge.");
-            copyCartBtn.textContent = originalText;
-        }
-    });
-
-    // 📊 Save as Excel (.xlsx) using ExcelJS
-    excelCart.addEventListener('click', async () => {
-        const items = getSelectionArray();
-        if(items.length === 0) return alert("Selection is empty.");
-
-        const originalText = excelCart.textContent;
-        excelCart.textContent = "Fetching Images...";
-        
-        const workbook = new ExcelJS.Workbook();
-        const worksheet = workbook.addWorksheet('Catalog Selection');
-
-        // Styles
-        worksheet.getRow(1).height = 30;
-        worksheet.getRow(1).font = { bold: true };
-
-        worksheet.columns = [
-            { header: 'Preview', key: 'img', width: 22 }, 
-            { header: 'Reference ID', key: 'id', width: 15 },
-            { header: 'Product Name', key: 'name', width: 40, style: { alignment: { wrapText: true, vertical: 'middle' } } },
-            { header: 'Category', key: 'category', width: 20, style: { alignment: { wrapText: true, vertical: 'middle' } } },
-            { header: 'Unit Price', key: 'price', width: 12 },
-            { header: 'Quantity', key: 'qty', width: 10 },
-            { header: 'Total Price', key: 'total', width: 15 }
-        ];
-
-        // Style for Borders
-        const borderStyle = {
-            top: { style: 'thin', color: { argb: 'FF333333' } },
-            left: { style: 'thin', color: { argb: 'FF333333' } },
-            bottom: { style: 'thin', color: { argb: 'FF333333' } },
-            right: { style: 'thin', color: { argb: 'FF333333' } }
-        };
-
-        // Process items
-        for(let idx = 0; idx < items.length; idx++) {
-            const i = items[idx];
-            const rowNo = idx + 2;
-            excelCart.textContent = `Processing ${idx+1}/${items.length}...`;
-
-            const row = worksheet.addRow({
-                id: i.product.id,
-                name: i.product.name,
-                category: i.product.category,
-                price: parseFloat(i.product.price),
-                qty: i.quantity,
-                total: parseFloat(i.product.price) * i.quantity
-            });
-            row.height = 110; 
-            
-            // Apply alignment and border to each cell explicitly
-            row.eachCell({ includeEmpty: true }, (cell) => {
-                const align = { vertical: 'middle', horizontal: 'center', wrapText: true };
-                // Use LEFT alignment for Name and Category to make wrap look better
-                if(cell.column === 3 || cell.column === 4) align.horizontal = 'left';
+            let grandSum = 0;
+            items.forEach(i => {
+                let total = parseFloat(i.product.price) * i.quantity;
+                grandSum += total;
+                let imgSrc = i.product.image;
+                if(!imgSrc.startsWith('http')) imgSrc = baseUrl + imgSrc;
                 
-                cell.alignment = align;
-                cell.border = borderStyle;
+                html += `
+                    <tr>
+                        <td style="padding:10px; border:1px solid #ddd; text-align:center;">
+                            <img src="${imgSrc}" width="60" style="max-width:60px;">
+                        </td>
+                        <td style="padding:10px; border:1px solid #ddd;">${i.product.id}</td>
+                        <td style="padding:10px; border:1px solid #ddd;">${i.product.name}</td>
+                        <td style="padding:10px; border:1px solid #ddd; text-align:center;">${i.quantity}</td>
+                        <td style="padding:10px; border:1px solid #ddd; text-align:center;">$${total.toFixed(2)}</td>
+                    </tr>
+                `;
             });
+            const salesTax = grandSum * TAX_RATE;
+            const finalTotal = grandSum + salesTax;
+
+            html += `
+                    <tr style="background:#f8fafc; font-size:0.9rem; color:#475569;">
+                        <td colspan="4" style="padding:8px 10px; border:1px solid #ddd; text-align:right; font-weight:bold;">Subtotal:</td>
+                        <td style="padding:8px 10px; border:1px solid #ddd; text-align:center; font-weight:bold;">$${grandSum.toFixed(2)}</td>
+                    </tr>
+                    <tr style="background:#f8fafc; font-size:0.9rem; color:#475569;">
+                        <td colspan="4" style="padding:8px 10px; border:1px solid #ddd; text-align:right; font-weight:bold;">Sales Tax (3.3125%):</td>
+                        <td style="padding:8px 10px; border:1px solid #ddd; text-align:center; font-weight:bold;">$${salesTax.toFixed(2)}</td>
+                    </tr>
+                    <tr style="background:#f1f5f9; font-weight:bold;">
+                        <td colspan="4" style="padding:10px; border:1px solid #ddd; text-align:right;">GRAND TOTAL:</td>
+                        <td style="padding:10px; border:1px solid #ddd; text-align:center; color:#1e3c72; font-size:1.1rem;">$${finalTotal.toFixed(2)}</td>
+                    </tr>
+                </tbody>
+                </table>
+            `;
 
             try {
-                let imgSrc = i.product.image;
-                if(!imgSrc.startsWith('http')) {
-                    imgSrc = window.location.origin + window.location.pathname.replace('index.html', '') + imgSrc;
-                }
+                const blob = new Blob([html], { type: 'text/html' });
+                const data = [new ClipboardItem({ 'text/html': blob, 'text/plain': new Blob([html.replace(/<[^>]*>/g, '')], { type: 'text/plain' }) })];
+                await navigator.clipboard.write(data);
+                copyCartBtn.textContent = "✅ Copied! Opening Gmail...";
                 
-                const response = await fetch(imgSrc);
-                const arrayBuffer = await response.arrayBuffer();
-                const imageId = workbook.addImage({
-                    buffer: arrayBuffer,
-                    extension: 'png',
-                });
+                setTimeout(() => {
+                    const subject = encodeURIComponent("Catalog Information Request");
+                    const defaultBody = encodeURIComponent("Hello Casa Central Team,\n\nI have copied my selection. Here it is (Please Paste / Ctrl+V below this line):\n\n====================\n\n\n");
+                    window.open(`https://mail.google.com/mail/?view=cm&fs=1&su=${subject}&body=${defaultBody}`);
+                    copyCartBtn.textContent = originalText;
+                }, 800);
 
-                // 140px size centered in cell
-                worksheet.addImage(imageId, {
-                    tl: { col: 0.1, row: rowNo - 0.95 },
-                    ext: { width: 140, height: 140 },
-                    editAs: 'oneCell'
-                });
             } catch (err) {
-                console.error("Excel Image Error:", err);
+                console.error(err);
+                alert("Clipboard Error. Try again in Chrome/Edge.");
+                copyCartBtn.textContent = originalText;
             }
-        }
+        });
+    }
 
-        worksheet.getColumn('price').numFmt = '$#,##0.00';
-        worksheet.getColumn('total').numFmt = '$#,##0.00';
+    // 📊 Save as Excel (.xlsx) using ExcelJS
+    if (excelCart) {
+        excelCart.addEventListener('click', async () => {
+            const items = getSelectionArray();
+            if(items.length === 0) return alert("Selection is empty.");
 
-        // Add Grand Total Row to Excel
-        const subtotal = items.reduce((acc, i) => acc + (parseFloat(i.product.price) * i.quantity), 0);
-        const salesTax = subtotal * 0.033125;
-        const grandTotal = subtotal + salesTax;
+            const originalText = excelCart.textContent;
+            excelCart.textContent = "Fetching Images...";
+            
+            const workbook = new ExcelJS.Workbook();
+            const worksheet = workbook.addWorksheet('Catalog Selection');
 
-        // 1. Subtotal Row
-        const subtotalRow = worksheet.addRow({ total: subtotal });
-        worksheet.mergeCells(`A${subtotalRow.number}:F${subtotalRow.number}`);
-        worksheet.getCell(`A${subtotalRow.number}`).value = 'SUBTOTAL:';
-        worksheet.getCell(`G${subtotalRow.number}`).numFmt = '$#,##0.00';
+            worksheet.getRow(1).height = 30;
+            worksheet.getRow(1).font = { bold: true };
 
-        // 2. Tax Row
-        const taxRow = worksheet.addRow({ total: salesTax });
-        worksheet.mergeCells(`A${taxRow.number}:F${taxRow.number}`);
-        worksheet.getCell(`A${taxRow.number}`).value = 'SALES TAX (3.3125%):';
-        worksheet.getCell(`G${taxRow.number}`).numFmt = '$#,##0.00';
+            worksheet.columns = [
+                { header: 'Preview', key: 'img', width: 22 }, 
+                { header: 'Reference ID', key: 'id', width: 15 },
+                { header: 'Product Name', key: 'name', width: 40, style: { alignment: { wrapText: true, vertical: 'middle' } } },
+                { header: 'Category', key: 'category', width: 20, style: { alignment: { wrapText: true, vertical: 'middle' } } },
+                { header: 'Unit Price', key: 'price', width: 12 },
+                { header: 'Quantity', key: 'qty', width: 10 },
+                { header: 'Total Price', key: 'total', width: 15 }
+            ];
 
-        // 3. Grand Total Row
-        const totalRow = worksheet.addRow({ total: grandTotal });
-        worksheet.mergeCells(`A${totalRow.number}:F${totalRow.number}`);
-        worksheet.getCell(`A${totalRow.number}`).value = 'SELECTION GRAND TOTAL:';
-        worksheet.getCell(`G${totalRow.number}`).numFmt = '$#,##0.00';
+            const borderStyle = {
+                top: { style: 'thin', color: { argb: 'FFD1D5DB' } },
+                left: { style: 'thin', color: { argb: 'FFD1D5DB' } },
+                bottom: { style: 'thin', color: { argb: 'FFD1D5DB' } },
+                right: { style: 'thin', color: { argb: 'FFD1D5DB' } }
+            };
 
-        // Style all three summary rows dynamically
-        [subtotalRow, taxRow, totalRow].forEach((row, idx, arr) => {
-            row.height = idx === 2 ? 35 : 25; // Make the final row slightly taller
-            row.eachCell({ includeEmpty: true }, (cell) => {
-                cell.border = borderStyle;
-                cell.font = { bold: true, size: idx === 2 ? 12 : 10 };
-                if (cell.column <= 6) {
-                    cell.alignment = { horizontal: 'right', vertical: 'middle' };
-                } else {
-                    cell.alignment = { horizontal: 'center', vertical: 'middle' };
-                    cell.numFmt = '$#,##0.00';
-                    if (idx === 2) cell.font.color = { argb: 'FF1E3C72' }; // Blue text for final total
+            for(let idx = 0; idx < items.length; idx++) {
+                const i = items[idx];
+                const rowNo = idx + 2;
+                excelCart.textContent = `Processing ${idx+1}/${items.length}...`;
+
+                const row = worksheet.addRow({
+                    id: i.product.id,
+                    name: i.product.name,
+                    category: i.product.category,
+                    price: parseFloat(i.product.price),
+                    qty: i.quantity,
+                    total: parseFloat(i.product.price) * i.quantity
+                });
+                row.height = 110; 
+                
+                row.eachCell({ includeEmpty: true }, (cell) => {
+                    const align = { vertical: 'middle', horizontal: 'center', wrapText: true };
+                    if(cell.column === 3 || cell.column === 4) align.horizontal = 'left';
+                    cell.alignment = align;
+                    cell.border = borderStyle;
+                });
+
+                try {
+                    let imgSrc = i.product.image;
+                    if(!imgSrc.startsWith('http')) {
+                        imgSrc = window.location.origin + window.location.pathname.replace('index.html', '') + imgSrc;
+                    }
+                    
+                    const response = await fetch(imgSrc);
+                    const arrayBuffer = await response.arrayBuffer();
+                    const imageId = workbook.addImage({
+                        buffer: arrayBuffer,
+                        extension: 'png',
+                    });
+
+                    worksheet.addImage(imageId, {
+                        tl: { col: 0.1, row: rowNo - 0.95 },
+                        ext: { width: 140, height: 140 },
+                        editAs: 'oneCell'
+                    });
+                } catch (err) {
+                    console.error("Excel Image Error:", err);
                 }
+            }
+
+            worksheet.getColumn('price').numFmt = '$#,##0.00';
+            worksheet.getColumn('total').numFmt = '$#,##0.00';
+
+            const subtotal = items.reduce((acc, i) => acc + (parseFloat(i.product.price) * i.quantity), 0);
+            const salesTax = subtotal * TAX_RATE;
+            const grandTotal = subtotal + salesTax;
+
+            const subtotalRow = worksheet.addRow({ total: subtotal });
+            worksheet.mergeCells(`A${subtotalRow.number}:F${subtotalRow.number}`);
+            worksheet.getCell(`A${subtotalRow.number}`).value = 'SUBTOTAL:';
+            worksheet.getCell(`G${subtotalRow.number}`).numFmt = '$#,##0.00';
+
+            const taxRow = worksheet.addRow({ total: salesTax });
+            worksheet.mergeCells(`A${taxRow.number}:F${taxRow.number}`);
+            worksheet.getCell(`A${taxRow.number}`).value = 'SALES TAX (3.3125%):';
+            worksheet.getCell(`G${taxRow.number}`).numFmt = '$#,##0.00';
+
+            const totalRow = worksheet.addRow({ total: grandTotal });
+            worksheet.mergeCells(`A${totalRow.number}:F${totalRow.number}`);
+            worksheet.getCell(`A${totalRow.number}`).value = 'SELECTION GRAND TOTAL:';
+            worksheet.getCell(`G${totalRow.number}`).numFmt = '$#,##0.00';
+
+            [subtotalRow, taxRow, totalRow].forEach((row, idx) => {
+                row.height = idx === 2 ? 35 : 25;
+                row.eachCell({ includeEmpty: true }, (cell) => {
+                    cell.border = borderStyle;
+                    cell.font = { bold: true, size: idx === 2 ? 12 : 10 };
+                    if (cell.column <= 6) {
+                        cell.alignment = { horizontal: 'right', vertical: 'middle' };
+                    } else {
+                        cell.alignment = { horizontal: 'center', vertical: 'middle' };
+                        cell.numFmt = '$#,##0.00';
+                        if (idx === 2) cell.font.color = { argb: 'FF1E3C72' };
+                    }
+                    cell.fill = {
+                        type: 'pattern',
+                        pattern: 'solid',
+                        fgColor: { argb: idx === 2 ? 'FFE2E8F0' : 'FFF1F5F9' }
+                    };
+                });
+            });
+
+            const headerRow = worksheet.getRow(1);
+            headerRow.height = 35;
+            headerRow.eachCell((cell) => {
+                cell.font = { bold: true, color: { argb: 'FFFFFFFF' } };
                 cell.fill = {
                     type: 'pattern',
                     pattern: 'solid',
-                    fgColor: { argb: idx === 2 ? 'FFE2E8F0' : 'FFF1F5F9' }
+                    fgColor: { argb: 'FF1E3C72' }
                 };
+                cell.border = borderStyle;
+                cell.alignment = { vertical: 'middle', horizontal: 'center', wrapText: true };
             });
-        });
 
-        // Header Styling
-        const headerRow = worksheet.getRow(1);
-        headerRow.height = 35;
-        headerRow.eachCell((cell) => {
-            cell.font = { bold: true, color: { argb: 'FFFFFFFF' } };
-            cell.fill = {
-                type: 'pattern',
-                pattern: 'solid',
-                fgColor: { argb: 'FF1E3C72' }
-            };
-            cell.border = borderStyle;
-            cell.alignment = { vertical: 'middle', horizontal: 'center', wrapText: true };
+            const buffer = await workbook.xlsx.writeBuffer();
+            const blob = new Blob([buffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+            saveAs(blob, `Catalog_Selection_${new Date().getTime()}.xlsx`);
+            
+            excelCart.textContent = originalText;
         });
-
-        const buffer = await workbook.xlsx.writeBuffer();
-        const blob = new Blob([buffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
-        saveAs(blob, `Catalog_Selection_${new Date().getTime()}.xlsx`);
-        
-        excelCart.textContent = originalText;
-    });
+    }
 
     // 📄 Native Vector PDF Generation (jsPDF + autoTable)
-    pdfCart.addEventListener('click', async () => {
-        const items = getSelectionArray();
-        if(items.length === 0) return alert("Selection is empty.");
-        
-        pdfCart.textContent = "Loading Images...";
+    if (pdfCart) {
+        pdfCart.addEventListener('click', async () => {
+            const items = getSelectionArray();
+            if(items.length === 0) return alert("Selection is empty.");
+            
+            pdfCart.textContent = "Loading Images...";
 
-        try {
-            // Initialize PDF
-            const { jsPDF } = window.jspdf;
-            const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
-            
-            // Header Rendering
-            doc.setFontSize(18);
-            doc.setTextColor(30, 60, 114);
-            doc.text("Casa Central", 14, 20);
-            
-            doc.setFontSize(10);
-            doc.setTextColor(100, 100, 100);
-            doc.text(`Date: ${new Date().toLocaleDateString()}`, 160, 20);
-            
-            doc.setFontSize(14);
-            doc.setTextColor(50, 50, 50);
-            doc.text("Selected Product Request", 14, 30);
-            
-            // Process Data & Images
-            const tableData = [];
-            const imageMap = {}; 
-            
-            const imagePromises = items.map(async (i, index) => {
-                let total = (parseFloat(i.product.price) * i.quantity).toFixed(2);
+            try {
+                const { jsPDF } = window.jspdf;
+                const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
                 
-                tableData[index] = [
-                    "", // Empty placeholder for Image
-                    i.product.id,
-                    i.product.name,
-                    i.product.category,
-                    i.quantity.toString(),
-                    "$" + parseFloat(i.product.price).toFixed(2),
-                    "$" + total
-                ];
+                doc.setFontSize(18);
+                doc.setTextColor(30, 60, 114);
+                doc.text("Casa Central", 14, 20);
                 
-                let imgSrc = i.product.image;
-                if(!imgSrc.startsWith('http')) {
-                    imgSrc = window.location.origin + window.location.pathname.replace('index.html', '') + imgSrc;
-                }
+                doc.setFontSize(10);
+                doc.setTextColor(100, 100, 100);
+                doc.text(`Date: ${new Date().toLocaleDateString()}`, 160, 20);
                 
-                return new Promise((resolve) => {
-                    const img = new Image();
-                    img.crossOrigin = "anonymous";
-                    img.onload = () => {
-                        const canvas = document.createElement('canvas');
-                        canvas.width = img.width;
-                        canvas.height = img.height;
-                        const ctx = canvas.getContext('2d');
-                        ctx.drawImage(img, 0, 0);
-                        imageMap[index] = canvas.toDataURL('image/jpeg', 0.95);
-                        resolve();
-                    };
-                    img.onerror = resolve; // Ignore errors, leave blank
-                    img.src = imgSrc;
+                doc.setFontSize(14);
+                doc.setTextColor(50, 50, 50);
+                doc.text("Selected Product Request", 14, 30);
+                
+                const tableData = [];
+                const imageMap = {}; 
+                
+                const imagePromises = items.map(async (i, index) => {
+                    let total = (parseFloat(i.product.price) * i.quantity).toFixed(2);
+                    
+                    tableData[index] = [
+                        "", 
+                        i.product.id,
+                        i.product.name,
+                        i.product.category,
+                        i.quantity.toString(),
+                        "$" + parseFloat(i.product.price).toFixed(2),
+                        "$" + total
+                    ];
+                    
+                    let imgSrc = i.product.image;
+                    if(!imgSrc.startsWith('http')) {
+                        imgSrc = window.location.origin + window.location.pathname.replace('index.html', '') + imgSrc;
+                    }
+                    
+                    return new Promise((resolve) => {
+                        const img = new Image();
+                        img.crossOrigin = "anonymous";
+                        img.onload = () => {
+                            const canvas = document.createElement('canvas');
+                            canvas.width = img.width;
+                            canvas.height = img.height;
+                            const ctx = canvas.getContext('2d');
+                            ctx.drawImage(img, 0, 0);
+                            imageMap[index] = canvas.toDataURL('image/jpeg', 0.95);
+                            resolve();
+                        };
+                        img.onerror = resolve; 
+                        img.src = imgSrc;
+                    });
                 });
-            });
-            
-            await Promise.all(imagePromises);
-            
-            pdfCart.textContent = "Rendering PDF...";
+                
+                await Promise.all(imagePromises);
+                
+                pdfCart.textContent = "Rendering PDF...";
 
-            // Draw Dynamic Vector Table
-            doc.autoTable({
-                startY: 35,
-                head: [['Preview', 'Ref ID', 'Product Name', 'Category', 'Qty', 'Unit Price', 'Total']],
-                body: tableData,
-                theme: 'grid',
-                headStyles: { fillColor: [30, 60, 114], textColor: 255 },
-                styles: { cellPadding: 3, valign: 'middle', halign: 'center', fontSize: 9 },
-                columnStyles: {
-                    0: { cellWidth: 25, minCellHeight: 25 },
-                    1: { cellWidth: 20 },
-                    2: { cellWidth: 'auto', halign: 'left' },
-                    3: { cellWidth: 28 },
-                    4: { cellWidth: 15, fontStyle: 'bold' },
-                    5: { cellWidth: 20 },
-                    6: { cellWidth: 25, fontStyle: 'bold' }
-                },
-                didDrawCell: (data) => {
-                    // Inject Images over placeholders
-                    if (data.section === 'body' && data.column.index === 0) {
-                        const base64Img = imageMap[data.row.index];
-                        if (base64Img) {
-                            const padding = 2;
-                            const x = data.cell.x + padding;
-                            const y = data.cell.y + padding;
-                            const w = data.cell.width - (padding * 2);
-                            const h = data.cell.height - (padding * 2);
-                            const dim = Math.min(w, h);
-                            const offsetX = x + (w - dim) / 2; // Center horizontally
-                            const offsetY = y + (h - dim) / 2; // Center vertically
-                            doc.addImage(base64Img, 'JPEG', offsetX, offsetY, dim, dim);
+                doc.autoTable({
+                    startY: 35,
+                    head: [['Preview', 'Ref ID', 'Product Name', 'Category', 'Qty', 'Unit Price', 'Total']],
+                    body: tableData,
+                    theme: 'grid',
+                    headStyles: { fillColor: [30, 60, 114], textColor: 255 },
+                    styles: { cellPadding: 3, valign: 'middle', halign: 'center', fontSize: 9 },
+                    columnStyles: {
+                        0: { cellWidth: 25, minCellHeight: 25 },
+                        1: { cellWidth: 20 },
+                        2: { cellWidth: 'auto', halign: 'left' },
+                        3: { cellWidth: 28 },
+                        4: { cellWidth: 15, fontStyle: 'bold' },
+                        5: { cellWidth: 20 },
+                        6: { cellWidth: 25, fontStyle: 'bold' }
+                    },
+                    didDrawCell: (data) => {
+                        if (data.section === 'body' && data.column.index === 0) {
+                            const base64Img = imageMap[data.row.index];
+                            if (base64Img) {
+                                const padding = 2;
+                                const x = data.cell.x + padding;
+                                const y = data.cell.y + padding;
+                                const w = data.cell.width - (padding * 2);
+                                const h = data.cell.height - (padding * 2);
+                                const dim = Math.min(w, h);
+                                const offsetX = x + (w - dim) / 2; 
+                                const offsetY = y + (h - dim) / 2; 
+                                doc.addImage(base64Img, 'JPEG', offsetX, offsetY, dim, dim);
+                            }
                         }
                     }
-                }
-            });
-            
-            // Grand Total Footer Section
-            const subtotal = items.reduce((acc, i) => acc + (parseFloat(i.product.price) * i.quantity), 0);
-            const salesTax = subtotal * 0.033125;
-            const grandTotal = subtotal + salesTax;
+                });
+                
+                const subtotal = items.reduce((acc, i) => acc + (parseFloat(i.product.price) * i.quantity), 0);
+                const salesTax = subtotal * TAX_RATE;
+                const grandTotal = subtotal + salesTax;
 
-            doc.autoTable({
-                startY: doc.lastAutoTable.finalY + 0,
-                body: [
-                    ["SUBTOTAL:", "$" + subtotal.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })],
-                    ["SALES TAX (3.3125%):", "$" + salesTax.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })],
-                    ["SELECTION GRAND TOTAL:", "$" + grandTotal.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })]
-                ],
-                theme: 'grid',
-                styles: { fontSize: 9, fontStyle: 'bold', halign: 'right', cellPadding: 3 },
-                margin: { left: 14, right: 14 },
-                columnStyles: {
-                    0: { fillColor: [241, 245, 249] },
-                    1: { cellWidth: 25, halign: 'center', textColor: [30, 60, 114], fillColor: [226, 232, 240] }
-                },
-                didParseCell: (data) => {
-                    // Optional: Highlight the final row even more in the PDF
-                    if (data.section === 'body' && data.row.index === 2) {
-                        if (data.column.index === 0) data.cell.styles.fillColor = [226, 232, 240];
+                doc.autoTable({
+                    startY: doc.lastAutoTable.finalY + 0,
+                    body: [
+                        ["SUBTOTAL:", "$" + subtotal.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })],
+                        ["SALES TAX (3.3125%):", "$" + salesTax.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })],
+                        ["SELECTION GRAND TOTAL:", "$" + grandTotal.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })]
+                    ],
+                    theme: 'grid',
+                    styles: { fontSize: 9, fontStyle: 'bold', halign: 'right', cellPadding: 3 },
+                    margin: { left: 14, right: 14 },
+                    columnStyles: {
+                        0: { fillColor: [241, 245, 249] },
+                        1: { cellWidth: 25, halign: 'center', textColor: [30, 60, 114], fillColor: [226, 232, 240] }
+                    },
+                    didParseCell: (data) => {
+                        if (data.section === 'body' && data.row.index === 2) {
+                            if (data.column.index === 0) data.cell.styles.fillColor = [226, 232, 240];
+                        }
                     }
-                }
-            });
-            
-            doc.save(`Catalog_Quote_${new Date().getTime()}.pdf`);
-            pdfCart.textContent = "📄 Save as PDF";
+                });
+                
+                doc.save(`Catalog_Quote_${new Date().getTime()}.pdf`);
+                pdfCart.textContent = "📄 Save as PDF";
 
-        } catch (error) {
-            console.error("PDF Generator Error:", error);
-            alert("An error occurred while generating the PDF.");
-            pdfCart.textContent = "📄 Save as PDF";
-        }
-    });
-
+            } catch (error) {
+                console.error("PDF Generator Error:", error);
+                alert("An error occurred while generating the PDF.");
+                pdfCart.textContent = "📄 Save as PDF";
+            }
+        });
+    }
 });
