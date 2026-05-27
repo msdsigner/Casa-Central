@@ -413,14 +413,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if(cartGrandTotalEl) {
-            const salesTax = subtotal * 0.03125;
+            const salesTax = subtotal * 0.033125;
             const grandTotal = subtotal + salesTax;
             cartGrandTotalEl.innerHTML = `
                 <div style="font-size:0.85rem; color:#666; display:flex; justify-content:space-between; margin-bottom:2px;">
                     <span>Subtotal:</span> <span>$${subtotal.toFixed(2)}</span>
                 </div>
                 <div style="font-size:0.85rem; color:#666; display:flex; justify-content:space-between; margin-bottom:6px; border-bottom:1px dashed #ddd; padding-bottom:4px;">
-                    <span>Sales Tax (3.125%):</span> <span>$${salesTax.toFixed(2)}</span>
+                    <span>Sales Tax (3.3125%):</span> <span>$${salesTax.toFixed(2)}</span>
                 </div>
                 <div style="font-weight:700; font-size:1.1rem; color:#1e3c72; display:flex; justify-content:space-between;">
                     <span>Grand Total:</span> <span>$${grandTotal.toFixed(2)}</span>
@@ -490,7 +490,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </tr>
             `;
         });
-        const salesTax = grandSum * 0.03125;
+        const salesTax = grandSum * 0.033125;
         const finalTotal = grandSum + salesTax;
 
         html += `
@@ -499,7 +499,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <td style="padding:8px 10px; border:1px solid #ddd; text-align:center; font-weight:bold;">$${grandSum.toFixed(2)}</td>
                 </tr>
                 <tr style="background:#f8fafc; font-size:0.9rem; color:#475569;">
-                    <td colspan="4" style="padding:8px 10px; border:1px solid #ddd; text-align:right; font-weight:bold;">Sales Tax (3.125%):</td>
+                    <td colspan="4" style="padding:8px 10px; border:1px solid #ddd; text-align:right; font-weight:bold;">Sales Tax (3.3125%):</td>
                     <td style="padding:8px 10px; border:1px solid #ddd; text-align:center; font-weight:bold;">$${salesTax.toFixed(2)}</td>
                 </tr>
                 <tr style="background:#f1f5f9; font-weight:bold;">
@@ -619,7 +619,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Add Grand Total Row to Excel
         const subtotal = items.reduce((acc, i) => acc + (parseFloat(i.product.price) * i.quantity), 0);
-        const salesTax = subtotal * 0.03125;
+        const salesTax = subtotal * 0.033125;
         const grandTotal = subtotal + salesTax;
 
         // 1. Subtotal Row
@@ -631,7 +631,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // 2. Tax Row
         const taxRow = worksheet.addRow({ total: salesTax });
         worksheet.mergeCells(`A${taxRow.number}:F${taxRow.number}`);
-        worksheet.getCell(`A${taxRow.number}`).value = 'SALES TAX (3.125%):';
+        worksheet.getCell(`A${taxRow.number}`).value = 'SALES TAX (3.3125%):';
         worksheet.getCell(`G${taxRow.number}`).numFmt = '$#,##0.00';
 
         // 3. Grand Total Row
@@ -788,14 +788,14 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Grand Total Footer Section
             const subtotal = items.reduce((acc, i) => acc + (parseFloat(i.product.price) * i.quantity), 0);
-            const salesTax = subtotal * 0.03125;
+            const salesTax = subtotal * 0.033125;
             const grandTotal = subtotal + salesTax;
 
             doc.autoTable({
                 startY: doc.lastAutoTable.finalY + 0,
                 body: [
                     ["SUBTOTAL:", "$" + subtotal.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })],
-                    ["SALES TAX (3.125%):", "$" + salesTax.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })],
+                    ["SALES TAX (3.3125%):", "$" + salesTax.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })],
                     ["SELECTION GRAND TOTAL:", "$" + grandTotal.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })]
                 ],
                 theme: 'grid',
