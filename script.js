@@ -245,15 +245,21 @@ document.addEventListener('DOMContentLoaded', () => {
             if (emptyState) emptyState.classList.add('hidden');
             
             filtered.forEach(item => {
-                const card = document.createElement('article');
-                card.className = 'product-card';
-                
-                const isSelected = !!selectionCart[item.id];
-                
-                let badgeHTML = '';
-                if (item.available <= 0) badgeHTML = `<div class="badge out-stock">OUT OF STOCK</div>`;
-                else if (item.available <= 5) badgeHTML = `<div class="badge low-stock">Only ${item.available} Left</div>`;
-                else badgeHTML = `<div class="badge">In Stock (${item.available})</div>`;
+    const card = document.createElement('article');
+    card.className = 'product-card';
+
+    const isSelected = !!selectionCart[item.id];
+
+    // Show exact inventory when below 10, otherwise show 10+
+    const displayQty = item.available >= 999 ? '10+' : item.available;
+
+    let badgeHTML = '';
+                if (item.available <= 0)
+    badgeHTML = `<div class="badge out-stock">OUT OF STOCK</div>`;
+else if (item.available <= 5)
+    badgeHTML = `<div class="badge low-stock">Only ${displayQty} Left</div>`;
+else
+    badgeHTML = `<div class="badge">In Stock (${displayQty})</div>`;
 
                 card.innerHTML = `
                     <div class="card-img-wrap">
@@ -269,8 +275,8 @@ document.addEventListener('DOMContentLoaded', () => {
                             <span class="card-ref">${item.id}</span>
                         </div>
                         <div class="card-stock-status" style="margin-top: 8px; font-size: 0.8rem; font-weight: 600; color: ${item.available > 0 ? '#10b981' : '#ef4444'}">
-                            ${item.available > 0 ? `Available: ${item.available}` : 'Out of Stock'}
-                        </div>
+    ${item.available > 0 ? `Available: ${displayQty}` : 'Out of Stock'}
+</div>
                         <button class="add-btn ${isSelected ? 'selected' : ''}" data-id="${item.id}" style="margin-top:10px; width:100%; ${isSelected ? 'background:#10b981; color:white; border-color:#10b981;' : ''}">
                             ${isSelected ? '✓ Selected' : 'Add to Selection'}
                         </button>
