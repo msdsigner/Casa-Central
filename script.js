@@ -398,7 +398,7 @@ else
                 <div class="cart-item-details" style="flex:1; margin-left:15px;">
                     <div class="cart-item-name" style="font-weight:600; font-size:0.85rem; color:#333; line-height:1.2;">${entry.product.name}</div>
                     <div class="cart-item-price" style="font-size:0.8rem; color:#666; margin-top:4px; display:flex; align-items:center; gap:5px;">
-                        $${entry.product.price} × 
+                        $<input type="number" class="price-edit" value="${parseFloat(entry.product.price).toFixed(2)}" step="0.01" style="width:65px; padding:2px; border:1px solid #ccc; border-radius:4px; font-size:0.8rem; text-align:center;"> × 
                         <input type="number" class="qty-edit" value="${entry.quantity}" min="1" max="${entry.product.available}" style="width:45px; padding:2px; border:1px solid #ccc; border-radius:4px; font-size:0.8rem; text-align:center;">
                         = $${itemTotal.toFixed(2)}
                     </div>
@@ -415,6 +415,13 @@ else
                     newQty = entry.product.available;
                 }
                 selectionCart[id].quantity = newQty;
+                updateCartUI();
+            });
+
+            div.querySelector('.price-edit').addEventListener('change', (e) => {
+                let newPrice = parseFloat(e.target.value);
+                if (isNaN(newPrice) || newPrice < 0) newPrice = 0;
+                selectionCart[id].product.price = newPrice.toFixed(2);
                 updateCartUI();
             });
 
