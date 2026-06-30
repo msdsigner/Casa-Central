@@ -1,5 +1,5 @@
 {
-    "last_updated": "June 26, 2026",
+    "last_updated": "July 01, 2026",
     "downloads": {
         "pdf": "https://drive.google.com/uc?export=download&id=1l6EWUSfuvu6voVXRur_zSaHYaoqyDv3J",
         "excel": "https://drive.google.com/uc?export=download&id=1LAiLV_yt5YHC_ieC5WXKVmjQRPN74nH8"
@@ -106,26 +106,6 @@
             "image": "images/AF-202W.png"
         },
         {
-            "id": "AF-2400SI",
-            "name": "Brentwood 24-Qt Convection Air Fryer Toaster Oven, Silver",
-            "category": "Air Fryer & Toaster",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Air Fryer & Toaster",
-            "price": "100.00",
-            "available": 3,
-            "image": "images/AF-2400SI.png"
-        },
-        {
-            "id": "AF-400DBK",
-            "name": "Brentwood 4-Quart Electric Digital Air Fryer with Timer & Temp. Control, Black",
-            "category": "Air Fryer & Toaster",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Air Fryer & Toaster",
-            "price": "70.00",
-            "available": 999,
-            "image": "images/AF-400DBK.png"
-        },
-        {
             "id": "AFWB7QWG13",
             "name": "West Bend 7 Qt Electric Air Fryer Oven",
             "category": "Air Fryer & Toaster",
@@ -146,16 +126,6 @@
             "image": "images/CHTO40B.png"
         },
         {
-            "id": "IM-436S",
-            "name": "Better Chef SS 5.0 L Digital Display Air Fryer",
-            "category": "Air Fryer & Toaster",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Air Fryer & Toaster",
-            "price": "60.00",
-            "available": 1,
-            "image": "images/IM-436S.png"
-        },
-        {
             "id": "KE-OV-B101BK",
             "name": "Kitchen Elite 4 Slice Toaster Oven",
             "category": "Air Fryer & Toaster",
@@ -164,36 +134,6 @@
             "price": "27.00",
             "available": 999,
             "image": "images/KE-OV-B101BK.png"
-        },
-        {
-            "id": "MS33018213889/ROA",
-            "name": "Mainstays XL Toaster Oven, 32L/ 6-Slice 1500W",
-            "category": "Air Fryer & Toaster",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Air Fryer & Toaster",
-            "price": "50.00",
-            "available": 3,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "R22997/RB",
-            "name": "Hamilton Beach 2 Slice Toaster SS Black, RB",
-            "category": "Air Fryer & Toaster",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Air Fryer & Toaster",
-            "price": "15.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "SM-AIR-1899/RBO",
-            "name": "Emerald 25L Air Fryer - Digital - RB",
-            "category": "Air Fryer & Toaster",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Air Fryer & Toaster",
-            "price": "105.00",
-            "available": 2,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "TS-247BK",
@@ -466,16 +406,6 @@
             "image": "images/CK-CB26GR.png"
         },
         {
-            "id": "FRWW4543AS/NB",
-            "name": "Frigidaire Wine Cooler, 45 Wine Bottle Capacity, RB",
-            "category": "Major Appliances",
-            "parent_category": "Major Appliances",
-            "sub_category": "Beverage Centers",
-            "price": "70.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
             "id": "58148G",
             "name": "Hamilton Beach 700W Glass Jar Blender",
             "category": "Blenders & Mixers",
@@ -496,6 +426,16 @@
             "image": "images/70450.png"
         },
         {
+            "id": "BLSTBKP-BRO-000",
+            "name": "Oster 700-watt Plastic Jar Blender, Black",
+            "category": "Blenders & Mixers",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Blenders & Mixers",
+            "price": "40.00",
+            "available": 3,
+            "image": "images/BLSTBKP-BRO-000.png"
+        },
+        {
             "id": "BLSTMEGG0",
             "name": "Oster Classic 8-Speed Glass Jar Blender",
             "category": "Blenders & Mixers",
@@ -512,7 +452,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Blenders & Mixers",
             "price": "95.00",
-            "available": 999,
+            "available": 2,
             "image": "images/BLSTTS-GTO-000.png"
         },
         {
@@ -642,7 +582,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Blenders & Mixers",
             "price": "30.00",
-            "available": 4,
+            "available": 2,
             "image": "images/FP-549BK.png"
         },
         {
@@ -652,7 +592,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Blenders & Mixers",
             "price": "30.00",
-            "available": 9,
+            "available": 7,
             "image": "images/FP-549W.png"
         },
         {
@@ -772,38 +712,8 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Blenders & Mixers",
             "price": "25.00",
-            "available": 9,
+            "available": 3,
             "image": "images/J-26BK.png"
-        },
-        {
-            "id": "J-28BK",
-            "name": "BRENTWOOD Powerful 200W Electric Citrus Juicer Orange, Lemon & Lime Squeezer, SS Lever, Black",
-            "category": "Blenders & Mixers",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Blenders & Mixers",
-            "price": "35.00",
-            "available": 6,
-            "image": "images/J-28BK.png"
-        },
-        {
-            "id": "JB-191BK",
-            "name": "BRENTWOOD Personal Blender - Black",
-            "category": "Blenders & Mixers",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Blenders & Mixers",
-            "price": "22.00",
-            "available": 6,
-            "image": "images/JB-191BK.png"
-        },
-        {
-            "id": "JB-191W",
-            "name": "BRENTWOOD Personal Blender - white",
-            "category": "Blenders & Mixers",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Blenders & Mixers",
-            "price": "22.00",
-            "available": 2,
-            "image": "images/JB-191W.png"
         },
         {
             "id": "JB-199",
@@ -966,36 +876,6 @@
             "image": "images/MG-400W.png"
         },
         {
-            "id": "R50190-RBO",
-            "name": "Hamilton Beach 10spd Plastic Blender - RB",
-            "category": "Blenders & Mixers",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Blenders & Mixers",
-            "price": "24.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "R53519/RB",
-            "name": "Hamilton Beach 700W Glass Blender - RB",
-            "category": "Blenders & Mixers",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Blenders & Mixers",
-            "price": "40.00",
-            "available": 999,
-            "image": "images/R53519-RB.png"
-        },
-        {
-            "id": "R56202-RBO",
-            "name": "Hamilton Beach Electronic Touchpad Glass Jar Blender - RB",
-            "category": "Blenders & Mixers",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Blenders & Mixers",
-            "price": "1.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
             "id": "RJB-100BK",
             "name": "Brentwood Portable Battery/USB Blender, Black",
             "category": "Blenders & Mixers",
@@ -1126,26 +1006,6 @@
             "image": "images/J-250BT-SIL.png"
         },
         {
-            "id": "J-290BT-BLK",
-            "name": "QFX Portable CD Player and Cassette Recorder + BT Boombox, Black",
-            "category": "Boombox",
-            "parent_category": "Audio",
-            "sub_category": "Boombox",
-            "price": "60.00",
-            "available": 1,
-            "image": "images/J-290BT-BLK.png"
-        },
-        {
-            "id": "J-290BT-SIL",
-            "name": "QFX Portable CD Player and Cassette Recorder + BT Boombox, Silver",
-            "category": "Boombox",
-            "parent_category": "Audio",
-            "sub_category": "Boombox",
-            "price": "60.00",
-            "available": 1,
-            "image": "images/J-290BT-SIL.png"
-        },
-        {
             "id": "LX-30",
             "name": "Dolphin Portable Boombox BT Speaker",
             "category": "Boombox",
@@ -1222,7 +1082,7 @@
             "parent_category": "Electronics",
             "sub_category": "CD/DVD Player",
             "price": "27.00",
-            "available": 999,
+            "available": 6,
             "image": "images/CV-103.png"
         },
         {
@@ -1476,26 +1336,6 @@
             "image": "images/BD100.png"
         },
         {
-            "id": "CCUK12W/ROA",
-            "name": "Commercial Cool 1.2 cf ft Upright Freezer White RB",
-            "category": "Major Appliances",
-            "parent_category": "Major Appliances",
-            "sub_category": "Chest Freezer",
-            "price": "100.00",
-            "available": 1,
-            "image": "images/CCUK12W-ROA.png"
-        },
-        {
-            "id": "CCUN28WV/ROA",
-            "name": "Commercial Cool 2.8 cf ft Upright Freezer, RB",
-            "category": "Major Appliances",
-            "parent_category": "Major Appliances",
-            "sub_category": "Chest Freezer",
-            "price": "100.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
             "id": "UL-BD142-D",
             "name": "GOLDEN 5.0 Cu.Ft. Chest Freezer W/Chest White",
             "category": "Major Appliances",
@@ -1504,6 +1344,26 @@
             "price": "180.00",
             "available": 999,
             "image": "images/UL-BD142-D.png"
+        },
+        {
+            "id": "176",
+            "name": "Kitchen+Sense 3-Cup Aluminum Espresso Coffee Maker",
+            "category": "Coffee & Tea",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Coffee & Tea",
+            "price": "8.50",
+            "available": 999,
+            "image": "images/176.png"
+        },
+        {
+            "id": "177",
+            "name": "Kitchen+Sense 6-Cup Aluminum Espresso Coffee Maker",
+            "category": "Coffee & Tea",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Coffee & Tea",
+            "price": "9.00",
+            "available": 999,
+            "image": "images/177.png"
         },
         {
             "id": "178",
@@ -1522,7 +1382,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Coffee & Tea",
             "price": "15.00",
-            "available": 2,
+            "available": 999,
             "image": "images/179.png"
         },
         {
@@ -1582,7 +1442,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Coffee & Tea",
             "price": "17.00",
-            "available": 999,
+            "available": 4,
             "image": "images/CG-158B.png"
         },
         {
@@ -1614,16 +1474,6 @@
             "price": "14.00",
             "available": 999,
             "image": "images/CTS-1000.png"
-        },
-        {
-            "id": "GF-P1549-1042-RBO",
-            "name": "GForce Ele. Kettle Travel Set - RB",
-            "category": "Coffee & Tea",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Coffee & Tea",
-            "price": "6.67",
-            "available": 6,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "HE-760",
@@ -2006,16 +1856,6 @@
             "image": "images/VPMS05BWT.png"
         },
         {
-            "id": "VPMS05BWT/ROA",
-            "name": "Vissani 5000 BTU115V Portable Air Conditioner/Dehumidifier, RB",
-            "category": "Dehumidifier",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Dehumidifier",
-            "price": "289.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
             "id": "37210",
             "name": "GE 6 Outlet Surge Protector, 840 Joules 4' Cord, White",
             "category": "Electronics",
@@ -2106,26 +1946,6 @@
             "image": "images/BHD406W.png"
         },
         {
-            "id": "BHF136193153/RBO",
-            "name": "Pelonis 23\" Tower Heater RB",
-            "category": "Fans",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Fans",
-            "price": "35.00",
-            "available": 3,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "BHOC05/ROA",
-            "name": "Black+Decker Ceiling Patio Space Heater 1500W",
-            "category": "Fans",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Fans",
-            "price": "100.00",
-            "available": 2,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
             "id": "F-16SPW",
             "name": "BRENTWOOD 16\u201d Oscillating Stand Fan, 3 Quiet Speeds, 5 Blades, White",
             "category": "Fans",
@@ -2152,7 +1972,7 @@
             "parent_category": "Air & Climate Control",
             "sub_category": "Fans",
             "price": "30.00",
-            "available": 999,
+            "available": 2,
             "image": "images/F-20SW.png"
         },
         {
@@ -2266,66 +2086,6 @@
             "image": "images/FS45-9L.png"
         },
         {
-            "id": "HCX9115E/RBO",
-            "name": "Delonghi Slim Convector Heater",
-            "category": "Fans",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Fans",
-            "price": "69.00",
-            "available": 1,
-            "image": "images/HCX9115E-RBO.png"
-        },
-        {
-            "id": "MSH20Q3ABB/RBO",
-            "name": "Midea 1500W Electric Quartz Radiant Heater RB - Black",
-            "category": "Fans",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Fans",
-            "price": "30.00",
-            "available": 9,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "MSH20Q3AWW/RBO",
-            "name": "Midea Radiant Quartz Space Heater RB - White",
-            "category": "Fans",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Fans",
-            "price": "30.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "MSWMT24JR/RBO",
-            "name": "Mainstays 36\" Tall 3-Speed Oscillating Tower Fan, Black, RB",
-            "category": "Fans",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Fans",
-            "price": "30.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "MSWMT24MB/RBO",
-            "name": "Mainstays Modern 3-Speed Oscillating Tower Fan, 28\" Tall, Black, RB",
-            "category": "Fans",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Fans",
-            "price": "24.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "MSWMT24MW/RBO",
-            "name": "Mainstays Modern 3-Speed Oscillating Tower Fan, 28\" Tall, White, RB",
-            "category": "Fans",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Fans",
-            "price": "24.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
             "id": "PFS40A4BBB",
             "name": "Pelonis 16\" Oscillating W/Remote Pedestal Fan -Blk",
             "category": "Fans",
@@ -2334,36 +2094,6 @@
             "price": "49.00",
             "available": 1,
             "image": "images/PFS40A4BBB.png"
-        },
-        {
-            "id": "PSH08F1ABB/RBO",
-            "name": "Pelonis 1500W 3-Spd Fan Forced Heater, RB, Black",
-            "category": "Fans",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Fans",
-            "price": "20.00",
-            "available": 9,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "PSH08F1AWW/RBO",
-            "name": "Pelonis 1500W 3-Spd Fan Forced Heater, RB, White",
-            "category": "Fans",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Fans",
-            "price": "20.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "PSH20Q3ABB/RBO",
-            "name": "Pelonis Quartz Heater 1500W RB, Black",
-            "category": "Fans",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Fans",
-            "price": "30.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "V/2270",
@@ -2382,7 +2112,7 @@
             "parent_category": "Air & Climate Control",
             "sub_category": "Fans",
             "price": "50.00",
-            "available": 999,
+            "available": 1,
             "image": "images/V-2271.png"
         },
         {
@@ -2392,7 +2122,7 @@
             "parent_category": "Air & Climate Control",
             "sub_category": "Fans",
             "price": "20.00",
-            "available": 8,
+            "available": 3,
             "image": "images/V-2273.png"
         },
         {
@@ -2484,26 +2214,6 @@
             "price": "10.00",
             "available": 3,
             "image": "images/WPF4-1008-WHT.png"
-        },
-        {
-            "id": "WSH0702ABB/RBO",
-            "name": "Mainstay 1500W Oil Filled Heater RB - Black",
-            "category": "Fans",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Fans",
-            "price": "35.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "WSH0702AWW/RBO",
-            "name": "Mainstay 1500W Oil Filled Heater RB - White",
-            "category": "Fans",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Fans",
-            "price": "35.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "WSH3-1002-WHT",
@@ -3552,7 +3262,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "35.00",
-            "available": 3,
+            "available": 999,
             "image": "images/1945.png"
         },
         {
@@ -3562,8 +3272,18 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "40.00",
-            "available": 3,
+            "available": 999,
             "image": "images/1947.png"
+        },
+        {
+            "id": "1949",
+            "name": "Kitchen+Sense 9L Alu Pressure Cooker w/o Steamer",
+            "category": "Heating & Cooking",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Heating & Cooking",
+            "price": "47.00",
+            "available": 999,
+            "image": "images/1949.png"
         },
         {
             "id": "AR-136",
@@ -3672,7 +3392,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "45.00",
-            "available": 999,
+            "available": 7,
             "image": "images/DMO01001.png"
         },
         {
@@ -3736,26 +3456,6 @@
             "image": "images/EM131A5C-BS.png"
         },
         {
-            "id": "GCST11N1WSS/ROA",
-            "name": "GE 1.1 Cu Ft CMO SS CL",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "70.00",
-            "available": 2,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "HB8436127995-3/RB",
-            "name": "Hamilton Beach 1.6 Cu Ft Microwave Oven, RB",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "99.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
             "id": "IM-306DB",
             "name": "Better Chef Double Burner - Wht",
             "category": "Heating & Cooking",
@@ -3774,126 +3474,6 @@
             "price": "25.00",
             "available": 999,
             "image": "images/IM-409S.png"
-        },
-        {
-            "id": "MS8436193153-3/ROA",
-            "name": "Mainstays 1.1 Cu Ft Microwave Oven, Black, RB",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "79.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "NN-SB65NS/ROA",
-            "name": "Panasonic Microwave Oven 1.3Cu.Ft. SS RB",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "85.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "NN-SC67NS/RB",
-            "name": "Panasonic Microwave Oven 1.3Cu. Ft. Blk/Silver - RB",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "90.00",
-            "available": 6,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "NN-SG616B/RBO",
-            "name": "Panasonic 1.3 cu.ft. Countertop Microwave Oven, RB",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "100.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "NN-SN68QB/RBO",
-            "name": "Panasonic 1.2 cu.ft. Countertop Microwave Oven, RB",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "110.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "NN-SN95HS/ROA",
-            "name": "Panasonic 2.2 cu. ft. 1250-Watt Microwave with Cyclonic Wave Inverter - RB",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "125.00",
-            "available": 2,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "NN-SU64LW/RB",
-            "name": "Panasonic Countertop Microwave Genius Sensor Cooking, 1.3-cu.ft., Matte White, RB",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "100.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "NN-SU65LW/RB",
-            "name": "Panasonic Microwave Oven 1.3Cu. Ft. White, RB",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "100.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "NN-SU65QB/RB",
-            "name": "Panasonic Microwave 1.3 cuft 1200W Inverter, RB, Black",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "100.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "NN-SU65QW/RB",
-            "name": "Panasonic Microwave 1.3 cuft 1200W Inverter, RB, White",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "100.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "NNSU64LWC/RBO",
-            "name": "Panasonic Countertop Microwave Oven, 1.3 Cu Ft 1100W, RB, White",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "100.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "NNSU65NBC/RBO",
-            "name": "Panasonic Countertop Microwave with Genius Sensor 1.3 Cu.Ft., RB, Black",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "100.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "RC-5110DS",
@@ -4112,7 +3692,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "32.00",
-            "available": 5,
+            "available": 3,
             "image": "images/TS-180S.png"
         },
         {
@@ -4226,16 +3806,6 @@
             "image": "images/TS-480S.png"
         },
         {
-            "id": "TS-611SS",
-            "name": "BRENTWOOD PANINI MAKER - SS",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "29.00",
-            "available": 3,
-            "image": "images/TS-611SS.png"
-        },
-        {
             "id": "TS-643BK",
             "name": "BRENTWOOD 1200W Electric Smokeless Indoor Grill with Ceramic Non-Stick Surface, Black",
             "category": "Heating & Cooking",
@@ -4274,16 +3844,6 @@
             "price": "35.00",
             "available": 999,
             "image": "images/TS-821.png"
-        },
-        {
-            "id": "WSI-EM22AST/ROA",
-            "name": "Toshiba 2.2 cu. ft. Microwave, 1200 W Stainless St",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "135.00",
-            "available": 1,
-            "image": "images/WSI-EM22AST-ROA.png"
         },
         {
             "id": "FSB228K-GT-DI",
@@ -4342,7 +3902,7 @@
             "parent_category": "Audio",
             "sub_category": "Home Audio",
             "price": "120.00",
-            "available": 6,
+            "available": 4,
             "image": "images/SP-2080RBT.png"
         },
         {
@@ -4422,7 +3982,7 @@
             "parent_category": "Audio",
             "sub_category": "Home Radio",
             "price": "45.00",
-            "available": 999,
+            "available": 9,
             "image": "images/J-230BT-BLK.png"
         },
         {
@@ -4454,16 +4014,6 @@
             "price": "100.00",
             "available": 8,
             "image": "images/NPB-426-BLK.png"
-        },
-        {
-            "id": "NPB-431",
-            "name": "NAXA Portable MP3/CD Player with PLL FM",
-            "category": "Home Radio",
-            "parent_category": "Audio",
-            "sub_category": "Home Radio",
-            "price": "70.00",
-            "available": 999,
-            "image": "images/NPB-431.png"
         },
         {
             "id": "PR205",
@@ -4614,16 +4164,6 @@
             "price": "16.00",
             "available": 999,
             "image": "images/IM-36CR.png"
-        },
-        {
-            "id": "MPI-42BK",
-            "name": "BRENTWOOD Portable Handheld Garment Iron Steamer",
-            "category": "Irons",
-            "parent_category": "Home & Office",
-            "sub_category": "Irons",
-            "price": "29.00",
-            "available": 6,
-            "image": "images/MPI-42BK.png"
         },
         {
             "id": "MPI-45",
@@ -4874,26 +4414,6 @@
             "price": "7.00",
             "available": 2,
             "image": "images/LSL110.png"
-        },
-        {
-            "id": "MHV1-1026-GRN",
-            "name": "Monster Cable 6ft LED Light - Green",
-            "category": "Lighting",
-            "parent_category": "Electronics",
-            "sub_category": "Lighting",
-            "price": "5.00",
-            "available": 1,
-            "image": "images/MHV1-1026-GRN.png"
-        },
-        {
-            "id": "MHV1-1026-PUR",
-            "name": "Monster Cable 6ft LED Light - Purple",
-            "category": "Lighting",
-            "parent_category": "Electronics",
-            "sub_category": "Lighting",
-            "price": "5.00",
-            "available": 1,
-            "image": "images/MHV1-1026-PUR.png"
         },
         {
             "id": "SM-720-1610",
@@ -5166,6 +4686,16 @@
             "image": "images/BCD6W.png"
         },
         {
+            "id": "303DGNX",
+            "name": "Conair 1875 Watts Mid-Size Dryer",
+            "category": "Personal Care",
+            "parent_category": "Health and Personal Care",
+            "sub_category": "Personal Care",
+            "price": "12.50",
+            "available": 999,
+            "image": "images/303DGNX.png"
+        },
+        {
             "id": "3043",
             "name": "Propert 150Kg Body Analysis Scale",
             "category": "Personal Care",
@@ -5366,6 +4896,16 @@
             "image": "images/MG-1-BLK.png"
         },
         {
+            "id": "MG-1-BLU",
+            "name": "QFX Mini Massager, Blue",
+            "category": "Personal Care",
+            "parent_category": "Health and Personal Care",
+            "sub_category": "Personal Care",
+            "price": "14.00",
+            "available": 1,
+            "image": "images/MG-1-BLU.png"
+        },
+        {
             "id": "MG-1-CHR",
             "name": "QFX Mini Massager, Charcoal",
             "category": "Personal Care",
@@ -5412,7 +4952,7 @@
             "parent_category": "Health and Personal Care",
             "sub_category": "Personal Care",
             "price": "18.00",
-            "available": 999,
+            "available": 9,
             "image": "images/RVDR5034N1.png"
         },
         {
@@ -5506,56 +5046,6 @@
             "image": "images/ARC-101CW.png"
         },
         {
-            "id": "ARC-131GD",
-            "name": "Whynter 13,000 BTU (6,345 BTU SACC) Dual Hose Cooling Portable AC, Dehumidifier, & Fan with Activated Carbon Filter, up to 420 sq ft, Grey",
-            "category": "Portable AC",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Portable AC",
-            "price": "400.00",
-            "available": 2,
-            "image": "images/ARC-131GD.png"
-        },
-        {
-            "id": "BPACT14WT-Q/RB",
-            "name": "Black & Decker 14.0k Portable AC - Refurbished",
-            "category": "Portable AC",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Portable AC",
-            "price": "280.00",
-            "available": 3,
-            "image": "images/BPACT14WT-Q-RB.png"
-        },
-        {
-            "id": "BPP10HWTB/RB",
-            "name": "Black & Decker 14.0k Portable AC - H/C Refurbished",
-            "category": "Portable AC",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Portable AC",
-            "price": "280.00",
-            "available": 999,
-            "image": "images/BPP10HWTB-RB.png"
-        },
-        {
-            "id": "CPT10WB/RB",
-            "name": "Commercial Cool 14000 BTU Portable AC - RB",
-            "category": "Portable AC",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Portable AC",
-            "price": "285.00",
-            "available": 9,
-            "image": "images/CPT10WB-RB.png"
-        },
-        {
-            "id": "CPT10WB/ROA",
-            "name": "Commercial Cool 14000 BTU Portable AC - RB",
-            "category": "Portable AC",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Portable AC",
-            "price": "285.00",
-            "available": 1,
-            "image": "images/CPT10WB-ROA.png"
-        },
-        {
             "id": "HAP0824TWD - No Accessories",
             "name": "Hisense 350 Sq. Ft. Inverter Dual-Hose 8000 BTU Portable Air Conditioner",
             "category": "Portable AC",
@@ -5574,26 +5064,6 @@
             "price": "245.00",
             "available": 999,
             "image": "images/MAP05S1AWT.png"
-        },
-        {
-            "id": "VAP09R1AWT/ROA",
-            "name": "Vissani 5,000 BTU 115V Portable AC for 150 Sq Ft Rooms, RB",
-            "category": "Portable AC",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Portable AC",
-            "price": "160.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "WPPH08CRN/RB",
-            "name": "Arctic King 6,000Btu Remote Control Portable Air Conditioner, White",
-            "category": "Portable AC",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Portable AC",
-            "price": "200.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "FPB1200W",
@@ -5696,16 +5166,6 @@
             "image": "images/BC 40.png"
         },
         {
-            "id": "BC115SS9/NB",
-            "name": "INSIGNIA 115 CAN BEVERAGE COOLER, RB",
-            "category": "Major Appliances",
-            "parent_category": "Major Appliances",
-            "sub_category": "Refrigerators",
-            "price": "70.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
             "id": "BCRK17V",
             "name": "Black+Decker 1.7 Cu. Ft. Compact Fridge Silver",
             "category": "Major Appliances",
@@ -5714,26 +5174,6 @@
             "price": "105.00",
             "available": 1,
             "image": "images/BCRK17V.png"
-        },
-        {
-            "id": "NS-BC1ZSS9/NB",
-            "name": "INSIGNIA 165 CAN Built-In Beverage Cooler, SS, RB",
-            "category": "Major Appliances",
-            "parent_category": "Major Appliances",
-            "sub_category": "Refrigerators",
-            "price": "70.00",
-            "available": 2,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "NS-CF44BK3/NB",
-            "name": "INSIGNIA 4.4 Cu Ft Mini Fridge, Black, RB",
-            "category": "Major Appliances",
-            "parent_category": "Major Appliances",
-            "sub_category": "Refrigerators",
-            "price": "70.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "RM3306W",
@@ -5802,7 +5242,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "13.00",
-            "available": 9,
+            "available": 3,
             "image": "images/BT-10BL.png"
         },
         {
@@ -6126,16 +5566,6 @@
             "image": "images/CLP-10-YEL.png"
         },
         {
-            "id": "E-1500",
-            "name": "QFX 2 X15\" PROFESSIONAL PA SPEAKER",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "403.00",
-            "available": 999,
-            "image": "images/E-1500.png"
-        },
-        {
             "id": "E-B5",
             "name": "QFX PRO HIGH POWER PARTY PA SPEAKER DUAL 15\"",
             "category": "Speakers",
@@ -6372,7 +5802,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "70.00",
-            "available": 3,
+            "available": 1,
             "image": "images/MPX-1505.png"
         },
         {
@@ -6512,7 +5942,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "100.00",
-            "available": 8,
+            "available": 3,
             "image": "images/PBX-157SM.png"
         },
         {
@@ -6522,7 +5952,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "180.00",
-            "available": 999,
+            "available": 1,
             "image": "images/PBX-2010.png"
         },
         {
@@ -6622,7 +6052,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "55.00",
-            "available": 7,
+            "available": 1,
             "image": "images/PBX-811.png"
         },
         {
@@ -6642,7 +6072,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "180.00",
-            "available": 2,
+            "available": 1,
             "image": "images/PBX-840.png"
         },
         {
@@ -6742,7 +6172,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "110.00",
-            "available": 9,
+            "available": 7,
             "image": "images/SBX1036K.png"
         },
         {
@@ -6752,7 +6182,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "135.00",
-            "available": 8,
+            "available": 6,
             "image": "images/SBX1530K.png"
         },
         {
@@ -6912,7 +6342,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "85.00",
-            "available": 999,
+            "available": 3,
             "image": "images/TMS-1560.png"
         },
         {
@@ -6956,13 +6386,23 @@
             "image": "images/WH58-BLK.png"
         },
         {
+            "id": "WH61-BLK",
+            "name": "WORRYFREE Portable BT Speaker With Handle - Black",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "75.00",
+            "available": 1,
+            "image": "images/WH61-BLK.png"
+        },
+        {
             "id": "WH61-BLU",
             "name": "WORRYFREE Portable BT Speaker With Handle - Blue",
             "category": "Speakers",
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "75.00",
-            "available": 6,
+            "available": 5,
             "image": "images/WH61-BLU.png"
         },
         {
@@ -6994,6 +6434,16 @@
             "price": "180.00",
             "available": 7,
             "image": "images/WPB2-BLK.png"
+        },
+        {
+            "id": "WPB2-BLU",
+            "name": "WORRYFREE Party Box Wireless BT Speaker with two Microphones and Tripod, Dark Blue w/(TR1/HS-02)",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "180.00",
+            "available": 1,
+            "image": "images/WPB2-BLU.png"
         },
         {
             "id": "WPB220M-BLK",
@@ -7106,6 +6556,16 @@
             "image": "images/ANT-7-BLK.png"
         },
         {
+            "id": "ANT1080E",
+            "name": "RCA Ultra-Thin HDTV Antenna",
+            "category": "TV Antenna",
+            "parent_category": "Electronics",
+            "sub_category": "TV Antenna",
+            "price": "15.00",
+            "available": 6,
+            "image": "images/ANT1080E.png"
+        },
+        {
             "id": "ANT111E",
             "name": "RCA Indoor HDTV Antenna",
             "category": "TV Antenna",
@@ -7162,7 +6622,7 @@
             "parent_category": "Electronics",
             "sub_category": "TV Antenna",
             "price": "23.00",
-            "available": 999,
+            "available": 3,
             "image": "images/ANT310E.png"
         },
         {
@@ -7386,6 +6846,16 @@
             "image": "images/SM-720-8712.png"
         },
         {
+            "id": "SM-720-8730",
+            "name": "Emerald Full Motion Wall Mount 32\" to 85\"",
+            "category": "TV Wall Bracket",
+            "parent_category": "Home & Office",
+            "sub_category": "TV Wall Bracket",
+            "price": "32.00",
+            "available": 5,
+            "image": "images/SM-720-8730.png"
+        },
+        {
             "id": "SM-720-8904C",
             "name": "Emerald Full Motion Wall Mount 32\" to 85\"",
             "category": "TV Wall Bracket",
@@ -7496,26 +6966,6 @@
             "image": "images/SA315.png"
         },
         {
-            "id": "303DGNX",
-            "name": "Conair 1875 Watts Mid-Size Dryer, Black",
-            "category": "Uncategorized",
-            "parent_category": "Other",
-            "sub_category": "Uncategorized",
-            "price": "12.50",
-            "available": 999,
-            "image": "images/303DGNX.png"
-        },
-        {
-            "id": "CCD100W6/ROA",
-            "name": "Commercial Chef Food Dehydrator, 280 Watts, White",
-            "category": "Uncategorized",
-            "parent_category": "Other",
-            "sub_category": "Uncategorized",
-            "price": "35.00",
-            "available": 4,
-            "image": "images/CCD100W6-ROA.png"
-        },
-        {
             "id": "STM-4000BK",
             "name": "BRENTWOOD 1100w Steam Mop Hard Floor Steamer Tile and Wood Cleaner, Black",
             "category": "Uncategorized",
@@ -7546,16 +6996,6 @@
             "image": "images/BDSV53-BLK.png"
         },
         {
-            "id": "NEU102/RBO",
-            "name": "Eureka Upright AirSpeed Vacuum Clnr",
-            "category": "Vacuums",
-            "parent_category": "Home & Office",
-            "sub_category": "Vacuums",
-            "price": "65.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
             "id": "NEU180",
             "name": "Eureka PowerSpeed Lightweight Upright Vacuum",
             "category": "Vacuums",
@@ -7564,16 +7004,6 @@
             "price": "79.00",
             "available": 1,
             "image": "images/NEU180.png"
-        },
-        {
-            "id": "NEU203/RBO",
-            "name": "Eureka Power Speed Multi-Surface Vacuum Cleaner",
-            "category": "Vacuums",
-            "parent_category": "Home & Office",
-            "sub_category": "Vacuums",
-            "price": "79.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "NV-09163",
@@ -7666,16 +7096,6 @@
             "image": "images/AWCS08WWF.png"
         },
         {
-            "id": "BAB-2438/ROA",
-            "name": "Black & Decker AC Window Bracket",
-            "category": "Window AC",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Window AC",
-            "price": "40.00",
-            "available": 7,
-            "image": "images/BAB-2438-ROA.png"
-        },
-        {
             "id": "DL12AWCW",
             "name": "Hisense Medium Room Window Air Conditioner with Remote (115-Volt, 12000-BTU)",
             "category": "Window AC",
@@ -7716,16 +7136,6 @@
             "image": "images/EWR05E.png"
         },
         {
-            "id": "EWR06C/ROA",
-            "name": "ELEMENT 6,000 BTU Window AC, White - RB",
-            "category": "Window AC",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Window AC",
-            "price": "200.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
             "id": "EWR06E",
             "name": "Element 6,000 BTU Window Air Conditioner \u2013 White",
             "category": "Window AC",
@@ -7754,16 +7164,6 @@
             "price": "160.00",
             "available": 999,
             "image": "images/FFRA051WAE.png"
-        },
-        {
-            "id": "FFRE1533U10/ROA",
-            "name": "Frigidaire 15.000-BTU Remote Window AC - No Box / No Remote",
-            "category": "Window AC",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Window AC",
-            "price": "350.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "LW1017ERSM1",
@@ -7816,36 +7216,6 @@
             "image": "images/MAW08V1QWT.png"
         },
         {
-            "id": "MAW10S1DWBL-T/ROA",
-            "name": "Midea 10,000 BTU 115V Smart Window Air Conditioner with Comfort Sense Remote, Black, RB",
-            "category": "Window AC",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Window AC",
-            "price": "319.00",
-            "available": 4,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "MAW12U1QWT",
-            "name": "Midea 12,000 BTU DOE U-Shaped Smart Window Air Conditioner 550 sq. ft - White",
-            "category": "Window AC",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Window AC",
-            "price": "440.00",
-            "available": 1,
-            "image": "images/MAW12U1QWT.png"
-        },
-        {
-            "id": "MAW12U1QWT/ROA",
-            "name": "Midea 12,000 BTU DOE U-Shaped Smart Window Air Conditioner 550 sq. ft - White, RB",
-            "category": "Window AC",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Window AC",
-            "price": "440.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
             "id": "MAW12V1YWT-S",
             "name": "Midea 12,000 BTU Smart Inverter U-Shaped Window Air Conditioner, White",
             "category": "Window AC",
@@ -7854,66 +7224,6 @@
             "price": "451.00",
             "available": 1,
             "image": "images/MAW12V1YWT-S.png"
-        },
-        {
-            "id": "RAC-WK0612CRRU/ROA",
-            "name": "Toshiba 6,000 BTU 115-Volt Window Air Conditioner for 250 Sq. Ft. Rooms with Remote",
-            "category": "Window AC",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Window AC",
-            "price": "229.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "TSB-2438/ROA",
-            "name": "Black & Decker AC Window Bracket",
-            "category": "Window AC",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Window AC",
-            "price": "40.00",
-            "available": 3,
-            "image": "images/TSB-2438-ROA.png"
-        },
-        {
-            "id": "VW6024R/ROA",
-            "name": "Vissani 6 000 BTU 115-Volt Window Air Conditioner for 250 sq. ft. W/ Remote",
-            "category": "Window AC",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Window AC",
-            "price": "229.00",
-            "available": 3,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "VWCS05CWT/ROA",
-            "name": "Vissani 5000 BTU 3in1 Climate Control Window AC with Remote, RB",
-            "category": "Window AC",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Window AC",
-            "price": "125.00",
-            "available": 3,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "W5WM-B3/ROA",
-            "name": "TCL 5000 BTU Cool Only Window Mechanical AC, Black",
-            "category": "Window AC",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Window AC",
-            "price": "135.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "W8W92-B4/ROA",
-            "name": "TCL 8000 BTU Smart Wi Fi Window AC, Remote Black",
-            "category": "Window AC",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Window AC",
-            "price": "180.00",
-            "available": 4,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "WAW0525CM1W",
