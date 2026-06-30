@@ -136,6 +136,36 @@
             "image": "images/KE-OV-B101BK.png"
         },
         {
+            "id": "MS33018213889/ROA",
+            "name": "Mainstays XL Toaster Oven, 32L/ 6-Slice 1500W",
+            "category": "Air Fryer & Toaster",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Air Fryer & Toaster",
+            "price": "50.00",
+            "available": 3,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "R22997/RB",
+            "name": "Hamilton Beach 2 Slice Toaster SS Black, RB",
+            "category": "Air Fryer & Toaster",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Air Fryer & Toaster",
+            "price": "15.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "SM-AIR-1899/RBO",
+            "name": "Emerald 25L Air Fryer - Digital - RB",
+            "category": "Air Fryer & Toaster",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Air Fryer & Toaster",
+            "price": "105.00",
+            "available": 2,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
             "id": "TS-247BK",
             "name": "BRENTWOOD Non-Stick Panini Press Grill and Sandwich Maker, Black",
             "category": "Air Fryer & Toaster",
@@ -886,6 +916,36 @@
             "image": "images/MG-400W.png"
         },
         {
+            "id": "R50190-RBO",
+            "name": "Hamilton Beach 10spd Plastic Blender - RB",
+            "category": "Blenders & Mixers",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Blenders & Mixers",
+            "price": "24.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "R53519/RB",
+            "name": "Hamilton Beach 700W Glass Blender - RB",
+            "category": "Blenders & Mixers",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Blenders & Mixers",
+            "price": "40.00",
+            "available": 999,
+            "image": "images/R53519-RB.png"
+        },
+        {
+            "id": "R56202-RBO",
+            "name": "Hamilton Beach Electronic Touchpad Glass Jar Blender - RB",
+            "category": "Blenders & Mixers",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Blenders & Mixers",
+            "price": "1.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
             "id": "RJB-100BK",
             "name": "Brentwood Portable Battery/USB Blender, Black",
             "category": "Blenders & Mixers",
@@ -1346,6 +1406,26 @@
             "image": "images/BD100.png"
         },
         {
+            "id": "CCUK12W/ROA",
+            "name": "Commercial Cool 1.2 cf ft Upright Freezer White RB",
+            "category": "Chest Freezer",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Chest Freezer",
+            "price": "100.00",
+            "available": 1,
+            "image": "images/CCUK12W-ROA.png"
+        },
+        {
+            "id": "CCUN28WV/ROA",
+            "name": "Commercial Cool 2.8 cf ft Upright Freezer, RB",
+            "category": "Chest Freezer",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Chest Freezer",
+            "price": "100.00",
+            "available": 1,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
             "id": "UL-BD142-D",
             "name": "GOLDEN 5.0 Cu.Ft. Chest Freezer W/Chest White",
             "category": "Major Appliances",
@@ -1484,6 +1564,16 @@
             "price": "14.00",
             "available": 999,
             "image": "images/CTS-1000.png"
+        },
+        {
+            "id": "GF-P1549-1042-RBO",
+            "name": "GForce Ele. Kettle Travel Set - RB",
+            "category": "Coffee & Tea",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Coffee & Tea",
+            "price": "6.67",
+            "available": 6,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "HE-760",
@@ -1866,6 +1956,16 @@
             "image": "images/VPMS05BWT.png"
         },
         {
+            "id": "VPMS05BWT/ROA",
+            "name": "Vissani 5000 BTU115V Portable Air Conditioner/Dehumidifier, RB",
+            "category": "Dehumidifier",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Dehumidifier",
+            "price": "289.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
             "id": "37210",
             "name": "GE 6 Outlet Surge Protector, 840 Joules 4' Cord, White",
             "category": "Electronics",
@@ -1954,6 +2054,16 @@
             "price": "25.00",
             "available": 1,
             "image": "images/BHD406W.png"
+        },
+        {
+            "id": "BHF136193153/RBO",
+            "name": "Pelonis 23\" Tower Heater RB",
+            "category": "Fans",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Fans",
+            "price": "35.00",
+            "available": 3,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "F-16SPW",
@@ -2096,6 +2206,66 @@
             "image": "images/FS45-9L.png"
         },
         {
+            "id": "HCX9115E/RBO",
+            "name": "Delonghi Slim Convector Heater",
+            "category": "Fans",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Fans",
+            "price": "69.00",
+            "available": 1,
+            "image": "images/HCX9115E-RBO.png"
+        },
+        {
+            "id": "MSH20Q3ABB/RBO",
+            "name": "Midea 1500W Electric Quartz Radiant Heater RB - Black",
+            "category": "Fans",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Fans",
+            "price": "30.00",
+            "available": 9,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "MSH20Q3AWW/RBO",
+            "name": "Midea Radiant Quartz Space Heater RB - White",
+            "category": "Fans",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Fans",
+            "price": "30.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "MSWMT24JR/RBO",
+            "name": "Mainstays 36\" Tall 3-Speed Oscillating Tower Fan, Black, RB",
+            "category": "Fans",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Fans",
+            "price": "30.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "MSWMT24MB/RBO",
+            "name": "Mainstays Modern 3-Speed Oscillating Tower Fan, 28\" Tall, Black, RB",
+            "category": "Fans",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Fans",
+            "price": "24.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "MSWMT24MW/RBO",
+            "name": "Mainstays Modern 3-Speed Oscillating Tower Fan, 28\" Tall, White, RB",
+            "category": "Fans",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Fans",
+            "price": "24.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
             "id": "PFS40A4BBB",
             "name": "Pelonis 16\" Oscillating W/Remote Pedestal Fan -Blk",
             "category": "Fans",
@@ -2104,6 +2274,36 @@
             "price": "49.00",
             "available": 1,
             "image": "images/PFS40A4BBB.png"
+        },
+        {
+            "id": "PSH08F1ABB/RBO",
+            "name": "Pelonis 1500W 3-Spd Fan Forced Heater, RB, Black",
+            "category": "Fans",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Fans",
+            "price": "20.00",
+            "available": 9,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "PSH08F1AWW/RBO",
+            "name": "Pelonis 1500W 3-Spd Fan Forced Heater, RB, White",
+            "category": "Fans",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Fans",
+            "price": "20.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "PSH20Q3ABB/RBO",
+            "name": "Pelonis Quartz Heater 1500W RB, Black",
+            "category": "Fans",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Fans",
+            "price": "30.00",
+            "available": 1,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "V/2270",
@@ -2224,6 +2424,26 @@
             "price": "10.00",
             "available": 3,
             "image": "images/WPF4-1008-WHT.png"
+        },
+        {
+            "id": "WSH0702ABB/RBO",
+            "name": "Mainstay 1500W Oil Filled Heater RB - Black",
+            "category": "Fans",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Fans",
+            "price": "35.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "WSH0702AWW/RBO",
+            "name": "Mainstay 1500W Oil Filled Heater RB - White",
+            "category": "Fans",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Fans",
+            "price": "35.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "WSH3-1002-WHT",
@@ -3226,6 +3446,16 @@
             "image": "images/BHOC05.png"
         },
         {
+            "id": "BHOC05/ROA",
+            "name": "Black+Decker Ceiling Patio Space Heater 1500W",
+            "category": "Heaters",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heaters",
+            "price": "100.00",
+            "available": 2,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
             "id": "CZ550",
             "name": "Comfort Zone Heater Electric radiant 1500/w",
             "category": "Heaters",
@@ -3366,6 +3596,16 @@
             "image": "images/BPC-112.png"
         },
         {
+            "id": "CCD100W6/ROA",
+            "name": "Commercial Chef Food Dehydrator, 280 Watts, White",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "35.00",
+            "available": 4,
+            "image": "images/CCD100W6-ROA.png"
+        },
+        {
             "id": "CE23839",
             "name": "Continental Sandwich Maker 2 Slice Non Stick-Black",
             "category": "Heating & Cooking",
@@ -3466,6 +3706,26 @@
             "image": "images/EM131A5C-BS.png"
         },
         {
+            "id": "GCST11N1WSS/ROA",
+            "name": "GE 1.1 Cu Ft CMO SS CL",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "70.00",
+            "available": 2,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "HB8436127995-3/RB",
+            "name": "Hamilton Beach 1.6 Cu Ft Microwave Oven, RB",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "99.00",
+            "available": 1,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
             "id": "IM-306DB",
             "name": "Better Chef Double Burner - Wht",
             "category": "Heating & Cooking",
@@ -3484,6 +3744,106 @@
             "price": "25.00",
             "available": 999,
             "image": "images/IM-409S.png"
+        },
+        {
+            "id": "MS8436193153-3/ROA",
+            "name": "Mainstays 1.1 Cu Ft Microwave Oven, Black, RB",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "79.00",
+            "available": 1,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "NN-SB65NS/ROA",
+            "name": "Panasonic Microwave Oven 1.3Cu.Ft. SS RB",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "85.00",
+            "available": 1,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "NN-SC64MBC/RBO",
+            "name": "Panasonic 1.3 CF Countertop Microwave with Inverter Technology, Black, RB",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "100.00",
+            "available": 1,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "NN-SG616B/RBO",
+            "name": "Panasonic 1.3 cu.ft. Countertop Microwave Oven, RB",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "100.00",
+            "available": 1,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "NN-SN68QB/RBO",
+            "name": "Panasonic 1.2 cu.ft. Countertop Microwave Oven, RB",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "110.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "NN-SN95HS/ROA",
+            "name": "Panasonic 2.2 cu. ft. 1250-Watt Microwave with Cyclonic Wave Inverter - RB",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "125.00",
+            "available": 2,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "NN-SU64LW/RB",
+            "name": "Panasonic Countertop Microwave Genius Sensor Cooking, 1.3-cu.ft., Matte White, RB",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "100.00",
+            "available": 2,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "NN-SU65LW/RB",
+            "name": "Panasonic Microwave Oven 1.3Cu. Ft. White, RB",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "100.00",
+            "available": 1,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "NNSU64LWC/RBO",
+            "name": "Panasonic Countertop Microwave Oven, 1.3 Cu Ft 1100W, RB, White",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "100.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "NNSU65NBC/RBO",
+            "name": "Panasonic Countertop Microwave with Genius Sensor 1.3 Cu.Ft., RB, Black",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "100.00",
+            "available": 6,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "RC-5110DS",
@@ -3864,6 +4224,16 @@
             "price": "35.00",
             "available": 999,
             "image": "images/TS-821.png"
+        },
+        {
+            "id": "WSI-EM22AST/ROA",
+            "name": "Toshiba 2.2 cu. ft. Microwave, 1200 W Stainless St",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "135.00",
+            "available": 1,
+            "image": "images/WSI-EM22AST-ROA.png"
         },
         {
             "id": "FSB228K-GT-DI",
@@ -5116,6 +5486,16 @@
             "image": "images/MAP05S1AWT.png"
         },
         {
+            "id": "VAP09R1AWT/ROA",
+            "name": "Vissani 5,000 BTU 115V Portable AC for 150 Sq Ft Rooms, RB",
+            "category": "Portable AC",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Portable AC",
+            "price": "160.00",
+            "available": 1,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
             "id": "FPB1200W",
             "name": "Fisher 10,000 MAh  Power Bank, White",
             "category": "Power Bank",
@@ -5274,476 +5654,6 @@
             "price": "165.00",
             "available": 999,
             "image": "images/RM3316B.png"
-        },
-        {
-            "id": "ANT111E/RB",
-            "name": "RCA Indoor HDTV Antenna",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "8.50",
-            "available": 999,
-            "image": "images/ANT111E-RB.png"
-        },
-        {
-            "id": "ANT121E/RB",
-            "name": "RCA Indoor FM and HDTV Antenna",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "6.50",
-            "available": 999,
-            "image": "images/ANT121E-RB.png"
-        },
-        {
-            "id": "BAB-2438/ROA",
-            "name": "Black & Decker AC Window Bracket",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "40.00",
-            "available": 7,
-            "image": "images/BAB-2438-ROA.png"
-        },
-        {
-            "id": "BHF136193153/RBO",
-            "name": "Pelonis 23\" Tower Heater RB",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "35.00",
-            "available": 3,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "BHOC05/ROA",
-            "name": "Black+Decker Ceiling Patio Space Heater 1500W",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "100.00",
-            "available": 2,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "CCD100W6/ROA",
-            "name": "Commercial Chef Food Dehydrator, 280 Watts, White",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "35.00",
-            "available": 4,
-            "image": "images/CCD100W6-ROA.png"
-        },
-        {
-            "id": "CCUK12W/ROA",
-            "name": "Commercial Cool 1.2 cf ft Upright Freezer White RB",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "100.00",
-            "available": 1,
-            "image": "images/CCUK12W-ROA.png"
-        },
-        {
-            "id": "CCUN28WV/ROA",
-            "name": "Commercial Cool 2.8 cf ft Upright Freezer, RB",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "100.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "FFRE1533U10/ROA",
-            "name": "Frigidaire 15.000-BTU Remote Window AC - No Box / No Remote",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "350.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "GCST11N1WSS/ROA",
-            "name": "GE 1.1 Cu Ft CMO SS CL",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "70.00",
-            "available": 2,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "GF-P1549-1042-RBO",
-            "name": "GForce Ele. Kettle Travel Set - RB",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "6.67",
-            "available": 6,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "HB8436127995-3/RB",
-            "name": "Hamilton Beach 1.6 Cu Ft Microwave Oven, RB",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "99.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "HCX9115E/RBO",
-            "name": "Delonghi Slim Convector Heater",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "69.00",
-            "available": 1,
-            "image": "images/HCX9115E-RBO.png"
-        },
-        {
-            "id": "MS33018213889/ROA",
-            "name": "Mainstays XL Toaster Oven, 32L/ 6-Slice 1500W",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "50.00",
-            "available": 3,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "MS8436193153-3/ROA",
-            "name": "Mainstays 1.1 Cu Ft Microwave Oven, Black, RB",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "79.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "MSH20Q3ABB/RBO",
-            "name": "Midea 1500W Electric Quartz Radiant Heater RB - Black",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "30.00",
-            "available": 9,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "MSH20Q3AWW/RBO",
-            "name": "Midea Radiant Quartz Space Heater RB - White",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "30.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "MSWMT24JR/RBO",
-            "name": "Mainstays 36\" Tall 3-Speed Oscillating Tower Fan, Black, RB",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "30.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "MSWMT24MB/RBO",
-            "name": "Mainstays Modern 3-Speed Oscillating Tower Fan, 28\" Tall, Black, RB",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "24.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "MSWMT24MW/RBO",
-            "name": "Mainstays Modern 3-Speed Oscillating Tower Fan, 28\" Tall, White, RB",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "24.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "NEU102/RBO",
-            "name": "Eureka Upright AirSpeed Vacuum Clnr",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "65.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "NEU203/RBO",
-            "name": "Eureka Power Speed Multi-Surface Vacuum Cleaner",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "79.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "NN-SB65NS/ROA",
-            "name": "Panasonic Microwave Oven 1.3Cu.Ft. SS RB",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "85.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "NN-SC64MBC/RBO",
-            "name": "Panasonic 1.3 CF Countertop Microwave with Inverter Technology, Black, RB",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "100.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "NN-SG616B/RBO",
-            "name": "Panasonic 1.3 cu.ft. Countertop Microwave Oven, RB",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "100.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "NN-SN68QB/RBO",
-            "name": "Panasonic 1.2 cu.ft. Countertop Microwave Oven, RB",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "110.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "NN-SN95HS/ROA",
-            "name": "Panasonic 2.2 cu. ft. 1250-Watt Microwave with Cyclonic Wave Inverter - RB",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "125.00",
-            "available": 2,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "NN-SU64LW/RB",
-            "name": "Panasonic Countertop Microwave Genius Sensor Cooking, 1.3-cu.ft., Matte White, RB",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "100.00",
-            "available": 2,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "NN-SU65LW/RB",
-            "name": "Panasonic Microwave Oven 1.3Cu. Ft. White, RB",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "100.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "NNSU64LWC/RBO",
-            "name": "Panasonic Countertop Microwave Oven, 1.3 Cu Ft 1100W, RB, White",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "100.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "NNSU65NBC/RBO",
-            "name": "Panasonic Countertop Microwave with Genius Sensor 1.3 Cu.Ft., RB, Black",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "100.00",
-            "available": 6,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "PSH08F1ABB/RBO",
-            "name": "Pelonis 1500W 3-Spd Fan Forced Heater, RB, Black",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "20.00",
-            "available": 9,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "PSH08F1AWW/RBO",
-            "name": "Pelonis 1500W 3-Spd Fan Forced Heater, RB, White",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "20.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "PSH20Q3ABB/RBO",
-            "name": "Pelonis Quartz Heater 1500W RB, Black",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "30.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "R22997/RB",
-            "name": "Hamilton Beach 2 Slice Toaster SS Black, RB",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "15.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "R50190-RBO",
-            "name": "Hamilton Beach 10spd Plastic Blender - RB",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "24.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "R53519/RB",
-            "name": "Hamilton Beach 700W Glass Blender - RB",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "40.00",
-            "available": 999,
-            "image": "images/R53519-RB.png"
-        },
-        {
-            "id": "R56202-RBO",
-            "name": "Hamilton Beach Electronic Touchpad Glass Jar Blender - RB",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "1.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "RAC-WK0612CRRU/ROA",
-            "name": "Toshiba 6,000 BTU 115-Volt Window Air Conditioner for 250 Sq. Ft. Rooms with Remote",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "229.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "SM-AIR-1899/RBO",
-            "name": "Emerald 25L Air Fryer - Digital - RB",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "105.00",
-            "available": 2,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "TSB-2438/ROA",
-            "name": "Black & Decker AC Window Bracket",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "40.00",
-            "available": 1,
-            "image": "images/TSB-2438-ROA.png"
-        },
-        {
-            "id": "VAP09R1AWT/ROA",
-            "name": "Vissani 5,000 BTU 115V Portable AC for 150 Sq Ft Rooms, RB",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "160.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "VPMS05BWT/ROA",
-            "name": "Vissani 5000 BTU115V Portable Air Conditioner/Dehumidifier, RB",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "289.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "W8W92-B4/ROA",
-            "name": "TCL 8000 BTU Smart Wi Fi Window AC, Remote Black",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "180.00",
-            "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "WSH0702ABB/RBO",
-            "name": "Mainstay 1500W Oil Filled Heater RB - Black",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "35.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "WSH0702AWW/RBO",
-            "name": "Mainstay 1500W Oil Filled Heater RB - White",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "35.00",
-            "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
-        },
-        {
-            "id": "WSI-EM22AST/ROA",
-            "name": "Toshiba 2.2 cu. ft. Microwave, 1200 W Stainless St",
-            "category": "Refurbished / Reconditioned",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Refurbished / Reconditioned",
-            "price": "135.00",
-            "available": 1,
-            "image": "images/WSI-EM22AST-ROA.png"
         },
         {
             "id": "ABX-160R",
@@ -7126,6 +7036,26 @@
             "image": "images/ANT111E.png"
         },
         {
+            "id": "ANT111E/RB",
+            "name": "RCA Indoor HDTV Antenna",
+            "category": "TV Antenna",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "TV Antenna",
+            "price": "8.50",
+            "available": 999,
+            "image": "images/ANT111E-RB.png"
+        },
+        {
+            "id": "ANT121E/RB",
+            "name": "RCA Indoor FM and HDTV Antenna",
+            "category": "TV Antenna",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "TV Antenna",
+            "price": "6.50",
+            "available": 999,
+            "image": "images/ANT121E-RB.png"
+        },
+        {
             "id": "ANT1560E",
             "name": "RCA AMPLIFIED DIGITAL ANTENNA",
             "category": "TV Antenna",
@@ -7506,6 +7436,16 @@
             "image": "images/BDSV53-BLK.png"
         },
         {
+            "id": "NEU102/RBO",
+            "name": "Eureka Upright AirSpeed Vacuum Clnr",
+            "category": "Vacuums",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Vacuums",
+            "price": "65.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
             "id": "NEU180",
             "name": "Eureka PowerSpeed Lightweight Upright Vacuum",
             "category": "Vacuums",
@@ -7514,6 +7454,16 @@
             "price": "79.00",
             "available": 1,
             "image": "images/NEU180.png"
+        },
+        {
+            "id": "NEU203/RBO",
+            "name": "Eureka Power Speed Multi-Surface Vacuum Cleaner",
+            "category": "Vacuums",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Vacuums",
+            "price": "79.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "NV-09163",
@@ -7616,6 +7566,16 @@
             "image": "images/AWCS08WWF.png"
         },
         {
+            "id": "BAB-2438/ROA",
+            "name": "Black & Decker AC Window Bracket",
+            "category": "Window AC",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Window AC",
+            "price": "40.00",
+            "available": 7,
+            "image": "images/BAB-2438-ROA.png"
+        },
+        {
             "id": "DL12AWCW",
             "name": "Hisense Medium Room Window Air Conditioner with Remote (115-Volt, 12000-BTU)",
             "category": "Window AC",
@@ -7686,6 +7646,16 @@
             "image": "images/FFRA051WAE.png"
         },
         {
+            "id": "FFRE1533U10/ROA",
+            "name": "Frigidaire 15.000-BTU Remote Window AC - No Box / No Remote",
+            "category": "Window AC",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Window AC",
+            "price": "350.00",
+            "available": 1,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
             "id": "LW1017ERSM1",
             "name": "LG 10,000 BTU Smart Window / Wall Air Conditioner",
             "category": "Window AC",
@@ -7744,6 +7714,36 @@
             "price": "451.00",
             "available": 1,
             "image": "images/MAW12V1YWT-S.png"
+        },
+        {
+            "id": "RAC-WK0612CRRU/ROA",
+            "name": "Toshiba 6,000 BTU 115-Volt Window Air Conditioner for 250 Sq. Ft. Rooms with Remote",
+            "category": "Window AC",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Window AC",
+            "price": "229.00",
+            "available": 1,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "TSB-2438/ROA",
+            "name": "Black & Decker AC Window Bracket",
+            "category": "Window AC",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Window AC",
+            "price": "40.00",
+            "available": 1,
+            "image": "images/TSB-2438-ROA.png"
+        },
+        {
+            "id": "W8W92-B4/ROA",
+            "name": "TCL 8000 BTU Smart Wi Fi Window AC, Remote Black",
+            "category": "Window AC",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Window AC",
+            "price": "180.00",
+            "available": 1,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "WAW0525CM1W",
