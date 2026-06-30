@@ -138,19 +138,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Subcategory buttons
             Array.from(categoriesList[parent]).sort().forEach(sub => {
-                const opt = document.createElement('option');
-                opt.value = sub;
-                opt.textContent = `  ${sub}`;
-                group.appendChild(opt);
-
                 const btnS = document.createElement('button');
                 btnS.className = 'btn-cat';
                 btnS.textContent = sub;
+                btnS.dataset.parent = parent;
+                btnS.dataset.sub = sub;
                 btnS.addEventListener('click', e => {
                     e.stopPropagation();
                     selectCategory(parent, sub);
                 });
                 subGrid.appendChild(btnS);
+
+                // Dropdown option uses compound key to avoid ambiguity between parents
+                const opt = document.createElement('option');
+                opt.value = `${parent}|||${sub}`;
+                opt.textContent = `  ${sub}`;
+                group.appendChild(opt);
             });
 
             catDropdown.appendChild(group);
@@ -164,17 +167,26 @@ document.addEventListener('DOMContentLoaded', () => {
             if (val === 'All Categories') {
                 selectCategory('All Parents', 'All Categories');
             } else {
-                let parentHit = 'Other';
-                for (let p in categoriesList) {
-                    if (categoriesList[p].has(val)) { parentHit = p; break; }
+                // Value is stored as "ParentName|||SubName" to avoid ambiguity
+                const parts = val.split('|||');
+                if (parts.length === 2) {
+                    selectCategory(parts[0], parts[1]);
+                } else {
+                    selectCategory('All Parents', 'All Categories');
                 }
-                selectCategory(parentHit, val);
             }
         });
     }
 
     function selectCategory(parent, sub) {
-        if (catDropdown) catDropdown.value = (sub !== 'All Categories' && sub !== 'All Subcategories') ? sub : 'All Categories';
+        // Sync dropdown using compound key to avoid ambiguity
+        if (catDropdown) {
+            if (sub !== 'All Categories' && sub !== 'All Subcategories') {
+                catDropdown.value = `${parent}|||${sub}`;
+            } else {
+                catDropdown.value = 'All Categories';
+            }
+        }
 
         currentParentCategory = parent;
         currentCategory = sub;
@@ -186,9 +198,10 @@ document.addEventListener('DOMContentLoaded', () => {
             b.classList.toggle('active-parent', isAll || isParent);
         });
 
-        // Highlight sub buttons
+        // Highlight sub buttons — check both text AND parent to avoid cross-parent highlights
         document.querySelectorAll('.btn-cat').forEach(b => {
-            b.classList.toggle('active', sub !== 'All Subcategories' && b.textContent === sub);
+            const matchSub = b.textContent === sub && b.dataset.parent === parent;
+            b.classList.toggle('active', sub !== 'All Subcategories' && matchSub);
         });
 
         renderGrid();
@@ -205,7 +218,9 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (currentCategory === 'All Subcategories') {
                 matchCat = item.parent_category === currentParentCategory;
             } else {
-                matchCat = item.sub_category === currentCategory;
+                // IMPORTANT: match BOTH parent AND sub-category to prevent cross-parent bleed
+                matchCat = item.parent_category === currentParentCategory &&
+                           item.sub_category === currentCategory;
             }
 
             const query = currentSearch.toLowerCase();
