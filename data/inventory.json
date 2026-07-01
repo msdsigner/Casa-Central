@@ -1,5 +1,5 @@
 {
-    "last_updated": "July 01, 2026",
+    "last_updated": "July 02, 2026",
     "downloads": {
         "pdf": "https://drive.google.com/uc?export=download&id=1gC_iZJLeoH-_A9waEBsoNpv8BbnvvdnR",
         "excel": "https://drive.google.com/uc?export=download&id=1jphLKnNkJ26SGBvUR6F9e8Gb7kV0ROQx"
@@ -143,7 +143,7 @@
             "sub_category": "Air Fryer & Toaster",
             "price": "50.00",
             "available": 3,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/MS33018213889-ROA.png"
         },
         {
             "id": "R22997/RB",
@@ -153,7 +153,7 @@
             "sub_category": "Air Fryer & Toaster",
             "price": "15.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/R22997-RB.png"
         },
         {
             "id": "SM-AIR-1899/RBO",
@@ -163,7 +163,7 @@
             "sub_category": "Air Fryer & Toaster",
             "price": "105.00",
             "available": 2,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/SM-AIR-1899-RBO.png"
         },
         {
             "id": "TS-247BK",
@@ -443,7 +443,7 @@
             "sub_category": "Beverage Centers",
             "price": "70.00",
             "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/FRWW4543AS-NB.png"
         },
         {
             "id": "58148G",
@@ -923,7 +923,7 @@
             "sub_category": "Blenders & Mixers",
             "price": "24.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/R50190-RBO.png"
         },
         {
             "id": "R53519/RB",
@@ -943,7 +943,7 @@
             "sub_category": "Blenders & Mixers",
             "price": "1.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/R56202-RBO.png"
         },
         {
             "id": "RJB-100BK",
@@ -1423,7 +1423,7 @@
             "sub_category": "Chest Freezer",
             "price": "100.00",
             "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/CCUN28WV-ROA.png"
         },
         {
             "id": "UL-BD142-D",
@@ -1573,7 +1573,7 @@
             "sub_category": "Coffee & Tea",
             "price": "6.67",
             "available": 6,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/GF-P1549-1042-RBO.png"
         },
         {
             "id": "HE-760",
@@ -1963,7 +1963,7 @@
             "sub_category": "Dehumidifier",
             "price": "289.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/VPMS05BWT-ROA.png"
         },
         {
             "id": "37210",
@@ -2063,7 +2063,7 @@
             "sub_category": "Fans",
             "price": "35.00",
             "available": 3,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/BHF136193153-RBO.png"
         },
         {
             "id": "F-16SPW",
@@ -2223,7 +2223,7 @@
             "sub_category": "Fans",
             "price": "30.00",
             "available": 9,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/MSH20Q3ABB-RBO.png"
         },
         {
             "id": "MSH20Q3AWW/RBO",
@@ -2233,7 +2233,7 @@
             "sub_category": "Fans",
             "price": "30.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/MSH20Q3AWW-RBO.png"
         },
         {
             "id": "MSWMT24JR/RBO",
@@ -2243,7 +2243,7 @@
             "sub_category": "Fans",
             "price": "30.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/MSWMT24JR-RBO.png"
         },
         {
             "id": "MSWMT24MB/RBO",
@@ -2253,7 +2253,7 @@
             "sub_category": "Fans",
             "price": "24.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/MSWMT24MB-RBO.png"
         },
         {
             "id": "MSWMT24MW/RBO",
@@ -2263,7 +2263,7 @@
             "sub_category": "Fans",
             "price": "24.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/MSWMT24MW-RBO.png"
         },
         {
             "id": "PFS40A4BBB",
@@ -2283,7 +2283,7 @@
             "sub_category": "Fans",
             "price": "20.00",
             "available": 9,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/PSH08F1ABB-RBO.png"
         },
         {
             "id": "PSH08F1AWW/RBO",
@@ -2293,7 +2293,7 @@
             "sub_category": "Fans",
             "price": "20.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/PSH08F1AWW-RBO.png"
         },
         {
             "id": "PSH20Q3ABB/RBO",
@@ -2303,7 +2303,7 @@
             "sub_category": "Fans",
             "price": "30.00",
             "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/PSH20Q3ABB-RBO.png"
         },
         {
             "id": "V/2270",
@@ -2433,7 +2433,7 @@
             "sub_category": "Fans",
             "price": "35.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/WSH0702ABB-RBO.png"
         },
         {
             "id": "WSH0702AWW/RBO",
@@ -2443,7 +2443,7 @@
             "sub_category": "Fans",
             "price": "35.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/WSH0702AWW-RBO.png"
         },
         {
             "id": "WSH3-1002-WHT",
@@ -3453,7 +3453,7 @@
             "sub_category": "Heaters",
             "price": "100.00",
             "available": 2,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/BHOC05-ROA.png"
         },
         {
             "id": "CZ550",
@@ -3713,7 +3713,7 @@
             "sub_category": "Heating & Cooking",
             "price": "70.00",
             "available": 2,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/GCST11N1WSS-ROA.png"
         },
         {
             "id": "HB8436127995-3/RB",
@@ -3723,7 +3723,7 @@
             "sub_category": "Heating & Cooking",
             "price": "99.00",
             "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/HB8436127995-3-RB.png"
         },
         {
             "id": "IM-306DB",
@@ -3753,7 +3753,7 @@
             "sub_category": "Heating & Cooking",
             "price": "79.00",
             "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/MS8436193153-3-ROA.png"
         },
         {
             "id": "NN-SB65NS/ROA",
@@ -3763,7 +3763,7 @@
             "sub_category": "Heating & Cooking",
             "price": "85.00",
             "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/NN-SB65NS-ROA.png"
         },
         {
             "id": "NN-SC64MBC/RBO",
@@ -3773,7 +3773,7 @@
             "sub_category": "Heating & Cooking",
             "price": "100.00",
             "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/NN-SC64MBC-RBO.png"
         },
         {
             "id": "NN-SG616B/RBO",
@@ -3783,7 +3783,7 @@
             "sub_category": "Heating & Cooking",
             "price": "100.00",
             "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/NN-SG616B-RBO.png"
         },
         {
             "id": "NN-SN68QB/RBO",
@@ -3793,7 +3793,7 @@
             "sub_category": "Heating & Cooking",
             "price": "110.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/NN-SN68QB-RBO.png"
         },
         {
             "id": "NN-SN95HS/ROA",
@@ -3803,7 +3803,7 @@
             "sub_category": "Heating & Cooking",
             "price": "125.00",
             "available": 2,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/NN-SN95HS-ROA.png"
         },
         {
             "id": "NN-SU64LW/RB",
@@ -3813,7 +3813,7 @@
             "sub_category": "Heating & Cooking",
             "price": "100.00",
             "available": 2,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/NN-SU64LW-RB.png"
         },
         {
             "id": "NN-SU65LW/RB",
@@ -3823,7 +3823,7 @@
             "sub_category": "Heating & Cooking",
             "price": "100.00",
             "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/NN-SU65LW-RB.png"
         },
         {
             "id": "NNSU64LWC/RBO",
@@ -3833,7 +3833,7 @@
             "sub_category": "Heating & Cooking",
             "price": "100.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/NNSU64LWC-RBO.png"
         },
         {
             "id": "NNSU65NBC/RBO",
@@ -3843,7 +3843,7 @@
             "sub_category": "Heating & Cooking",
             "price": "100.00",
             "available": 6,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/NNSU65NBC-RBO.png"
         },
         {
             "id": "RC-5110DS",
@@ -5493,7 +5493,7 @@
             "sub_category": "Portable AC",
             "price": "160.00",
             "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/VAP09R1AWT-ROA.png"
         },
         {
             "id": "FPB1200W",
@@ -5603,7 +5603,7 @@
             "sub_category": "Refrigerators",
             "price": "70.00",
             "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/BC115SS9-NB.png"
         },
         {
             "id": "BCRK17V",
@@ -5623,7 +5623,7 @@
             "sub_category": "Refrigerators",
             "price": "70.00",
             "available": 2,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/NS-BC1ZSS9-NB.png"
         },
         {
             "id": "NS-CF44BK3/NB",
@@ -5633,7 +5633,7 @@
             "sub_category": "Refrigerators",
             "price": "70.00",
             "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/NS-CF44BK3-NB.png"
         },
         {
             "id": "RM3306W",
@@ -7443,7 +7443,7 @@
             "sub_category": "Vacuums",
             "price": "65.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/NEU102-RBO.png"
         },
         {
             "id": "NEU180",
@@ -7463,7 +7463,7 @@
             "sub_category": "Vacuums",
             "price": "79.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/NEU203-RBO.png"
         },
         {
             "id": "NV-09163",
@@ -7653,7 +7653,7 @@
             "sub_category": "Window AC",
             "price": "350.00",
             "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/FFRE1533U10-ROA.png"
         },
         {
             "id": "LW1017ERSM1",
@@ -7723,7 +7723,7 @@
             "sub_category": "Window AC",
             "price": "229.00",
             "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/RAC-WK0612CRRU-ROA.png"
         },
         {
             "id": "TSB-2438/ROA",
@@ -7743,7 +7743,7 @@
             "sub_category": "Window AC",
             "price": "180.00",
             "available": 1,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/W8W92-B4-ROA.png"
         },
         {
             "id": "WAW0525CM1W",
