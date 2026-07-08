@@ -1,5 +1,5 @@
 {
-    "last_updated": "July 02, 2026",
+    "last_updated": "July 08, 2026",
     "downloads": {
         "pdf": "https://drive.google.com/uc?export=download&id=1gC_iZJLeoH-_A9waEBsoNpv8BbnvvdnR",
         "excel": "https://drive.google.com/uc?export=download&id=1jphLKnNkJ26SGBvUR6F9e8Gb7kV0ROQx"
@@ -106,6 +106,36 @@
             "image": "images/AF-202W.png"
         },
         {
+            "id": "AF-2400SI",
+            "name": "Brentwood 24-Qt Convection Air Fryer Toaster Oven, Silver",
+            "category": "Air Fryer & Toaster",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Air Fryer & Toaster",
+            "price": "100.00",
+            "available": 999,
+            "image": "images/AF-2400SI.png"
+        },
+        {
+            "id": "AF-400DBK",
+            "name": "Brentwood 4-Quart Electric Digital Air Fryer with Timer & Temp. Control, Black",
+            "category": "Air Fryer & Toaster",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Air Fryer & Toaster",
+            "price": "70.00",
+            "available": 999,
+            "image": "images/AF-400DBK.png"
+        },
+        {
+            "id": "AF-800DBK",
+            "name": "BRENTWOOD XL 8-Quart Digital Air Fryer with Clear View Window, Touch Display, 8 Presets, 60 Minute Timer & Temp. Control",
+            "category": "Air Fryer & Toaster",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Air Fryer & Toaster",
+            "price": "72.00",
+            "available": 999,
+            "image": "images/AF-800DBK.png"
+        },
+        {
             "id": "AFWB7QWG13",
             "name": "West Bend 7 Qt Electric Air Fryer Oven",
             "category": "Air Fryer & Toaster",
@@ -124,6 +154,16 @@
             "price": "39.00",
             "available": 1,
             "image": "images/CHTO40B.png"
+        },
+        {
+            "id": "IM-436S",
+            "name": "Better Chef SS 5.0 L Digital Display Air Fryer",
+            "category": "Air Fryer & Toaster",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Air Fryer & Toaster",
+            "price": "60.00",
+            "available": 1,
+            "image": "images/IM-436S.png"
         },
         {
             "id": "KE-OV-B101BK",
@@ -246,6 +286,16 @@
             "image": "images/TS-345R.png"
         },
         {
+            "id": "TS-651",
+            "name": "BRENTWOOD Panini Maker - SS",
+            "category": "Air Fryer & Toaster",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Air Fryer & Toaster",
+            "price": "42.00",
+            "available": 999,
+            "image": "images/TS-651.png"
+        },
+        {
             "id": "WTO1-1001-BLK",
             "name": "AIWA 5 in 1 Functionality Convection Air Fryer Toaster, Black",
             "category": "Air Fryer & Toaster",
@@ -324,16 +374,6 @@
             "price": "24.00",
             "available": 999,
             "image": "images/HPXSPBT14.png"
-        },
-        {
-            "id": "HPXSPBT18",
-            "name": "Sentry BT Clock Speaker",
-            "category": "Alarm Clocks",
-            "parent_category": "Home & Office",
-            "sub_category": "Alarm Clocks",
-            "price": "13.00",
-            "available": 4,
-            "image": "images/HPXSPBT18.png"
         },
         {
             "id": "RC551",
@@ -492,7 +532,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Blenders & Mixers",
             "price": "95.00",
-            "available": 2,
+            "available": 1,
             "image": "images/BLSTTS-GTO-000.png"
         },
         {
@@ -622,7 +662,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Blenders & Mixers",
             "price": "30.00",
-            "available": 2,
+            "available": 999,
             "image": "images/FP-549BK.png"
         },
         {
@@ -632,8 +672,28 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Blenders & Mixers",
             "price": "30.00",
-            "available": 7,
+            "available": 999,
             "image": "images/FP-549W.png"
+        },
+        {
+            "id": "FP-581",
+            "name": "BRENTWOOD Select 12-Cup Food Processor, SS",
+            "category": "Blenders & Mixers",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Blenders & Mixers",
+            "price": "65.00",
+            "available": 999,
+            "image": "images/FP-581.png"
+        },
+        {
+            "id": "FP-585BK",
+            "name": "BRENTWOOD 8-Cup Food Processor",
+            "category": "Blenders & Mixers",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Blenders & Mixers",
+            "price": "47.00",
+            "available": 999,
+            "image": "images/FP-585BK.png"
         },
         {
             "id": "GA-103S",
@@ -662,7 +722,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Blenders & Mixers",
             "price": "15.00",
-            "available": 4,
+            "available": 999,
             "image": "images/HB-32BK.png"
         },
         {
@@ -752,8 +812,38 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Blenders & Mixers",
             "price": "25.00",
-            "available": 3,
+            "available": 999,
             "image": "images/J-26BK.png"
+        },
+        {
+            "id": "J-28BK",
+            "name": "BRENTWOOD Powerful 200W Electric Citrus Juicer Orange, Lemon & Lime Squeezer, SS Lever, Black",
+            "category": "Blenders & Mixers",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Blenders & Mixers",
+            "price": "35.00",
+            "available": 999,
+            "image": "images/J-28BK.png"
+        },
+        {
+            "id": "JB-191BK",
+            "name": "BRENTWOOD Personal Blender - Black",
+            "category": "Blenders & Mixers",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Blenders & Mixers",
+            "price": "22.00",
+            "available": 999,
+            "image": "images/JB-191BK.png"
+        },
+        {
+            "id": "JB-191W",
+            "name": "BRENTWOOD Personal Blender - white",
+            "category": "Blenders & Mixers",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Blenders & Mixers",
+            "price": "22.00",
+            "available": 999,
+            "image": "images/JB-191W.png"
         },
         {
             "id": "JB-199",
@@ -982,7 +1072,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Blenders & Mixers",
             "price": "40.00",
-            "available": 1,
+            "available": 999,
             "image": "images/SM-1152.png"
         },
         {
@@ -1152,7 +1242,7 @@
             "parent_category": "Electronics",
             "sub_category": "CD/DVD Player",
             "price": "27.00",
-            "available": 6,
+            "available": 2,
             "image": "images/CV-103.png"
         },
         {
@@ -1532,8 +1622,18 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Coffee & Tea",
             "price": "17.00",
-            "available": 4,
+            "available": 3,
             "image": "images/CG-158B.png"
+        },
+        {
+            "id": "CG-158BL",
+            "name": "BRENTWOOD Kitchen Essential Coffee Grinder - Blue",
+            "category": "Coffee & Tea",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Coffee & Tea",
+            "price": "17.00",
+            "available": 999,
+            "image": "images/CG-158BL.png"
         },
         {
             "id": "CG-158W",
@@ -1544,6 +1644,16 @@
             "price": "17.00",
             "available": 999,
             "image": "images/CG-158W.png"
+        },
+        {
+            "id": "CG-162S",
+            "name": "BRENTWOOD 75-Gram Electric Wet & Dry Coffee Bean, Herb, & Spice Grinder, Black",
+            "category": "Coffee & Tea",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Coffee & Tea",
+            "price": "33.00",
+            "available": 999,
+            "image": "images/CG-162S.png"
         },
         {
             "id": "CHCM12B",
@@ -1686,16 +1796,6 @@
             "image": "images/SM-KET-1368.png"
         },
         {
-            "id": "SM-KET-1377-B",
-            "name": "Emerald Glass Tea Kettle, Countertop Electric Kettle Water Boiler Heater, 1.8 L, Clear",
-            "category": "Coffee & Tea",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Coffee & Tea",
-            "price": "20.00",
-            "available": 999,
-            "image": "images/SM-KET-1377-B.png"
-        },
-        {
             "id": "SM-KET-1386-B",
             "name": "Emerald SS Electric Kettle Water Boiler Heater Tea Kettle, 1.8 L, Silver",
             "category": "Coffee & Tea",
@@ -1722,8 +1822,18 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Coffee & Tea",
             "price": "25.00",
-            "available": 999,
+            "available": 1,
             "image": "images/SM-KET-1404.png"
+        },
+        {
+            "id": "TS-1101BK",
+            "name": "BRENTWOOD 800-watt K-Cup\u00ae Single Serve Coffee Maker with Reusable Filter Basket",
+            "category": "Coffee & Tea",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Coffee & Tea",
+            "price": "40.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "TS-112B",
@@ -1956,16 +2066,6 @@
             "image": "images/VPMS05BWT.png"
         },
         {
-            "id": "VPMS05BWT/ROA",
-            "name": "Vissani 5000 BTU115V Portable Air Conditioner/Dehumidifier, RB",
-            "category": "Dehumidifier",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Dehumidifier",
-            "price": "289.00",
-            "available": 999,
-            "image": "images/VPMS05BWT-ROA.png"
-        },
-        {
             "id": "37210",
             "name": "GE 6 Outlet Surge Protector, 840 Joules 4' Cord, White",
             "category": "Electronics",
@@ -2066,6 +2166,26 @@
             "image": "images/BHF136193153-RBO.png"
         },
         {
+            "id": "F-16SMB",
+            "name": "BRENTWOOD 3-Speed 16\u201d Oscillating Stand Fan, Black",
+            "category": "Fans",
+            "parent_category": "Air & Climate Control",
+            "sub_category": "Fans",
+            "price": "22.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "F-16SMW",
+            "name": "BRENTWOOD 3-Speed 16\u201d Oscillating Stand Fan, White",
+            "category": "Fans",
+            "parent_category": "Air & Climate Control",
+            "sub_category": "Fans",
+            "price": "22.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
             "id": "F-16SPW",
             "name": "BRENTWOOD 16\u201d Oscillating Stand Fan, 3 Quiet Speeds, 5 Blades, White",
             "category": "Fans",
@@ -2086,13 +2206,23 @@
             "image": "images/F-1831B.png"
         },
         {
+            "id": "F-20CRC",
+            "name": "BRENTWOOD 3-Speed 20\u201d High Velocity Floor Fan, Metal Construction",
+            "category": "Fans",
+            "parent_category": "Air & Climate Control",
+            "sub_category": "Fans",
+            "price": "55.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
             "id": "F-20SW",
             "name": "BRENTWOOD 3-Speed 20\u201d Box Fan, White",
             "category": "Fans",
             "parent_category": "Air & Climate Control",
             "sub_category": "Fans",
             "price": "30.00",
-            "available": 2,
+            "available": 999,
             "image": "images/F-20SW.png"
         },
         {
@@ -2364,16 +2494,6 @@
             "price": "17.00",
             "available": 999,
             "image": "images/V-2742.png"
-        },
-        {
-            "id": "V/3193",
-            "name": "UniqueWare 14\" Industrial Floor Fan",
-            "category": "Fans",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Fans",
-            "price": "28.00",
-            "available": 999,
-            "image": "images/V-3193.png"
         },
         {
             "id": "V/3488",
@@ -2752,7 +2872,7 @@
             "parent_category": "Audio",
             "sub_category": "Headphones & Earphones",
             "price": "18.00",
-            "available": 4,
+            "available": 1,
             "image": "images/HP-E120-BLK.png"
         },
         {
@@ -2952,7 +3072,7 @@
             "parent_category": "Audio",
             "sub_category": "Headphones & Earphones",
             "price": "13.00",
-            "available": 999,
+            "available": 4,
             "image": "images/HPXBT820Z.png"
         },
         {
@@ -3636,6 +3756,16 @@
             "image": "images/CP43279.png"
         },
         {
+            "id": "DF-730S",
+            "name": "BRENTWOOD 1500w 3L / 12-Cup Electric SS Deep Fryer with Removable Basket",
+            "category": "Heating & Cooking",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Heating & Cooking",
+            "price": "50.00",
+            "available": 999,
+            "image": "images/DF-730S.png"
+        },
+        {
             "id": "DMO01001",
             "name": "Marc's On The Grill - Folding Charcoal Grill, Black",
             "category": "Heating & Cooking",
@@ -3756,16 +3886,6 @@
             "image": "images/MS8436193153-3-ROA.png"
         },
         {
-            "id": "NN-SB65NS/ROA",
-            "name": "Panasonic Microwave Oven 1.3Cu.Ft. SS RB",
-            "category": "Heating & Cooking",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Heating & Cooking",
-            "price": "85.00",
-            "available": 1,
-            "image": "images/NN-SB65NS-ROA.png"
-        },
-        {
             "id": "NN-SC64MBC/RBO",
             "name": "Panasonic 1.3 CF Countertop Microwave with Inverter Technology, Black, RB",
             "category": "Heating & Cooking",
@@ -3774,26 +3894,6 @@
             "price": "100.00",
             "available": 1,
             "image": "images/NN-SC64MBC-RBO.png"
-        },
-        {
-            "id": "NN-SG616B/RBO",
-            "name": "Panasonic 1.3 cu.ft. Countertop Microwave Oven, RB",
-            "category": "Heating & Cooking",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Heating & Cooking",
-            "price": "100.00",
-            "available": 1,
-            "image": "images/NN-SG616B-RBO.png"
-        },
-        {
-            "id": "NN-SN68QB/RBO",
-            "name": "Panasonic 1.2 cu.ft. Countertop Microwave Oven, RB",
-            "category": "Heating & Cooking",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Heating & Cooking",
-            "price": "110.00",
-            "available": 999,
-            "image": "images/NN-SN68QB-RBO.png"
         },
         {
             "id": "NN-SN95HS/ROA",
@@ -3816,23 +3916,13 @@
             "image": "images/NN-SU64LW-RB.png"
         },
         {
-            "id": "NN-SU65LW/RB",
-            "name": "Panasonic Microwave Oven 1.3Cu. Ft. White, RB",
-            "category": "Heating & Cooking",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Heating & Cooking",
-            "price": "100.00",
-            "available": 1,
-            "image": "images/NN-SU65LW-RB.png"
-        },
-        {
             "id": "NNSU64LWC/RBO",
             "name": "Panasonic Countertop Microwave Oven, 1.3 Cu Ft 1100W, RB, White",
             "category": "Heating & Cooking",
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Heating & Cooking",
             "price": "100.00",
-            "available": 999,
+            "available": 9,
             "image": "images/NNSU64LWC-RBO.png"
         },
         {
@@ -3842,7 +3932,7 @@
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Heating & Cooking",
             "price": "100.00",
-            "available": 6,
+            "available": 4,
             "image": "images/NNSU65NBC-RBO.png"
         },
         {
@@ -3884,6 +3974,16 @@
             "price": "38.00",
             "available": 999,
             "image": "images/SC-140BL.png"
+        },
+        {
+            "id": "SC-157S",
+            "name": "BRENTWOOD Select 7 Quart Slow Cooker",
+            "category": "Heating & Cooking",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Heating & Cooking",
+            "price": "38.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "SK-45",
@@ -4056,16 +4156,6 @@
             "image": "images/TS-15.png"
         },
         {
-            "id": "TS-180S",
-            "name": "BRENTWOOD 8 CUP - 1.5 L Rice Cooker with Steamer, White",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "32.00",
-            "available": 3,
-            "image": "images/TS-180S.png"
-        },
-        {
             "id": "TS-231S",
             "name": "BRENTWOOD 5\" Flip Belgian Waffle Maker",
             "category": "Heating & Cooking",
@@ -4084,16 +4174,6 @@
             "price": "17.00",
             "available": 999,
             "image": "images/TS-240B.png"
-        },
-        {
-            "id": "TS-242",
-            "name": "BRENTWOOD Waffle Maker - White & SS",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "16.00",
-            "available": 6,
-            "image": "images/TS-242.png"
         },
         {
             "id": "TS-246",
@@ -4186,6 +4266,16 @@
             "image": "images/TS-480S.png"
         },
         {
+            "id": "TS-611SS",
+            "name": "BRENTWOOD PANINI MAKER - SS",
+            "category": "Heating & Cooking",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Heating & Cooking",
+            "price": "29.00",
+            "available": 999,
+            "image": "images/TS-611SS.png"
+        },
+        {
             "id": "TS-643BK",
             "name": "BRENTWOOD 1200W Electric Smokeless Indoor Grill with Ceramic Non-Stick Surface, Black",
             "category": "Heating & Cooking",
@@ -4262,7 +4352,7 @@
             "parent_category": "Audio",
             "sub_category": "Home Audio",
             "price": "80.00",
-            "available": 1,
+            "available": 3,
             "image": "images/MPX-1505SM.png"
         },
         {
@@ -4302,7 +4392,7 @@
             "parent_category": "Audio",
             "sub_category": "Home Audio",
             "price": "180.00",
-            "available": 7,
+            "available": 3,
             "image": "images/WA65-BLU.png"
         },
         {
@@ -4312,7 +4402,7 @@
             "parent_category": "Audio",
             "sub_category": "Home Audio",
             "price": "180.00",
-            "available": 999,
+            "available": 5,
             "image": "images/WA65-GRY.png"
         },
         {
@@ -4372,7 +4462,7 @@
             "parent_category": "Audio",
             "sub_category": "Home Radio",
             "price": "45.00",
-            "available": 9,
+            "available": 5,
             "image": "images/J-230BT-BLK.png"
         },
         {
@@ -4564,6 +4654,16 @@
             "price": "16.00",
             "available": 999,
             "image": "images/IM-36CR.png"
+        },
+        {
+            "id": "MPI-42BK",
+            "name": "BRENTWOOD Portable Handheld Garment Iron Steamer",
+            "category": "Irons",
+            "parent_category": "Home & Office",
+            "sub_category": "Irons",
+            "price": "29.00",
+            "available": 999,
+            "image": "images/MPI-42BK.png"
         },
         {
             "id": "MPI-45",
@@ -4872,18 +4972,8 @@
             "parent_category": "Electronics",
             "sub_category": "Lighting",
             "price": "12.00",
-            "available": 999,
+            "available": 7,
             "image": "images/SM-720-2500.png"
-        },
-        {
-            "id": "SM-720-3000",
-            "name": "Emerald LED 30ft Strip Light with Remote",
-            "category": "Lighting",
-            "parent_category": "Electronics",
-            "sub_category": "Lighting",
-            "price": "12.00",
-            "available": 6,
-            "image": "images/SM-720-3000.png"
         },
         {
             "id": "M-310",
@@ -5372,7 +5462,7 @@
             "parent_category": "Health and Personal Care",
             "sub_category": "Personal Care",
             "price": "18.00",
-            "available": 9,
+            "available": 2,
             "image": "images/RVDR5034N1.png"
         },
         {
@@ -5486,6 +5576,26 @@
             "image": "images/MAP05S1AWT.png"
         },
         {
+            "id": "S-15051",
+            "name": "Portable AC Box - 15x15x36",
+            "category": "Portable AC",
+            "parent_category": "Air & Climate Control",
+            "sub_category": "Portable AC",
+            "price": "3.76",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "S-4532",
+            "name": "Portable AC Box - 14x14x36",
+            "category": "Portable AC",
+            "parent_category": "Air & Climate Control",
+            "sub_category": "Portable AC",
+            "price": "3.15",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
             "id": "VAP09R1AWT/ROA",
             "name": "Vissani 5,000 BTU 115V Portable AC for 150 Sq Ft Rooms, RB",
             "category": "Portable AC",
@@ -5512,7 +5622,7 @@
             "parent_category": "Electronics",
             "sub_category": "Power Bank",
             "price": "15.00",
-            "available": 999,
+            "available": 6,
             "image": "images/FPB2000W.png"
         },
         {
@@ -5582,7 +5692,7 @@
             "parent_category": "Electronics",
             "sub_category": "Power Bank",
             "price": "10.00",
-            "available": 999,
+            "available": 9,
             "image": "images/WPF4-1008-RED.png"
         },
         {
@@ -5694,16 +5804,6 @@
             "price": "13.00",
             "available": 999,
             "image": "images/BT-10BK.png"
-        },
-        {
-            "id": "BT-10BL",
-            "name": "QFX Portable Rechargeable BT Bazooka Party Speaker, Blue",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "13.00",
-            "available": 3,
-            "image": "images/BT-10BL.png"
         },
         {
             "id": "BT-10R",
@@ -5832,7 +5932,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "22.00",
-            "available": 8,
+            "available": 5,
             "image": "images/BT-2201.png"
         },
         {
@@ -5962,7 +6062,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "100.00",
-            "available": 999,
+            "available": 8,
             "image": "images/BTSPK145.png"
         },
         {
@@ -6356,6 +6456,16 @@
             "image": "images/PBX-100.png"
         },
         {
+            "id": "PBX-1020",
+            "name": "QFX 2x10 Portable BT Speaker w/ LED Lights",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "100.00",
+            "available": 1,
+            "image": "images/PBX-1020.png"
+        },
+        {
             "id": "PBX-1206",
             "name": "QFX 12\" Lighted Party SPEAKER",
             "category": "Speakers",
@@ -6396,24 +6506,14 @@
             "image": "images/PBX-151.png"
         },
         {
-            "id": "PBX-157SM",
-            "name": "QFX 15\" BT Rechargeable Speaker + Stand & Mic",
+            "id": "PBX-1520",
+            "name": "QFX 15\" Dual BT Rechargeable Party Speaker",
             "category": "Speakers",
             "parent_category": "Audio",
             "sub_category": "Speakers",
-            "price": "100.00",
-            "available": 3,
-            "image": "images/PBX-157SM.png"
-        },
-        {
-            "id": "PBX-2010",
-            "name": "QFX Dual 10\u201d Rechargeable BT Speaker with Transparent LED Party Lights",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "180.00",
+            "price": "190.00",
             "available": 1,
-            "image": "images/PBX-2010.png"
+            "image": "images/PBX-1520.png"
         },
         {
             "id": "PBX-2122",
@@ -6504,16 +6604,6 @@
             "price": "65.00",
             "available": 4,
             "image": "images/PBX-806.png"
-        },
-        {
-            "id": "PBX-811",
-            "name": "QFX 8\u201d Portable Rechargeable BT Speaker with LED Party Lights",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "55.00",
-            "available": 1,
-            "image": "images/PBX-811.png"
         },
         {
             "id": "PBX-831",
@@ -6706,16 +6796,6 @@
             "image": "images/SP-2250RBT.png"
         },
         {
-            "id": "SP-2600RBT",
-            "name": "Dolphin Dual 6.5\" Party Speaker w/Shoulder Strap",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "85.00",
-            "available": 5,
-            "image": "images/SP-2600RBT.png"
-        },
-        {
             "id": "SP-3210RBT",
             "name": "Dolphin Dual 10\" Speaker w/ Wireless Mic",
             "category": "Speakers",
@@ -6782,7 +6862,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "12.00",
-            "available": 999,
+            "available": 8,
             "image": "images/TMS-101-BLK.png"
         },
         {
@@ -6792,18 +6872,8 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "12.00",
-            "available": 6,
+            "available": 2,
             "image": "images/TMS-101-BLU.png"
-        },
-        {
-            "id": "TMS-1560",
-            "name": "QFX Rechargeable BT Portable Speaker + Translucent Motion Party Lights",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "85.00",
-            "available": 3,
-            "image": "images/TMS-1560.png"
         },
         {
             "id": "TMS-801-BLU",
@@ -6836,16 +6906,6 @@
             "image": "images/WA65-BLK.png"
         },
         {
-            "id": "WH58-BLK",
-            "name": "WORRYFREE 65W Wireless BT Speaker with RGB Lights, Black",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "60.00",
-            "available": 2,
-            "image": "images/WH58-BLK.png"
-        },
-        {
             "id": "WH61-BLK",
             "name": "WORRYFREE Portable BT Speaker With Handle - Black",
             "category": "Speakers",
@@ -6862,7 +6922,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "75.00",
-            "available": 5,
+            "available": 3,
             "image": "images/WH61-BLU.png"
         },
         {
@@ -6892,7 +6952,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "180.00",
-            "available": 7,
+            "available": 4,
             "image": "images/WPB2-BLK.png"
         },
         {
@@ -7082,7 +7142,7 @@
             "parent_category": "Electronics",
             "sub_category": "TV Antenna",
             "price": "23.00",
-            "available": 3,
+            "available": 1,
             "image": "images/ANT310E.png"
         },
         {
@@ -7572,7 +7632,7 @@
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Window AC",
             "price": "40.00",
-            "available": 7,
+            "available": 3,
             "image": "images/BAB-2438-ROA.png"
         },
         {
@@ -7632,7 +7692,7 @@
             "parent_category": "Air & Climate Control",
             "sub_category": "Window AC",
             "price": "212.00",
-            "available": 999,
+            "available": 3,
             "image": "images/EWR08E.png"
         },
         {
@@ -7696,16 +7756,6 @@
             "image": "images/MAW08S1VWT-A.png"
         },
         {
-            "id": "MAW08V1QWT",
-            "name": "Midea U-Shaped 350-sq ft Window Air Conditioner with Remote (115-Volt; 8000-BTU) ENERGY STAR Wi-Fi enabled ",
-            "category": "Window AC",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Window AC",
-            "price": "300.00",
-            "available": 1,
-            "image": "images/MAW08V1QWT.png"
-        },
-        {
             "id": "MAW12V1YWT-S",
             "name": "Midea 12,000 BTU Smart Inverter U-Shaped Window Air Conditioner, White",
             "category": "Window AC",
@@ -7736,16 +7786,6 @@
             "image": "images/TSB-2438-ROA.png"
         },
         {
-            "id": "W8W92-B4/ROA",
-            "name": "TCL 8000 BTU Smart Wi Fi Window AC, Remote Black",
-            "category": "Window AC",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Window AC",
-            "price": "180.00",
-            "available": 1,
-            "image": "images/W8W92-B4-ROA.png"
-        },
-        {
             "id": "WAW0525CM1W",
             "name": "Hisense 5,000 BTU Window Air Conditioner 150 sq ft. Easy Clean, Easy to Install",
             "category": "Window AC",
@@ -7772,7 +7812,7 @@
             "parent_category": "Air & Climate Control",
             "sub_category": "Window AC",
             "price": "180.00",
-            "available": 8,
+            "available": 2,
             "image": "images/WC06R25A.png"
         },
         {
@@ -7782,7 +7822,7 @@
             "parent_category": "Air & Climate Control",
             "sub_category": "Window AC",
             "price": "287.00",
-            "available": 5,
+            "available": 3,
             "image": "images/WC08W25A.png"
         },
         {
