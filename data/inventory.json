@@ -1,5 +1,5 @@
 {
-    "last_updated": "July 09, 2026",
+    "last_updated": "July 16, 2026",
     "downloads": {
         "pdf": "https://drive.google.com/uc?export=download&id=1gC_iZJLeoH-_A9waEBsoNpv8BbnvvdnR",
         "excel": "https://drive.google.com/uc?export=download&id=1jphLKnNkJ26SGBvUR6F9e8Gb7kV0ROQx"
@@ -66,6 +66,26 @@
             "image": "images/IP-365.png"
         },
         {
+            "id": "REM-13-BLK",
+            "name": "QFX 4-in-1 Smart Universal Remote Control, Black",
+            "category": "Accessories",
+            "parent_category": "Electronics",
+            "sub_category": "Accessories",
+            "price": "5.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "REM-13-SIL",
+            "name": "QFX 4-in-1 Smart Universal Remote Control, Silver",
+            "category": "Accessories",
+            "parent_category": "Electronics",
+            "sub_category": "Accessories",
+            "price": "5.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
             "id": "SM-513-972",
             "name": "Emerald Tilt Wall Mount 32\" to 90\"",
             "category": "Accessories",
@@ -84,6 +104,16 @@
             "price": "32.00",
             "available": 999,
             "image": "images/SM-720-8550.png"
+        },
+        {
+            "id": "SRP2024R-27",
+            "name": "Philips Universal Slide-In Remote Control, 4 Device",
+            "category": "Accessories",
+            "parent_category": "Electronics",
+            "sub_category": "Accessories",
+            "price": "5.50",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "AF-202BK",
@@ -122,7 +152,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Air Fryer & Toaster",
             "price": "70.00",
-            "available": 999,
+            "available": 9,
             "image": "images/AF-400DBK.png"
         },
         {
@@ -322,7 +352,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Air Fryer & Toaster",
             "price": "14.00",
-            "available": 9,
+            "available": 999,
             "image": "images/WTO1-1022-BLK.png"
         },
         {
@@ -422,7 +452,7 @@
             "parent_category": "Audio",
             "sub_category": "Audio",
             "price": "12.00",
-            "available": 999,
+            "available": 6,
             "image": "images/ANT-400.png"
         },
         {
@@ -742,7 +772,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Blenders & Mixers",
             "price": "20.00",
-            "available": 999,
+            "available": 8,
             "image": "images/HB-33R.png"
         },
         {
@@ -1174,6 +1204,26 @@
             "price": "85.00",
             "available": 999,
             "image": "images/J-250BT-SIL.png"
+        },
+        {
+            "id": "J-290BT-BLK",
+            "name": "QFX Portable CD Player and Cassette Recorder + BT Boombox, Black",
+            "category": "Boombox",
+            "parent_category": "Audio",
+            "sub_category": "Boombox",
+            "price": "60.00",
+            "available": 999,
+            "image": "images/J-290BT-BLK.png"
+        },
+        {
+            "id": "J-290BT-SIL",
+            "name": "QFX Portable CD Player and Cassette Recorder + BT Boombox, Silver",
+            "category": "Boombox",
+            "parent_category": "Audio",
+            "sub_category": "Boombox",
+            "price": "60.00",
+            "available": 999,
+            "image": "images/J-290BT-SIL.png"
         },
         {
             "id": "LX-30",
@@ -1762,7 +1812,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Coffee & Tea",
             "price": "25.00",
-            "available": 7,
+            "available": 6,
             "image": "images/KT-1900R.png"
         },
         {
@@ -1806,6 +1856,26 @@
             "image": "images/SM-KET-1368.png"
         },
         {
+            "id": "SM-KET-1377-B",
+            "name": "Emerald Glass Tea Kettle, Countertop Electric Kettle Water Boiler Heater, 1.8 L, Clear",
+            "category": "Coffee & Tea",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Coffee & Tea",
+            "price": "20.00",
+            "available": 999,
+            "image": "images/SM-KET-1377-B.png"
+        },
+        {
+            "id": "SM-KET-1386",
+            "name": "Emerald 1.8L Electric Kettle Rapid Boil Technology, Silver",
+            "category": "Coffee & Tea",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Coffee & Tea",
+            "price": "20.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
             "id": "SM-KET-1386-B",
             "name": "Emerald SS Electric Kettle Water Boiler Heater Tea Kettle, 1.8 L, Silver",
             "category": "Coffee & Tea",
@@ -1832,7 +1902,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Coffee & Tea",
             "price": "25.00",
-            "available": 1,
+            "available": 999,
             "image": "images/SM-KET-1404.png"
         },
         {
@@ -1952,7 +2022,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Coffee & Tea",
             "price": "38.00",
-            "available": 999,
+            "available": 8,
             "image": "images/TS-222BK.png"
         },
         {
@@ -2034,16 +2104,6 @@
             "price": "100.00",
             "available": 1,
             "image": "images/DH5023KP.png"
-        },
-        {
-            "id": "DH7020KP",
-            "name": "Hisense Energy Star 70-Pint 2-Speed Dehumidifier with Build in Pump - E-star",
-            "category": "Dehumidifier",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Dehumidifier",
-            "price": "100.00",
-            "available": 1,
-            "image": "images/DH7020KP.png"
         },
         {
             "id": "HAP9435B",
@@ -2392,7 +2452,7 @@
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Fans",
             "price": "24.00",
-            "available": 999,
+            "available": 4,
             "image": "images/MSWMT24MB-RBO.png"
         },
         {
@@ -2472,7 +2532,7 @@
             "parent_category": "Air & Climate Control",
             "sub_category": "Fans",
             "price": "20.00",
-            "available": 3,
+            "available": 1,
             "image": "images/V-2273.png"
         },
         {
@@ -2494,16 +2554,6 @@
             "price": "32.00",
             "available": 999,
             "image": "images/V-2500.png"
-        },
-        {
-            "id": "V/2742",
-            "name": "UniqueWare 0.9\" Industrial Floor Fan",
-            "category": "Fans",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Fans",
-            "price": "17.00",
-            "available": 999,
-            "image": "images/V-2742.png"
         },
         {
             "id": "V/3193",
@@ -2986,26 +3036,6 @@
             "image": "images/HPBT195K.png"
         },
         {
-            "id": "HPM540K",
-            "name": "2Boom Bass Max Wired Headphone, Black",
-            "category": "Headphones & Earphones",
-            "parent_category": "Audio",
-            "sub_category": "Headphones & Earphones",
-            "price": "6.00",
-            "available": 3,
-            "image": "images/HPM540K.png"
-        },
-        {
-            "id": "HPM540R",
-            "name": "2Boom Bass Max Wired Headphone, Red",
-            "category": "Headphones & Earphones",
-            "parent_category": "Audio",
-            "sub_category": "Headphones & Earphones",
-            "price": "6.00",
-            "available": 2,
-            "image": "images/HPM540R.png"
-        },
-        {
             "id": "HPSHM165",
             "name": "Sentry Evolve Earbuds with Mic, White",
             "category": "Headphones & Earphones",
@@ -3084,16 +3114,6 @@
             "price": "16.00",
             "available": 999,
             "image": "images/HPXBT301-BLWBT301.png"
-        },
-        {
-            "id": "HPXBT820Z",
-            "name": "Sentry BT Folding OHD with Carrying Case",
-            "category": "Headphones & Earphones",
-            "parent_category": "Audio",
-            "sub_category": "Headphones & Earphones",
-            "price": "13.00",
-            "available": 4,
-            "image": "images/HPXBT820Z.png"
         },
         {
             "id": "HPXBT900B",
@@ -3436,16 +3456,6 @@
             "image": "images/HPXHO425.png"
         },
         {
-            "id": "HPXHOKIDB",
-            "name": "Sentry Kids Headphones - Blk",
-            "category": "Headphones & Earphones",
-            "parent_category": "Audio",
-            "sub_category": "Headphones & Earphones",
-            "price": "6.00",
-            "available": 999,
-            "image": "images/HPXHOKIDB.png"
-        },
-        {
             "id": "HPXHOKIDP",
             "name": "Sentry Kids Headphones - Pink",
             "category": "Headphones & Earphones",
@@ -3682,7 +3692,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "55.00",
-            "available": 999,
+            "available": 1,
             "image": "images/B20PXP78-A70B.png"
         },
         {
@@ -3792,7 +3802,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "45.00",
-            "available": 7,
+            "available": 6,
             "image": "images/DMO01001.png"
         },
         {
@@ -3962,7 +3972,7 @@
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Heating & Cooking",
             "price": "100.00",
-            "available": 4,
+            "available": 1,
             "image": "images/NNSU65NBC-RBO.png"
         },
         {
@@ -3972,7 +3982,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "48.00",
-            "available": 999,
+            "available": 9,
             "image": "images/RC-5110DS.png"
         },
         {
@@ -4052,7 +4062,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "30.00",
-            "available": 999,
+            "available": 9,
             "image": "images/SK-67BK.png"
         },
         {
@@ -4162,18 +4172,8 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "58.00",
-            "available": 5,
+            "available": 3,
             "image": "images/TS-124R.png"
-        },
-        {
-            "id": "TS-127",
-            "name": "BRENTWOOD SS Electric Tortilla Maker",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "42.00",
-            "available": 2,
-            "image": "images/TS-127.png"
         },
         {
             "id": "TS-15",
@@ -4312,7 +4312,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "40.00",
-            "available": 9,
+            "available": 3,
             "image": "images/TS-643BK.png"
         },
         {
@@ -4322,7 +4322,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "25.00",
-            "available": 999,
+            "available": 7,
             "image": "images/TS-700S.png"
         },
         {
@@ -4382,7 +4382,7 @@
             "parent_category": "Audio",
             "sub_category": "Home Audio",
             "price": "80.00",
-            "available": 3,
+            "available": 2,
             "image": "images/MPX-1505SM.png"
         },
         {
@@ -4412,18 +4412,8 @@
             "parent_category": "Audio",
             "sub_category": "Home Audio",
             "price": "120.00",
-            "available": 4,
+            "available": 999,
             "image": "images/SP-2080RBT.png"
-        },
-        {
-            "id": "WA65-BLU",
-            "name": "WORRYFREE 300W Portable Bluetooth Speaker with Handle, One Microphone, Blue",
-            "category": "Home Audio",
-            "parent_category": "Audio",
-            "sub_category": "Home Audio",
-            "price": "180.00",
-            "available": 3,
-            "image": "images/WA65-BLU.png"
         },
         {
             "id": "WA65-GRY",
@@ -4432,8 +4422,18 @@
             "parent_category": "Audio",
             "sub_category": "Home Audio",
             "price": "180.00",
-            "available": 5,
+            "available": 999,
             "image": "images/WA65-GRY.png"
+        },
+        {
+            "id": "WH58-GRN",
+            "name": "WORRYFREE 65W Wireless BT Speaker with RGB Lights, Green",
+            "category": "Home Audio",
+            "parent_category": "Audio",
+            "sub_category": "Home Audio",
+            "price": "60.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "BT-1010-BLK",
@@ -4442,8 +4442,28 @@
             "parent_category": "Audio",
             "sub_category": "Home Radio",
             "price": "13.00",
-            "available": 3,
+            "available": 999,
             "image": "images/BT-1010-BLK.png"
+        },
+        {
+            "id": "BT-1010-BLU",
+            "name": "QFX 2\" Portable BT Rechargeable Speaker with Multi-Color LED Party Lights, Blue",
+            "category": "Home Radio",
+            "parent_category": "Audio",
+            "sub_category": "Home Radio",
+            "price": "13.00",
+            "available": 999,
+            "image": "images/BT-1010-BLU.png"
+        },
+        {
+            "id": "BT-1010-RED",
+            "name": "QFX 2\" Portable BT Rechargeable Speaker with Multi-Color LED Party Lights, Red",
+            "category": "Home Radio",
+            "parent_category": "Audio",
+            "sub_category": "Home Radio",
+            "price": "13.00",
+            "available": 999,
+            "image": "images/BT-1010-RED.png"
         },
         {
             "id": "BT-70",
@@ -4492,7 +4512,7 @@
             "parent_category": "Audio",
             "sub_category": "Home Radio",
             "price": "45.00",
-            "available": 5,
+            "available": 999,
             "image": "images/J-230BT-BLK.png"
         },
         {
@@ -4502,7 +4522,7 @@
             "parent_category": "Audio",
             "sub_category": "Home Radio",
             "price": "45.00",
-            "available": 9,
+            "available": 999,
             "image": "images/J-230BT-BLU.png"
         },
         {
@@ -4512,7 +4532,7 @@
             "parent_category": "Audio",
             "sub_category": "Home Radio",
             "price": "45.00",
-            "available": 1,
+            "available": 999,
             "image": "images/J-230BT-RED.png"
         },
         {
@@ -4536,16 +4556,6 @@
             "image": "images/NPB-431.png"
         },
         {
-            "id": "PR205",
-            "name": "Borne Radio",
-            "category": "Home Radio",
-            "parent_category": "Audio",
-            "sub_category": "Home Radio",
-            "price": "9.00",
-            "available": 999,
-            "image": "images/PR205.png"
-        },
-        {
             "id": "R-15BLK",
             "name": "QFX Portable Rechargeable BT FM Radio + Digital Music Player and LED Light, Black",
             "category": "Home Radio",
@@ -4554,6 +4564,46 @@
             "price": "8.00",
             "available": 1,
             "image": "images/R-15BLK.png"
+        },
+        {
+            "id": "R-24",
+            "name": "QFX AM/FM/SW Radio",
+            "category": "Home Radio",
+            "parent_category": "Audio",
+            "sub_category": "Home Radio",
+            "price": "13.00",
+            "available": 999,
+            "image": "images/R-24.png"
+        },
+        {
+            "id": "R-333BT-BLU",
+            "name": "QFX 3 Band Radio FM/AM w/flashlight",
+            "category": "Home Radio",
+            "parent_category": "Audio",
+            "sub_category": "Home Radio",
+            "price": "23.00",
+            "available": 999,
+            "image": "images/R-333BT-BLU.png"
+        },
+        {
+            "id": "R-333BT-RED",
+            "name": "QFX 3 Band Radio FM/AM w/flashlight",
+            "category": "Home Radio",
+            "parent_category": "Audio",
+            "sub_category": "Home Radio",
+            "price": "23.00",
+            "available": 999,
+            "image": "images/R-333BT-RED.png"
+        },
+        {
+            "id": "R-334BT-BLK",
+            "name": "QFX Solar Rechargeable AM/FM/SW BT Radio + Flashlight + Floodlight",
+            "category": "Home Radio",
+            "parent_category": "Audio",
+            "sub_category": "Home Radio",
+            "price": "28.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "R-34",
@@ -4696,16 +4746,6 @@
             "image": "images/MPI-42BK.png"
         },
         {
-            "id": "MPI-45",
-            "name": "BRENTWOOD 1100-Watt Dual Voltage Non-Stick Travel Iron with Steam, Blue",
-            "category": "Irons",
-            "parent_category": "Home & Office",
-            "sub_category": "Irons",
-            "price": "20.00",
-            "available": 2,
-            "image": "images/MPI-45.png"
-        },
-        {
             "id": "MPI-51BK",
             "name": "BRENTWOOD Non-Stick Steam Iron w/ 8ft Cord",
             "category": "Irons",
@@ -4734,16 +4774,6 @@
             "price": "25.00",
             "available": 999,
             "image": "images/MPI-59BK.png"
-        },
-        {
-            "id": "MPI-59R",
-            "name": "BRENTWOOD Non-Stick Steam/Dry, Iron w/ retractable cord, Red",
-            "category": "Irons",
-            "parent_category": "Home & Office",
-            "sub_category": "Irons",
-            "price": "25.00",
-            "available": 999,
-            "image": "images/MPI-59R.png"
         },
         {
             "id": "MPI-59W",
@@ -5004,6 +5034,36 @@
             "price": "12.00",
             "available": 7,
             "image": "images/SM-720-2500.png"
+        },
+        {
+            "id": "SM-720-3000",
+            "name": "Emerald LED 30ft Strip Light with Remote",
+            "category": "Lighting",
+            "parent_category": "Electronics",
+            "sub_category": "Lighting",
+            "price": "12.00",
+            "available": 999,
+            "image": "images/SM-720-3000.png"
+        },
+        {
+            "id": "SM-720-5000",
+            "name": "Emerald LED 50ft Strip Lights",
+            "category": "Lighting",
+            "parent_category": "Electronics",
+            "sub_category": "Lighting",
+            "price": "16.00",
+            "available": 999,
+            "image": "images/SM-720-5000.png"
+        },
+        {
+            "id": "SM-720-7500",
+            "name": "Emerald LED 75ft Strip Lights",
+            "category": "Lighting",
+            "parent_category": "Electronics",
+            "sub_category": "Lighting",
+            "price": "18.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "M-310",
@@ -5276,6 +5336,16 @@
             "image": "images/CBH1-4002-VTN.png"
         },
         {
+            "id": "CBH1-4006-SIG",
+            "name": "Barbasol PRO Ceramic Cordless Trimmer",
+            "category": "Personal Care",
+            "parent_category": "Health and Personal Care",
+            "sub_category": "Personal Care",
+            "price": "22.00",
+            "available": 999,
+            "image": "images/CBH1-4006-SIG.png"
+        },
+        {
             "id": "CBH1-4007-VTN",
             "name": "Barbasol Rechargeable Cordless Hair Clipper, SS Blades",
             "category": "Personal Care",
@@ -5322,7 +5392,7 @@
             "parent_category": "Health and Personal Care",
             "sub_category": "Personal Care",
             "price": "27.00",
-            "available": 7,
+            "available": 999,
             "image": "images/CBR1-1003-SIG.png"
         },
         {
@@ -5366,6 +5436,16 @@
             "image": "images/CBT1-9000-SIG.png"
         },
         {
+            "id": "CPH1-9010-BOX",
+            "name": "Xtreme Pure Silk 1\" Barrel Curling Iron",
+            "category": "Personal Care",
+            "parent_category": "Health and Personal Care",
+            "sub_category": "Personal Care",
+            "price": "12.00",
+            "available": 999,
+            "image": "images/CPH1-9010-BOX.png"
+        },
+        {
             "id": "CPH1-9011-BOX",
             "name": "Xtreme Pure Silk Tapered Curling Wand ",
             "category": "Personal Care",
@@ -5406,6 +5486,16 @@
             "image": "images/CXH1-5003-BLK.png"
         },
         {
+            "id": "CXH1-6000-BLK",
+            "name": "Xtreme Hollywood Ultra Slim Flat Iron with Titanium Tourmaline Plates, Black",
+            "category": "Personal Care",
+            "parent_category": "Health and Personal Care",
+            "sub_category": "Personal Care",
+            "price": "13.00",
+            "available": 999,
+            "image": "images/CXH1-6000-BLK.png"
+        },
+        {
             "id": "CXT1-3500-HYP",
             "name": "Xtreme Cutting Edge Bump-Free & Hypoallergenic Battery Powered T-Blade Trimmer for Smooth, Irritation-Free Skin",
             "category": "Personal Care",
@@ -5416,6 +5506,16 @@
             "image": "images/CXT1-3500-HYP.png"
         },
         {
+            "id": "CXT1-4007-CMB",
+            "name": "Xtreme Cutting Edge Cordless Rechargeable Hair Clippers for Men & Women",
+            "category": "Personal Care",
+            "parent_category": "Health and Personal Care",
+            "sub_category": "Personal Care",
+            "price": "20.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
             "id": "CXT1-6002-HYP",
             "name": "Xtreme Cutting Edge Rechargeable Hypoallergenic T-Blade Zero Gapped Trimmer",
             "category": "Personal Care",
@@ -5424,6 +5524,36 @@
             "price": "12.00",
             "available": 999,
             "image": "images/CXT1-6002-HYP.png"
+        },
+        {
+            "id": "JL10003WL-KO",
+            "name": "Costway Zero Gravity Shiatsu Massage Chair - Refurbished Open Box (Wrapped)",
+            "category": "Personal Care",
+            "parent_category": "Health and Personal Care",
+            "sub_category": "Personal Care",
+            "price": "1299.00",
+            "available": 7,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "JL10003WL-WU",
+            "name": "Costway Zero Gravity Shiatsu Massage Chair - Refurbished Open Box (Wrapped)",
+            "category": "Personal Care",
+            "parent_category": "Health and Personal Care",
+            "sub_category": "Personal Care",
+            "price": "1299.00",
+            "available": 4,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "JL10003WL-YB",
+            "name": "Costway Zero Gravity Shiatsu Massage Chair - Refurbished Open Box (Wrapped)",
+            "category": "Personal Care",
+            "parent_category": "Health and Personal Care",
+            "sub_category": "Personal Care",
+            "price": "1299.00",
+            "available": 5,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "MG-1-BLK",
@@ -5442,7 +5572,7 @@
             "parent_category": "Health and Personal Care",
             "sub_category": "Personal Care",
             "price": "14.00",
-            "available": 1,
+            "available": 999,
             "image": "images/MG-1-BLU.png"
         },
         {
@@ -5566,16 +5696,6 @@
             "image": "images/HPAMP610.png"
         },
         {
-            "id": "HPAMP620",
-            "name": "Sentry Bendy Cup Phone Holder",
-            "category": "Phones",
-            "parent_category": "Communications",
-            "sub_category": "Phones",
-            "price": "9.00",
-            "available": 1,
-            "image": "images/HPAMP620.png"
-        },
-        {
             "id": "ARC-101CW",
             "name": "Whynter 10,000 BTU (5,200 BTU SACC) Cool Size Compact Portable AC, Dehumidifier, & Fan with Activated Carbon Filter up to 300 sq ft",
             "category": "Portable AC",
@@ -5616,6 +5736,16 @@
             "image": "images/NS-AC08PWH1-ROA.png"
         },
         {
+            "id": "PX0811CWRU/ROA",
+            "name": "Toshiba 8,000/12,000 BTU 115-VOLT Smart Portable AC, White, RB",
+            "category": "Portable AC",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Portable AC",
+            "price": "240.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
             "id": "S-15051",
             "name": "Portable AC Box - 15x15x36",
             "category": "Portable AC",
@@ -5646,16 +5776,6 @@
             "image": "images/VAP05R1AWT-RB.png"
         },
         {
-            "id": "VAP05R1AWT/ROA",
-            "name": "Vissani 5,000 BTU 115V Portable AC for 150 Sq Ft Rooms, RB",
-            "category": "Portable AC",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Portable AC",
-            "price": "160.00",
-            "available": 999,
-            "image": "images/VAP05R1AWT-ROA.png"
-        },
-        {
             "id": "VAP09R1AWT/RB",
             "name": "Vissani 5,000 BTU 115V Portable AC for 150 Sq Ft Rooms, RB",
             "category": "Portable AC",
@@ -5682,7 +5802,7 @@
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Portable AC",
             "price": "160.00",
-            "available": 999,
+            "available": 5,
             "image": "images/VPFD05YCLW-ROA.png"
         },
         {
@@ -5694,16 +5814,6 @@
             "price": "11.00",
             "available": 999,
             "image": "images/FPB1200W.png"
-        },
-        {
-            "id": "FPB2000W",
-            "name": "Fisher 20000 MAH Power Bank, White",
-            "category": "Power Bank",
-            "parent_category": "Electronics",
-            "sub_category": "Power Bank",
-            "price": "15.00",
-            "available": 6,
-            "image": "images/FPB2000W.png"
         },
         {
             "id": "FWPB502K",
@@ -5772,7 +5882,7 @@
             "parent_category": "Electronics",
             "sub_category": "Power Bank",
             "price": "10.00",
-            "available": 9,
+            "available": 3,
             "image": "images/WPF4-1008-RED.png"
         },
         {
@@ -5842,8 +5952,28 @@
             "parent_category": "Major Appliances",
             "sub_category": "Refrigerators",
             "price": "165.00",
-            "available": 999,
+            "available": 4,
             "image": "images/RM3316B.png"
+        },
+        {
+            "id": "A6CLUB-BLK",
+            "name": "WORRYFREE 200W Wireless Party BT Speaker with One Microphone, Black",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "125.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "ABX-1550S",
+            "name": "Audiobox 15\" Portable Speaker w/ Stand & Mic",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "80.00",
+            "available": 999,
+            "image": "images/ABX-1550S.png"
         },
         {
             "id": "ABX-160R",
@@ -5886,6 +6016,16 @@
             "image": "images/BT-10BK.png"
         },
         {
+            "id": "BT-10BL",
+            "name": "QFX Portable Rechargeable BT Bazooka Party Speaker, Blue",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "13.00",
+            "available": 999,
+            "image": "images/BT-10BL.png"
+        },
+        {
             "id": "BT-10R",
             "name": "QFX Portable Rechargeable BT Bazooka Party Speaker, Red",
             "category": "Speakers",
@@ -5894,6 +6034,66 @@
             "price": "13.00",
             "available": 999,
             "image": "images/BT-10R.png"
+        },
+        {
+            "id": "BT-111-BLK",
+            "name": "QFX Portable BT Rechargeable Speaker with Multi-Color LED Party Lights, Black",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "11.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "BT-111-BLU",
+            "name": "QFX Portable BT Rechargeable Speaker with Multi-Color LED Party Lights, Blue",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "11.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "BT-111-RED",
+            "name": "QFX Portable BT Rechargeable Speaker with Multi-Color LED Party Lights, Red",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "11.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "BT-112-BLK",
+            "name": "QFX Portable BT Rechargeable Speaker + Multi-Color LED Party Lights, Black",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "10.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "BT-112-BLU",
+            "name": "QFX Portable BT Rechargeable Speaker + Multi-Color LED Party Lights, Blue",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "10.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
+            "id": "BT-112-RED",
+            "name": "QFX Portable BT Rechargeable Speaker + Multi-Color LED Party Lights, Red",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "10.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "BT-16-BLK",
@@ -5966,6 +6166,26 @@
             "image": "images/BT-1956-RED.png"
         },
         {
+            "id": "BT-1985-BLK",
+            "name": "QFX Retro Truck BT Speaker with LED Lights + Hands Free Calling, Black",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "23.00",
+            "available": 999,
+            "image": "images/BT-1985-BLK.png"
+        },
+        {
+            "id": "BT-1985-BLU",
+            "name": "QFX Retro Truck BT Speaker with LED Lights + Hands Free Calling, Blue",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "23.00",
+            "available": 999,
+            "image": "images/BT-1985-BLU.png"
+        },
+        {
             "id": "BT-2024-BLK",
             "name": "QFX Retro Truck Dual 2\u201d BT Speaker with Bass Radiator and On-The-Go LED Lights, Black",
             "category": "Speakers",
@@ -6006,16 +6226,6 @@
             "image": "images/BT-220.png"
         },
         {
-            "id": "BT-2201",
-            "name": "QFX Dual 2\u201d Portable Rechargeable BT Party Speaker with Transparent LED Lights",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "22.00",
-            "available": 5,
-            "image": "images/BT-2201.png"
-        },
-        {
             "id": "BT-23",
             "name": "QFX 2 x 3\" Bluetooth Speaker",
             "category": "Speakers",
@@ -6024,6 +6234,16 @@
             "price": "10.00",
             "available": 999,
             "image": "images/BT-23.png"
+        },
+        {
+            "id": "BT-27",
+            "name": "QFX Portable Cylinder Rechargeable BT Speaker with LED Party Lights",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "13.00",
+            "available": 999,
+            "image": "images/BT-27.png"
         },
         {
             "id": "BT-29-BLK",
@@ -6056,6 +6276,16 @@
             "image": "images/BT-29-RED.png"
         },
         {
+            "id": "BT-30",
+            "name": "QFX Dual 3\u201d Portable Rechargeable BT Party Speaker with LED Party Lights",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "12.00",
+            "available": 999,
+            "image": "images/BT-30.png"
+        },
+        {
             "id": "BT-35",
             "name": "QFX Rechargeable BT Soundbar Speaker w/LED",
             "category": "Speakers",
@@ -6074,16 +6304,6 @@
             "price": "13.00",
             "available": 1,
             "image": "images/BT-402-Blk.png"
-        },
-        {
-            "id": "BT-63-BLK",
-            "name": "QFX 6.5\" BT Portable Speaker w/ LED, Blk",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "20.00",
-            "available": 999,
-            "image": "images/BT-63-BLK.png"
         },
         {
             "id": "BT-64-BLK",
@@ -6206,14 +6426,34 @@
             "image": "images/CLP-10-YEL.png"
         },
         {
+            "id": "E-1500",
+            "name": "QFX 2 X15\" PROFESSIONAL PA SPEAKER",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "403.00",
+            "available": 5,
+            "image": "images/E-1500.png"
+        },
+        {
             "id": "E-B5",
             "name": "QFX PRO HIGH POWER PARTY PA SPEAKER DUAL 15\"",
             "category": "Speakers",
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "320.00",
-            "available": 6,
+            "available": 999,
             "image": "images/E-B5.png"
+        },
+        {
+            "id": "E-B8",
+            "name": "QFX Pro High Power 8\" BT Speaker w/ Lights+Mic",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "60.00",
+            "available": 999,
+            "image": "images/E-B8.png"
         },
         {
             "id": "FBHP546R",
@@ -6226,33 +6466,13 @@
             "image": "images/FBHP546R.png"
         },
         {
-            "id": "FBT500K",
-            "name": "Fisher KANNON Wireless Speaker",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "18.50",
-            "available": 3,
-            "image": "images/FBT500K.png"
-        },
-        {
-            "id": "FBT500NB",
-            "name": "Fisher KANNON Wireless Speaker",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "18.50",
-            "available": 1,
-            "image": "images/FBT500NB.png"
-        },
-        {
             "id": "FBX1529ACSM",
             "name": "Fisher 15\" Bass Blaster Party Speaker",
             "category": "Speakers",
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "85.00",
-            "available": 2,
+            "available": 1,
             "image": "images/FBX1529ACSM.png"
         },
         {
@@ -6312,7 +6532,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "12.00",
-            "available": 999,
+            "available": 4,
             "image": "images/HPXSPBT8.png"
         },
         {
@@ -6374,6 +6594,16 @@
             "price": "160.00",
             "available": 999,
             "image": "images/LMS-210.png"
+        },
+        {
+            "id": "LX-440",
+            "name": "Dolphin Portable Bluetooth Party Speaker",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "48.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "M-6500-MKII",
@@ -6516,14 +6746,44 @@
             "image": "images/P54-BLK.png"
         },
         {
+            "id": "PBX-100",
+            "name": "QFX 2x10 Portable Party Speaker",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "150.00",
+            "available": 999,
+            "image": "images/PBX-100.png"
+        },
+        {
+            "id": "PBX-1001",
+            "name": "QFX 3x10\" BT Speaker",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "150.00",
+            "available": 999,
+            "image": "images/PBX-1001.png"
+        },
+        {
             "id": "PBX-1020",
             "name": "QFX 2x10 Portable BT Speaker w/ LED Lights",
             "category": "Speakers",
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "100.00",
-            "available": 1,
+            "available": 999,
             "image": "images/PBX-1020.png"
+        },
+        {
+            "id": "PBX-1203",
+            "name": "QFX 12\" Lighted Party SPEAKER",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "80.00",
+            "available": 999,
+            "image": "images/PBX-1203.png"
         },
         {
             "id": "PBX-1206",
@@ -6542,8 +6802,18 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "52.00",
-            "available": 1,
+            "available": 999,
             "image": "images/PBX-1206SM.png"
+        },
+        {
+            "id": "PBX-1212",
+            "name": "QFX Dual 12\" High Powered Party Speaker",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "249.00",
+            "available": 999,
+            "image": "images/PBX-1212.png"
         },
         {
             "id": "PBX-1213",
@@ -6556,6 +6826,16 @@
             "image": "images/PBX-1213.png"
         },
         {
+            "id": "PBX-1501",
+            "name": "QFX 15\" Rechargeable BT Speaker with LED Party Lights",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "190.00",
+            "available": 999,
+            "image": "images/PBX-1501.png"
+        },
+        {
             "id": "PBX-151",
             "name": "QFX 15\u201d BT Rechargeable Speaker with RGB LED Party Lights + Wired MIC",
             "category": "Speakers",
@@ -6566,6 +6846,16 @@
             "image": "images/PBX-151.png"
         },
         {
+            "id": "PBX-151SM",
+            "name": "QFX 15\" BT Rechargeable Speaker with RGB LED Party Lights + Wired Mic",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "80.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+        },
+        {
             "id": "PBX-1520",
             "name": "QFX 15\" Dual BT Rechargeable Party Speaker",
             "category": "Speakers",
@@ -6574,6 +6864,26 @@
             "price": "190.00",
             "available": 1,
             "image": "images/PBX-1520.png"
+        },
+        {
+            "id": "PBX-2010",
+            "name": "QFX Dual 10\u201d Rechargeable BT Speaker with Transparent LED Party Lights",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "180.00",
+            "available": 999,
+            "image": "images/PBX-2010.png"
+        },
+        {
+            "id": "PBX-2015",
+            "name": "QFX Dual 15\u201d Rechargeable BT Speaker with Multi-Color Party Lights",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "185.00",
+            "available": 999,
+            "image": "images/PBX-2015.png"
         },
         {
             "id": "PBX-2122",
@@ -6632,7 +6942,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "210.00",
-            "available": 999,
+            "available": 8,
             "image": "images/PBX-5190.png"
         },
         {
@@ -6662,7 +6972,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "65.00",
-            "available": 4,
+            "available": 2,
             "image": "images/PBX-806.png"
         },
         {
@@ -6672,7 +6982,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "60.00",
-            "available": 1,
+            "available": 999,
             "image": "images/PBX-831.png"
         },
         {
@@ -6806,14 +7116,34 @@
             "image": "images/SC-2329BT.png"
         },
         {
+            "id": "SP-1217RBT",
+            "name": "Dolphin 12\" Rechargeable Party Speaker",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "95.00",
+            "available": 999,
+            "image": "images/SP-1217RBT.png"
+        },
+        {
             "id": "SP-1270RBT",
             "name": "Dolphin Dual 12\" Premium Party Speaker",
             "category": "Speakers",
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "215.00",
-            "available": 4,
+            "available": 999,
             "image": "images/SP-1270RBT.png"
+        },
+        {
+            "id": "SP-1700RBT",
+            "name": "Dolphin High Fidelity Speaker + Stand + Mic",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "125.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "SP-18RBT",
@@ -6832,8 +7162,18 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "160.00",
-            "available": 999,
+            "available": 6,
             "image": "images/SP-2100RBT.png"
+        },
+        {
+            "id": "SP-2120RBT",
+            "name": "Dolphin BT Spkr Dual 12\" w/ USB Port, LED & Radio",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "160.00",
+            "available": 8,
+            "image": "images/SP-2120RBT.png"
         },
         {
             "id": "SP-212RBT",
@@ -6852,8 +7192,28 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "240.00",
-            "available": 5,
+            "available": 4,
             "image": "images/SP-2250RBT.png"
+        },
+        {
+            "id": "SP-2600RBT",
+            "name": "Dolphin Dual 6.5\" Party Speaker w/Shoulder Strap",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "85.00",
+            "available": 999,
+            "image": "images/SP-2600RBT.png"
+        },
+        {
+            "id": "SP-3115RBT",
+            "name": "Dolphin High Power 15\" Portable Speaker",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "160.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "SP-3210RBT",
@@ -6922,18 +7282,8 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "12.00",
-            "available": 8,
+            "available": 4,
             "image": "images/TMS-101-BLK.png"
-        },
-        {
-            "id": "TMS-101-BLU",
-            "name": "QFX Dual 3\u201d Portable BT Rechargeable Party Speaker with Translucent Motion Party Lights, Blue",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "12.00",
-            "available": 2,
-            "image": "images/TMS-101-BLU.png"
         },
         {
             "id": "TMS-801-BLU",
@@ -6956,34 +7306,14 @@
             "image": "images/TMS-801-RED.png"
         },
         {
-            "id": "WA65-BLK",
-            "name": "WORRYFREE 300W Portable Bluetooth Speaker with Handle, one Microphone, Black",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "180.00",
-            "available": 999,
-            "image": "images/WA65-BLK.png"
-        },
-        {
             "id": "WH58-BLK",
             "name": "WORRYFREE 65W Wireless BT Speaker with RGB Lights, Black",
             "category": "Speakers",
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "60.00",
-            "available": 2,
+            "available": 999,
             "image": "images/WH58-BLK.png"
-        },
-        {
-            "id": "WH61-BLK",
-            "name": "WORRYFREE Portable BT Speaker With Handle - Black",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "75.00",
-            "available": 1,
-            "image": "images/WH61-BLK.png"
         },
         {
             "id": "WH61-BLU",
@@ -6992,18 +7322,28 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "75.00",
-            "available": 3,
+            "available": 999,
             "image": "images/WH61-BLU.png"
         },
         {
-            "id": "WP64-BLK",
-            "name": "WORRYFREE 40W Wireless Portable BT Speaker with RGB Lights, Black",
+            "id": "WH61-CMO",
+            "name": "WORRYFREE Portable BT Speaker With Handle - Camo",
             "category": "Speakers",
             "parent_category": "Audio",
             "sub_category": "Speakers",
-            "price": "35.00",
+            "price": "75.00",
             "available": 999,
-            "image": "images/WP64-BLK.png"
+            "image": "images/WH61-CMO.png"
+        },
+        {
+            "id": "WP63-BLK",
+            "name": "WORRYFREE 10W Waterproof IPX6 Mini Wireless BT Speaker with RGB Lights",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "22.00",
+            "available": 999,
+            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
         },
         {
             "id": "WP64-BLU",
@@ -7016,13 +7356,23 @@
             "image": "images/WP64-BLU.png"
         },
         {
+            "id": "WP64-GRY",
+            "name": "WORRYFREE 40W Wireless Portable BT Speaker with RGB Lights, Gray",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "35.00",
+            "available": 999,
+            "image": "images/WP64-GRY.png"
+        },
+        {
             "id": "WPB2-BLK",
             "name": "WORRYFREE Party Box Wireless BT Speaker with two Microphones and Tripod, Black w/(TR1/HS-02)",
             "category": "Speakers",
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "180.00",
-            "available": 4,
+            "available": 999,
             "image": "images/WPB2-BLK.png"
         },
         {
@@ -7032,7 +7382,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "180.00",
-            "available": 1,
+            "available": 999,
             "image": "images/WPB2-BLU.png"
         },
         {
@@ -7052,8 +7402,18 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "22.00",
-            "available": 1,
+            "available": 999,
             "image": "images/WPBMINI-BLK.png"
+        },
+        {
+            "id": "WPBMINI-BLU",
+            "name": "WORRYFREE Party Box Mini 10W Wireless BT Speaker, Blue",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "22.00",
+            "available": 999,
+            "image": "images/WPBMINI-BLU.png"
         },
         {
             "id": "WS10-BLU",
@@ -7126,6 +7486,16 @@
             "image": "images/XL-2120.png"
         },
         {
+            "id": "ANT-101",
+            "name": "QFX Indoor 90\u00b0 Rotating Antenna",
+            "category": "TV Antenna",
+            "parent_category": "Electronics",
+            "sub_category": "TV Antenna",
+            "price": "12.00",
+            "available": 999,
+            "image": "images/ANT-101.png"
+        },
+        {
             "id": "ANT-22",
             "name": "QFX Adjustable Indoor HDTV Antenna",
             "category": "TV Antenna",
@@ -7192,7 +7562,7 @@
             "parent_category": "Electronics",
             "sub_category": "TV Antenna",
             "price": "25.00",
-            "available": 1,
+            "available": 2,
             "image": "images/ANT1560E.png"
         },
         {
@@ -7212,7 +7582,7 @@
             "parent_category": "Electronics",
             "sub_category": "TV Antenna",
             "price": "23.00",
-            "available": 1,
+            "available": 2,
             "image": "images/ANT310E.png"
         },
         {
@@ -7592,7 +7962,7 @@
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Vacuums",
             "price": "79.00",
-            "available": 9,
+            "available": 4,
             "image": "images/NEU203-RBO.png"
         },
         {
@@ -7612,7 +7982,7 @@
             "parent_category": "Home & Office",
             "sub_category": "Vacuums",
             "price": "55.00",
-            "available": 999,
+            "available": 8,
             "image": "images/STM-4000BK.png"
         },
         {
@@ -7722,7 +8092,7 @@
             "parent_category": "Air & Climate Control",
             "sub_category": "Window AC",
             "price": "330.00",
-            "available": 999,
+            "available": 2,
             "image": "images/ETTW08E.png"
         },
         {
@@ -7732,7 +8102,7 @@
             "parent_category": "Air & Climate Control",
             "sub_category": "Window AC",
             "price": "350.00",
-            "available": 999,
+            "available": 6,
             "image": "images/ETTW10E.png"
         },
         {
@@ -7746,13 +8116,23 @@
             "image": "images/EWR05E.png"
         },
         {
+            "id": "EWR06E",
+            "name": "Element 6,000 BTU Window Air Conditioner \u2013 White",
+            "category": "Window AC",
+            "parent_category": "Air & Climate Control",
+            "sub_category": "Window AC",
+            "price": "156.00",
+            "available": 1,
+            "image": "images/EWR06E.png"
+        },
+        {
             "id": "EWR08E",
             "name": "Element 8,000 BTU Window Air Conditioner \u2013 White",
             "category": "Window AC",
             "parent_category": "Air & Climate Control",
             "sub_category": "Window AC",
             "price": "212.00",
-            "available": 3,
+            "available": 999,
             "image": "images/EWR08E.png"
         },
         {
@@ -7764,6 +8144,16 @@
             "price": "160.00",
             "available": 999,
             "image": "images/FFRA051WAE.png"
+        },
+        {
+            "id": "FFRE1533U10/ROA",
+            "name": "Frigidaire 15.000-BTU Remote Window AC - No Box / No Remote",
+            "category": "Window AC",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Window AC",
+            "price": "350.00",
+            "available": 1,
+            "image": "images/FFRE1533U10-ROA.png"
         },
         {
             "id": "LW1017ERSM1",
