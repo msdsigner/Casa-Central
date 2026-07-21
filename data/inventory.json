@@ -73,7 +73,7 @@
             "sub_category": "Accessories",
             "price": "5.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/REM-13-BLK.png"
         },
         {
             "id": "REM-13-SIL",
@@ -83,7 +83,7 @@
             "sub_category": "Accessories",
             "price": "5.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/REM-13-SIL.png"
         },
         {
             "id": "SM-513-972",
@@ -113,7 +113,7 @@
             "sub_category": "Accessories",
             "price": "7.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/SRP2024R-27.png"
         },
         {
             "id": "AF-202BK",
@@ -1873,7 +1873,7 @@
             "sub_category": "Coffee & Tea",
             "price": "20.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/SM-KET-1386.png"
         },
         {
             "id": "SM-KET-1386-B",
@@ -4453,7 +4453,7 @@
             "sub_category": "Home Audio",
             "price": "60.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/WH58-GRN.png"
         },
         {
             "id": "BT-1010-BLK",
@@ -4623,7 +4623,7 @@
             "sub_category": "Home Radio",
             "price": "28.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/R-334BT-BLK.png"
         },
         {
             "id": "R-34",
@@ -5083,7 +5083,7 @@
             "sub_category": "Lighting",
             "price": "18.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/SM-720-7500.png"
         },
         {
             "id": "M-310",
@@ -5523,7 +5523,7 @@
             "sub_category": "Personal Care",
             "price": "20.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/CXT1-4007-CMB.png"
         },
         {
             "id": "CXT1-6002-HYP",
@@ -5543,7 +5543,7 @@
             "sub_category": "Personal Care",
             "price": "1299.00",
             "available": 7,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/JL10003WL-KO.png"
         },
         {
             "id": "JL10003WL-WU",
@@ -5553,7 +5553,7 @@
             "sub_category": "Personal Care",
             "price": "1299.00",
             "available": 4,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/JL10003WL-WU.png"
         },
         {
             "id": "JL10003WL-YB",
@@ -5563,7 +5563,7 @@
             "sub_category": "Personal Care",
             "price": "1299.00",
             "available": 5,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/JL10003WL-YB.png"
         },
         {
             "id": "MG-1-BLK",
@@ -5753,7 +5753,7 @@
             "sub_category": "Portable AC",
             "price": "240.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/PX0811CWRU-ROA.png"
         },
         {
             "id": "S-15051",
@@ -5953,7 +5953,7 @@
             "sub_category": "Speakers",
             "price": "125.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/A6CLUB-BLK.png"
         },
         {
             "id": "ABX-1550S",
@@ -6033,7 +6033,7 @@
             "sub_category": "Speakers",
             "price": "11.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/BT-111-BLK.png"
         },
         {
             "id": "BT-111-BLU",
@@ -6043,7 +6043,7 @@
             "sub_category": "Speakers",
             "price": "11.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/BT-111-BLU.png"
         },
         {
             "id": "BT-111-RED",
@@ -6053,7 +6053,7 @@
             "sub_category": "Speakers",
             "price": "11.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/BT-111-RED.png"
         },
         {
             "id": "BT-112-BLK",
@@ -6063,7 +6063,7 @@
             "sub_category": "Speakers",
             "price": "10.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/BT-112-BLK.png"
         },
         {
             "id": "BT-112-BLU",
@@ -6073,7 +6073,7 @@
             "sub_category": "Speakers",
             "price": "10.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/BT-112-BLU.png"
         },
         {
             "id": "BT-112-RED",
@@ -6083,7 +6083,7 @@
             "sub_category": "Speakers",
             "price": "10.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/BT-112-RED.png"
         },
         {
             "id": "BT-16-BLK",
@@ -6543,7 +6543,7 @@
             "sub_category": "Speakers",
             "price": "48.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/LX-440.png"
         },
         {
             "id": "M-6500-MKII",
@@ -6793,7 +6793,7 @@
             "sub_category": "Speakers",
             "price": "80.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/PBX-151SM.png"
         },
         {
             "id": "PBX-1520",
@@ -7083,7 +7083,7 @@
             "sub_category": "Speakers",
             "price": "125.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/SP-1700RBT.png"
         },
         {
             "id": "SP-18RBT",
@@ -7153,7 +7153,7 @@
             "sub_category": "Speakers",
             "price": "160.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/SP-3115RBT.png"
         },
         {
             "id": "SP-3210RBT",
@@ -7303,7 +7303,7 @@
             "sub_category": "Speakers",
             "price": "22.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/WP63-BLK.png"
         },
         {
             "id": "WP64-BLU",
