@@ -446,31 +446,11 @@
             "image": "images/RCD5.png"
         },
         {
-            "id": "ANT-100",
-            "name": "AudioBox Digital TV & HD Antenna",
-            "category": "Audio",
-            "parent_category": "Audio",
-            "sub_category": "Audio",
-            "price": "5.00",
-            "available": 6,
-            "image": "images/ANT-100.png"
-        },
-        {
-            "id": "ANT-400",
-            "name": "AudioBox Amplified Indoor Antenna",
-            "category": "Audio",
-            "parent_category": "Audio",
-            "sub_category": "Audio",
-            "price": "12.00",
-            "available": 3,
-            "image": "images/ANT-400.png"
-        },
-        {
             "id": "WAC5-1002-BLK",
             "name": "AIWA RGB Clock with USB Output",
-            "category": "Audio",
-            "parent_category": "Audio",
-            "sub_category": "Audio",
+            "category": "Alarm Clocks",
+            "parent_category": "Home & Office",
+            "sub_category": "Alarm Clocks",
             "price": "10.00",
             "available": 999,
             "image": "images/WAC5-1002-BLK.png"
@@ -2134,6 +2114,26 @@
             "price": "8.00",
             "available": 3,
             "image": "images/37210.png"
+        },
+        {
+            "id": "ANT-100",
+            "name": "AudioBox Digital TV & HD Antenna",
+            "category": "Electronics",
+            "parent_category": "Electronics",
+            "sub_category": "Electronics",
+            "price": "5.00",
+            "available": 6,
+            "image": "images/ANT-100.png"
+        },
+        {
+            "id": "ANT-400",
+            "name": "AudioBox Amplified Indoor Antenna",
+            "category": "Electronics",
+            "parent_category": "Electronics",
+            "sub_category": "Electronics",
+            "price": "12.00",
+            "available": 3,
+            "image": "images/ANT-400.png"
         },
         {
             "id": "CJR720BLHD",
