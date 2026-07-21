@@ -1,14 +1,14 @@
 /* Light Mode Base Styling */
 :root {
-    --bg: #f8fafc; /* Soft white/gray */
-    --surface: #ffffff; /* Clean white */
+    --bg: #f8fafc;
+    --surface: #ffffff;
     --surface-hover: #f1f5f9;
     --border: #e2e8f0;
-    --primary: #ebecf0; /* White to pop */
+    --primary: #57585f;
     --primary-hover: #1e40af;
-    --accent: hsl(46, 100%, 66%); /* Golden trim */
+    --accent: hsl(46deg 100% 57.33%);
     --text-main: #0f172a;
-    --text-sub: #327feb;
+    --text-sub: #33373d;
     --radius: 8px;
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --font: 'Inter', system-ui, sans-serif;
