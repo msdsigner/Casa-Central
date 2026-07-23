@@ -1,5 +1,5 @@
 {
-    "last_updated": "July 22, 2026",
+    "last_updated": "July 23, 2026",
     "downloads": {
         "pdf": "https://drive.google.com/uc?export=download&id=1gC_iZJLeoH-_A9waEBsoNpv8BbnvvdnR",
         "excel": "https://drive.google.com/uc?export=download&id=1jphLKnNkJ26SGBvUR6F9e8Gb7kV0ROQx"
@@ -66,26 +66,6 @@
             "image": "images/IP-365.png"
         },
         {
-            "id": "REM-13-BLK",
-            "name": "QFX 4-in-1 Smart Universal Remote Control, Black",
-            "category": "Accessories",
-            "parent_category": "Electronics",
-            "sub_category": "Accessories",
-            "price": "5.00",
-            "available": 999,
-            "image": "images/REM-13-BLK.png"
-        },
-        {
-            "id": "REM-13-SIL",
-            "name": "QFX 4-in-1 Smart Universal Remote Control, Silver",
-            "category": "Accessories",
-            "parent_category": "Electronics",
-            "sub_category": "Accessories",
-            "price": "5.00",
-            "available": 999,
-            "image": "images/REM-13-SIL.png"
-        },
-        {
             "id": "SM-513-972",
             "name": "Emerald Tilt Wall Mount 32\" to 90\"",
             "category": "Accessories",
@@ -94,26 +74,6 @@
             "price": "15.00",
             "available": 999,
             "image": "images/SM-513-972.png"
-        },
-        {
-            "id": "SM-720-8550",
-            "name": "Emerald Full Motion Wall Mount 26\" to 70\" TV's",
-            "category": "Accessories",
-            "parent_category": "Electronics",
-            "sub_category": "Accessories",
-            "price": "32.00",
-            "available": 999,
-            "image": "images/SM-720-8550.png"
-        },
-        {
-            "id": "SRP2024R-27",
-            "name": "Philips Universal Slide-In Remote Control, 4 Device",
-            "category": "Accessories",
-            "parent_category": "Electronics",
-            "sub_category": "Accessories",
-            "price": "7.00",
-            "available": 999,
-            "image": "images/SRP2024R-27.png"
         },
         {
             "id": "AF-202BK",
@@ -1426,6 +1386,26 @@
             "image": "images/DV10R.png"
         },
         {
+            "id": "MHV1-1026-GRN",
+            "name": "Monster Cable 6ft LED Light - Green",
+            "category": "Cables",
+            "parent_category": "Electronics",
+            "sub_category": "Cables",
+            "price": "5.00",
+            "available": 1,
+            "image": "images/MHV1-1026-GRN.png"
+        },
+        {
+            "id": "MHV1-1026-PUR",
+            "name": "Monster Cable 6ft LED Light - Purple",
+            "category": "Cables",
+            "parent_category": "Electronics",
+            "sub_category": "Cables",
+            "price": "5.00",
+            "available": 1,
+            "image": "images/MHV1-1026-PUR.png"
+        },
+        {
             "id": "VH25HHR",
             "name": "RCA 25 ft. HDMI to HDMI Cable",
             "category": "Cables",
@@ -2114,26 +2094,6 @@
             "price": "8.00",
             "available": 3,
             "image": "images/37210.png"
-        },
-        {
-            "id": "ANT-100",
-            "name": "AudioBox Digital TV & HD Antenna",
-            "category": "Electronics",
-            "parent_category": "Electronics",
-            "sub_category": "Electronics",
-            "price": "5.00",
-            "available": 6,
-            "image": "images/ANT-100.png"
-        },
-        {
-            "id": "ANT-400",
-            "name": "AudioBox Amplified Indoor Antenna",
-            "category": "Electronics",
-            "parent_category": "Electronics",
-            "sub_category": "Electronics",
-            "price": "12.00",
-            "available": 3,
-            "image": "images/ANT-400.png"
         },
         {
             "id": "CJR720BLHD",
@@ -4456,36 +4416,6 @@
             "image": "images/WH58-GRN.png"
         },
         {
-            "id": "BT-1010-BLK",
-            "name": "QFX 2\" Portable BT Rechargeable Speaker with Multi-Color LED Party Lights, Black",
-            "category": "Home Radio",
-            "parent_category": "Audio",
-            "sub_category": "Home Radio",
-            "price": "13.00",
-            "available": 999,
-            "image": "images/BT-1010-BLK.png"
-        },
-        {
-            "id": "BT-1010-BLU",
-            "name": "QFX 2\" Portable BT Rechargeable Speaker with Multi-Color LED Party Lights, Blue",
-            "category": "Home Radio",
-            "parent_category": "Audio",
-            "sub_category": "Home Radio",
-            "price": "13.00",
-            "available": 999,
-            "image": "images/BT-1010-BLU.png"
-        },
-        {
-            "id": "BT-1010-RED",
-            "name": "QFX 2\" Portable BT Rechargeable Speaker with Multi-Color LED Party Lights, Red",
-            "category": "Home Radio",
-            "parent_category": "Audio",
-            "sub_category": "Home Radio",
-            "price": "13.00",
-            "available": 999,
-            "image": "images/BT-1010-RED.png"
-        },
-        {
             "id": "BT-70",
             "name": "QFX Beverage Dispenser BT Speaker + LED Party Lights",
             "category": "Home Radio",
@@ -4994,26 +4924,6 @@
             "price": "7.00",
             "available": 2,
             "image": "images/LSL110.png"
-        },
-        {
-            "id": "MHV1-1026-GRN",
-            "name": "Monster Cable 6ft LED Light - Green",
-            "category": "Lighting",
-            "parent_category": "Electronics",
-            "sub_category": "Lighting",
-            "price": "5.00",
-            "available": 1,
-            "image": "images/MHV1-1026-GRN.png"
-        },
-        {
-            "id": "MHV1-1026-PUR",
-            "name": "Monster Cable 6ft LED Light - Purple",
-            "category": "Lighting",
-            "parent_category": "Electronics",
-            "sub_category": "Lighting",
-            "price": "5.00",
-            "available": 1,
-            "image": "images/MHV1-1026-PUR.png"
         },
         {
             "id": "SM-720-1610",
@@ -5994,6 +5904,36 @@
             "price": "33.00",
             "available": 999,
             "image": "images/ABX-82S.png"
+        },
+        {
+            "id": "BT-1010-BLK",
+            "name": "QFX 2\" Portable BT Rechargeable Speaker with Multi-Color LED Party Lights, Black",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "13.00",
+            "available": 999,
+            "image": "images/BT-1010-BLK.png"
+        },
+        {
+            "id": "BT-1010-BLU",
+            "name": "QFX 2\" Portable BT Rechargeable Speaker with Multi-Color LED Party Lights, Blue",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "13.00",
+            "available": 999,
+            "image": "images/BT-1010-BLU.png"
+        },
+        {
+            "id": "BT-1010-RED",
+            "name": "QFX 2\" Portable BT Rechargeable Speaker with Multi-Color LED Party Lights, Red",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "13.00",
+            "available": 999,
+            "image": "images/BT-1010-RED.png"
         },
         {
             "id": "BT-10BK",
@@ -7446,6 +7386,16 @@
             "image": "images/XL-2120.png"
         },
         {
+            "id": "ANT-100",
+            "name": "AudioBox Digital TV & HD Antenna",
+            "category": "TV Antenna",
+            "parent_category": "Electronics",
+            "sub_category": "TV Antenna",
+            "price": "5.00",
+            "available": 6,
+            "image": "images/ANT-100.png"
+        },
+        {
             "id": "ANT-101",
             "name": "QFX Indoor 90\u00b0 Rotating Antenna",
             "category": "TV Antenna",
@@ -7464,6 +7414,16 @@
             "price": "5.00",
             "available": 999,
             "image": "images/ANT-22.png"
+        },
+        {
+            "id": "ANT-400",
+            "name": "AudioBox Amplified Indoor Antenna",
+            "category": "TV Antenna",
+            "parent_category": "Electronics",
+            "sub_category": "TV Antenna",
+            "price": "12.00",
+            "available": 3,
+            "image": "images/ANT-400.png"
         },
         {
             "id": "ANT-7-BLK",
@@ -7596,6 +7556,26 @@
             "image": "images/REM-11.png"
         },
         {
+            "id": "REM-13-BLK",
+            "name": "QFX 4-in-1 Smart Universal Remote Control, Black",
+            "category": "TV Remote",
+            "parent_category": "Communications",
+            "sub_category": "TV Remote",
+            "price": "5.00",
+            "available": 999,
+            "image": "images/REM-13-BLK.png"
+        },
+        {
+            "id": "REM-13-SIL",
+            "name": "QFX 4-in-1 Smart Universal Remote Control, Silver",
+            "category": "TV Remote",
+            "parent_category": "Communications",
+            "sub_category": "TV Remote",
+            "price": "5.00",
+            "available": 999,
+            "image": "images/REM-13-SIL.png"
+        },
+        {
             "id": "REM-6",
             "name": "QFX 6 IN 1 Universal Remote Control",
             "category": "TV Remote",
@@ -7604,6 +7584,16 @@
             "price": "3.50",
             "available": 999,
             "image": "images/REM-6.png"
+        },
+        {
+            "id": "SRP2024R-27",
+            "name": "Philips Universal Slide-In Remote Control, 4 Device",
+            "category": "TV Remote",
+            "parent_category": "Communications",
+            "sub_category": "TV Remote",
+            "price": "7.00",
+            "available": 999,
+            "image": "images/SRP2024R-27.png"
         },
         {
             "id": "SRP4221B/27",
@@ -7754,6 +7744,16 @@
             "price": "28.00",
             "available": 999,
             "image": "images/SM-720-8532.png"
+        },
+        {
+            "id": "SM-720-8550",
+            "name": "Emerald Full Motion Wall Mount 26\" to 70\" TV's",
+            "category": "TV Wall Bracket",
+            "parent_category": "Home & Office",
+            "sub_category": "TV Wall Bracket",
+            "price": "32.00",
+            "available": 999,
+            "image": "images/SM-720-8550.png"
         },
         {
             "id": "SM-720-8712",
