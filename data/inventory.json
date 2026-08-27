@@ -1,5 +1,5 @@
 {
-    "last_updated": "August 19, 2026",
+    "last_updated": "August 28, 2026",
     "downloads": {
         "pdf": "https://drive.google.com/uc?export=download&id=1gC_iZJLeoH-_A9waEBsoNpv8BbnvvdnR",
         "excel": "https://drive.google.com/uc?export=download&id=1jphLKnNkJ26SGBvUR6F9e8Gb7kV0ROQx"
@@ -4733,7 +4733,7 @@
             "sub_category": "Home Audio",
             "price": "115.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/WPB2-GRY.png"
         },
         {
             "id": "BT-70",
