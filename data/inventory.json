@@ -266,6 +266,16 @@
             "image": "images/SM-AIR-1899-RBO.png"
         },
         {
+            "id": "TS-120",
+            "name": "BRENTWOOD Quesadilla Maker, Red",
+            "category": "Air Fryer & Toaster",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Air Fryer & Toaster",
+            "price": "40.00",
+            "available": 2,
+            "image": "images/TS-120.png"
+        },
+        {
             "id": "TS-260B",
             "name": "BRENTWOOD 2-Slice Toaster, Black",
             "category": "Air Fryer & Toaster",
@@ -4146,6 +4156,16 @@
             "image": "images/HB8436127995-3-RB.png"
         },
         {
+            "id": "HP-3013BK",
+            "name": "BRENTWOOD 1.3Qt SS Hot Pot and Steam",
+            "category": "Heating & Cooking",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Heating & Cooking",
+            "price": "26.00",
+            "available": 2,
+            "image": "images/HP-3013BK.png"
+        },
+        {
             "id": "IM-306DB",
             "name": "Better Chef Double Burner - Wht",
             "category": "Heating & Cooking",
@@ -5126,6 +5146,16 @@
             "image": "images/IM-36CR.png"
         },
         {
+            "id": "CE-CO109",
+            "name": "Continental Can Opener Stainless Blade - Black",
+            "category": "Kitchen accessories",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Kitchen accessories",
+            "price": "16.50",
+            "available": 999,
+            "image": "images/CE-CO109.png"
+        },
+        {
             "id": "J-30B",
             "name": "BRENTWOOD Elec. Tall Can Opener - BLK",
             "category": "Kitchen accessories",
@@ -5164,6 +5194,26 @@
             "price": "13.36",
             "available": 1,
             "image": "images/SR-100.png"
+        },
+        {
+            "id": "WWFB2",
+            "name": "Westinghouse Replacement Water Filter - 2pk",
+            "category": "Kitchen accessories",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Kitchen accessories",
+            "price": "5.00",
+            "available": 1,
+            "image": "images/WWFB2.png"
+        },
+        {
+            "id": "WWFB3",
+            "name": "Westinghouse Replacement Water Filter - 3pk",
+            "category": "Kitchen accessories",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Kitchen accessories",
+            "price": "6.00",
+            "available": 1,
+            "image": "images/WWFB3.png"
         },
         {
             "id": "BCED26",
@@ -8364,56 +8414,6 @@
             "price": "60.00",
             "available": 3,
             "image": "images/SA315.png"
-        },
-        {
-            "id": "CE-CO109",
-            "name": "Continental Can Opener Stainless Blade - Black",
-            "category": "Uncategorized",
-            "parent_category": "Other",
-            "sub_category": "Uncategorized",
-            "price": "16.50",
-            "available": 999,
-            "image": "images/CE-CO109.png"
-        },
-        {
-            "id": "HP-3013BK",
-            "name": "BRENTWOOD 1.3Qt SS Hot Pot and Steam",
-            "category": "Uncategorized",
-            "parent_category": "Other",
-            "sub_category": "Uncategorized",
-            "price": "26.00",
-            "available": 2,
-            "image": "images/HP-3013BK.png"
-        },
-        {
-            "id": "TS-120",
-            "name": "BRENTWOOD Quesadilla Maker, Red",
-            "category": "Uncategorized",
-            "parent_category": "Other",
-            "sub_category": "Uncategorized",
-            "price": "40.00",
-            "available": 2,
-            "image": "images/TS-120.png"
-        },
-        {
-            "id": "WWFB2",
-            "name": "Westinghouse Replacement Water Filter - 2pk",
-            "category": "Uncategorized",
-            "parent_category": "Other",
-            "sub_category": "Uncategorized",
-            "price": "5.00",
-            "available": 1,
-            "image": "images/WWFB2.png"
-        },
-        {
-            "id": "WWFB3",
-            "name": "Westinghouse Replacement Water Filter - 3pk",
-            "category": "Uncategorized",
-            "parent_category": "Other",
-            "sub_category": "Uncategorized",
-            "price": "6.00",
-            "available": 1,
-            "image": "images/WWFB3.png"
         },
         {
             "id": "BDSV53-BLK",
