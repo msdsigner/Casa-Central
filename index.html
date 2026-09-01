@@ -68,6 +68,13 @@
                 </div>
             </div>
             
+            <div class="sidebar-block">
+                <h3>System Health</h3>
+                <button class="health-btn" id="healthCheckBtn">
+                    🩺 Data Health Audit (<span id="healthBadge">Checking...</span>)
+                </button>
+            </div>
+
             <p id="totalCount" class="total-count">Loading items...</p>
         </aside>
 
@@ -109,6 +116,22 @@
     
     <!-- Cart Overlay -->
     <div id="cartOverlay" class="cart-overlay"></div>
+
+    <!-- Data Health Audit Modal -->
+    <div id="healthModal" class="health-modal hidden">
+        <div class="health-modal-content">
+            <div class="health-modal-header">
+                <h2>🩺 Catalog Data Health Audit</h2>
+                <button class="close-modal" id="closeHealthModal">&times;</button>
+            </div>
+            <div class="health-summary-cards" id="healthCards">
+                <!-- Injected by JS -->
+            </div>
+            <div class="health-details" id="healthDetails">
+                <!-- Injected by JS -->
+            </div>
+        </div>
+    </div>
 
     <!-- Lightbox Modal -->
     <div id="imageModal" class="image-modal">

@@ -81,10 +81,121 @@ document.addEventListener('DOMContentLoaded', () => {
             buildFilters();
             renderGrid();
             updateCartUI(); // Initial UI sync
+            updateHealthAudit(inventory);
         } catch (error) {
             totalCount.textContent = "Error loading inventory data.";
             console.error('Fetch error:', error);
         }
+    }
+
+    // 🩺 Health Audit System
+    const healthCheckBtn = document.getElementById('healthCheckBtn');
+    const healthBadge = document.getElementById('healthBadge');
+    const healthModal = document.getElementById('healthModal');
+    const closeHealthModal = document.getElementById('closeHealthModal');
+    const healthCards = document.getElementById('healthCards');
+    const healthDetails = document.getElementById('healthDetails');
+
+    let healthMetrics = { missingImages: [], zeroPrices: [], uncategorized: [], total: 0 };
+
+    function updateHealthAudit(items) {
+        if (!healthBadge) return;
+        const missingImages = items.filter(i => !i.image || i.image.includes('placeholder') || i.image.trim() === '');
+        const zeroPrices = items.filter(i => !i.price || parseFloat(i.price) <= 0 || isNaN(parseFloat(i.price)));
+        const uncategorized = items.filter(i => (i.parent_category === 'Other' || i.category === 'Uncategorized' || (i.parent_category === 'Refurbished / Reconditioned' && i.category === 'General')));
+
+        healthMetrics = { missingImages, zeroPrices, uncategorized, total: items.length };
+
+        const totalIssues = missingImages.length + zeroPrices.length + uncategorized.length;
+        if (totalIssues === 0) {
+            healthBadge.textContent = '100% Healthy';
+            healthBadge.style.color = '#10b981';
+        } else {
+            healthBadge.textContent = `${totalIssues} Issue${totalIssues > 1 ? 's' : ''}`;
+            healthBadge.style.color = '#f59e0b';
+        }
+    }
+
+    function renderHealthModal() {
+        if (!healthCards || !healthDetails) return;
+        const { missingImages, zeroPrices, uncategorized, total } = healthMetrics;
+        const totalIssues = missingImages.length + zeroPrices.length + uncategorized.length;
+
+        healthCards.innerHTML = `
+            <div class="health-card ${missingImages.length ? 'issue' : 'ok'}">
+                <div class="health-card-num">${missingImages.length}</div>
+                <div class="health-card-label">Missing Images</div>
+            </div>
+            <div class="health-card ${zeroPrices.length ? 'issue' : 'ok'}">
+                <div class="health-card-num">${zeroPrices.length}</div>
+                <div class="health-card-label">$0 / Invalid Price</div>
+            </div>
+            <div class="health-card ${uncategorized.length ? 'issue' : 'ok'}">
+                <div class="health-card-num">${uncategorized.length}</div>
+                <div class="health-card-label">Uncategorized</div>
+            </div>
+            <div class="health-card ok">
+                <div class="health-card-num">${total}</div>
+                <div class="health-card-label">Total Audited</div>
+            </div>
+        `;
+
+        if (totalIssues === 0) {
+            healthDetails.innerHTML = `<div class="health-empty-state">✨ Catalog dataset is in 100% perfect parity. No data anomalies found.</div>`;
+            return;
+        }
+
+        let html = '';
+        if (missingImages.length > 0) {
+            html += `<div class="health-issue-group">
+                <h3>🖼️ Items Missing Images (${missingImages.length})</h3>
+                <ul class="health-item-list">
+                    ${missingImages.slice(0, 15).map(i => `<li><strong>${i.id}</strong>: ${i.name}</li>`).join('')}
+                    ${missingImages.length > 15 ? `<li class="more-note">...and ${missingImages.length - 15} more</li>` : ''}
+                </ul>
+            </div>`;
+        }
+
+        if (zeroPrices.length > 0) {
+            html += `<div class="health-issue-group">
+                <h3>💲 Items with Zero or Missing Price (${zeroPrices.length})</h3>
+                <ul class="health-item-list">
+                    ${zeroPrices.slice(0, 15).map(i => `<li><strong>${i.id}</strong>: ${i.name}</li>`).join('')}
+                    ${zeroPrices.length > 15 ? `<li class="more-note">...and ${zeroPrices.length - 15} more</li>` : ''}
+                </ul>
+            </div>`;
+        }
+
+        if (uncategorized.length > 0) {
+            html += `<div class="health-issue-group">
+                <h3>🏷️ Uncategorized / General Items (${uncategorized.length})</h3>
+                <ul class="health-item-list">
+                    ${uncategorized.slice(0, 15).map(i => `<li><strong>${i.id}</strong>: ${i.name} (${i.parent_category} / ${i.category})</li>`).join('')}
+                    ${uncategorized.length > 15 ? `<li class="more-note">...and ${uncategorized.length - 15} more</li>` : ''}
+                </ul>
+            </div>`;
+        }
+
+        healthDetails.innerHTML = html;
+    }
+
+    if (healthCheckBtn) {
+        healthCheckBtn.addEventListener('click', () => {
+            renderHealthModal();
+            if (healthModal) healthModal.classList.remove('hidden');
+        });
+    }
+
+    if (closeHealthModal) {
+        closeHealthModal.addEventListener('click', () => {
+            if (healthModal) healthModal.classList.add('hidden');
+        });
+    }
+
+    if (healthModal) {
+        healthModal.addEventListener('click', (e) => {
+            if (e.target === healthModal) healthModal.classList.add('hidden');
+        });
     }
 
     if (sortSelect) {
