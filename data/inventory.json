@@ -106,16 +106,6 @@
             "image": "images/RCR414BHE1.png"
         },
         {
-            "id": "RCRN06GBE",
-            "name": "RCA 6-Device Universal Remote Control",
-            "category": "Accessories",
-            "parent_category": "Electronics",
-            "sub_category": "Accessories",
-            "price": "10.00",
-            "available": 2,
-            "image": "images/RCRN06GBE.png"
-        },
-        {
             "id": "REM-10",
             "name": "QFX SMART UNIVERSAL REMOTE CONTROL",
             "category": "Accessories",
@@ -156,16 +146,6 @@
             "image": "images/SRP9232D-27.png"
         },
         {
-            "id": "AF-202W",
-            "name": "BRENTWOOD 2.0 AIR Fryer, White",
-            "category": "Air Fryer & Toaster",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Air Fryer & Toaster",
-            "price": "50.00",
-            "available": 2,
-            "image": "images/AF-202W.png"
-        },
-        {
             "id": "AF-2400SI",
             "name": "Brentwood 24-Qt Convection Air Fryer Toaster Oven, Silver",
             "category": "Air Fryer & Toaster",
@@ -174,16 +154,6 @@
             "price": "100.00",
             "available": 999,
             "image": "images/AF-2400SI.png"
-        },
-        {
-            "id": "AF-800DBK",
-            "name": "BRENTWOOD XL 8-Quart Digital Air Fryer with Clear View Window, Touch Display, 8 Presets, 60 Minute Timer & Temp. Control",
-            "category": "Air Fryer & Toaster",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Air Fryer & Toaster",
-            "price": "72.00",
-            "available": 1,
-            "image": "images/AF-800DBK.png"
         },
         {
             "id": "AFWB7QWG13",
@@ -302,18 +272,8 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Air Fryer & Toaster",
             "price": "15.00",
-            "available": 999,
+            "available": 5,
             "image": "images/TS-260B.png"
-        },
-        {
-            "id": "TS-260W",
-            "name": "BRENTWOOD 2-Slice Toaster, White",
-            "category": "Air Fryer & Toaster",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Air Fryer & Toaster",
-            "price": "15.00",
-            "available": 2,
-            "image": "images/TS-260W.png"
         },
         {
             "id": "TS-265",
@@ -1162,7 +1122,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Blenders & Mixers",
             "price": "28.00",
-            "available": 5,
+            "available": 2,
             "image": "images/RJB-100W.png"
         },
         {
@@ -1264,16 +1224,6 @@
             "price": "20.00",
             "available": 1,
             "image": "images/FBX396K.png"
-        },
-        {
-            "id": "FBX396R",
-            "name": "Fisher  MAX Sound Wireless Boombox - Red",
-            "category": "Boombox",
-            "parent_category": "Audio",
-            "sub_category": "Boombox",
-            "price": "20.00",
-            "available": 2,
-            "image": "images/FBX396R.png"
         },
         {
             "id": "J-220BT",
@@ -1716,6 +1666,16 @@
             "image": "images/CCUN28WV-ROA.png"
         },
         {
+            "id": "ERT74MES",
+            "name": "Element 21.3 in. 7.4 cu. ft. Compact Top Freezer Refrigerator, Stainless Steel",
+            "category": "Major Appliances",
+            "parent_category": "Major Appliances",
+            "sub_category": "Chest Freezer",
+            "price": "656.00",
+            "available": 7,
+            "image": "images/ERT74MES.png"
+        },
+        {
             "id": "176",
             "name": "Kitchen+Sense 3-Cup Aluminum Espresso Coffee Maker",
             "category": "Coffee & Tea",
@@ -1836,16 +1796,6 @@
             "image": "images/CG-158W.png"
         },
         {
-            "id": "CG-162S",
-            "name": "BRENTWOOD 75-Gram Electric Wet & Dry Coffee Bean, Herb, & Spice Grinder, Black",
-            "category": "Coffee & Tea",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Coffee & Tea",
-            "price": "33.00",
-            "available": 1,
-            "image": "images/CG-162S.png"
-        },
-        {
             "id": "CH99671",
             "name": "Homestyle Essentials 12 Cups coffee maker",
             "category": "Coffee & Tea",
@@ -1904,16 +1854,6 @@
             "price": "12.00",
             "available": 1,
             "image": "images/HE-760.png"
-        },
-        {
-            "id": "IM-170S",
-            "name": "Better Chef Stainless Steel Cordless Electric Kettle",
-            "category": "Coffee & Tea",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Coffee & Tea",
-            "price": "20.00",
-            "available": 7,
-            "image": "images/IM-170S.png"
         },
         {
             "id": "KT-1610W",
@@ -2303,7 +2243,7 @@
             "sub_category": "Dehumidifier",
             "price": "230.00",
             "available": 3,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/MAD50S1QWT-ROA.png"
         },
         {
             "id": "VPMS05BWT",
@@ -2642,7 +2582,7 @@
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Fans",
             "price": "30.00",
-            "available": 9,
+            "available": 8,
             "image": "images/MSH20Q3ABB-RBO.png"
         },
         {
@@ -2832,7 +2772,7 @@
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Fans",
             "price": "35.00",
-            "available": 999,
+            "available": 6,
             "image": "images/WSH0702ABB-RBO.png"
         },
         {
@@ -3044,16 +2984,6 @@
             "price": "11.00",
             "available": 8,
             "image": "images/FBHP546W.png"
-        },
-        {
-            "id": "FBHP660K",
-            "name": "Fisher Groovy PRO Wireless Headphone",
-            "category": "Headphones & Earphones",
-            "parent_category": "Audio",
-            "sub_category": "Headphones & Earphones",
-            "price": "14.00",
-            "available": 999,
-            "image": "images/FBHP660K.png"
         },
         {
             "id": "FGHP245B",
@@ -4002,7 +3932,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "55.00",
-            "available": 3,
+            "available": 1,
             "image": "images/B20PXP78-A70W.png"
         },
         {
@@ -4312,7 +4242,7 @@
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Heating & Cooking",
             "price": "95.00",
-            "available": 999,
+            "available": 7,
             "image": "images/NN-SC678C-RBO.png"
         },
         {
@@ -4384,26 +4314,6 @@
             "price": "100.00",
             "available": 999,
             "image": "images/NN-SU64LW-RB.png"
-        },
-        {
-            "id": "NN-SU65QB/RBO",
-            "name": "Panasonic Microwave 1.3 cuft 1200W Inverter, RB, Black",
-            "category": "Heating & Cooking",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Heating & Cooking",
-            "price": "100.00",
-            "available": 2,
-            "image": "images/NN-SU65QB-RBO.png"
-        },
-        {
-            "id": "NNSC64MW/RB",
-            "name": "Panasonic Microwave Oven 1.3Cu.Ft. Wht RB",
-            "category": "Heating & Cooking",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Heating & Cooking",
-            "price": "85.00",
-            "available": 999,
-            "image": "images/NNSC64MW-RB.png"
         },
         {
             "id": "NNSC64MWC/RBO",
@@ -4794,16 +4704,6 @@
             "price": "29.00",
             "available": 999,
             "image": "images/TS-611SS.png"
-        },
-        {
-            "id": "TS-700S",
-            "name": "BRENTWOOD 4 CUP - 0.8L Rice Cooker w/ Steamer, White",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "25.00",
-            "available": 3,
-            "image": "images/TS-700S.png"
         },
         {
             "id": "TS-810",
@@ -5224,26 +5124,6 @@
             "price": "16.00",
             "available": 999,
             "image": "images/IM-36CR.png"
-        },
-        {
-            "id": "MPI-42BK",
-            "name": "BRENTWOOD Portable Handheld Garment Iron Steamer",
-            "category": "Irons",
-            "parent_category": "Home & Office",
-            "sub_category": "Irons",
-            "price": "29.00",
-            "available": 2,
-            "image": "images/MPI-42BK.png"
-        },
-        {
-            "id": "MPI-51BK",
-            "name": "BRENTWOOD Non-Stick Steam Iron w/ 8ft Cord",
-            "category": "Irons",
-            "parent_category": "Home & Office",
-            "sub_category": "Irons",
-            "price": "15.00",
-            "available": 4,
-            "image": "images/MPI-51BK.png"
         },
         {
             "id": "J-30B",
@@ -5796,23 +5676,13 @@
             "image": "images/CBH1-4006-SIG.png"
         },
         {
-            "id": "CBH1-4007-VTN",
-            "name": "Barbasol Rechargeable Cordless Hair Clipper, SS Blades",
-            "category": "Personal Care",
-            "parent_category": "Health and Personal Care",
-            "sub_category": "Personal Care",
-            "price": "20.00",
-            "available": 999,
-            "image": "images/CBH1-4007-VTN.png"
-        },
-        {
             "id": "CBH1-4008-SIG",
             "name": "Barbasol Rechargeable LED Display T-Blade Trimmer",
             "category": "Personal Care",
             "parent_category": "Health and Personal Care",
             "sub_category": "Personal Care",
             "price": "19.00",
-            "available": 9,
+            "available": 6,
             "image": "images/CBH1-4008-SIG.png"
         },
         {
@@ -5862,7 +5732,7 @@
             "parent_category": "Health and Personal Care",
             "sub_category": "Personal Care",
             "price": "12.00",
-            "available": 999,
+            "available": 2,
             "image": "images/CBT1-6002-SLV.png"
         },
         {
@@ -6132,7 +6002,7 @@
             "parent_category": "Communications",
             "sub_category": "Phones",
             "price": "55.00",
-            "available": 999,
+            "available": 8,
             "image": "images/CS5129-2.png"
         },
         {
@@ -6272,7 +6142,7 @@
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Portable AC",
             "price": "160.00",
-            "available": 2,
+            "available": 1,
             "image": "images/VAP09R1AWT-ROA.png"
         },
         {
@@ -6542,7 +6412,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "13.00",
-            "available": 999,
+            "available": 4,
             "image": "images/BT-10BK.png"
         },
         {
@@ -6552,7 +6422,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "13.00",
-            "available": 6,
+            "available": 4,
             "image": "images/BT-10BL.png"
         },
         {
@@ -6872,7 +6742,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "37.00",
-            "available": 5,
+            "available": 1,
             "image": "images/BTSPK30B.png"
         },
         {
@@ -6974,16 +6844,6 @@
             "price": "12.00",
             "available": 1,
             "image": "images/FBX232K.png"
-        },
-        {
-            "id": "FBX492K",
-            "name": "Fisher Dual 4\" Flame Party Speaker - Black",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "20.00",
-            "available": 2,
-            "image": "images/FBX492K.png"
         },
         {
             "id": "FBX643K",
@@ -7342,7 +7202,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "48.00",
-            "available": 999,
+            "available": 3,
             "image": "images/PBX-1206.png"
         },
         {
@@ -7442,7 +7302,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "185.00",
-            "available": 6,
+            "available": 3,
             "image": "images/PBX-2015.png"
         },
         {
@@ -7714,16 +7574,6 @@
             "price": "185.00",
             "available": 5,
             "image": "images/SP-212RBT.png"
-        },
-        {
-            "id": "SP-2250RBT",
-            "name": "Dolphin Dual 12\" Rechargeable X-Bass Spkr",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "240.00",
-            "available": 2,
-            "image": "images/SP-2250RBT.png"
         },
         {
             "id": "SP-2600RBT",
