@@ -1,5 +1,5 @@
 {
-    "last_updated": "September 04, 2026",
+    "last_updated": "September 08, 2026",
     "downloads": {
         "pdf": "https://drive.google.com/uc?export=download&id=1gC_iZJLeoH-_A9waEBsoNpv8BbnvvdnR",
         "excel": "https://drive.google.com/uc?export=download&id=1jphLKnNkJ26SGBvUR6F9e8Gb7kV0ROQx"
@@ -153,7 +153,7 @@
             "sub_category": "Air Fryer & Toaster",
             "price": "50.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/AF-202BKC.png"
         },
         {
             "id": "AF-2400SI",
@@ -243,7 +243,7 @@
             "sub_category": "Air Fryer & Toaster",
             "price": "25.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/DF-715BK.png"
         },
         {
             "id": "FT50931AMZ",
@@ -1123,7 +1123,7 @@
             "sub_category": "Blenders & Mixers",
             "price": "15.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/MC-102BK.png"
         },
         {
             "id": "MC-102W",
@@ -1133,7 +1133,7 @@
             "sub_category": "Blenders & Mixers",
             "price": "15.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/MC-102W.png"
         },
         {
             "id": "MC-109R",
@@ -1342,7 +1342,7 @@
             "parent_category": "Audio",
             "sub_category": "Boombox",
             "price": "85.00",
-            "available": 999,
+            "available": 9,
             "image": "images/J-250BT-BLK.png"
         },
         {
@@ -1352,7 +1352,7 @@
             "parent_category": "Audio",
             "sub_category": "Boombox",
             "price": "85.00",
-            "available": 999,
+            "available": 8,
             "image": "images/J-250BT-SIL.png"
         },
         {
@@ -1374,16 +1374,6 @@
             "price": "60.00",
             "available": 999,
             "image": "images/J-290BT-SIL.png"
-        },
-        {
-            "id": "LX-30",
-            "name": "Dolphin Portable Boombox BT Speaker",
-            "category": "Boombox",
-            "parent_category": "Audio",
-            "sub_category": "Boombox",
-            "price": "30.00",
-            "available": 999,
-            "image": "images/LX-30.png"
         },
         {
             "id": "PRCD650A-SLV",
@@ -2282,7 +2272,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Coffee & Tea",
             "price": "18.00",
-            "available": 5,
+            "available": 1,
             "image": "images/WCF1-1007-BLK.png"
         },
         {
@@ -2526,6 +2516,26 @@
             "image": "images/BHD406W.png"
         },
         {
+            "id": "BHF136193153/RBO",
+            "name": "Pelonis 23\" Tower Heater RB",
+            "category": "Fans",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Fans",
+            "price": "35.00",
+            "available": 999,
+            "image": "images/BHF136193153-RBO.png"
+        },
+        {
+            "id": "BHF136193153ERB/RBO",
+            "name": "Pelonis 23\" Tower Heater RB",
+            "category": "Fans",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Fans",
+            "price": "35.00",
+            "available": 999,
+            "image": "images/BHF136193153ERB-RBO.png"
+        },
+        {
             "id": "CZ319WTWM",
             "name": "Comfort Zone 0.9\" Fan Window Twin Portable",
             "category": "Fans",
@@ -2726,26 +2736,6 @@
             "image": "images/HCX9115E-RBO.png"
         },
         {
-            "id": "MSH20Q3ABB/RBO",
-            "name": "Midea 1500W Electric Quartz Radiant Heater RB - Black",
-            "category": "Fans",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Fans",
-            "price": "30.00",
-            "available": 8,
-            "image": "images/MSH20Q3ABB-RBO.png"
-        },
-        {
-            "id": "MSH20Q3AWW/RBO",
-            "name": "Midea Radiant Quartz Space Heater RB - White",
-            "category": "Fans",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Fans",
-            "price": "30.00",
-            "available": 999,
-            "image": "images/MSH20Q3AWW-RBO.png"
-        },
-        {
             "id": "MSWMT24JR/RBO",
             "name": "Mainstays 36\" Tall 3-Speed Oscillating Tower Fan, Black, RB",
             "category": "Fans",
@@ -2774,16 +2764,6 @@
             "price": "24.00",
             "available": 999,
             "image": "images/MSWMT24MW-RBO.png"
-        },
-        {
-            "id": "NT15-20A/G",
-            "name": "Aikoper Space Heater, 1500W Electric Heater Indoor Portable with Thermostat",
-            "category": "Fans",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Fans",
-            "price": "18.00",
-            "available": 999,
-            "image": "images/NT15-20A-G.png"
         },
         {
             "id": "PFS40A4BBB",
@@ -2914,6 +2894,26 @@
             "price": "10.00",
             "available": 3,
             "image": "images/WPF4-1008-WHT.png"
+        },
+        {
+            "id": "WSH0702ABB/RBO",
+            "name": "Mainstay 1500W Oil Filled Heater RB - Black",
+            "category": "Fans",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Fans",
+            "price": "35.00",
+            "available": 999,
+            "image": "images/WSH0702ABB-RBO.png"
+        },
+        {
+            "id": "WSH0702AWW/RBO",
+            "name": "Mainstay 1500W Oil Filled Heater RB - White",
+            "category": "Fans",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Fans",
+            "price": "35.00",
+            "available": 999,
+            "image": "images/WSH0702AWW-RBO.png"
         },
         {
             "id": "WSH3-1002-WHT",
@@ -3996,6 +3996,16 @@
             "image": "images/HO-0250H.png"
         },
         {
+            "id": "MSHC23R6/RBO",
+            "name": "Midea 23\" Tower Dual-Flex Heater w/ Remote, 1911232 RB",
+            "category": "Heaters",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heaters",
+            "price": "35.00",
+            "available": 999,
+            "image": "images/MSHC23R6-RBO.png"
+        },
+        {
             "id": "RSWW1",
             "name": "RCA Hot Water Heater Shut off System",
             "category": "Heaters",
@@ -4044,6 +4054,16 @@
             "price": "47.00",
             "available": 999,
             "image": "images/1949.png"
+        },
+        {
+            "id": "889",
+            "name": "Kitchen Sense 7Pcs S.S. Cookware Set",
+            "category": "Heating & Cooking",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Heating & Cooking",
+            "price": "45.00",
+            "available": 999,
+            "image": "images/889.png"
         },
         {
             "id": "AR-136",
@@ -4376,16 +4396,6 @@
             "image": "images/NN-SC64MBC-RBO.png"
         },
         {
-            "id": "NN-SC678C/RBO",
-            "name": "Panasonic Microwave Oven 1.3Cu.Ft. SS RBO",
-            "category": "Heating & Cooking",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Heating & Cooking",
-            "price": "95.00",
-            "available": 3,
-            "image": "images/NN-SC678C-RBO.png"
-        },
-        {
             "id": "NN-SC678CC/RBO",
             "name": "Panasonic MW Oven 1.3CF SS w/ Child Lock RBO",
             "category": "Heating & Cooking",
@@ -4394,16 +4404,6 @@
             "price": "100.00",
             "available": 999,
             "image": "images/NN-SC678CC-RBO.png"
-        },
-        {
-            "id": "NN-SC678S/RB",
-            "name": "Panasonic Microwave Oven 1.3Cu.Ft. SS RB",
-            "category": "Heating & Cooking",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Heating & Cooking",
-            "price": "87.96",
-            "available": 8,
-            "image": "images/NN-SC678S-RB.png"
         },
         {
             "id": "NN-SC67NS/RBO",
@@ -4762,7 +4762,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "17.00",
-            "available": 9,
+            "available": 6,
             "image": "images/TS-240B.png"
         },
         {
@@ -5073,7 +5073,7 @@
             "sub_category": "Home Radio",
             "price": "35.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/MPX-8080.png"
         },
         {
             "id": "NA-3029",
@@ -6046,16 +6046,6 @@
             "image": "images/CBT1-3007-BLY.png"
         },
         {
-            "id": "CBT1-6002-SLV",
-            "name": "Barbasol T-Blade Trimmer",
-            "category": "Personal Care",
-            "parent_category": "Health and Personal Care",
-            "sub_category": "Personal Care",
-            "price": "12.00",
-            "available": 2,
-            "image": "images/CBT1-6002-SLV.png"
-        },
-        {
             "id": "CBT1-7001-SIG",
             "name": "Barbasol Vacuum lcd Beard Trimmer, Rechargeable, Adjustable Settings, Blk",
             "category": "Personal Care",
@@ -6206,16 +6196,6 @@
             "image": "images/MG-1-BLU.png"
         },
         {
-            "id": "MG-1-CHR",
-            "name": "QFX Mini Massager, Charcoal",
-            "category": "Personal Care",
-            "parent_category": "Health and Personal Care",
-            "sub_category": "Personal Care",
-            "price": "14.00",
-            "available": 6,
-            "image": "images/MG-1-CHR.png"
-        },
-        {
             "id": "MG-1-RED",
             "name": "QFX Mini Massager, Red",
             "category": "Personal Care",
@@ -6302,7 +6282,7 @@
             "parent_category": "Communications",
             "sub_category": "Phones",
             "price": "25.00",
-            "available": 999,
+            "available": 6,
             "image": "images/CS5119.png"
         },
         {
@@ -6912,7 +6892,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "18.00",
-            "available": 999,
+            "available": 7,
             "image": "images/BT-2024-BLK.png"
         },
         {
@@ -6933,7 +6913,7 @@
             "sub_category": "Speakers",
             "price": "9.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/BT-210.png"
         },
         {
             "id": "BT-23",
@@ -7183,7 +7163,7 @@
             "sub_category": "Speakers",
             "price": "65.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/E-B9.png"
         },
         {
             "id": "FBHP546R",
@@ -7482,7 +7462,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "20.00",
-            "available": 999,
+            "available": 4,
             "image": "images/MPX-802.png"
         },
         {
@@ -7582,7 +7562,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "100.00",
-            "available": 7,
+            "available": 3,
             "image": "images/PBX-1020.png"
         },
         {
@@ -7652,7 +7632,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "190.00",
-            "available": 999,
+            "available": 7,
             "image": "images/PBX-1501.png"
         },
         {
@@ -7712,7 +7692,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "160.00",
-            "available": 9,
+            "available": 7,
             "image": "images/PBX-2122.png"
         },
         {
@@ -7903,7 +7883,7 @@
             "sub_category": "Speakers",
             "price": "465.00",
             "available": 999,
-            "image": "https://via.placeholder.com/150/f0f0f0/888888?text=No+Image"
+            "image": "images/SBX-213W.png"
         },
         {
             "id": "SBX1036K",
@@ -7952,7 +7932,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "215.00",
-            "available": 4,
+            "available": 2,
             "image": "images/SP-1270RBT.png"
         },
         {
@@ -7992,7 +7972,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "185.00",
-            "available": 5,
+            "available": 3,
             "image": "images/SP-212RBT.png"
         },
         {
@@ -8012,7 +7992,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "160.00",
-            "available": 999,
+            "available": 8,
             "image": "images/SP-3115RBT.png"
         },
         {
@@ -8202,7 +8182,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "115.00",
-            "available": 8,
+            "available": 6,
             "image": "images/WPB2-BLU.png"
         },
         {
@@ -8212,7 +8192,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "30.00",
-            "available": 4,
+            "available": 1,
             "image": "images/WPB220M-BLK.png"
         },
         {
