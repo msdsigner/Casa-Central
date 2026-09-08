@@ -1802,7 +1802,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Coffee & Tea",
             "price": "9.00",
-            "available": 999,
+            "available": 4,
             "image": "images/177.png"
         },
         {
@@ -1982,7 +1982,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Coffee & Tea",
             "price": "17.00",
-            "available": 999,
+            "available": 7,
             "image": "images/KT-1610W.png"
         },
         {
@@ -3626,16 +3626,6 @@
             "image": "images/HPXBTA1000BK.png"
         },
         {
-            "id": "HPXBTA1000WH",
-            "name": "Sentry BT Pro Sq Headset, White w/ Gold",
-            "category": "Headphones & Earphones",
-            "parent_category": "Audio",
-            "sub_category": "Headphones & Earphones",
-            "price": "19.00",
-            "available": 2,
-            "image": "images/HPXBTA1000WH.png"
-        },
-        {
             "id": "HPXBTA105",
             "name": "Sentry Noise Active Canceling Wireless Earbuds",
             "category": "Headphones & Earphones",
@@ -4342,7 +4332,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "26.00",
-            "available": 2,
+            "available": 1,
             "image": "images/HP-3013BK.png"
         },
         {
@@ -4432,7 +4422,7 @@
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Heating & Cooking",
             "price": "100.00",
-            "available": 999,
+            "available": 8,
             "image": "images/NN-SC64MBC-RBO.png"
         },
         {
@@ -6792,7 +6782,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "11.00",
-            "available": 5,
+            "available": 2,
             "image": "images/BT-111-BLK.png"
         },
         {
@@ -6802,7 +6792,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "11.00",
-            "available": 999,
+            "available": 7,
             "image": "images/BT-111-BLU.png"
         },
         {
@@ -6824,16 +6814,6 @@
             "price": "10.00",
             "available": 999,
             "image": "images/BT-112-BLK.png"
-        },
-        {
-            "id": "BT-112-BLU",
-            "name": "QFX Portable BT Rechargeable Speaker + Multi-Color LED Party Lights, Blue",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "10.00",
-            "available": 4,
-            "image": "images/BT-112-BLU.png"
         },
         {
             "id": "BT-112-RED",
@@ -6972,7 +6952,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "18.00",
-            "available": 7,
+            "available": 4,
             "image": "images/BT-2024-BLK.png"
         },
         {
@@ -7726,16 +7706,6 @@
             "image": "images/PBX-1001.png"
         },
         {
-            "id": "PBX-1020",
-            "name": "QFX 2x10 Portable BT Speaker w/ LED Lights",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "100.00",
-            "available": 1,
-            "image": "images/PBX-1020.png"
-        },
-        {
             "id": "PBX-1203",
             "name": "QFX 12\" Lighted Party SPEAKER",
             "category": "Speakers",
@@ -8112,7 +8082,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "215.00",
-            "available": 2,
+            "available": 1,
             "image": "images/SP-1270RBT.png"
         },
         {
@@ -8144,16 +8114,6 @@
             "price": "160.00",
             "available": 6,
             "image": "images/SP-2100RBT.png"
-        },
-        {
-            "id": "SP-212RBT",
-            "name": "Dolphin Dual 12\" Party Speaker",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "185.00",
-            "available": 3,
-            "image": "images/SP-212RBT.png"
         },
         {
             "id": "SP-2600RBT",
