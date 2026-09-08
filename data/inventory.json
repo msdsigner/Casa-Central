@@ -1,5 +1,5 @@
 {
-    "last_updated": "September 08, 2026",
+    "last_updated": "September 09, 2026",
     "downloads": {
         "pdf": "https://drive.google.com/uc?export=download&id=1gC_iZJLeoH-_A9waEBsoNpv8BbnvvdnR",
         "excel": "https://drive.google.com/uc?export=download&id=1jphLKnNkJ26SGBvUR6F9e8Gb7kV0ROQx"
@@ -212,7 +212,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Air Fryer & Toaster",
             "price": "75.00",
-            "available": 4,
+            "available": 1,
             "image": "images/CHPG12R.png"
         },
         {
@@ -282,7 +282,7 @@
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Air Fryer & Toaster",
             "price": "50.00",
-            "available": 3,
+            "available": 2,
             "image": "images/MS33018213889-ROA.png"
         },
         {
@@ -1306,6 +1306,16 @@
             "image": "images/EPB-3002.png"
         },
         {
+            "id": "FBX390K",
+            "name": "Fisher Dual LED Ring Light Boombox, Black",
+            "category": "Boombox",
+            "parent_category": "Audio",
+            "sub_category": "Boombox",
+            "price": "20.00",
+            "available": 999,
+            "image": "images/FBX390K.png"
+        },
+        {
             "id": "FBX396B",
             "name": "Fisher  MAX Sound Wireless Boombox - Blue",
             "category": "Boombox",
@@ -1392,7 +1402,7 @@
             "parent_category": "Audio",
             "sub_category": "Boombox",
             "price": "32.00",
-            "available": 999,
+            "available": 9,
             "image": "images/PRCD667.png"
         },
         {
@@ -1606,6 +1616,26 @@
             "image": "images/DV10R.png"
         },
         {
+            "id": "FPB1225K",
+            "name": "Fisher 10,000 MAH Power Bank with Built-in Cables, Black",
+            "category": "Cables",
+            "parent_category": "Electronics",
+            "sub_category": "Cables",
+            "price": "13.00",
+            "available": 999,
+            "image": "images/FPB1225K.png"
+        },
+        {
+            "id": "FPB2225K",
+            "name": "Fisher 20,000 MAH Power Bank with Built-in Cables, Black",
+            "category": "Cables",
+            "parent_category": "Electronics",
+            "sub_category": "Cables",
+            "price": "17.00",
+            "available": 999,
+            "image": "images/FPB2225K.png"
+        },
+        {
             "id": "MHV1-1026-GRN",
             "name": "Monster Cable 6ft LED Light - Green",
             "category": "Cables",
@@ -1674,16 +1704,6 @@
             "price": "7.00",
             "available": 999,
             "image": "images/CA700.png"
-        },
-        {
-            "id": "CALCA275",
-            "name": "Sentry Deluxe Mini Desktop Calculator",
-            "category": "Calculator",
-            "parent_category": "Home & Office",
-            "sub_category": "Calculator",
-            "price": "5.00",
-            "available": 1,
-            "image": "images/CALCA275.png"
         },
         {
             "id": "FMT-13",
@@ -2432,7 +2452,7 @@
             "parent_category": "Electronics",
             "sub_category": "Electronics",
             "price": "85.00",
-            "available": 3,
+            "available": 2,
             "image": "images/CJR720BLHD.png"
         },
         {
@@ -3086,6 +3106,16 @@
             "image": "images/BUD200-ZB.png"
         },
         {
+            "id": "FBHP382K",
+            "name": "Fisher Peak Wireless Headphones",
+            "category": "Headphones & Earphones",
+            "parent_category": "Audio",
+            "sub_category": "Headphones & Earphones",
+            "price": "12.00",
+            "available": 999,
+            "image": "images/FBHP382K.png"
+        },
+        {
             "id": "FBHP540W",
             "name": "Fisher Boom Max Wireless Headphones -Wht",
             "category": "Headphones & Earphones",
@@ -3114,6 +3144,16 @@
             "price": "11.00",
             "available": 8,
             "image": "images/FBHP546W.png"
+        },
+        {
+            "id": "FEP910K",
+            "name": "Fisher 8-PIN Wired Silicone Earbuds & Case, Blk",
+            "category": "Headphones & Earphones",
+            "parent_category": "Audio",
+            "sub_category": "Headphones & Earphones",
+            "price": "4.50",
+            "available": 999,
+            "image": "images/FEP910K.png"
         },
         {
             "id": "FGHP245B",
@@ -3572,7 +3612,7 @@
             "parent_category": "Audio",
             "sub_category": "Headphones & Earphones",
             "price": "21.00",
-            "available": 5,
+            "available": 4,
             "image": "images/HPXBTA100.png"
         },
         {
@@ -3592,7 +3632,7 @@
             "parent_category": "Audio",
             "sub_category": "Headphones & Earphones",
             "price": "19.00",
-            "available": 4,
+            "available": 2,
             "image": "images/HPXBTA1000WH.png"
         },
         {
@@ -4612,7 +4652,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "30.00",
-            "available": 5,
+            "available": 3,
             "image": "images/SK-67BK.png"
         },
         {
@@ -4672,7 +4712,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "14.00",
-            "available": 7,
+            "available": 5,
             "image": "images/SM-STV-2606.png"
         },
         {
@@ -5124,16 +5164,6 @@
             "price": "16.00",
             "available": 1,
             "image": "images/NPC-321.png"
-        },
-        {
-            "id": "R-15BLK",
-            "name": "QFX Portable Rechargeable BT FM Radio + Digital Music Player and LED Light, Black",
-            "category": "Home Radio",
-            "parent_category": "Audio",
-            "sub_category": "Home Radio",
-            "price": "8.00",
-            "available": 1,
-            "image": "images/R-15BLK.png"
         },
         {
             "id": "R-24",
@@ -6232,7 +6262,7 @@
             "parent_category": "Health and Personal Care",
             "sub_category": "Personal Care",
             "price": "18.00",
-            "available": 2,
+            "available": 1,
             "image": "images/RVDR5034N1.png"
         },
         {
@@ -6302,7 +6332,7 @@
             "parent_category": "Communications",
             "sub_category": "Phones",
             "price": "55.00",
-            "available": 8,
+            "available": 6,
             "image": "images/CS5129-2.png"
         },
         {
@@ -6462,8 +6492,18 @@
             "parent_category": "Electronics",
             "sub_category": "Power Bank",
             "price": "12.00",
-            "available": 1,
+            "available": 999,
             "image": "images/FWPB502K.png"
+        },
+        {
+            "id": "FWPB502W",
+            "name": "Fisher 5,000 mAh Megaplus PRO Charge, White",
+            "category": "Power Bank",
+            "parent_category": "Electronics",
+            "sub_category": "Power Bank",
+            "price": "12.00",
+            "available": 999,
+            "image": "images/FWPB502W.png"
         },
         {
             "id": "FWPB515W",
@@ -6606,6 +6646,16 @@
             "image": "images/RM3316B.png"
         },
         {
+            "id": "250BX210K",
+            "name": "Fisher Wireless Portable Speaker / FM Radio",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "8.00",
+            "available": 999,
+            "image": "images/250BX210K.png"
+        },
+        {
             "id": "A6CLUB-BLK",
             "name": "WORRYFREE 200W Wireless Party BT Speaker with One Microphone, Black",
             "category": "Speakers",
@@ -6742,7 +6792,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "11.00",
-            "available": 7,
+            "available": 5,
             "image": "images/BT-111-BLK.png"
         },
         {
@@ -6806,6 +6856,26 @@
             "image": "images/BT-16-BLK.png"
         },
         {
+            "id": "BT-17-BLK",
+            "name": "QFX SS 16.oz Insulated Mug + BT Speaker With Multi-Color LED Lights, Black",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "13.00",
+            "available": 999,
+            "image": "images/BT-17-BLK.png"
+        },
+        {
+            "id": "BT-17-BLU",
+            "name": "QFX SS 16.oz Insulated Mug + BT Speaker With Multi-Color LED Lights, Aqua Blue",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "13.00",
+            "available": 999,
+            "image": "images/BT-17-BLU.png"
+        },
+        {
             "id": "BT-17-FTB",
             "name": "QFX SS 16.oz Insulated Mug + BT Speaker With Multi-Color LED Lights, Soccer",
             "category": "Speakers",
@@ -6814,6 +6884,16 @@
             "price": "14.00",
             "available": 6,
             "image": "images/BT-17-FTB.png"
+        },
+        {
+            "id": "BT-17-RED",
+            "name": "QFX SS 16.oz Insulated Mug + BT Speaker With Multi-Color LED Lights, Red",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "13.00",
+            "available": 999,
+            "image": "images/BT-17-RED.png"
         },
         {
             "id": "BT-1934-GRN",
@@ -7056,13 +7136,33 @@
             "image": "images/BT-87.png"
         },
         {
+            "id": "BT248B",
+            "name": "2Boom MINI GLO LED Wireless Speaker, Blue",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "8.00",
+            "available": 999,
+            "image": "images/BT248B.png"
+        },
+        {
+            "id": "BT248R",
+            "name": "2Boom MINI GLO LED Wireless Speaker, Red",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "8.00",
+            "available": 999,
+            "image": "images/BT248R.png"
+        },
+        {
             "id": "BTSB370",
             "name": "KODAK Soundbar Speaker system",
             "category": "Speakers",
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "38.00",
-            "available": 8,
+            "available": 6,
             "image": "images/BTSB370.png"
         },
         {
@@ -7106,6 +7206,36 @@
             "image": "images/BTWSPK20.png"
         },
         {
+            "id": "BX496K",
+            "name": "2Boom Pulse Wave BT Speaker, Black",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "10.00",
+            "available": 999,
+            "image": "images/BX496K.png"
+        },
+        {
+            "id": "BX496R",
+            "name": "2Boom Pulse Wave BT Speaker, Red",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "10.00",
+            "available": 999,
+            "image": "images/BX496R.png"
+        },
+        {
+            "id": "BX550KM",
+            "name": "2BOOM 4\" BT Speaker with LED Flame Light + Mic",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "12.00",
+            "available": 999,
+            "image": "images/BX550KM.png"
+        },
+        {
             "id": "BX604R",
             "name": "2BOOM 6.5\" Radial Portable Speaker - Red",
             "category": "Speakers",
@@ -7114,6 +7244,26 @@
             "price": "12.00",
             "available": 1,
             "image": "images/BX604R.png"
+        },
+        {
+            "id": "BX627K",
+            "name": "2BOOM 6.5\" Ring Light Speaker - Black",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "12.00",
+            "available": 999,
+            "image": "images/BX627K.png"
+        },
+        {
+            "id": "BX627R",
+            "name": "2BOOM 6.5\" Ring Light Speaker - Red",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "12.00",
+            "available": 999,
+            "image": "images/BX627R.png"
         },
         {
             "id": "CH-M230-BRN",
@@ -7224,6 +7374,26 @@
             "price": "26.00",
             "available": 999,
             "image": "images/FBX647K.png"
+        },
+        {
+            "id": "FBX816SM",
+            "name": "Fisher Power Jam Sound 8\" Speaker",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "31.00",
+            "available": 999,
+            "image": "images/FBX816SM.png"
+        },
+        {
+            "id": "FBX833KM",
+            "name": "Fisher 8\" Disco Party Speaker with Mic",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "30.00",
+            "available": 999,
+            "image": "images/FBX833KM.png"
         },
         {
             "id": "FBX879KM",
@@ -7462,7 +7632,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "20.00",
-            "available": 4,
+            "available": 3,
             "image": "images/MPX-802.png"
         },
         {
@@ -7562,7 +7732,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "100.00",
-            "available": 3,
+            "available": 1,
             "image": "images/PBX-1020.png"
         },
         {
@@ -7874,6 +8044,16 @@
             "price": "12.00",
             "available": 1,
             "image": "images/SBT294NB.png"
+        },
+        {
+            "id": "SBT354K",
+            "name": "Fisher RIDGE PRO LED Wireless Waterproof Speaker, Black",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "18.00",
+            "available": 999,
+            "image": "images/SBT354K.png"
         },
         {
             "id": "SBX-213W",
