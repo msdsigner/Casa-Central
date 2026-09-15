@@ -1,5 +1,5 @@
 {
-    "last_updated": "September 09, 2026",
+    "last_updated": "September 16, 2026",
     "downloads": {
         "pdf": "https://drive.google.com/uc?export=download&id=1gC_iZJLeoH-_A9waEBsoNpv8BbnvvdnR",
         "excel": "https://drive.google.com/uc?export=download&id=1jphLKnNkJ26SGBvUR6F9e8Gb7kV0ROQx"
@@ -154,6 +154,16 @@
             "price": "50.00",
             "available": 999,
             "image": "images/AF-202BKC.png"
+        },
+        {
+            "id": "AF-202W",
+            "name": "BRENTWOOD 2.0 AIR Fryer, White",
+            "category": "Air Fryer & Toaster",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Air Fryer & Toaster",
+            "price": "50.00",
+            "available": 2,
+            "image": "images/AF-202W.png"
         },
         {
             "id": "AF-2400SI",
@@ -382,7 +392,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Air Fryer & Toaster",
             "price": "45.00",
-            "available": 7,
+            "available": 5,
             "image": "images/TS-345B.png"
         },
         {
@@ -492,7 +502,7 @@
             "parent_category": "Home & Office",
             "sub_category": "Alarm Clocks",
             "price": "11.00",
-            "available": 999,
+            "available": 2,
             "image": "images/CR640D.png"
         },
         {
@@ -1186,16 +1196,6 @@
             "image": "images/R50190-RBO.png"
         },
         {
-            "id": "R53519/RB",
-            "name": "Hamilton Beach 700W Glass Blender - RB",
-            "category": "Blenders & Mixers",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Blenders & Mixers",
-            "price": "40.00",
-            "available": 2,
-            "image": "images/R53519-RB.png"
-        },
-        {
             "id": "R56202-RBO",
             "name": "Hamilton Beach Electronic Touchpad Glass Jar Blender - RB",
             "category": "Blenders & Mixers",
@@ -1362,7 +1362,7 @@
             "parent_category": "Audio",
             "sub_category": "Boombox",
             "price": "85.00",
-            "available": 8,
+            "available": 5,
             "image": "images/J-250BT-SIL.png"
         },
         {
@@ -1796,16 +1796,6 @@
             "image": "images/176.png"
         },
         {
-            "id": "177",
-            "name": "Kitchen+Sense 6-Cup Aluminum Espresso Coffee Maker",
-            "category": "Coffee & Tea",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Coffee & Tea",
-            "price": "9.00",
-            "available": 4,
-            "image": "images/177.png"
-        },
-        {
             "id": "178",
             "name": "Kitchen+Sense 9-Cup Aluminum Espresso Coffee Maker",
             "category": "Coffee & Tea",
@@ -1974,6 +1964,16 @@
             "price": "12.00",
             "available": 1,
             "image": "images/HE-760.png"
+        },
+        {
+            "id": "IM-170S",
+            "name": "Better Chef Stainless Steel Cordless Electric Kettle",
+            "category": "Coffee & Tea",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Coffee & Tea",
+            "price": "20.00",
+            "available": 1,
+            "image": "images/IM-170S.png"
         },
         {
             "id": "KT-1610W",
@@ -2292,7 +2292,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Coffee & Tea",
             "price": "18.00",
-            "available": 1,
+            "available": 3,
             "image": "images/WCF1-1007-BLK.png"
         },
         {
@@ -2552,7 +2552,7 @@
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Fans",
             "price": "35.00",
-            "available": 999,
+            "available": 6,
             "image": "images/BHF136193153ERB-RBO.png"
         },
         {
@@ -2754,6 +2754,26 @@
             "price": "69.00",
             "available": 1,
             "image": "images/HCX9115E-RBO.png"
+        },
+        {
+            "id": "MSH20Q3ABB/RBO",
+            "name": "Midea 1500W Electric Quartz Radiant Heater RB - Black",
+            "category": "Fans",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Fans",
+            "price": "30.00",
+            "available": 999,
+            "image": "images/MSH20Q3ABB-RBO.png"
+        },
+        {
+            "id": "MSH20Q3AWW/RBO",
+            "name": "Midea Radiant Quartz Space Heater RB - White",
+            "category": "Fans",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Fans",
+            "price": "30.00",
+            "available": 999,
+            "image": "images/MSH20Q3AWW-RBO.png"
         },
         {
             "id": "MSWMT24JR/RBO",
@@ -3082,7 +3102,7 @@
             "parent_category": "Audio",
             "sub_category": "Headphones & Earphones",
             "price": "11.00",
-            "available": 999,
+            "available": 1,
             "image": "images/BTWS300.png"
         },
         {
@@ -3482,7 +3502,7 @@
             "parent_category": "Audio",
             "sub_category": "Headphones & Earphones",
             "price": "12.00",
-            "available": 2,
+            "available": 1,
             "image": "images/HPXBT200.png"
         },
         {
@@ -3542,7 +3562,7 @@
             "parent_category": "Audio",
             "sub_category": "Headphones & Earphones",
             "price": "13.00",
-            "available": 999,
+            "available": 4,
             "image": "images/HPXBT957B.png"
         },
         {
@@ -3606,16 +3626,6 @@
             "image": "images/HPXBT999BK.png"
         },
         {
-            "id": "HPXBTA100",
-            "name": "Sentry Noise Active Canceling Wireless Earbuds, Bk",
-            "category": "Headphones & Earphones",
-            "parent_category": "Audio",
-            "sub_category": "Headphones & Earphones",
-            "price": "21.00",
-            "available": 4,
-            "image": "images/HPXBTA100.png"
-        },
-        {
             "id": "HPXBTA1000BK",
             "name": "Sentry BT Pro Sq Headset, Black",
             "category": "Headphones & Earphones",
@@ -3624,6 +3634,16 @@
             "price": "19.00",
             "available": 999,
             "image": "images/HPXBTA1000BK.png"
+        },
+        {
+            "id": "HPXBTA1000WH",
+            "name": "Sentry BT Pro Sq Headset, White w/ Gold",
+            "category": "Headphones & Earphones",
+            "parent_category": "Audio",
+            "sub_category": "Headphones & Earphones",
+            "price": "19.00",
+            "available": 3,
+            "image": "images/HPXBTA1000WH.png"
         },
         {
             "id": "HPXBTA105",
@@ -3926,16 +3946,6 @@
             "image": "images/MUZ40031W-BLK.png"
         },
         {
-            "id": "SBGHO425",
-            "name": "Sentry Twist Folding Headphones Asstd",
-            "category": "Headphones & Earphones",
-            "parent_category": "Audio",
-            "sub_category": "Headphones & Earphones",
-            "price": "5.00",
-            "available": 999,
-            "image": "images/SBGHO425.png"
-        },
-        {
             "id": "SBHP550AK",
             "name": "Fisher NEXUS PRO Noise Cancelling True Wireless Earphones",
             "category": "Headphones & Earphones",
@@ -4094,16 +4104,6 @@
             "price": "45.00",
             "available": 999,
             "image": "images/889.png"
-        },
-        {
-            "id": "AR-136",
-            "name": "BRENTWOOD Arepa Maker-6 Slice",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "33.00",
-            "available": 1,
-            "image": "images/AR-136.png"
         },
         {
             "id": "B20PXP78-A70W",
@@ -4332,7 +4332,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "26.00",
-            "available": 1,
+            "available": 2,
             "image": "images/HP-3013BK.png"
         },
         {
@@ -4364,16 +4364,6 @@
             "price": "15.50",
             "available": 2,
             "image": "images/KE-111.png"
-        },
-        {
-            "id": "KE-170",
-            "name": "Cookinex 2 Burner Gas Stove - Heavy",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "26.56",
-            "available": 2,
-            "image": "images/KE-170.png"
         },
         {
             "id": "KF-6600",
@@ -4422,7 +4412,7 @@
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Heating & Cooking",
             "price": "100.00",
-            "available": 8,
+            "available": 5,
             "image": "images/NN-SC64MBC-RBO.png"
         },
         {
@@ -4732,7 +4722,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "25.00",
-            "available": 999,
+            "available": 5,
             "image": "images/SM-STV-2685.png"
         },
         {
@@ -4792,7 +4782,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "17.00",
-            "available": 6,
+            "available": 2,
             "image": "images/TS-240B.png"
         },
         {
@@ -5156,6 +5146,16 @@
             "image": "images/NPC-321.png"
         },
         {
+            "id": "R-15BLK",
+            "name": "QFX Portable Rechargeable BT FM Radio + Digital Music Player and LED Light, Black",
+            "category": "Home Radio",
+            "parent_category": "Audio",
+            "sub_category": "Home Radio",
+            "price": "8.00",
+            "available": 1,
+            "image": "images/R-15BLK.png"
+        },
+        {
             "id": "R-24",
             "name": "QFX AM/FM/SW Radio",
             "category": "Home Radio",
@@ -5202,7 +5202,7 @@
             "parent_category": "Audio",
             "sub_category": "Home Radio",
             "price": "23.00",
-            "available": 999,
+            "available": 7,
             "image": "images/R-333BT-RED.png"
         },
         {
@@ -5572,7 +5572,7 @@
             "parent_category": "Major Appliances",
             "sub_category": "Laundry",
             "price": "300.00",
-            "available": 3,
+            "available": 2,
             "image": "images/BPWM16W.png"
         },
         {
@@ -6006,6 +6006,16 @@
             "image": "images/CBG1-5000-KIT.png"
         },
         {
+            "id": "CBH1-4002-SLV",
+            "name": "Barbasol PRO Hair Clipper Kit",
+            "category": "Personal Care",
+            "parent_category": "Health and Personal Care",
+            "sub_category": "Personal Care",
+            "price": "12.00",
+            "available": 999,
+            "image": "images/CBH1-4002-SLV.png"
+        },
+        {
             "id": "CBH1-4002-VTN",
             "name": "Barbasol 10 Pc PRO Clipper Kit",
             "category": "Personal Care",
@@ -6026,6 +6036,26 @@
             "image": "images/CBH1-4006-SIG.png"
         },
         {
+            "id": "CBH1-4007-VTN",
+            "name": "Barbasol Rechargeable Cordless Hair Clipper, SS Blades",
+            "category": "Personal Care",
+            "parent_category": "Health and Personal Care",
+            "sub_category": "Personal Care",
+            "price": "20.00",
+            "available": 999,
+            "image": "images/CBH1-4007-VTN.png"
+        },
+        {
+            "id": "CBH1-4008-SIG",
+            "name": "Barbasol Rechargeable LED Display T-Blade Trimmer",
+            "category": "Personal Care",
+            "parent_category": "Health and Personal Care",
+            "sub_category": "Personal Care",
+            "price": "19.00",
+            "available": 999,
+            "image": "images/CBH1-4008-SIG.png"
+        },
+        {
             "id": "CBH1-4012-VTN",
             "name": "Barbasol PRO Clipper Kit with Travel Bag",
             "category": "Personal Care",
@@ -6034,6 +6064,16 @@
             "price": "19.00",
             "available": 999,
             "image": "images/CBH1-4012-VTN.png"
+        },
+        {
+            "id": "CBK1-6001-TIN",
+            "name": "Barbasol Rechargeable Pro Clipper, Electroplated Body",
+            "category": "Personal Care",
+            "parent_category": "Health and Personal Care",
+            "sub_category": "Personal Care",
+            "price": "20.00",
+            "available": 999,
+            "image": "images/CBK1-6001-TIN.png"
         },
         {
             "id": "CBR1-1002-BLY",
@@ -6064,6 +6104,16 @@
             "price": "5.00",
             "available": 999,
             "image": "images/CBT1-3007-BLY.png"
+        },
+        {
+            "id": "CBT1-6002-SLV",
+            "name": "Barbasol T-Blade Trimmer",
+            "category": "Personal Care",
+            "parent_category": "Health and Personal Care",
+            "sub_category": "Personal Care",
+            "price": "12.00",
+            "available": 999,
+            "image": "images/CBT1-6002-SLV.png"
         },
         {
             "id": "CBT1-7001-SIG",
@@ -6106,6 +6156,36 @@
             "image": "images/CPH1-9011-BOX.png"
         },
         {
+            "id": "CSX1-4000-KYO",
+            "name": "SAVAGE Kyoto Hair Dryer, Cherry Blossom",
+            "category": "Personal Care",
+            "parent_category": "Health and Personal Care",
+            "sub_category": "Personal Care",
+            "price": "30.00",
+            "available": 999,
+            "image": "images/CSX1-4000-KYO.png"
+        },
+        {
+            "id": "CXE1-1006-WM1",
+            "name": "Cutting Edge Dual Rotary Travel Shaver",
+            "category": "Personal Care",
+            "parent_category": "Health and Personal Care",
+            "sub_category": "Personal Care",
+            "price": "7.50",
+            "available": 999,
+            "image": "images/CXE1-1006-WM1.png"
+        },
+        {
+            "id": "CXE1-1008-WM1",
+            "name": "Cutting Edge Battery Operated Travel Foil Shaver",
+            "category": "Personal Care",
+            "parent_category": "Health and Personal Care",
+            "sub_category": "Personal Care",
+            "price": "7.50",
+            "available": 999,
+            "image": "images/CXE1-1008-WM1.png"
+        },
+        {
             "id": "CXH1-5000-BOX",
             "name": "Xtreme Hollywood Hair Styler Hot Comb",
             "category": "Personal Care",
@@ -6146,6 +6226,16 @@
             "image": "images/CXT1-3500-HYP.png"
         },
         {
+            "id": "CXT1-3500-WM1",
+            "name": "Cutting Edge 4 Piece Touch Up Trimmer, Gold Chrome",
+            "category": "Personal Care",
+            "parent_category": "Health and Personal Care",
+            "sub_category": "Personal Care",
+            "price": "5.50",
+            "available": 999,
+            "image": "images/CXT1-3500-WM1.png"
+        },
+        {
             "id": "CXT1-4007-CMB",
             "name": "Xtreme Cutting Edge Cordless Rechargeable Hair Clippers for Men & Women",
             "category": "Personal Care",
@@ -6182,7 +6272,7 @@
             "parent_category": "Health and Personal Care",
             "sub_category": "Personal Care",
             "price": "1299.00",
-            "available": 999,
+            "available": 6,
             "image": "images/JL10003WL-WU.png"
         },
         {
@@ -6302,7 +6392,7 @@
             "parent_category": "Communications",
             "sub_category": "Phones",
             "price": "25.00",
-            "available": 6,
+            "available": 4,
             "image": "images/CS5119.png"
         },
         {
@@ -6322,7 +6412,7 @@
             "parent_category": "Communications",
             "sub_category": "Phones",
             "price": "55.00",
-            "available": 6,
+            "available": 4,
             "image": "images/CS5129-2.png"
         },
         {
@@ -6362,7 +6452,7 @@
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Portable AC",
             "price": "180.00",
-            "available": 3,
+            "available": 2,
             "image": "images/NS-AC08PWH1-ROA.png"
         },
         {
@@ -6722,28 +6812,8 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "13.00",
-            "available": 6,
+            "available": 5,
             "image": "images/BT-1010-BLK.png"
-        },
-        {
-            "id": "BT-1010-BLU",
-            "name": "QFX 2\" Portable BT Rechargeable Speaker with Multi-Color LED Party Lights, Blue",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "13.00",
-            "available": 4,
-            "image": "images/BT-1010-BLU.png"
-        },
-        {
-            "id": "BT-1010-RED",
-            "name": "QFX 2\" Portable BT Rechargeable Speaker with Multi-Color LED Party Lights, Red",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "13.00",
-            "available": 7,
-            "image": "images/BT-1010-RED.png"
         },
         {
             "id": "BT-10BK",
@@ -6962,7 +7032,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "18.00",
-            "available": 3,
+            "available": 1,
             "image": "images/BT-2024-SIL.png"
         },
         {
@@ -7146,6 +7216,26 @@
             "image": "images/BTSB370.png"
         },
         {
+            "id": "BTSPK145",
+            "name": "Borne 10\"x 2 BT Wireless Speaker",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "100.00",
+            "available": 999,
+            "image": "images/BTSPK145.png"
+        },
+        {
+            "id": "BTSPK149",
+            "name": "Borne 15\"x 2 BT Wireless Speaker",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "150.00",
+            "available": 999,
+            "image": "images/BTSPK149.png"
+        },
+        {
             "id": "BTSPK154",
             "name": "Borne BT Wireless Speaker w/ RGB LED",
             "category": "Speakers",
@@ -7154,6 +7244,16 @@
             "price": "13.00",
             "available": 999,
             "image": "images/BTSPK154.png"
+        },
+        {
+            "id": "BTSPK184",
+            "name": "Borne BT Portable Party Speaker System, 15\" Speaker + Mic",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "10.00",
+            "available": 999,
+            "image": "images/BTSPK184.png"
         },
         {
             "id": "BTSPK30B",
@@ -7376,16 +7476,6 @@
             "image": "images/FBX833KM.png"
         },
         {
-            "id": "FBX879KM",
-            "name": "Fisher 8\" LED Flame Light Speaker",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "37.00",
-            "available": 1,
-            "image": "images/FBX879KM.png"
-        },
-        {
             "id": "HPNPRMN1",
             "name": "Sentry Mini Projector with Speaker and Remote",
             "category": "Speakers",
@@ -7492,7 +7582,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "48.00",
-            "available": 999,
+            "available": 8,
             "image": "images/LX-440.png"
         },
         {
@@ -7612,7 +7702,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "20.00",
-            "available": 3,
+            "available": 1,
             "image": "images/MPX-802.png"
         },
         {
@@ -7642,7 +7732,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "26.00",
-            "available": 4,
+            "available": 3,
             "image": "images/NAS-3105D.png"
         },
         {
@@ -7654,16 +7744,6 @@
             "price": "65.00",
             "available": 2,
             "image": "images/NDS-8006D.png"
-        },
-        {
-            "id": "NDS-8501",
-            "name": "NAXA Portable Dual 8\" Speakers w/lights",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "90.00",
-            "available": 1,
-            "image": "images/NDS-8501.png"
         },
         {
             "id": "NDS-8502",
@@ -8146,16 +8226,6 @@
             "image": "images/SP-3210RBT.png"
         },
         {
-            "id": "SP-811RBT",
-            "name": "Dolphin Portable 8\" BT Speaker LED Light/Radio",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "38.00",
-            "available": 1,
-            "image": "images/SP-811RBT.png"
-        },
-        {
             "id": "SP-885RBT",
             "name": "Dolphin Rechargeable 8\u201d Party Speaker with Tilt Function",
             "category": "Speakers",
@@ -8324,16 +8394,6 @@
             "price": "115.00",
             "available": 6,
             "image": "images/WPB2-BLU.png"
-        },
-        {
-            "id": "WPB220M-BLK",
-            "name": "WORRYFREE Party 220 Mini Wireless Colorful BT Speaker, Waterproof, Black",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "30.00",
-            "available": 1,
-            "image": "images/WPB220M-BLK.png"
         },
         {
             "id": "WPBMINI-BLK",
@@ -9056,16 +9116,6 @@
             "image": "images/EWR05E.png"
         },
         {
-            "id": "EWR06E",
-            "name": "Element 6,000 BTU Window Air Conditioner \u2013 White",
-            "category": "Window AC",
-            "parent_category": "Air & Climate Control",
-            "sub_category": "Window AC",
-            "price": "156.00",
-            "available": 6,
-            "image": "images/EWR06E.png"
-        },
-        {
             "id": "EWR08E",
             "name": "Element 8,000 BTU Window Air Conditioner \u2013 White",
             "category": "Window AC",
@@ -9142,7 +9192,7 @@
             "parent_category": "Air & Climate Control",
             "sub_category": "Window AC",
             "price": "175.00",
-            "available": 999,
+            "available": 9,
             "image": "images/WAW0525CM1W.png"
         },
         {
