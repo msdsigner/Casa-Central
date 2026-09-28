@@ -1,5 +1,5 @@
 {
-    "last_updated": "September 23, 2026",
+    "last_updated": "September 28, 2026",
     "downloads": {
         "pdf": "https://drive.google.com/uc?export=download&id=1gC_iZJLeoH-_A9waEBsoNpv8BbnvvdnR",
         "excel": "https://drive.google.com/uc?export=download&id=1jphLKnNkJ26SGBvUR6F9e8Gb7kV0ROQx"
@@ -62,7 +62,7 @@
             "parent_category": "Electronics",
             "sub_category": "Accessories",
             "price": "15.00",
-            "available": 999,
+            "available": 9,
             "image": "images/HPXKX700.png"
         },
         {
@@ -146,6 +146,16 @@
             "image": "images/SRP9232D-27.png"
         },
         {
+            "id": "25440PSC",
+            "name": "Proctor Silex Panini Press and Grill",
+            "category": "Air Fryer & Toaster",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Air Fryer & Toaster",
+            "price": "28.00",
+            "available": 999,
+            "image": "images/25440PSC.png"
+        },
+        {
             "id": "AF-202BKC",
             "name": "BRENTWOOD 2.0 AIR Fryer, Copper",
             "category": "Air Fryer & Toaster",
@@ -224,16 +234,6 @@
             "price": "75.00",
             "available": 1,
             "image": "images/CHPG12R.png"
-        },
-        {
-            "id": "CHQP12R",
-            "name": "Commercial Chef 12 Inch Pizza Maker",
-            "category": "Air Fryer & Toaster",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Air Fryer & Toaster",
-            "price": "29.00",
-            "available": 1,
-            "image": "images/CHQP12R.png"
         },
         {
             "id": "CHTO40B",
@@ -412,8 +412,18 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Air Fryer & Toaster",
             "price": "42.00",
-            "available": 999,
+            "available": 6,
             "image": "images/TS-651.png"
+        },
+        {
+            "id": "WGR1-1011-BLK",
+            "name": "AIWA Sandwich Maker - Press & Slice, Black",
+            "category": "Air Fryer & Toaster",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Air Fryer & Toaster",
+            "price": "17.00",
+            "available": 999,
+            "image": "images/WGR1-1011-BLK.png"
         },
         {
             "id": "WGR1-1011-WHT",
@@ -616,6 +626,26 @@
             "image": "images/58148G.png"
         },
         {
+            "id": "62683G",
+            "name": "Hamilton Beach 250watt Hand Mixer with Storage",
+            "category": "Blenders & Mixers",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Blenders & Mixers",
+            "price": "22.00",
+            "available": 999,
+            "image": "images/62683G.png"
+        },
+        {
+            "id": "6706-000",
+            "name": "Oster 10-Speed Plastic Jar Blender, 450-Watt, Black",
+            "category": "Blenders & Mixers",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Blenders & Mixers",
+            "price": "50.00",
+            "available": 999,
+            "image": "images/6706-000.png"
+        },
+        {
             "id": "70450",
             "name": "Hamilton Beach 8 cup Food Processor",
             "category": "Blenders & Mixers",
@@ -626,6 +656,26 @@
             "image": "images/70450.png"
         },
         {
+            "id": "BL1400DG-RFP",
+            "name": "BLACK+DECKER Touchpad Glass Jar Blender plus To-Go Jar",
+            "category": "Blenders & Mixers",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Blenders & Mixers",
+            "price": "75.00",
+            "available": 999,
+            "image": "images/BL1400DG-RFP.png"
+        },
+        {
+            "id": "BLSTBCG-G8B",
+            "name": "Oster 8-Speed Glass Jar Blender with 20oz Blend-n-Go Cup, Black",
+            "category": "Blenders & Mixers",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Blenders & Mixers",
+            "price": "65.00",
+            "available": 999,
+            "image": "images/BLSTBCG-G8B.png"
+        },
+        {
             "id": "BLSTBKP-BRO-000",
             "name": "Oster 700-watt Plastic Jar Blender, Black",
             "category": "Blenders & Mixers",
@@ -634,6 +684,16 @@
             "price": "40.00",
             "available": 3,
             "image": "images/BLSTBKP-BRO-000.png"
+        },
+        {
+            "id": "BLSTJJ-GPB-000",
+            "name": "Oster 800W Glass Blender with Extra To-Go Cup",
+            "category": "Blenders & Mixers",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Blenders & Mixers",
+            "price": "70.00",
+            "available": 999,
+            "image": "images/BLSTJJ-GPB-000.png"
         },
         {
             "id": "BLSTMEGG0",
@@ -1002,7 +1062,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Blenders & Mixers",
             "price": "30.00",
-            "available": 999,
+            "available": 8,
             "image": "images/JB-220B.png"
         },
         {
@@ -1092,7 +1152,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Blenders & Mixers",
             "price": "50.00",
-            "available": 7,
+            "available": 1,
             "image": "images/JC-452B.png"
         },
         {
@@ -1186,6 +1246,16 @@
             "image": "images/R56202-RBO.png"
         },
         {
+            "id": "R67870/RBO",
+            "name": "Hamilton Beach 800-watt Juice Extractor, RB",
+            "category": "Blenders & Mixers",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Blenders & Mixers",
+            "price": "52.00",
+            "available": 999,
+            "image": "images/R67870-RBO.png"
+        },
+        {
             "id": "RJB-100BK",
             "name": "Brentwood Portable Battery/USB Blender, Black",
             "category": "Blenders & Mixers",
@@ -1222,7 +1292,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Blenders & Mixers",
             "price": "40.00",
-            "available": 999,
+            "available": 9,
             "image": "images/SM-1152.png"
         },
         {
@@ -1332,7 +1402,7 @@
             "parent_category": "Audio",
             "sub_category": "Boombox",
             "price": "85.00",
-            "available": 8,
+            "available": 6,
             "image": "images/J-250BT-BLK.png"
         },
         {
@@ -1364,6 +1434,26 @@
             "price": "60.00",
             "available": 999,
             "image": "images/J-290BT-SIL.png"
+        },
+        {
+            "id": "LX-30-BLK",
+            "name": "Dolphin Portable Boombox BT Speaker, Black",
+            "category": "Boombox",
+            "parent_category": "Audio",
+            "sub_category": "Boombox",
+            "price": "32.00",
+            "available": 999,
+            "image": "images/LX-30-BLK.png"
+        },
+        {
+            "id": "LX-30-CAMO",
+            "name": "Dolphin Portable Boombox BT Speaker, Camo",
+            "category": "Boombox",
+            "parent_category": "Audio",
+            "sub_category": "Boombox",
+            "price": "32.00",
+            "available": 999,
+            "image": "images/LX-30-CAMO.png"
         },
         {
             "id": "PRCD650A-SLV",
@@ -1714,16 +1804,6 @@
             "price": "11.00",
             "available": 2,
             "image": "images/NA-3032.png"
-        },
-        {
-            "id": "BD146",
-            "name": "Golden 5.0 Cu.Ft. Chest Freezer W/Chest White DOE",
-            "category": "Major Appliances",
-            "parent_category": "Major Appliances",
-            "sub_category": "Chest Freezer",
-            "price": "170.00",
-            "available": 1,
-            "image": "images/BD146.png"
         },
         {
             "id": "CCUK12W/ROA",
@@ -2112,7 +2192,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Coffee & Tea",
             "price": "23.00",
-            "available": 6,
+            "available": 4,
             "image": "images/TS-113BK.png"
         },
         {
@@ -2252,7 +2332,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Coffee & Tea",
             "price": "35.00",
-            "available": 4,
+            "available": 2,
             "image": "images/WCF1-1003-BWS.png"
         },
         {
@@ -2422,7 +2502,7 @@
             "parent_category": "Electronics",
             "sub_category": "Electronics",
             "price": "85.00",
-            "available": 2,
+            "available": 1,
             "image": "images/CJR720BLHD.png"
         },
         {
@@ -2504,6 +2584,16 @@
             "price": "25.00",
             "available": 1,
             "image": "images/BHD406W.png"
+        },
+        {
+            "id": "BHF136193153/RBO",
+            "name": "Pelonis 23\" Tower Heater RB",
+            "category": "Fans",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Fans",
+            "price": "35.00",
+            "available": 2,
+            "image": "images/BHF136193153-RBO.png"
         },
         {
             "id": "CZ319WTWM",
@@ -2686,6 +2776,16 @@
             "image": "images/FB-84-WHT.png"
         },
         {
+            "id": "FLA-21",
+            "name": "Airbro Socket Fan Light",
+            "category": "Fans",
+            "parent_category": "Air & Climate Control",
+            "sub_category": "Fans",
+            "price": "14.00",
+            "available": 999,
+            "image": "images/FLA-21.png"
+        },
+        {
             "id": "FS45-9L",
             "name": "Pelonis 18\" Oscillating Misting Pedestal Fan - Blk",
             "category": "Fans",
@@ -2694,6 +2794,16 @@
             "price": "59.00",
             "available": 2,
             "image": "images/FS45-9L.png"
+        },
+        {
+            "id": "H-3013",
+            "name": "Optimus Portable Utility Heater with Thermostat",
+            "category": "Fans",
+            "parent_category": "Air & Climate Control",
+            "sub_category": "Fans",
+            "price": "25.00",
+            "available": 999,
+            "image": "images/H-3013.png"
         },
         {
             "id": "HCX9115E/RBO",
@@ -2706,14 +2816,14 @@
             "image": "images/HCX9115E-RBO.png"
         },
         {
-            "id": "MSH20Q3AWW/RBO",
-            "name": "Midea Radiant Quartz Space Heater RB - White",
+            "id": "HP-1000",
+            "name": "Airbro Oscillating Radiant Heater",
             "category": "Fans",
-            "parent_category": "Refurbished / Reconditioned",
+            "parent_category": "Air & Climate Control",
             "sub_category": "Fans",
-            "price": "30.00",
+            "price": "38.00",
             "available": 999,
-            "image": "images/MSH20Q3AWW-RBO.png"
+            "image": "images/HP-1000.png"
         },
         {
             "id": "MSWMT24JR/RBO",
@@ -2744,6 +2854,16 @@
             "price": "24.00",
             "available": 999,
             "image": "images/MSWMT24MW-RBO.png"
+        },
+        {
+            "id": "NT15-20A/G",
+            "name": "Aikoper Space Heater, 1500W Electric Heater Indoor Portable with Thermostat",
+            "category": "Fans",
+            "parent_category": "Air & Climate Control",
+            "sub_category": "Fans",
+            "price": "18.00",
+            "available": 999,
+            "image": "images/NT15-20A-G.png"
         },
         {
             "id": "PFS40A4BBB",
@@ -3452,7 +3572,7 @@
             "parent_category": "Audio",
             "sub_category": "Headphones & Earphones",
             "price": "16.00",
-            "available": 7,
+            "available": 1,
             "image": "images/HPXBT301-BLWBT301.png"
         },
         {
@@ -4002,7 +4122,7 @@
             "parent_category": "Air & Climate Control",
             "sub_category": "Heaters",
             "price": "45.00",
-            "available": 5,
+            "available": 4,
             "image": "images/WHT3001.png"
         },
         {
@@ -4094,6 +4214,16 @@
             "price": "52.00",
             "available": 1,
             "image": "images/BPC-112.png"
+        },
+        {
+            "id": "CC-MW7000-BK",
+            "name": "Complete Cuisine 0.7 Cu. Ft. Digital Programmable Microwave, Black",
+            "category": "Heating & Cooking",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Heating & Cooking",
+            "price": "85.00",
+            "available": 999,
+            "image": "images/CC-MW7000-BK.png"
         },
         {
             "id": "CCD100W6",
@@ -4212,7 +4342,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "20.00",
-            "available": 4,
+            "available": 3,
             "image": "images/ED-302-BUR.png"
         },
         {
@@ -4296,6 +4426,16 @@
             "image": "images/IM-409S.png"
         },
         {
+            "id": "IM-4110CR",
+            "name": "Better Chef 10/20-cup Ceramic Bowl Rice Cooker w/ Steamer",
+            "category": "Heating & Cooking",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Heating & Cooking",
+            "price": "26.00",
+            "available": 999,
+            "image": "images/IM-4110CR.png"
+        },
+        {
             "id": "KE-111",
             "name": "Hercules Portable Gas Stove - Black",
             "category": "Heating & Cooking",
@@ -4352,7 +4492,7 @@
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Heating & Cooking",
             "price": "100.00",
-            "available": 5,
+            "available": 2,
             "image": "images/NN-SC64MBC-RBO.png"
         },
         {
@@ -4384,16 +4524,6 @@
             "price": "100.00",
             "available": 999,
             "image": "images/NN-SN68QB-RB.png"
-        },
-        {
-            "id": "NN-SN68QB/RBO",
-            "name": "Panasonic 1.2 cu.ft. Countertop Microwave Oven, RB",
-            "category": "Heating & Cooking",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Heating & Cooking",
-            "price": "110.00",
-            "available": 6,
-            "image": "images/NN-SN68QB-RBO.png"
         },
         {
             "id": "NN-SN95HS/ROA",
@@ -4444,6 +4574,16 @@
             "price": "100.00",
             "available": 999,
             "image": "images/NNSU64LWC-RBO.png"
+        },
+        {
+            "id": "NNSU65NBC/RBO",
+            "name": "Panasonic Countertop Microwave with Genius Sensor 1.3 Cu.Ft., RB, Black",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "100.00",
+            "available": 1,
+            "image": "images/NNSU65NBC-RBO.png"
         },
         {
             "id": "NNSU65NWC/RBO",
@@ -4614,16 +4754,6 @@
             "price": "14.00",
             "available": 999,
             "image": "images/SM-STV-2605.png"
-        },
-        {
-            "id": "SM-STV-2606",
-            "name": "Emerald Electric Burner, Black",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "14.00",
-            "available": 5,
-            "image": "images/SM-STV-2606.png"
         },
         {
             "id": "SM-STV-2680",
@@ -5082,7 +5212,7 @@
             "parent_category": "Audio",
             "sub_category": "Home Radio",
             "price": "8.00",
-            "available": 1,
+            "available": 3,
             "image": "images/R-15BLK.png"
         },
         {
@@ -5122,7 +5252,7 @@
             "parent_category": "Audio",
             "sub_category": "Home Radio",
             "price": "25.00",
-            "available": 999,
+            "available": 8,
             "image": "images/R-333BT-BLU.png"
         },
         {
@@ -5132,7 +5262,7 @@
             "parent_category": "Audio",
             "sub_category": "Home Radio",
             "price": "25.00",
-            "available": 5,
+            "available": 4,
             "image": "images/R-333BT-RED.png"
         },
         {
@@ -5254,6 +5384,16 @@
             "price": "35.00",
             "available": 999,
             "image": "images/14210R.png"
+        },
+        {
+            "id": "14289F",
+            "name": "Hamilton Beach Cord Reel Iron w/ Spray/Burst, Non-Stick and Auto-shutoff",
+            "category": "Irons",
+            "parent_category": "Home & Office",
+            "sub_category": "Irons",
+            "price": "30.00",
+            "available": 999,
+            "image": "images/14289F.png"
         },
         {
             "id": "CE-IR941",
@@ -6162,7 +6302,7 @@
             "parent_category": "Health and Personal Care",
             "sub_category": "Personal Care",
             "price": "20.00",
-            "available": 999,
+            "available": 9,
             "image": "images/CXT1-4007-CMB.png"
         },
         {
@@ -6292,7 +6432,7 @@
             "parent_category": "Communications",
             "sub_category": "Phone Charger",
             "price": "6.00",
-            "available": 1,
+            "available": 999,
             "image": "images/ADP-101.png"
         },
         {
@@ -6486,6 +6626,26 @@
             "image": "images/PTB-1010.png"
         },
         {
+            "id": "PTB-150-BLK",
+            "name": "Techbro 5000mAh MagSafe Power Bank, Black",
+            "category": "Power Bank",
+            "parent_category": "Electronics",
+            "sub_category": "Power Bank",
+            "price": "9.00",
+            "available": 999,
+            "image": "images/PTB-150-BLK.png"
+        },
+        {
+            "id": "PTB-150-WHT",
+            "name": "Techbro 5000mAh MagSafe Power Bank, White",
+            "category": "Power Bank",
+            "parent_category": "Electronics",
+            "sub_category": "Power Bank",
+            "price": "9.00",
+            "available": 999,
+            "image": "images/PTB-150-WHT.png"
+        },
+        {
             "id": "PTB-1520",
             "name": "Techbro 20,000 mAh Solar Powerbank",
             "category": "Power Bank",
@@ -6636,6 +6796,16 @@
             "image": "images/A6CLUB-BLU.png"
         },
         {
+            "id": "ABX-1220R",
+            "name": "Audiobox Groovestar Portable Party Speaker with Wireless Mic",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "36.00",
+            "available": 999,
+            "image": "images/ABX-1220R.png"
+        },
+        {
             "id": "ABX-1550S",
             "name": "Audiobox 15\" Portable Speaker w/ Stand & Mic",
             "category": "Speakers",
@@ -6676,13 +6846,23 @@
             "image": "images/ABX-265R-RB.png"
         },
         {
+            "id": "ABX-810R",
+            "name": "Audiobox Portable Party Speaker with Long Lasting Battery",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "13.00",
+            "available": 999,
+            "image": "images/ABX-810R.png"
+        },
+        {
             "id": "ABX-82S",
             "name": "Audiobox 8\" PA Speaker",
             "category": "Speakers",
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "33.00",
-            "available": 5,
+            "available": 999,
             "image": "images/ABX-82S.png"
         },
         {
@@ -6692,7 +6872,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "13.00",
-            "available": 2,
+            "available": 3,
             "image": "images/BT-1010-BLK.png"
         },
         {
@@ -6726,14 +6906,14 @@
             "image": "images/BT-10R.png"
         },
         {
-            "id": "BT-111-BLU",
-            "name": "QFX Portable BT Rechargeable Speaker with Multi-Color LED Party Lights, Blue",
+            "id": "BT-111-BLK",
+            "name": "QFX Portable BT Rechargeable Speaker with Multi-Color LED Party Lights, Black",
             "category": "Speakers",
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "11.00",
-            "available": 3,
-            "image": "images/BT-111-BLU.png"
+            "available": 1,
+            "image": "images/BT-111-BLK.png"
         },
         {
             "id": "BT-111-RED",
@@ -6752,18 +6932,8 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "10.00",
-            "available": 4,
+            "available": 1,
             "image": "images/BT-112-BLK.png"
-        },
-        {
-            "id": "BT-112-RED",
-            "name": "QFX Portable BT Rechargeable Speaker + Multi-Color LED Party Lights, Red",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "10.00",
-            "available": 2,
-            "image": "images/BT-112-RED.png"
         },
         {
             "id": "BT-16-BLK",
@@ -7236,6 +7406,26 @@
             "image": "images/CLP-10-YEL.png"
         },
         {
+            "id": "CLP-500-BLK",
+            "name": "Dolphin Waterproof Clip Speaker, Black",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "12.00",
+            "available": 999,
+            "image": "images/CLP-500-BLK.png"
+        },
+        {
+            "id": "CLP-500-CAMO",
+            "name": "Dolphin Waterproof Clip Speaker, Camo",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "12.00",
+            "available": 999,
+            "image": "images/CLP-500-CAMO.png"
+        },
+        {
             "id": "E-1500",
             "name": "QFX 2 X15\" PROFESSIONAL PA SPEAKER",
             "category": "Speakers",
@@ -7254,16 +7444,6 @@
             "price": "320.00",
             "available": 999,
             "image": "images/E-B5.png"
-        },
-        {
-            "id": "E-B9",
-            "name": "QFX Professional High-Power 8\u201d BT Speaker with Party Lights + Wireless Mic",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "65.00",
-            "available": 6,
-            "image": "images/E-B9.png"
         },
         {
             "id": "FBHP546R",
@@ -7302,7 +7482,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "26.00",
-            "available": 999,
+            "available": 7,
             "image": "images/FBX643K.png"
         },
         {
@@ -7312,7 +7492,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "26.00",
-            "available": 9,
+            "available": 4,
             "image": "images/FBX647K.png"
         },
         {
@@ -7386,14 +7566,14 @@
             "image": "images/HPXSPBTRGB.png"
         },
         {
-            "id": "KAR-990",
-            "name": "QFX 14.1\" High Definition WIFI Touch Screen Party Speaker System with Wireless Mic",
+            "id": "KB-85R",
+            "name": "Dolphin Portable 8\" Karaoke Speaker w/ Tablet",
             "category": "Speakers",
             "parent_category": "Audio",
             "sub_category": "Speakers",
-            "price": "390.00",
-            "available": 2,
-            "image": "images/KAR-990.png"
+            "price": "225.00",
+            "available": 6,
+            "image": "images/KB-85R.png"
         },
         {
             "id": "KP-500",
@@ -7442,7 +7622,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "48.00",
-            "available": 8,
+            "available": 999,
             "image": "images/LX-440.png"
         },
         {
@@ -7552,7 +7732,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "15.00",
-            "available": 999,
+            "available": 2,
             "image": "images/MPX-8.png"
         },
         {
@@ -7564,16 +7744,6 @@
             "price": "20.00",
             "available": 1,
             "image": "images/MPX-802.png"
-        },
-        {
-            "id": "MPX-803",
-            "name": "QFX 8\" Rechargeable BT Speaker with LED Party Lights",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "16.00",
-            "available": 999,
-            "image": "images/MPX-803.png"
         },
         {
             "id": "NAS-3082",
@@ -7592,7 +7762,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "26.00",
-            "available": 3,
+            "available": 1,
             "image": "images/NAS-3105D.png"
         },
         {
@@ -7862,7 +8032,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "60.00",
-            "available": 999,
+            "available": 9,
             "image": "images/PBX-831.png"
         },
         {
@@ -7914,6 +8084,26 @@
             "price": "28.00",
             "available": 999,
             "image": "images/RC-1932-RED.png"
+        },
+        {
+            "id": "RXC-2400R",
+            "name": "Audiobox ProDeck Cassette Player with Radio & Bluetooth",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "80.00",
+            "available": 999,
+            "image": "images/RXC-2400R.png"
+        },
+        {
+            "id": "RXC-2BT",
+            "name": "Audiobox Cassette Player with Radio BT ",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "25.00",
+            "available": 999,
+            "image": "images/RXC-2BT.png"
         },
         {
             "id": "S-15",
@@ -7972,7 +8162,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "465.00",
-            "available": 999,
+            "available": 7,
             "image": "images/SBX-213W.png"
         },
         {
@@ -8016,6 +8206,26 @@
             "image": "images/SP-1217RBT.png"
         },
         {
+            "id": "SP-1270RBT",
+            "name": "Dolphin Dual 12\" Premium Party Speaker",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "215.00",
+            "available": 999,
+            "image": "images/SP-1270RBT.png"
+        },
+        {
+            "id": "SP-1500RBT",
+            "name": "Dolphin Party Speaker",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "155.00",
+            "available": 999,
+            "image": "images/SP-1500RBT.png"
+        },
+        {
             "id": "SP-1700RBT",
             "name": "Dolphin High Fidelity Speaker + Stand + Mic",
             "category": "Speakers",
@@ -8042,8 +8252,28 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "160.00",
-            "available": 6,
+            "available": 999,
             "image": "images/SP-2100RBT.png"
+        },
+        {
+            "id": "SP-212RBT",
+            "name": "Dolphin Dual 12\" Party Speaker",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "185.00",
+            "available": 999,
+            "image": "images/SP-212RBT.png"
+        },
+        {
+            "id": "SP-2250RBT",
+            "name": "Dolphin Dual 12\" Rechargeable X-Bass Spkr",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "240.00",
+            "available": 999,
+            "image": "images/SP-2250RBT.png"
         },
         {
             "id": "SP-2600RBT",
@@ -8062,7 +8292,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "160.00",
-            "available": 7,
+            "available": 999,
             "image": "images/SP-3115RBT.png"
         },
         {
@@ -8332,8 +8562,18 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "500.00",
-            "available": 3,
+            "available": 7,
             "image": "images/XL-2120.png"
+        },
+        {
+            "id": "XL-4120",
+            "name": "Dolphin Quad 12\" Event Speaker w/ Android Tab",
+            "category": "Speakers",
+            "parent_category": "Audio",
+            "sub_category": "Speakers",
+            "price": "710.00",
+            "available": 999,
+            "image": "images/XL-4120.png"
         },
         {
             "id": "40527",
@@ -8344,6 +8584,16 @@
             "price": "10.00",
             "available": 1,
             "image": "images/40527.png"
+        },
+        {
+            "id": "ANT-100",
+            "name": "AudioBox Digital TV & HD Antenna",
+            "category": "TV Antenna",
+            "parent_category": "Electronics",
+            "sub_category": "TV Antenna",
+            "price": "5.00",
+            "available": 999,
+            "image": "images/ANT-100.png"
         },
         {
             "id": "ANT-101",
@@ -8832,7 +9082,7 @@
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Vacuums",
             "price": "65.00",
-            "available": 8,
+            "available": 7,
             "image": "images/NEU102-RBO.png"
         },
         {
@@ -8972,7 +9222,7 @@
             "parent_category": "Air & Climate Control",
             "sub_category": "Window AC",
             "price": "212.00",
-            "available": 999,
+            "available": 7,
             "image": "images/EWR08E.png"
         },
         {
@@ -9026,6 +9276,16 @@
             "image": "images/LW5024.png"
         },
         {
+            "id": "LW8024IVSM",
+            "name": "LG 8,500 BTU, 115V High Efficiency Dual Inverter Window AC with Wi-Fi & LCD Remote",
+            "category": "Window AC",
+            "parent_category": "Air & Climate Control",
+            "sub_category": "Window AC",
+            "price": "375.00",
+            "available": 1,
+            "image": "images/LW8024IVSM.png"
+        },
+        {
             "id": "TSB-2438/ROA",
             "name": "Black & Decker AC Window Bracket",
             "category": "Window AC",
@@ -9042,7 +9302,7 @@
             "parent_category": "Air & Climate Control",
             "sub_category": "Window AC",
             "price": "175.00",
-            "available": 9,
+            "available": 8,
             "image": "images/WAW0525CM1W.png"
         },
         {
