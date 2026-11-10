@@ -72,7 +72,7 @@
             "parent_category": "Electronics",
             "sub_category": "Accessories",
             "price": "15.00",
-            "available": 6,
+            "available": 2,
             "image": "images/HPXKX700.png"
         },
         {
@@ -102,7 +102,7 @@
             "parent_category": "Electronics",
             "sub_category": "Accessories",
             "price": "6.00",
-            "available": 9,
+            "available": 3,
             "image": "images/QUB9003.png"
         },
         {
@@ -332,7 +332,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Air Fryer & Toaster",
             "price": "45.00",
-            "available": 4,
+            "available": 3,
             "image": "images/TS-345B.png"
         },
         {
@@ -442,7 +442,7 @@
             "parent_category": "Home & Office",
             "sub_category": "Alarm Clocks",
             "price": "10.00",
-            "available": 999,
+            "available": 8,
             "image": "images/RCD5.png"
         },
         {
@@ -974,16 +974,6 @@
             "price": "15.00",
             "available": 999,
             "image": "images/MC-102W.png"
-        },
-        {
-            "id": "MC-109R",
-            "name": "BRENTWOOD Mini Food Chopper - Red",
-            "category": "Blenders & Mixers",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Blenders & Mixers",
-            "price": "15.00",
-            "available": 6,
-            "image": "images/MC-109R.png"
         },
         {
             "id": "MC-109W",
@@ -1572,7 +1562,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Coffee & Tea",
             "price": "33.00",
-            "available": 6,
+            "available": 5,
             "image": "images/CG-162S.png"
         },
         {
@@ -1682,7 +1672,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Coffee & Tea",
             "price": "20.00",
-            "available": 8,
+            "available": 6,
             "image": "images/SM-KET-1377-B.png"
         },
         {
@@ -1754,16 +1744,6 @@
             "price": "32.00",
             "available": 999,
             "image": "images/TS-119S.png"
-        },
-        {
-            "id": "TS-212BK",
-            "name": "BRENTWOOD 4 Cup Coffee Maker, Black",
-            "category": "Coffee & Tea",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Coffee & Tea",
-            "price": "17.00",
-            "available": 5,
-            "image": "images/TS-212BK.png"
         },
         {
             "id": "TS-213BK",
@@ -2442,7 +2422,7 @@
             "parent_category": "Audio",
             "sub_category": "Headphones & Earphones",
             "price": "16.00",
-            "available": 4,
+            "available": 2,
             "image": "images/BLWBT301.png"
         },
         {
@@ -2982,7 +2962,7 @@
             "parent_category": "Audio",
             "sub_category": "Headphones & Earphones",
             "price": "18.00",
-            "available": 8,
+            "available": 2,
             "image": "images/HPXBTAND.png"
         },
         {
@@ -3322,7 +3302,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "45.00",
-            "available": 9,
+            "available": 6,
             "image": "images/889.png"
         },
         {
@@ -3542,7 +3522,7 @@
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Heating & Cooking",
             "price": "100.00",
-            "available": 9,
+            "available": 2,
             "image": "images/NN-SC678CC-RBO.png"
         },
         {
@@ -3572,7 +3552,7 @@
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Heating & Cooking",
             "price": "100.00",
-            "available": 999,
+            "available": 6,
             "image": "images/NNSU64LWC-RBO.png"
         },
         {
@@ -3692,7 +3672,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "14.00",
-            "available": 999,
+            "available": 8,
             "image": "images/SM-STV-2605.png"
         },
         {
@@ -3734,6 +3714,16 @@
             "price": "25.00",
             "available": 999,
             "image": "images/SM-STV-2686.png"
+        },
+        {
+            "id": "TS-1045BK",
+            "name": "BRENTWOOD 7 Egg Cooker/Steamer -Black",
+            "category": "Heating & Cooking",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Heating & Cooking",
+            "price": "15.00",
+            "available": 999,
+            "image": "images/TS-1045BK.png"
         },
         {
             "id": "TS-124R",
@@ -3792,7 +3782,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "36.00",
-            "available": 8,
+            "available": 4,
             "image": "images/TS-372.png"
         },
         {
@@ -3802,7 +3792,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "38.00",
-            "available": 999,
+            "available": 5,
             "image": "images/TS-380S.png"
         },
         {
@@ -4012,7 +4002,7 @@
             "parent_category": "Audio",
             "sub_category": "Home Radio",
             "price": "25.00",
-            "available": 7,
+            "available": 5,
             "image": "images/J-200BT.png"
         },
         {
@@ -4192,7 +4182,7 @@
             "parent_category": "Audio",
             "sub_category": "Home Radio",
             "price": "20.00",
-            "available": 999,
+            "available": 8,
             "image": "images/RETRO-15.png"
         },
         {
@@ -4352,7 +4342,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Kitchen accessories",
             "price": "22.00",
-            "available": 999,
+            "available": 7,
             "image": "images/TS-1002.png"
         },
         {
@@ -4542,7 +4532,7 @@
             "parent_category": "Audio",
             "sub_category": "Microphones",
             "price": "10.00",
-            "available": 999,
+            "available": 9,
             "image": "images/MC101-BLK.png"
         },
         {
@@ -4646,16 +4636,6 @@
             "image": "images/MPH-20.png"
         },
         {
-            "id": "303DGNX",
-            "name": "Conair 1875 Watts Mid-Size Dryer",
-            "category": "Personal Care",
-            "parent_category": "Health and Personal Care",
-            "sub_category": "Personal Care",
-            "price": "12.50",
-            "available": 1,
-            "image": "images/303DGNX.png"
-        },
-        {
             "id": "3043",
             "name": "Propert 150Kg Body Analysis Scale",
             "category": "Personal Care",
@@ -4664,16 +4644,6 @@
             "price": "9.00",
             "available": 999,
             "image": "images/3043.png"
-        },
-        {
-            "id": "79424-200",
-            "name": "WAHL Color Code with 17-Pc Easy-To-Use Color-Coded Haircutting Kit",
-            "category": "Personal Care",
-            "parent_category": "Health and Personal Care",
-            "sub_category": "Personal Care",
-            "price": "28.00",
-            "available": 2,
-            "image": "images/79424-200.png"
         },
         {
             "id": "79449",
@@ -4726,6 +4696,16 @@
             "image": "images/9670-1301.png"
         },
         {
+            "id": "9916-817",
+            "name": "Wahl Beard with Self-Sharpening Carbon Steel Blades",
+            "category": "Personal Care",
+            "parent_category": "Health and Personal Care",
+            "sub_category": "Personal Care",
+            "price": "27.00",
+            "available": 1,
+            "image": "images/9916-817.png"
+        },
+        {
             "id": "CBF1-2001-BLK",
             "name": "Barbasol Rechargeable Foil Shaver, Pop-up Trimmer, Giftbox",
             "category": "Personal Care",
@@ -4752,7 +4732,7 @@
             "parent_category": "Health and Personal Care",
             "sub_category": "Personal Care",
             "price": "12.00",
-            "available": 8,
+            "available": 6,
             "image": "images/CBH1-4002-SLV.png"
         },
         {
@@ -4784,16 +4764,6 @@
             "price": "19.00",
             "available": 999,
             "image": "images/CBH1-4008-SIG.png"
-        },
-        {
-            "id": "CBH1-4012-VTN",
-            "name": "Barbasol PRO Clipper Kit with Travel Bag",
-            "category": "Personal Care",
-            "parent_category": "Health and Personal Care",
-            "sub_category": "Personal Care",
-            "price": "19.00",
-            "available": 1,
-            "image": "images/CBH1-4012-VTN.png"
         },
         {
             "id": "CBK1-6001-TIN",
@@ -4834,16 +4804,6 @@
             "price": "5.00",
             "available": 999,
             "image": "images/CBT1-3007-BLY.png"
-        },
-        {
-            "id": "CBT1-6002-SLV",
-            "name": "Barbasol T-Blade Trimmer",
-            "category": "Personal Care",
-            "parent_category": "Health and Personal Care",
-            "sub_category": "Personal Care",
-            "price": "12.00",
-            "available": 3,
-            "image": "images/CBT1-6002-SLV.png"
         },
         {
             "id": "CBT1-7001-SIG",
@@ -5104,6 +5064,16 @@
             "price": "55.00",
             "available": 999,
             "image": "images/CS5129-2.png"
+        },
+        {
+            "id": "BPP10HWTB/RB",
+            "name": "Black & Decker 14.0k Portable AC - H/C Refurbished",
+            "category": "Portable AC",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Portable AC",
+            "price": "280.00",
+            "available": 1,
+            "image": "images/BPP10HWTB-RB.png"
         },
         {
             "id": "HAP0824TWD - No Accessories",
@@ -5572,7 +5542,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "18.00",
-            "available": 999,
+            "available": 9,
             "image": "images/BT-1956-RED.png"
         },
         {
@@ -7334,16 +7304,6 @@
             "price": "60.00",
             "available": 3,
             "image": "images/SA315.png"
-        },
-        {
-            "id": "TS-1045BK",
-            "name": "BRENTWOOD 7 Egg Cooker/Steamer -Black",
-            "category": "Uncategorized",
-            "parent_category": "Other",
-            "sub_category": "Uncategorized",
-            "price": "15.00",
-            "available": 999,
-            "image": "images/TS-1045BK.png"
         },
         {
             "id": "BDSV53-BLK",
