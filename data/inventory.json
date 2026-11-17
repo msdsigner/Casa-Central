@@ -1,5 +1,5 @@
 {
-    "last_updated": "November 10, 2026",
+    "last_updated": "November 17, 2026",
     "downloads": {
         "pdf": "https://drive.google.com/uc?export=download&id=1gC_iZJLeoH-_A9waEBsoNpv8BbnvvdnR",
         "excel": "https://drive.google.com/uc?export=download&id=1jphLKnNkJ26SGBvUR6F9e8Gb7kV0ROQx"
@@ -496,16 +496,6 @@
             "image": "images/62683G.png"
         },
         {
-            "id": "6706-000",
-            "name": "Oster 10-Speed Plastic Jar Blender, 450-Watt, Black",
-            "category": "Blenders & Mixers",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Blenders & Mixers",
-            "price": "50.00",
-            "available": 999,
-            "image": "images/6706-000.png"
-        },
-        {
             "id": "70450",
             "name": "Hamilton Beach 8 cup Food Processor",
             "category": "Blenders & Mixers",
@@ -612,7 +602,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Blenders & Mixers",
             "price": "11.00",
-            "available": 6,
+            "available": 3,
             "image": "images/ED-250-R.png"
         },
         {
@@ -682,7 +672,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Blenders & Mixers",
             "price": "30.00",
-            "available": 999,
+            "available": 8,
             "image": "images/FP-549BK.png"
         },
         {
@@ -712,7 +702,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Blenders & Mixers",
             "price": "47.00",
-            "available": 999,
+            "available": 6,
             "image": "images/FP-585BK.png"
         },
         {
@@ -976,6 +966,16 @@
             "image": "images/MC-102W.png"
         },
         {
+            "id": "MC-109R",
+            "name": "BRENTWOOD Mini Food Chopper - Red",
+            "category": "Blenders & Mixers",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Blenders & Mixers",
+            "price": "15.00",
+            "available": 1,
+            "image": "images/MC-109R.png"
+        },
+        {
             "id": "MC-109W",
             "name": "BRENTWOOD Mini Food Chopper - White",
             "category": "Blenders & Mixers",
@@ -1004,16 +1004,6 @@
             "price": "80.00",
             "available": 999,
             "image": "images/MG-400W.png"
-        },
-        {
-            "id": "R50190-RBO",
-            "name": "Hamilton Beach 10spd Plastic Blender - RB",
-            "category": "Blenders & Mixers",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Blenders & Mixers",
-            "price": "24.00",
-            "available": 999,
-            "image": "images/R50190-RBO.png"
         },
         {
             "id": "R56202-RBO",
@@ -1054,16 +1044,6 @@
             "price": "28.00",
             "available": 999,
             "image": "images/RJB-100W.png"
-        },
-        {
-            "id": "SM-1152",
-            "name": "BRENTWOOD 5 Speed Stand Mixer with SS/Bowl - White",
-            "category": "Blenders & Mixers",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Blenders & Mixers",
-            "price": "40.00",
-            "available": 1,
-            "image": "images/SM-1152.png"
         },
         {
             "id": "SM-1153",
@@ -1312,7 +1292,7 @@
             "parent_category": "Electronics",
             "sub_category": "CD/DVD Player",
             "price": "110.00",
-            "available": 9,
+            "available": 5,
             "image": "images/PDT-312DTV.png"
         },
         {
@@ -1446,14 +1426,14 @@
             "image": "images/FX-911.png"
         },
         {
-            "id": "ERT74MES",
-            "name": "Element 21.3 in. 7.5 cu. ft. Compact Top Freezer Refrigerator, Stainless Steel",
+            "id": "UL-BD142-D",
+            "name": "GOLDEN 5.0 Cu.Ft. Chest Freezer W/Chest White",
             "category": "Major Appliances",
             "parent_category": "Major Appliances",
             "sub_category": "Chest Freezer",
-            "price": "656.00",
+            "price": "180.00",
             "available": 2,
-            "image": "images/ERT74MES.png"
+            "image": "images/UL-BD142-D.png"
         },
         {
             "id": "176",
@@ -1462,8 +1442,18 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Coffee & Tea",
             "price": "8.50",
-            "available": 9,
+            "available": 999,
             "image": "images/176.png"
+        },
+        {
+            "id": "177",
+            "name": "Kitchen+Sense 6-Cup Aluminum Espresso Coffee Maker",
+            "category": "Coffee & Tea",
+            "parent_category": "Kitchen Appliances",
+            "sub_category": "Coffee & Tea",
+            "price": "9.00",
+            "available": 999,
+            "image": "images/177.png"
         },
         {
             "id": "178",
@@ -1554,16 +1544,6 @@
             "price": "17.00",
             "available": 999,
             "image": "images/CG-158W.png"
-        },
-        {
-            "id": "CG-162S",
-            "name": "BRENTWOOD 75-Gram Electric Wet & Dry Coffee Bean, Herb, & Spice Grinder, Black",
-            "category": "Coffee & Tea",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Coffee & Tea",
-            "price": "33.00",
-            "available": 5,
-            "image": "images/CG-162S.png"
         },
         {
             "id": "CTS-1000",
@@ -1664,16 +1644,6 @@
             "price": "20.00",
             "available": 999,
             "image": "images/SM-KET-1368.png"
-        },
-        {
-            "id": "SM-KET-1377-B",
-            "name": "Emerald Glass Tea Kettle, Countertop Electric Kettle Water Boiler Heater, 1.8 L, Clear",
-            "category": "Coffee & Tea",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Coffee & Tea",
-            "price": "20.00",
-            "available": 6,
-            "image": "images/SM-KET-1377-B.png"
         },
         {
             "id": "SM-KET-1395",
@@ -2436,16 +2406,6 @@
             "image": "images/BLWBT900.png"
         },
         {
-            "id": "BT751",
-            "name": "Sentry Talk BUDS True Wireless Buds, Black",
-            "category": "Headphones & Earphones",
-            "parent_category": "Audio",
-            "sub_category": "Headphones & Earphones",
-            "price": "9.00",
-            "available": 999,
-            "image": "images/BT751.png"
-        },
-        {
             "id": "BT752",
             "name": "Sentry Talk BUDS True Wireless Buds, White",
             "category": "Headphones & Earphones",
@@ -2602,7 +2562,7 @@
             "parent_category": "Audio",
             "sub_category": "Headphones & Earphones",
             "price": "18.00",
-            "available": 999,
+            "available": 6,
             "image": "images/HP-E120-WHT.png"
         },
         {
@@ -2786,6 +2746,16 @@
             "image": "images/HPXBT301-BLWBT301.png"
         },
         {
+            "id": "HPXBT751",
+            "name": "Sentry Talk BUDS True Wireless Buds, Black",
+            "category": "Headphones & Earphones",
+            "parent_category": "Audio",
+            "sub_category": "Headphones & Earphones",
+            "price": "9.00",
+            "available": 999,
+            "image": "images/HPXBT751.png"
+        },
+        {
             "id": "HPXBT910",
             "name": "Sentry Deluxe On-The-Neck Wireless Headphones with Microphone",
             "category": "Headphones & Earphones",
@@ -2892,7 +2862,7 @@
             "parent_category": "Audio",
             "sub_category": "Headphones & Earphones",
             "price": "19.00",
-            "available": 9,
+            "available": 3,
             "image": "images/HPXBTA1000BK.png"
         },
         {
@@ -3052,7 +3022,7 @@
             "parent_category": "Audio",
             "sub_category": "Headphones & Earphones",
             "price": "12.00",
-            "available": 999,
+            "available": 2,
             "image": "images/HPXGX175.png"
         },
         {
@@ -3266,16 +3236,6 @@
             "image": "images/WHT3001.png"
         },
         {
-            "id": "1945",
-            "name": "Kitchen+Sense 5.5L Alu Pressure Cooker w/o Steamer",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "35.00",
-            "available": 999,
-            "image": "images/1945.png"
-        },
-        {
             "id": "1947",
             "name": "Kitchen+Sense 7L Alu Pressure Cooker w/o Steamer",
             "category": "Heating & Cooking",
@@ -3292,7 +3252,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "47.00",
-            "available": 7,
+            "available": 999,
             "image": "images/1949.png"
         },
         {
@@ -3302,7 +3262,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "45.00",
-            "available": 6,
+            "available": 999,
             "image": "images/889.png"
         },
         {
@@ -3402,7 +3362,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "49.00",
-            "available": 7,
+            "available": 4,
             "image": "images/CP43279.png"
         },
         {
@@ -3516,34 +3476,94 @@
             "image": "images/MT09V1B.png"
         },
         {
-            "id": "NN-SC678CC/RBO",
-            "name": "Panasonic MW Oven 1.3CF SS w/ Child Lock RBO",
+            "id": "NN-64MBC/RB",
+            "name": "Panasonic 1.3 CF Counter-top Microwave with Inverter Technology, Black, RB",
             "category": "Heating & Cooking",
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Heating & Cooking",
             "price": "100.00",
             "available": 2,
-            "image": "images/NN-SC678CC-RBO.png"
+            "image": "images/NN-64MBC-RB.png"
         },
         {
-            "id": "NN-SU64LW/RB",
-            "name": "Panasonic Countertop Microwave Genius Sensor Cooking, 1.3-cu.ft., Matte White, RB",
+            "id": "NN-SC64MBC/RBO",
+            "name": "Panasonic 1.3 CF Countertop Microwave with Inverter Technology, Black, RB",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "100.00",
+            "available": 999,
+            "image": "images/NN-SC64MBC-RBO.png"
+        },
+        {
+            "id": "NN-SU65QB/RB",
+            "name": "Panasonic Microwave 1.3 cuft 1200W Inverter, RB, Black",
             "category": "Heating & Cooking",
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Heating & Cooking",
             "price": "100.00",
             "available": 2,
-            "image": "images/NN-SU64LW-RB.png"
+            "image": "images/NN-SU65QB-RB.png"
         },
         {
-            "id": "NNSU64LBC/RBO",
-            "name": "Panasonic Countertop Microwave Oven, 1.3 Cu Ft 1100W, RB, Black",
+            "id": "NN-SU65QB/RBO",
+            "name": "Panasonic Microwave 1.3 cuft 1200W Inverter, RB, Black",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "100.00",
+            "available": 2,
+            "image": "images/NN-SU65QB-RBO.png"
+        },
+        {
+            "id": "NN-SU65QW/RB",
+            "name": "Panasonic Microwave 1.3 cuft 1200W Inverter, RB, White",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "100.00",
+            "available": 2,
+            "image": "images/NN-SU65QW-RB.png"
+        },
+        {
+            "id": "NN-SU65QW/RBO",
+            "name": "Panasonic Microwave 1.3 cuft 1200W Inverter, RB, White",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "100.00",
+            "available": 6,
+            "image": "images/NN-SU65QW-RBO.png"
+        },
+        {
+            "id": "NNSC64MW/RB",
+            "name": "Panasonic Microwave Oven 1.3Cu.Ft. Wht RB",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "85.00",
+            "available": 999,
+            "image": "images/NNSC64MW-RB.png"
+        },
+        {
+            "id": "NNSC64MWC/RBO",
+            "name": "Panasonic Microwave Oven 1.3Cu.Ft. Wht RB",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "100.00",
+            "available": 999,
+            "image": "images/NNSC64MWC-RBO.png"
+        },
+        {
+            "id": "NNSU64LB/RB",
+            "name": "Panasonic Mid-Size 1.3 Cu Ft genius Microwave Oven, RB, Black",
             "category": "Heating & Cooking",
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Heating & Cooking",
             "price": "100.00",
             "available": 1,
-            "image": "images/NNSU64LBC-RBO.png"
+            "image": "images/NNSU64LB-RB.png"
         },
         {
             "id": "NNSU64LWC/RBO",
@@ -3552,8 +3572,38 @@
             "parent_category": "Refurbished / Reconditioned",
             "sub_category": "Heating & Cooking",
             "price": "100.00",
-            "available": 6,
+            "available": 999,
             "image": "images/NNSU64LWC-RBO.png"
+        },
+        {
+            "id": "NNSU65NBC/RBO",
+            "name": "Panasonic Countertop Microwave with Genius Sensor 1.3 Cu.Ft., RB, Black",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "100.00",
+            "available": 1,
+            "image": "images/NNSU65NBC-RBO.png"
+        },
+        {
+            "id": "NNSU65NW/RBO",
+            "name": "Panasonic Countertop Microwave with Genius Sensor 1.3 Cu.Ft., RB, White",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "100.00",
+            "available": 1,
+            "image": "images/NNSU65NW-RBO.png"
+        },
+        {
+            "id": "NNSU65NWC/RBO",
+            "name": "Panasonic Countertop Microwave, 20-inch Exterior Width, 1.3 cu. ft. Capacity, 1100W, RB, White",
+            "category": "Heating & Cooking",
+            "parent_category": "Refurbished / Reconditioned",
+            "sub_category": "Heating & Cooking",
+            "price": "100.00",
+            "available": 999,
+            "image": "images/NNSU65NWC-RBO.png"
         },
         {
             "id": "RC-5110DS",
@@ -3582,7 +3632,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "38.00",
-            "available": 999,
+            "available": 5,
             "image": "images/SC-140BL.png"
         },
         {
@@ -3592,7 +3642,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "38.00",
-            "available": 7,
+            "available": 1,
             "image": "images/SC-157S.png"
         },
         {
@@ -3666,16 +3716,6 @@
             "image": "images/SM-STV-2601.png"
         },
         {
-            "id": "SM-STV-2605",
-            "name": "Emerald Electric Burner, Hot Plate, White",
-            "category": "Heating & Cooking",
-            "parent_category": "Kitchen Appliances",
-            "sub_category": "Heating & Cooking",
-            "price": "14.00",
-            "available": 8,
-            "image": "images/SM-STV-2605.png"
-        },
-        {
             "id": "SM-STV-2680",
             "name": "Emerald Electric Double  Burner, White",
             "category": "Heating & Cooking",
@@ -3732,7 +3772,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "58.00",
-            "available": 999,
+            "available": 6,
             "image": "images/TS-124R.png"
         },
         {
@@ -3792,7 +3832,7 @@
             "parent_category": "Kitchen Appliances",
             "sub_category": "Heating & Cooking",
             "price": "38.00",
-            "available": 5,
+            "available": 1,
             "image": "images/TS-380S.png"
         },
         {
@@ -3962,7 +4002,7 @@
             "parent_category": "Audio",
             "sub_category": "Home Audio",
             "price": "115.00",
-            "available": 999,
+            "available": 3,
             "image": "images/WPB2-GRY.png"
         },
         {
@@ -3994,16 +4034,6 @@
             "price": "8.00",
             "available": 999,
             "image": "images/ER-7002-RD.png"
-        },
-        {
-            "id": "J-200BT",
-            "name": "QFX Portable BT CD Player & Cassette Rec.",
-            "category": "Home Radio",
-            "parent_category": "Audio",
-            "sub_category": "Home Radio",
-            "price": "25.00",
-            "available": 5,
-            "image": "images/J-200BT.png"
         },
         {
             "id": "J-230BT-BLK",
@@ -4082,7 +4112,7 @@
             "parent_category": "Audio",
             "sub_category": "Home Radio",
             "price": "13.00",
-            "available": 999,
+            "available": 2,
             "image": "images/R-24.png"
         },
         {
@@ -4152,7 +4182,7 @@
             "parent_category": "Audio",
             "sub_category": "Home Radio",
             "price": "28.00",
-            "available": 999,
+            "available": 9,
             "image": "images/R-334BT-RED.png"
         },
         {
@@ -4206,16 +4236,6 @@
             "image": "images/SCR-75-BLK.png"
         },
         {
-            "id": "14210R",
-            "name": "Hamilton Beach ASO Cord Reel Iron",
-            "category": "Irons",
-            "parent_category": "Home & Office",
-            "sub_category": "Irons",
-            "price": "35.00",
-            "available": 999,
-            "image": "images/14210R.png"
-        },
-        {
             "id": "14289F",
             "name": "Hamilton Beach Cord Reel Iron w/ Spray/Burst, Non-Stick and Auto-shutoff",
             "category": "Irons",
@@ -4262,7 +4282,7 @@
             "parent_category": "Home & Office",
             "sub_category": "Irons",
             "price": "25.00",
-            "available": 999,
+            "available": 6,
             "image": "images/MPI-59BK.png"
         },
         {
@@ -4456,16 +4476,6 @@
             "image": "images/SM-720-5000.png"
         },
         {
-            "id": "M-106-BLK",
-            "name": "QFX Cardioid Dynamic Microphone + 10Ft Microphone Cable, Black",
-            "category": "Microphones",
-            "parent_category": "Audio",
-            "sub_category": "Microphones",
-            "price": "4.50",
-            "available": 4,
-            "image": "images/M-106-BLK.png"
-        },
-        {
             "id": "M-106-SIL",
             "name": "QFX Cardioid Dynamic Microphone + 10Ft Microphone Cable, Silver",
             "category": "Microphones",
@@ -4652,7 +4662,7 @@
             "parent_category": "Health and Personal Care",
             "sub_category": "Personal Care",
             "price": "23.00",
-            "available": 999,
+            "available": 1,
             "image": "images/79449.png"
         },
         {
@@ -4672,7 +4682,7 @@
             "parent_category": "Health and Personal Care",
             "sub_category": "Personal Care",
             "price": "30.00",
-            "available": 999,
+            "available": 3,
             "image": "images/9243-6901.png"
         },
         {
@@ -4732,7 +4742,7 @@
             "parent_category": "Health and Personal Care",
             "sub_category": "Personal Care",
             "price": "12.00",
-            "available": 6,
+            "available": 3,
             "image": "images/CBH1-4002-SLV.png"
         },
         {
@@ -5066,16 +5076,6 @@
             "image": "images/CS5129-2.png"
         },
         {
-            "id": "BPP10HWTB/RB",
-            "name": "Black & Decker 14.0k Portable AC - H/C Refurbished",
-            "category": "Portable AC",
-            "parent_category": "Refurbished / Reconditioned",
-            "sub_category": "Portable AC",
-            "price": "280.00",
-            "available": 1,
-            "image": "images/BPP10HWTB-RB.png"
-        },
-        {
             "id": "HAP0824TWD - No Accessories",
             "name": "Hisense 350 Sq. Ft. Inverter Dual-Hose 8000 BTU Portable Air Conditioner",
             "category": "Portable AC",
@@ -5272,7 +5272,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "125.00",
-            "available": 9,
+            "available": 3,
             "image": "images/A6CLUB-BLK.png"
         },
         {
@@ -5292,7 +5292,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "125.00",
-            "available": 8,
+            "available": 2,
             "image": "images/A6CLUB-GRY.png"
         },
         {
@@ -5416,23 +5416,13 @@
             "image": "images/BT-10R.png"
         },
         {
-            "id": "BT-111-RED",
-            "name": "QFX Portable BT Rechargeable Speaker with Multi-Color LED Party Lights, Red",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "11.00",
-            "available": 4,
-            "image": "images/BT-111-RED.png"
-        },
-        {
             "id": "BT-112-BLK",
             "name": "QFX Portable BT Rechargeable Speaker + Multi-Color LED Party Lights, Black",
             "category": "Speakers",
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "10.00",
-            "available": 4,
+            "available": 1,
             "image": "images/BT-112-BLK.png"
         },
         {
@@ -5492,7 +5482,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "14.00",
-            "available": 9,
+            "available": 5,
             "image": "images/BT-17-FTB.png"
         },
         {
@@ -5912,7 +5902,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "320.00",
-            "available": 999,
+            "available": 9,
             "image": "images/E-B5.png"
         },
         {
@@ -6492,7 +6482,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "465.00",
-            "available": 7,
+            "available": 5,
             "image": "images/SBX-213W.png"
         },
         {
@@ -6534,16 +6524,6 @@
             "price": "95.00",
             "available": 999,
             "image": "images/SP-1217RBT.png"
-        },
-        {
-            "id": "SP-1270RBT",
-            "name": "Dolphin Dual 12\" Premium Party Speaker",
-            "category": "Speakers",
-            "parent_category": "Audio",
-            "sub_category": "Speakers",
-            "price": "215.00",
-            "available": 999,
-            "image": "images/SP-1270RBT.png"
         },
         {
             "id": "SP-1500RBT",
@@ -6882,7 +6862,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "500.00",
-            "available": 7,
+            "available": 6,
             "image": "images/XL-2120.png"
         },
         {
@@ -6892,7 +6872,7 @@
             "parent_category": "Audio",
             "sub_category": "Speakers",
             "price": "710.00",
-            "available": 9,
+            "available": 8,
             "image": "images/XL-4120.png"
         },
         {
@@ -7352,7 +7332,7 @@
             "parent_category": "Home & Office",
             "sub_category": "Vacuums",
             "price": "55.00",
-            "available": 8,
+            "available": 1,
             "image": "images/STM-4000BK.png"
         },
         {
@@ -7382,7 +7362,7 @@
             "parent_category": "Home & Office",
             "sub_category": "Vacuums",
             "price": "40.00",
-            "available": 999,
+            "available": 6,
             "image": "images/VC-450-YLW.png"
         },
         {
